@@ -1,39 +1,33 @@
 import csv
 def create_student_hash(crn_hash):
 	lines = []
-	with open("CourseEnrollmentInfo.csv", 'rb') as csvfile:
+	with open("grad_info.csv", 'rb') as csvfile:
 		class_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for row in class_data:
 			#print row
 			lines.append(row)
 	
-	sem_stud_course = {}
+	stud_course = {}
 	for each in lines:
 		#print each
 		sem, crn, level, stud_id  = each
 
 		#print sem, crn, level, stud_id, crn_hash[sem][crn]
 		if crn_hash[sem].has_key(crn):
-			if sem_stud_course.has_key(sem):
-				if sem_stud_course[sem].has_key(stud_id):
-					#print sem_stud_course[sem][stud_id]
-					sem_stud_course[sem][stud_id].append(crn_hash[sem][crn])
-				else:
-					sem_stud_course[sem][stud_id] = [crn_hash[sem][crn]]
+			if stud_course.has_key(stud_id):
+				stud_course[stud_id].append(crn_hash[sem][crn])
 			else:
-				sem_stud_course[sem] = { stud_id : [crn_hash[sem][crn]] }
-			print "CRN - ", crn, " is present in the list of CRNS-CIDS"
+				stud_course[stud_id] = [crn_hash[sem][crn]]
 		else:
 			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
-	return sem_stud_course
+	return stud_course
 
 #print sem_stud_course
 def write_out(crn_hash):
 	out = open("courses.txt", "w")
-	sem_stud_course = create_student_hash(crn_hash)
-	for sem in sem_stud_course.keys():
-		for stud_id in sem_stud_course[sem]:
-			out.write(" ".join(sem_stud_course[sem][stud_id]) + "\n")
+	stud_course = create_student_hash(crn_hash)
+	for stud_id in stud_course:
+		out.write(" ".join(stud_course[stud_id]) + "\n")
 	out.close()
 
 
