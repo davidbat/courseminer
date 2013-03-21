@@ -1,1 +1,1 @@
-java -jar spmf.jar run FPGrowth_itemsets input.txt output.txt 40%
+java -jar spmf.jar run FPGrowth_itemsets courses.txt output.txt 0%

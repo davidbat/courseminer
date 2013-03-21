@@ -20,6 +20,10 @@ def create_student_hash(crn_hash):
 				stud_course[stud_id] = [crn_hash[sem][crn]]
 		else:
 			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
+
+	with open('stud_info.txt', 'w') as std:
+		for studid in stud_course:
+			std.write(studid + " " + " ".join(stud_course[studid]) + "\n")
 	return stud_course
 
 #print sem_stud_course
