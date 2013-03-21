@@ -16,7 +16,7 @@ def readhash(fn):
 	my_hash = {}
 	for line in fd.readlines():
 		mid, cid = line.split()
-		print mid, "a", cid
+		#print mid, "a", cid
 		my_hash[mid] = cid
 	return my_hash
 

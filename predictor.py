@@ -14,8 +14,10 @@ def ReadFile(fn):
 fp = ReadFile("final.txt")
 out = list(fp)
 for course in sys.argv[1:]:
-	out	= [ filter(lambda x:x != course, item) for item in out if item.count(course) > 0 ]
+	#out	= [ filter(lambda x:x != course, item) for item in out if item.count(course) > 0 ]
+	out = [ item for item in out if item.count(course) > 0 ]
 
 dont_want = ['CS6949', 'CS6964']
 for line in out:
-	print " ".join(filter(lambda x:x not in dont_want,line))
+	print " ".join(line)
+	#print " ".join(filter(lambda x:x not in dont_want,line))
