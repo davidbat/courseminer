@@ -98,7 +98,7 @@ if __name__ == '__main__':
 		exit(1)
 	try:
 		with open(path + sem_hash[sem] + "/" + ids, "r") as fn:
-			if len(fn.readlines()) > 10000:
+			if fn.read().find('Instructors') != -1:
 				print sem, ids, "file already exists"
 				exit(0)
 	except IOError:

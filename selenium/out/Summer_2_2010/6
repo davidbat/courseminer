@@ -1,0 +1,1192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="no-cache" name="Cache-Control" http-equiv="Pragma" />
+<meta content="no-cache" name="Cache-Control" http-equiv="Cache-Control" />
+<link type="text/css" href="/css/web_defaultapp.css" rel="stylesheet" />
+<link media="print" type="text/css" href="/css/web_defaultprint.css" rel="stylesheet" />
+<title>Class Schedule Search</title>
+<meta content="text/javascript" name="Default_Script_Language" http-equiv="Content-Script-Type" />
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding --&gt;
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding --&gt;
+</script>
+</head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a class="skiplinks" onblur="window.status=''; return true" onfocus="window.status='Go to Main Content'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Go to Main Content'; return true" href="#main_content">Go to Main Content</a>
+</div>
+<table width="100%" summary="This table displays Menu Items and Banner Search textbox." class="plaintable">
+<tbody><tr>
+<td class="pldefault">
+<div class="headerlinksdiv2">
+ 
+</div>
+</td>
+<td class="pldefault"><p class="rightaligntext">
+<span class="pageheaderlinks">
+<a class="submenulinktext2" onblur="window.status=''; return true" onfocus="window.status='';  return true" onmouseout="window.status=''; return true" onmouseover="window.status='';  return true" target="_blank" onclick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" accesskey="H" href="/wtlhelp/twbhhelp.htm">HELP</a>
+|
+<a class="submenulinktext2" accesskey="3" href="twbkwbis.P_Logout">EXIT</a>
+</span>
+</p></td>
+</tr>
+</tbody></table>
+</div>
+<div class="pagetitlediv">
+<table width="100%" summary="This table displays title and static header displays." class="plaintable">
+<tbody><tr>
+<td class="pldefault">
+<h2>Class Schedule Search</h2>
+</td>
+<td class="pldefault">
+ 
+</td>
+<td class="pldefault"><p class="rightaligntext">
+</p><div class="staticheaders">
+Summer 2 2010 Semester<br />
+Mar 22, 2013<br />
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" colspan="3" class="bg3"><img width="10" vspace="0" hspace="0" height="3" border="0" name="web_transparent" title="Transparent Image" class="headerImg" alt="Transparent Image" src="/wtlgifs/web_transparent.gif" /></td>
+</tr>
+</tbody></table>
+<a name="main_content"></a>
+</div>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<table summary="This layout table holds message information" class="plaintable">
+<tbody><tr>
+<td class="pldefault">
+<img width="13" vspace="0" hspace="0" height="13" border="0" name="web_stop" title="Stop" class="headerImg" alt="Stop" src="/wtlgifs/web_stop_cascade.png" />
+</td>
+<td class="pldefault">
+<span class="errortext">You can not select All in Subject and All in Attribute type.</span>
+<br />
+</td>
+</tr>
+</tbody></table>
+<p class="whitespace1">
+</p><div class="infotextdiv"><table summary="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information." class="infotexttable"><tbody><tr><td class="indefault"><img width="14" vspace="0" hspace="0" height="12" border="0" name="web_info" title="Information" class="headerImg" alt="Information" src="/wtlgifs/web_info_cascade.png" /></td><td class="indefault"><span class="infotext"> Use any combination of selection options to narrow your search for courses. <br /><br />
+If you enter anything in the CRN box then the search will be by CRN and all other search options will be ignored.<br /><br />
+You may select multiple subjects one-by-one.  On Windows, the <b><font color="FF0000"><i>Ctrl</i> </font></b> key on your keyboard is used to select more than one subject from the list. For MACs, the <b><font color="FF0000"><i>Command</i> </font></b> key is used.  Use the <b><font color="FF0000"><i>Shift</i> </font></b> key on your keyboard to select an entire range of subjects.  The same techniques for multiple selection work for Attribute Type. <br /><br />
+The CRN, and Course Number, and Course Title fields do a case insensitive partial match on what is entered. Using the <b><font color="FF0000"><i>%</i> </font></b> key allows you to refine the partial match. For example, entering Art will return <b><font color="FF0000"><i>any</i> </font></b> course with Art in the title. Searching for Art% will return any course that begins with Art.</span></td></tr></tbody></table><p></p></div>
+<form method="post" action="NEUCLSS.p_class_search">
+<input type="hidden" value="dummy" name="sel_day" />
+<input type="hidden" value="201060" name="STU_TERM_IN" />
+<input type="hidden" value="dummy" name="sel_subj" />
+<input type="hidden" value="dummy" name="sel_attr" />
+<input type="hidden" value="dummy" name="sel_schd" />
+<input type="hidden" value="dummy" name="sel_camp" />
+<input type="hidden" value="dummy" name="sel_insm" />
+<input type="hidden" value="dummy" name="sel_ptrm" />
+<input type="hidden" value="dummy" name="sel_levl" />
+<input type="hidden" value="dummy" name="sel_instr" />
+<input type="hidden" value="dummy" name="sel_seat" />
+<input type="hidden" value="You can not select All in Subject and All in Attribute type." name="p_msg_code" />
+<table summary="Table is used to present the course search criteria" class="dataentrytable">
+<tbody><tr>
+<td scope="row" class="delabel"><label for="crn_id"><span class="fieldlabeltext">CRN:</span></label></td>
+<td class="dedefault" colspan="7"><input type="text" id="crn_id" maxlength="5" size="6" name="sel_crn" /></td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="subjct_id"><span class="fieldlabeltext">Subject: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="subjct_id" multiple="multiple" size="8" name="sel_subj">
+<option selected="selected" value="%">All
+</option><option value="ACCT">Accounting - ACCT
+</option><option value="AFRS">African Studies - AFRS
+</option><option value="ANTH">Anthropology - ANTH
+</option><option value="ARAB">Arabic - ARAB
+</option><option value="ARCH">Architecture - ARCH
+</option><option value="ARMY">Army ROTC - ARMY
+</option><option value="ART">Art - CPS - ART
+</option><option value="ARTD">Art - Digital - ARTD
+</option><option value="ARTF">Art - Foundations - ARTF
+</option><option value="ARTE">Art - General - ARTE
+</option><option value="ARTG">Art - Graphic - ARTG
+</option><option value="ATHT">Athletic Training - ATHT
+</option><option value="BIOL">Biology - BIOL
+</option><option value="BIO">Biology - CPS - BIO
+</option><option value="BUSN">Business Administration - BUSN
+</option><option value="CHME">Chemical Engineering - CHME
+</option><option value="CHEM">Chemistry &amp; Chemical Biology - CHEM
+</option><option value="CHNS">Chinese - CHNS
+</option><option value="CIVE">Civil &amp; Environmental Engineer - CIVE
+</option><option value="COMM">Communication Studies - COMM
+</option><option value="CMN">Communicatn Studies - CPS - CMN
+</option><option value="CS">Computer Science - CS
+</option><option value="CSYE">Computer Systems Engineering - CSYE
+</option><option value="COOP">Cooperative Education - COOP
+</option><option value="CAEP">Counseling and Applied Ed Psyc - CAEP
+</option><option value="CRIM">Criminal Justice - CRIM
+</option><option value="CLTR">Culture - CLTR
+</option><option value="DSN">Design - CPS - DSN
+</option><option value="ENVR">Earth &amp; Environmental Sciences - ENVR
+</option><option value="ECON">Economics - ECON
+</option><option value="ECN">Economics - CPS - ECN
+</option><option value="EDUC">Education - EDUC
+</option><option value="EECE">Electrical and Comp Engineerng - EECE
+</option><option value="ENSY">Energy Systems - ENSY
+</option><option value="EMGT">Engineering Management - EMGT
+</option><option value="ENGL">English - ENGL
+</option><option value="ENTR">Entrepreneurship &amp; Innovation - ENTR
+</option><option value="FINA">Finance &amp; Insurance - FINA
+</option><option value="FRNH">French - FRNH
+</option><option value="GENS">General Studies - GENS
+</option><option value="GRMN">German - GRMN
+</option><option value="HLTH">Health Sci - Interdisciplinary - HLTH
+</option><option value="HSCI">Health Science - HSCI
+</option><option value="HIST">History - HIST
+</option><option value="HST">History - CPS - HST
+</option><option value="HONR">Honors Program - HONR
+</option><option value="HRMG">Human Resources Management - HRMG
+</option><option value="HUSV">Human Services - HUSV
+</option><option value="IE">Industrial Engineering - IE
+</option><option value="IS">Information Science - IS
+</option><option value="INFO">Information Systems Program - INFO
+</option><option value="INTL">International Affairs - INTL
+</option><option value="INTB">International Business - INTB
+</option><option value="INTP">Interpreting - INTP
+</option><option value="ITLN">Italian - ITLN
+</option><option value="JWSS">Jewish Studies - JWSS
+</option><option value="JRNL">Journalism - JRNL
+</option><option value="MGMT">Management - MGMT
+</option><option value="MISM">Management Information Systems - MISM
+</option><option value="MGSC">Management Science - MGSC
+</option><option value="MECN">Managerial Economics - MECN
+</option><option value="MKTG">Marketing - MKTG
+</option><option value="MATL">Materials Engineering - MATL
+</option><option value="MATH">Mathematics - MATH
+</option><option value="MEIE">Mech &amp; Industrial Engineering - MEIE
+</option><option value="ME">Mechanical Engineering - ME
+</option><option value="CINE">Media - Cinema Studies - CINE
+</option><option value="MUSC">Music - MUSC
+</option><option value="MUSI">Music Industry - MUSI
+</option><option value="NRSG">Nursing - NRSG
+</option><option value="OR">Operations Research - OR
+</option><option value="ORGB">Organizational Behavior - ORGB
+</option><option value="PHSC">Pharmaceutical Science - PHSC
+</option><option value="PHMD">Pharmacy Practice - PHMD
+</option><option value="PHIL">Philosophy - PHIL
+</option><option value="RELS">Philosophy - Religious Studies - RELS
+</option><option value="PT">Physical Therapy - PT
+</option><option value="PHYS">Physics - PHYS
+</option><option value="POLS">Political Science - POLS
+</option><option value="PORT">Portuguese - PORT
+</option><option value="PSYC">Psychology - PSYC
+</option><option value="PSY">Psychology - CPS - PSY
+</option><option value="PHTH">Public Health - PHTH
+</option><option value="SOCL">Sociology - SOCL
+</option><option value="SPNS">Spanish - SPNS
+</option><option value="SLPA">Speech-Lang Path &amp; Audiology - SLPA
+</option><option value="STRT">Strategy - STRT
+</option><option value="ISPR">Study Abroad - ISPR
+</option><option value="SABU">Study Abroad - Business - SABU
+</option><option value="SCHM">Supply Chain Management - SCHM
+</option><option value="TECE">Technological Entrepreneurship - TECE
+</option><option value="TSMG">Telecom Sys Mgmt - TSMG
+</option></select>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="crse_id"><span class="fieldlabeltext">Course Number: </span></label></td>
+<td class="dedefault" colspan="7"><input type="text" id="crse_id" maxlength="10" size="11" name="sel_crse" /></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="title_id"><span class="fieldlabeltext">Title: </span></label></td>
+<td class="dedefault" colspan="7"><input type="text" id="title_id" maxlength="30" size="33" name="sel_title" /></td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="attr_id"><span class="fieldlabeltext">Attribute Type: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="attr_id" multiple="multiple" size="3" name="sel_attr">
+<option selected="selected" value="%">All
+</option><option value="NCW1"> NU Core 1st year Writing
+</option><option value="NCW3"> NU Core Adv Writing in Dscpln
+</option><option value="NCR1"> NU Core Arts Lvl 1
+</option><option value="NCA1"> NU Core Arts/Humanities Lvl 1
+</option><option value="NCC1"> NU Core Capstone
+</option><option value="NCD1"> NU Core Comp Stdy of Cultures
+</option><option value="NCE1"> NU Core Experiential Learning
+</option><option value="NCH1"> NU Core Humanities Lvl 1
+</option><option value="NCM1"> NU Core Math/Anly Think Lvl 1
+</option><option value="NCM2"> NU Core Math/Anly Think Lvl 2
+</option><option value="NCT1"> NU Core Science/Tech Lvl 1
+</option><option value="NCS1"> NU Core Social Science Lvl 1
+</option><option value="NCW2"> NU Core Writing Intsv in Majr
+</option><option value="CCCR">CAS Core 1st year Writing
+</option><option value="CCWR">CAS Core Adv Writing in Discpl
+</option><option value="CCYR">CAS Core Analysis
+</option><option value="CCDR">CAS Core Diversity
+</option><option value="CCLR">CAS Core Foreign Language
+</option><option value="CCER">CAS Core Hist,Ethcl,Asth Prspv
+</option><option value="CCAR">CAS Core MOI: Arts Context
+</option><option value="CCHR">CAS Core MOI: Humanities
+</option><option value="CCNR">CAS Core MOI: Natural World
+</option><option value="CCSR">CAS Core MOI: Social World
+</option><option value="CCMR">CAS Core Mathematics
+</option><option value="PSDV">CPS Diversity Core
+</option><option value="PSEP">CPS Ethical&amp;Pol Prspctv Core
+</option><option value="PSHS">CPS Historical Prspctv Core
+</option><option value="PSIL">CPS Information Literacy Core
+</option><option value="PSMT">CPS Mathematics Core
+</option><option value="PSSP">CPS Science Prspctv Core
+</option><option value="PSWC">CPS Written Comm Core
+</option><option value="MCHL">Charlotte, NC program eligible
+</option><option value="UBFL">Faculty Led Study Abroad
+</option><option value="GNFT">Full-time status
+</option><option value="GNHN">Honors
+</option><option value="GN3S">Three Seas Program
+</option></select>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="levl_id"><span class="fieldlabeltext">Course Level: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="levl_id" multiple="multiple" size="8" name="sel_levl">
+<option selected="selected" value="%">All
+</option><option value="GP">CPS - Graduate
+</option><option value="UP">CPS - Undergraduate
+</option><option value="CP">Continuing Education
+</option><option value="GR">Graduate
+</option><option value="LW">Law
+</option><option value="UG">Undergraduate
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel"> </td>
+<td class="dedefault" colspan="7">
+<input type="checkbox" id="sel_seat_id" value="Y" name="sel_seat" />
+<label for="sel_seat_id"><span class="fieldlabeltextinvisible">Show only courses with seats available</span></label>
+<abbr available="" seats="" with="" courses="" only="" title="Show">Show only courses with seats available</abbr>
+</td>
+</tr>
+</tbody></table>
+<script type="text/javascript" language="JavaScript">
+function showOption(h) {
+  var tbl = document.getElementById('opttbl')
+  tbl.style.display = h;
+}
+function show_hide(divid, show) { 
+if (tbl = document.getElementById(divid)) {
+if (null == show) show = tbl.style.display == 'none';
+tbl.style.display = (show ? '' : 'none');}}
+</script> 
+<br />
+<a onclick="show_hide('OptTable')" href="javascript:;"><font size="2">+/- More Options</font></a>
+<div style="overflow:hidden;display:none" id="OptTable">
+<table summary="Table is used to present the additional course search criteria" class="dataentrytable">
+<tbody><tr>
+<td scope="row" class="delabel"><label for="schd_id"><span class="fieldlabeltext">Schedule Type: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="schd_id" multiple="multiple" size="8" name="sel_schd">
+<option selected="selected" value="%">All
+</option><option value="II">Individual Instruction
+</option><option value="LAB">Lab
+</option><option value="LEC">Lecture
+</option><option value="XC">Off-campus instruction
+</option><option value="XCL">Off-campus instruction w/ lec
+</option><option value="PRF">Performance/Individual Lesson
+</option><option value="REC">Recitation/Discussion
+</option><option value="SEM">Seminar
+</option><option value="STU">Studio
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="insm_id"><span class="fieldlabeltext">Instructional Method: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="insm_id" multiple="multiple" size="8" name="sel_insm">
+<option selected="selected" value="%">All
+</option><option value="BL">Blended
+</option><option value="CO">Cooperative Education
+</option><option value="HY">Hybrid
+</option><option value="SAFL">NU Faculty-led Study Abroad
+</option><option value="OL">Online
+</option><option value="SA">Study Abroad
+</option><option value="VS">Video Streaming
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="credit_id_from"><span class="fieldlabeltext">Credit Range: </span></label></td>
+<td class="dedefault" colspan="7">
+<input type="text" id="credit_id_from" maxlength="10" size="11" name="sel_from_cred" />
+ hours to  
+<label for="credit_id_to"><span class="fieldlabeltextinvisible">Credit Range To:</span></label>
+<input type="text" id="credit_id_to" maxlength="10" size="11" name="sel_to_cred" />
+ hours
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="camp_id"><span class="fieldlabeltext">Campus: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="camp_id" multiple="multiple" size="7" name="sel_camp">
+<option selected="selected" value="%">All
+</option><option value="BOS">Boston, Main
+</option><option value="BRD">89 Broad St., Boston
+</option><option value="BRL">Burlington
+</option><option value="CHL">Charlotte, NC
+</option><option value="DDH">Dedham
+</option><option value="NAH">Nahant
+</option><option value="SEA">Seattle, Wa
+</option><option value="VTL">Online
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="ptrm_id"><span class="fieldlabeltext">Part of Term: </span></label><br />     <span class="fieldsmalltext">Non-date based courses only</span></td>
+<td class="dedefault" colspan="7">
+<select id="ptrm_id" multiple="multiple" size="5" name="sel_ptrm">
+<option selected="selected" value="%">All
+</option><option value="1">Full Term
+</option><option value="2">Full Term Grad
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel"><label for="instr_id"><span class="fieldlabeltext">Instructor: </span></label></td>
+<td class="dedefault" colspan="7">
+<select id="instr_id" multiple="multiple" size="8" name="sel_instr">
+<option selected="selected" value="%">All
+</option><option value="348908">Abderrazzaq, Mohammad A.
+</option><option value="948766">Acciavatti, Anthony R.
+</option><option value="333395">Adomdza, Gordon K.
+</option><option value="31070">Anderson, James S.
+</option><option value="30754">Andrews, Edwin C.
+</option><option value="30754">Andrews, Edwin C.
+</option><option value="873919">Attwood, Polly F.
+</option><option value="32208">Balachandra, Ramaiya
+</option><option value="72378">Barden, Arlene M.
+</option><option value="72378">Barden, Arlene M.
+</option><option value="30103">Barreto, Amilcar A.
+</option><option value="40157">Basu, Linnea M.
+</option><option value="31953">Beauchesne, Michelle A.
+</option><option value="292142">Beiswenger, Kerri A.
+</option><option value="30697">Bernal, Dionisio
+</option><option value="820215">Better, Hansy
+</option><option value="30504">Bettinson, Craig
+</option><option value="32449">Blank, Samuel J.
+</option><option value="31779">Block, Martin L.
+</option><option value="30402">Bognanni, Charles
+</option><option value="32114">Bolster, Paul J.
+</option><option value="32114">Bolster, Paul J.
+</option><option value="31246">Bottomy, John
+</option><option value="31246">Bottomy, John
+</option><option value="31246">Bottomy, John
+</option><option value="84100">Bowers, Michael C.
+</option><option value="946134">Bowles, Michael
+</option><option value="946134">Bowles, Michael
+</option><option value="946134">Bowles, Michael
+</option><option value="32048">Boyson, Nicole M.
+</option><option value="30157">Brady, Ann
+</option><option value="31704">Breen, Marcus J.
+</option><option value="31704">Breen, Marcus J.
+</option><option value="31704">Breen, Marcus J.
+</option><option value="30263">Brock, Bernice M.
+</option><option value="30583">Budil, David E.
+</option><option value="31159">Burds, Jeffrey
+</option><option value="31159">Burds, Jeffrey
+</option><option value="31159">Burds, Jeffrey
+</option><option value="31159">Burds, Jeffrey
+</option><option value="32588">Burgard, Stephen D.
+</option><option value="31677">Burke, Lynn H.
+</option><option value="31565">Cahalin, Lawrence P.
+</option><option value="31565">Cahalin, Lawrence P.
+</option><option value="31565">Cahalin, Lawrence P.
+</option><option value="350223">Cai, Hua
+</option><option value="333384">Cai, Qinghong
+</option><option value="333384">Cai, Qinghong
+</option><option value="333384">Cai, Qinghong
+</option><option value="333384">Cai, Qinghong
+</option><option value="333384">Cai, Qinghong
+</option><option value="333384">Cai, Qinghong
+</option><option value="30075">Canali, Alicia A.
+</option><option value="32115">Canavan, Paul
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="333305">Canavan, Yanet M.
+</option><option value="31968">Cantor, Mira
+</option><option value="31968">Cantor, Mira
+</option><option value="31968">Cantor, Mira
+</option><option value="121546">Catalano, Steven G.
+</option><option value="350052">Cesme, Burak
+</option><option value="350052">Cesme, Burak
+</option><option value="350052">Cesme, Burak
+</option><option value="32462">Chatterjee, Sangit
+</option><option value="32462">Chatterjee, Sangit
+</option><option value="37063">Chevarley Jr, Joseph W.
+</option><option value="37063">Chevarley Jr, Joseph W.
+</option><option value="30772">Chilvers, Elizabeth
+</option><option value="101912">Choa, Pong
+</option><option value="101912">Choa, Pong
+</option><option value="31457">Chung, Ken Y.
+</option><option value="333245">Chung, Y. Barry
+</option><option value="333245">Chung, Y. Barry
+</option><option value="333245">Chung, Y. Barry
+</option><option value="339020">Clark, Tabitha
+</option><option value="264180">Cody, Nakeisha M.
+</option><option value="30666">Cokely, Dennis R.
+</option><option value="31175">Cole, Jennifer S.
+</option><option value="31175">Cole, Jennifer S.
+</option><option value="31252">Coley, John
+</option><option value="30329">Colvin, C. R.
+</option><option value="342637">Compaine, Benjamin
+</option><option value="32259">Conley, Richard
+</option><option value="342128">Connell, Sarah
+</option><option value="948558">Connors, Elizabeth
+</option><option value="948558">Connors, Elizabeth
+</option><option value="84417">Cook, Lisa
+</option><option value="31899">Cottrill, Michael D.
+</option><option value="31899">Cottrill, Michael D.
+</option><option value="31899">Cottrill, Michael D.
+</option><option value="739952">Covino, Ralph J.
+</option><option value="349293">Crowe, Christina C.
+</option><option value="349293">Crowe, Christina C.
+</option><option value="348942">Cruz, Carlos R.
+</option><option value="30585">Czesniuk, David J.
+</option><option value="293366">Daniels, Brian
+</option><option value="340078">Davies, Michael
+</option><option value="350031">Dedek, Michael J.
+</option><option value="333355">Dedeke, Adenekan A.
+</option><option value="333355">Dedeke, Adenekan A.
+</option><option value="820344">Deese, Richard S.
+</option><option value="32495">Demirkan, Sebahattin
+</option><option value="30189">De Ritis, Anthony P.
+</option><option value="30189">De Ritis, Anthony P.
+</option><option value="30587">DeSteno, David A.
+</option><option value="349730">Dickstein-Fis, Laurie
+</option><option value="30566">Dicoscia, Danielle
+</option><option value="30566">Dicoscia, Danielle
+</option><option value="30566">Dicoscia, Danielle
+</option><option value="30566">Dicoscia, Danielle
+</option><option value="32412">Dimarco, Rosemarie
+</option><option value="30404">Dimarzio, Charles
+</option><option value="30404">Dimarzio, Charles
+</option><option value="291619">Douglass, Peter R.
+</option><option value="291619">Douglass, Peter R.
+</option><option value="335984">Dow, Michael V.
+</option><option value="30831">Doyon, Erin T.
+</option><option value="31901">Dukakis, Michael S.
+</option><option value="30388">Dunand, Catherine M.
+</option><option value="30388">Dunand, Catherine M.
+</option><option value="30388">Dunand, Catherine M.
+</option><option value="30388">Dunand, Catherine M.
+</option><option value="30388">Dunand, Catherine M.
+</option><option value="870485">Dunn, Rebecca
+</option><option value="870485">Dunn, Rebecca
+</option><option value="31153">Egan, Jean
+</option><option value="31153">Egan, Jean
+</option><option value="31153">Egan, Jean
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="348905">Elias, Simone S.
+</option><option value="30861">El-Shihibi, Fathi A.
+</option><option value="31758">Erickson, Mark
+</option><option value="339688">Erinna, Diana I.
+</option><option value="30543">Faber, Daniel R.
+</option><option value="30543">Faber, Daniel R.
+</option><option value="30543">Faber, Daniel R.
+</option><option value="30543">Faber, Daniel R.
+</option><option value="31701">Febo, Marcelo
+</option><option value="31838">Felleisen, Matthias
+</option><option value="37075">Fenton, Esther M.
+</option><option value="30505">Ferris, Craig F.
+</option><option value="155167">Findley, Charles A.
+</option><option value="32644">Flint, Susan M.
+</option><option value="31703">Flores, Marcial E.
+</option><option value="949109">Forman, Linda
+</option><option value="32834">Forrest, Walter B.
+</option><option value="31627">Foster, Lisa
+</option><option value="342638">Fraunholtz, Peter R.
+</option><option value="115345">Fray-Witzer, Sharon J.
+</option><option value="31504">Freeman, Kimberly
+</option><option value="31504">Freeman, Kimberly
+</option><option value="31907">Frengel, Michael
+</option><option value="39553">Fulton, Brian
+</option><option value="39553">Fulton, Brian
+</option><option value="32159">Furth, Peter G.
+</option><option value="32159">Furth, Peter G.
+</option><option value="32159">Furth, Peter G.
+</option><option value="31259">Gabriel Jr., John L.
+</option><option value="31259">Gabriel Jr., John L.
+</option><option value="30161">Galligan, Ann M.
+</option><option value="31645">Gardinier, Lori M.
+</option><option value="31645">Gardinier, Lori M.
+</option><option value="31645">Gardinier, Lori M.
+</option><option value="31645">Gardinier, Lori M.
+</option><option value="349111">Geary, Charlene
+</option><option value="349111">Geary, Charlene
+</option><option value="32443">Genovese, Salvatore J.
+</option><option value="32443">Genovese, Salvatore J.
+</option><option value="32443">Genovese, Salvatore J.
+</option><option value="31996">Geoffrion, Nancy L.
+</option><option value="339311">Giaimo, Genie N.
+</option><option value="32730">Gilbert, Thomas R.
+</option><option value="38568">Gildae, Catherine A.
+</option><option value="38078">Glick, James
+</option><option value="38078">Glick, James
+</option><option value="31586">Glick, Leonard J.
+</option><option value="32328">Goldberg, Robert L.
+</option><option value="32328">Goldberg, Robert L.
+</option><option value="40185">Goldman, William
+</option><option value="30162">Golub-Victor, Ann
+</option><option value="32081">Goodale, Pamela
+</option><option value="32081">Goodale, Pamela
+</option><option value="132091">Greitzer, Andrea S.
+</option><option value="132091">Greitzer, Andrea S.
+</option><option value="338934">Griffin, Brent G.
+</option><option value="31261">Griffith, John
+</option><option value="31261">Griffith, John
+</option><option value="31630">Gurdin, Lisa
+</option><option value="31973">Habibullah, Mohamed
+</option><option value="31973">Habibullah, Mohamed
+</option><option value="31973">Habibullah, Mohamed
+</option><option value="30369">Hafner, Carole D.
+</option><option value="30214">Hajian, Arshag B.
+</option><option value="30214">Hajian, Arshag B.
+</option><option value="31351">Hall, Judith A.
+</option><option value="32330">Hall, Robert L.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="32731">Hamrick, Thomas P.
+</option><option value="117155">Hansen, Norman
+</option><option value="32331">Hanson, Robert N.
+</option><option value="333315">Harris, Maureen A.
+</option><option value="308021">Hastings, Sarah
+</option><option value="40210">Hauck, Heather A.
+</option><option value="31647">Hayward, Lorna M.
+</option><option value="31647">Hayward, Lorna M.
+</option><option value="555735">Healey, Lauren
+</option><option value="555735">Healey, Lauren
+</option><option value="555735">Healey, Lauren
+</option><option value="31034">Hedges, Inez K.
+</option><option value="32391">Hedlund, Ronald D.
+</option><option value="32391">Hedlund, Ronald D.
+</option><option value="32391">Hedlund, Ronald D.
+</option><option value="871470">Heffernan, Clare
+</option><option value="30935">Herman, Gerald H.
+</option><option value="31798">Hickey, Mary J.
+</option><option value="308047">Hill, Andrea L.
+</option><option value="31692">Hill, Malcolm D.
+</option><option value="31692">Hill, Malcolm D.
+</option><option value="31692">Hill, Malcolm D.
+</option><option value="342627">Hoppmann, Michael J.
+</option><option value="604975">Hopwood, Elizabeth
+</option><option value="30660">Horn, Denise
+</option><option value="345448">Hudak, Kristen E.
+</option><option value="40205">Hyndman III, William T.
+</option><option value="40205">Hyndman III, William T.
+</option><option value="40205">Hyndman III, William T.
+</option><option value="40205">Hyndman III, William T.
+</option><option value="40205">Hyndman III, William T.
+</option><option value="32245">Ibraheem, Remi M.
+</option><option value="32816">Ingle, Vinaykumar K.
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="30146">Irving, Angela
+</option><option value="349326">Isakower, Sean
+</option><option value="31954">Israel, Michelle L.
+</option><option value="31954">Israel, Michelle L.
+</option><option value="30514">Jackson, Cynthia
+</option><option value="32873">Jackson, William J.
+</option><option value="31955">Jacobs, Michelle L.
+</option><option value="868450">Jalili, Nader
+</option><option value="868450">Jalili, Nader
+</option><option value="101597">James, Robert F.
+</option><option value="31582">Janikian, Leon C.
+</option><option value="31582">Janikian, Leon C.
+</option><option value="32803">Johnson, Vanessa D.
+</option><option value="32803">Johnson, Vanessa D.
+</option><option value="30959">Jones, Graham B.
+</option><option value="30959">Jones, Graham B.
+</option><option value="30974">Jones, Gwilym S.
+</option><option value="333350">Jones, Kimberly
+</option><option value="333350">Jones, Kimberly
+</option><option value="333350">Jones, Kimberly
+</option><option value="32691">Jones, T Anthony
+</option><option value="32691">Jones, T Anthony
+</option><option value="32691">Jones, T Anthony
+</option><option value="30694">Jordan, Dierdre A.
+</option><option value="39773">Judge, J. Matthew
+</option><option value="868653">Kagalovsky, Victor
+</option><option value="868653">Kagalovsky, Victor
+</option><option value="32439">Kamarthi, Sagar V.
+</option><option value="31267">Kane, John C.
+</option><option value="31267">Kane, John C.
+</option><option value="31267">Kane, John C.
+</option><option value="31267">Kane, John C.
+</option><option value="31267">Kane, John C.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="31801">Kane, Mary M.
+</option><option value="32597">Kane, Stephen M.
+</option><option value="356112">Kapica, Steven
+</option><option value="32205">Katz, Ralph
+</option><option value="31308">Keefe, Jordan S.
+</option><option value="30292">Keeling, Bret L.
+</option><option value="31387">Kelley, Karen P.
+</option><option value="30548">Kennedy, Daniel D.
+</option><option value="30928">Kent, George F.
+</option><option value="30032">Kent Yates, Aileen B.
+</option><option value="31042">Keren, Iris
+</option><option value="31042">Keren, Iris
+</option><option value="31042">Keren, Iris
+</option><option value="31042">Keren, Iris
+</option><option value="532114">Kiang, Shun
+</option><option value="31998">Kim, Nancy S.
+</option><option value="349554">Kinch, Frederick A.
+</option><option value="349487">Kogos, Helene
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="30943">Kornfeld-Jacobs, Gila
+</option><option value="32790">Kovacs, Tunde
+</option><option value="30965">Kowalski, Gregory J.
+</option><option value="30965">Kowalski, Gregory J.
+</option><option value="944364">Krawiec, Chad
+</option><option value="333298">Kucharski-Howard, Janna D.
+</option><option value="333298">Kucharski-Howard, Janna D.
+</option><option value="32617">Kursh, Steven R.
+</option><option value="349891">Laird, Bobbi
+</option><option value="32540">Lam, Shuk-Yin
+</option><option value="349761">Lamachia, Joan
+</option><option value="36385">Landgrebe, Junauro
+</option><option value="36385">Landgrebe, Junauro
+</option><option value="31008">Lane, Henry W.
+</option><option value="30663">Lapon, Denise G.
+</option><option value="30663">Lapon, Denise G.
+</option><option value="30663">Lapon, Denise G.
+</option><option value="124882">Larsen, Krista M.
+</option><option value="62843">Latif, Nasreen
+</option><option value="31055">Levin, Jack
+</option><option value="31055">Levin, Jack
+</option><option value="859569">Lewis, Rachel L.
+</option><option value="31395">Lifter, Karin N.
+</option><option value="31395">Lifter, Karin N.
+</option><option value="45989">Lindhe, John J.
+</option><option value="349626">Linskey, Charles
+</option><option value="32441">Lotuff III, Salim A.
+</option><option value="32652">Lowe, Susan
+</option><option value="32652">Lowe, Susan
+</option><option value="32652">Lowe, Susan
+</option><option value="32652">Lowe, Susan
+</option><option value="32652">Lowe, Susan
+</option><option value="820168">Lowenthal, Lawrence
+</option><option value="308053">Lubitow, Amy
+</option><option value="339675">Lupi, Robert A.
+</option><option value="339675">Lupi, Robert A.
+</option><option value="462695">Lush, Richard H.
+</option><option value="32098">Mabrouk, Patricia A.
+</option><option value="949864">Maffeo, Amanda
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="31666">Maiellaro, Luigia G.
+</option><option value="32162">Manning, Peter K.
+</option><option value="30712">Margotta, Donald
+</option><option value="820167">Massey, Drew
+</option><option value="32712">Masson, Terrence D.
+</option><option value="30498">Mavroidis, Constantinos
+</option><option value="32142">McCarty, Paulette A.
+</option><option value="32142">McCarty, Paulette A.
+</option><option value="349163">McCarty, Timothy
+</option><option value="31273">McDevitt, John F.
+</option><option value="291815">McGrath, James
+</option><option value="31604">McKie Jr, Lincoln R.
+</option><option value="31604">McKie Jr, Lincoln R.
+</option><option value="31604">McKie Jr, Lincoln R.
+</option><option value="31604">McKie Jr, Lincoln R.
+</option><option value="40164">McKinney, Michael
+</option><option value="30484">McShane, Clay
+</option><option value="32503">Merriam, Seth J.
+</option><option value="30411">Meszoely, Charles A.
+</option><option value="30411">Meszoely, Charles A.
+</option><option value="30411">Meszoely, Charles A.
+</option><option value="31972">Metghalchi, Mohamad
+</option><option value="31924">Meyer, Michael C.
+</option><option value="31924">Meyer, Michael C.
+</option><option value="948767">Miller, Casey J.
+</option><option value="32506">Mohammed, Shan
+</option><option value="32506">Mohammed, Shan
+</option><option value="32506">Mohammed, Shan
+</option><option value="32506">Mohammed, Shan
+</option><option value="32506">Mohammed, Shan
+</option><option value="344676">Monteiro, Carlos
+</option><option value="867126">Moran, George S.
+</option><option value="31648">Mountain, Lorraine A.
+</option><option value="32393">Mourant, Ronald R.
+</option><option value="32544">Muftu, Sinan
+</option><option value="31454">Murphy, Kellianne M.
+</option><option value="31454">Murphy, Kellianne M.
+</option><option value="350163">Murphy, William
+</option><option value="350163">Murphy, William
+</option><option value="32519">Murthy, Shashi K.
+</option><option value="333363">Mustafa, Shakir
+</option><option value="333363">Mustafa, Shakir
+</option><option value="333363">Mustafa, Shakir
+</option><option value="333363">Mustafa, Shakir
+</option><option value="871466">Navabi, Zainalabedin
+</option><option value="30340">Nelson, Carl W.
+</option><option value="38235">Nelson, Jessica
+</option><option value="349342">Nguyen, Duyen
+</option><option value="39537">Nicoll, Lauren A.
+</option><option value="62910">Nicoloro, David A.
+</option><option value="62910">Nicoloro, David A.
+</option><option value="30080">Nogueira, Alison A.
+</option><option value="36495">Nolan, David C.
+</option><option value="31835">Noonan, Matthew P.
+</option><option value="30944">Nyaga, Gilbert
+</option><option value="30944">Nyaga, Gilbert
+</option><option value="873666">O'Brien, John
+</option><option value="32147">O'Kelly, Peggy
+</option><option value="32147">O'Kelly, Peggy
+</option><option value="32147">O'Kelly, Peggy
+</option><option value="30713">O'Malley, Donald M.
+</option><option value="30713">O'Malley, Donald M.
+</option><option value="30713">O'Malley, Donald M.
+</option><option value="32165">O'Reilly, Peter J.
+</option><option value="31529">Panford, Kwamina
+</option><option value="31529">Panford, Kwamina
+</option><option value="30486">Pantalone, Coleen C.
+</option><option value="859517">Papa, Victoria H.
+</option><option value="947981">Paul, William P.
+</option><option value="339669">Peaker, Alicia
+</option><option value="32028">Pearlmutter, Neal J.
+</option><option value="31877">Peikin, Melissa A.
+</option><option value="31672">Petty-Edwards, Lula E.
+</option><option value="871082">Piatt, Thomas
+</option><option value="345251">Polins, Jason
+</option><option value="32810">Porter, Veronica L.
+</option><option value="31282">Portz, John
+</option><option value="30611">Potter, David
+</option><option value="350308">Poudel, Arjun P.
+</option><option value="31929">Power, Michael
+</option><option value="31929">Power, Michael
+</option><option value="333332">Pritchard, Robert D.
+</option><option value="333332">Pritchard, Robert D.
+</option><option value="333332">Pritchard, Robert D.
+</option><option value="333332">Pritchard, Robert D.
+</option><option value="333332">Pritchard, Robert D.
+</option><option value="32886">Quill, William G.
+</option><option value="30956">Rabrenovic, Gordana
+</option><option value="30956">Rabrenovic, Gordana
+</option><option value="30956">Rabrenovic, Gordana
+</option><option value="30956">Rabrenovic, Gordana
+</option><option value="32200">Rajaraman, Rajmohan
+</option><option value="344277">Ranky, Richard
+</option><option value="30127">Raynor, Andrea
+</option><option value="30127">Raynor, Andrea
+</option><option value="30127">Raynor, Andrea
+</option><option value="30019">Reeves, Adam J.
+</option><option value="32196">Reisberg, Rachelle M.
+</option><option value="32602">Reucroft, Stephen
+</option><option value="31590">Ricci, Lesley A.
+</option><option value="350317">Richie, James
+</option><option value="349513">Rivera-Ottenberger, Anny
+</option><option value="349513">Rivera-Ottenberger, Anny
+</option><option value="349513">Rivera-Ottenberger, Anny
+</option><option value="349629">Rizzo, Joseph E.
+</option><option value="349629">Rizzo, Joseph E.
+</option><option value="30470">Robertson, Christopher J.
+</option><option value="30506">Robertson, Craig M.
+</option><option value="30988">Robinson, Harlow L.
+</option><option value="30988">Robinson, Harlow L.
+</option><option value="30988">Robinson, Harlow L.
+</option><option value="32786">Robinson-Wood, Tracy L.
+</option><option value="32824">Rocchio, Vincent
+</option><option value="32824">Rocchio, Vincent
+</option><option value="32824">Rocchio, Vincent
+</option><option value="30613">Rochefort, David A.
+</option><option value="30613">Rochefort, David A.
+</option><option value="30136">Rohm, Andrew J.
+</option><option value="883051">Rosen, Karyn
+</option><option value="31475">Rosenfeld, Ketty
+</option><option value="31781">Ross, Martin E.
+</option><option value="30973">Rotella, Guy L.
+</option><option value="32761">Rupert, Timothy J.
+</option><option value="32139">Ryan, Paula
+</option><option value="842151">Saban, Abraham R.
+</option><option value="40625">Sadaka, Hanai
+</option><option value="32604">Sadow, Stephen
+</option><option value="32604">Sadow, Stephen
+</option><option value="868364">Sandstrom, Scott
+</option><option value="868364">Sandstrom, Scott
+</option><option value="128354">Sansone, Robert A.
+</option><option value="31679">Sarikas, Lynne A.
+</option><option value="349956">Satterley, Jeffrey
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="30254">Satvat, Behrooz
+</option><option value="349390">Savev, Stefan
+</option><option value="30042">Schroeder, Alan
+</option><option value="872404">Schwartz, Joseph
+</option><option value="653461">Sciuto, Jenna
+</option><option value="906866">Seraphin, Robert
+</option><option value="906866">Seraphin, Robert
+</option><option value="30233">Shafai, Bahram
+</option><option value="30233">Shafai, Bahram
+</option><option value="31151">Shah, Jayant
+</option><option value="820187">Shapiro, Barbara A.
+</option><option value="30671">Shaughnessy, Dennis R.
+</option><option value="30671">Shaughnessy, Dennis R.
+</option><option value="30671">Shaughnessy, Dennis R.
+</option><option value="32744">Sheahan, Thomas C.
+</option><option value="30978">Sherman, H. D.
+</option><option value="30978">Sherman, H. D.
+</option><option value="31528">Silva, Kumarini
+</option><option value="31528">Silva, Kumarini
+</option><option value="31883">Simms, Melvin W.
+</option><option value="49879">Simons, S M.
+</option><option value="333322">Sinwell, Sarah S.
+</option><option value="32299">Sipahi, Rifat
+</option><option value="350310">Smith, David
+</option><option value="32848">Smith, Wendy A.
+</option><option value="39540">Smollin, Leandra Mae
+</option><option value="30847">Smotkin, Eugene S.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="30483">Sokol, Claudia I.
+</option><option value="873664">Soldato, Gary
+</option><option value="873664">Soldato, Gary
+</option><option value="333342">Soroka, Susan J.
+</option><option value="333342">Soroka, Susan J.
+</option><option value="350251">Spencer, Meridith A.
+</option><option value="30211">Stepanyants, Armen B.
+</option><option value="349324">Strand, Julie L.
+</option><option value="30657">Sullivan, Denis J.
+</option><option value="32293">Swasey, Richard S.
+</option><option value="32293">Swasey, Richard S.
+</option><option value="32293">Swasey, Richard S.
+</option><option value="31067">Sweeney, Jacqueline
+</option><option value="31417">Tanner, Katherine
+</option><option value="31974">Taslim, Mohammad
+</option><option value="31974">Taslim, Mohammad
+</option><option value="32006">Tavares, Nancy J.
+</option><option value="350015">Templeton, Kathryn
+</option><option value="30021">Thomas, Adam C.
+</option><option value="30021">Thomas, Adam C.
+</option><option value="32362">Tillman, Robert R.
+</option><option value="32895">Tita, William T.
+</option><option value="32895">Tita, William T.
+</option><option value="32895">Tita, William T.
+</option><option value="30073">Touran, Ali
+</option><option value="30805">Trahan, Emery A.
+</option><option value="855025">Tua'one, Natalie S.
+</option><option value="871471">Turam, Berna
+</option><option value="871471">Turam, Berna
+</option><option value="871471">Turam, Berna
+</option><option value="344241">Uzdella, Alison
+</option><option value="37069">Vallas, Steven P.
+</option><option value="867116">Vandal, Dennis C.
+</option><option value="40000">Vaziri, Ashkan
+</option><option value="30357">Vittoria, Carmine
+</option><option value="139619">Volaitis, Lydia
+</option><option value="30472">Walker, Christopher A.
+</option><option value="333383">Wang, Ming L.
+</option><option value="333075">Ward, Robert
+</option><option value="346134">Warfield, Garrett
+</option><option value="31853">Watkins, Maureen
+</option><option value="31818">Watson, Mary
+</option><option value="273968">Watt, Linda T.
+</option><option value="30752">Wertheim, Edward G.
+</option><option value="333302">Westwater, Robert
+</option><option value="333302">Westwater, Robert
+</option><option value="32400">Whitfield, Ronald M.
+</option><option value="32400">Whitfield, Ronald M.
+</option><option value="854889">Whittet, Ethan R.
+</option><option value="349128">Wholley, Laura
+</option><option value="32401">Willey, Ronald
+</option><option value="32401">Willey, Ronald
+</option><option value="868311">Williams, Christine
+</option><option value="32607">Williams, Stephen E.
+</option><option value="945204">Winborne, Sheila
+</option><option value="31637">Worsh, Lisa C.
+</option><option value="32897">Wray, William E.
+</option><option value="32538">Wu, Shu-Shih Y.
+</option><option value="32538">Wu, Shu-Shih Y.
+</option><option value="32535">Yang, Shiawee
+</option><option value="350231">Yashon, Ronnee
+</option><option value="32137">Zavracky, Paul M.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="32440">Ziane, Sali S.
+</option><option value="31419">Ziemer, Katherine S.
+</option><option value="349988">Zilleruelo, Arturo
+</option><option value="30969">Zuch, Gregory B.
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel">Start Time: </td>
+<td class="dedefault" colspan="2">
+<label for="begin_hh_id"><span class="fieldlabeltextinvisible">Hour</span></label>
+Hour <select id="begin_hh_id" size="1" name="begin_hh">
+<option value="0"> 00
+</option><option value="1"> 01
+</option><option value="2"> 02
+</option><option value="3"> 03
+</option><option value="4"> 04
+</option><option value="5"> 05
+</option><option value="6"> 06
+</option><option value="7"> 07
+</option><option value="8"> 08
+</option><option value="9"> 09
+</option><option value="10"> 10
+</option><option value="11"> 11
+</option><option value="12"> 12
+</option></select>
+</td>
+<td class="dedefault" colspan="2">
+<label for="begin_mi_id"><span class="fieldlabeltextinvisible">Minute</span></label>
+Minute <select id="begin_mi_id" size="1" name="begin_mi">
+<option value="0"> 00
+</option><option value="5"> 05
+</option><option value="10"> 10
+</option><option value="15"> 15
+</option><option value="20"> 20
+</option><option value="25"> 25
+</option><option value="30"> 30
+</option><option value="35"> 35
+</option><option value="40"> 40
+</option><option value="45"> 45
+</option><option value="50"> 50
+</option><option value="55"> 55
+</option></select>
+</td>
+<td class="dedefault" colspan="3">
+<label for="begin_ap_id"><span class="fieldlabeltextinvisible">am/pm</span></label>
+am/pm <select id="begin_ap_id" size="1" name="begin_ap">
+<option value="a">am
+</option><option value="p">pm
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel">End Time: </td>
+<td class="dedefault" colspan="2">
+<label for="end_hh_id"><span class="fieldlabeltextinvisible">Hour</span></label>
+Hour <select id="end_hh_id" size="1" name="end_hh">
+<option value="0"> 00
+</option><option value="1"> 01
+</option><option value="2"> 02
+</option><option value="3"> 03
+</option><option value="4"> 04
+</option><option value="5"> 05
+</option><option value="6"> 06
+</option><option value="7"> 07
+</option><option value="8"> 08
+</option><option value="9"> 09
+</option><option value="10"> 10
+</option><option value="11"> 11
+</option><option value="12"> 12
+</option></select>
+</td>
+<td class="dedefault" colspan="2">
+<label for="end_mi_id"><span class="fieldlabeltextinvisible">Minute</span></label>
+Minute <select id="end_mi_id" size="1" name="end_mi">
+<option value="0"> 00
+</option><option value="5"> 05
+</option><option value="10"> 10
+</option><option value="15"> 15
+</option><option value="20"> 20
+</option><option value="25"> 25
+</option><option value="30"> 30
+</option><option value="35"> 35
+</option><option value="40"> 40
+</option><option value="45"> 45
+</option><option value="50"> 50
+</option><option value="55"> 55
+</option></select>
+</td>
+<td class="dedefault" colspan="3">
+<label for="end_ap_id"><span class="fieldlabeltextinvisible">am/pm</span></label>
+am/pm <select id="end_ap_id" size="1" name="end_ap">
+<option value="a">am
+</option><option value="p">pm
+</option></select>
+</td>
+</tr>
+<tr>
+<td scope="row" class="delabel">Days: </td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_mon_id" value="m" name="sel_day" />
+<label for="sel_day_mon_id"><span class="fieldlabeltextinvisible">Monday</span></label>
+<abbr title="Monday">Mon</abbr>
+</td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_tue_id" value="t" name="sel_day" />
+<label for="sel_day_tue_id"><span class="fieldlabeltextinvisible">Tuesday</span></label>
+<abbr title="Tuesday">Tue</abbr>
+</td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_wed_id" value="w" name="sel_day" />
+<label for="sel_day_wed_id"><span class="fieldlabeltextinvisible">Wednesday</span></label>
+<abbr title="Wednesday">Wed</abbr>
+</td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_thur_id" value="r" name="sel_day" />
+<label for="sel_day_thur_id"><span class="fieldlabeltextinvisible">Thursday</span></label>
+<abbr title="Thursday">Thur</abbr>
+</td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_fri_id" value="f" name="sel_day" />
+<label for="sel_day_fri_id"><span class="fieldlabeltextinvisible">Friday</span></label>
+<abbr title="Friday">Fri</abbr>
+</td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_sat_id" value="s" name="sel_day" />
+<label for="sel_day_sat_id"><span class="fieldlabeltextinvisible">Saturday</span></label>
+<abbr title="Saturday">Sat</abbr>
+</td>
+<td width="11%" class="dedefault">
+<input type="checkbox" id="sel_day_sun_id" value="u" name="sel_day" />
+<label for="sel_day_sun_id"><span class="fieldlabeltextinvisible">Sunday</span></label>
+<abbr title="Sunday">Sun</abbr>
+</td>
+</tr>
+</tbody></table>
+</div>
+<br />
+<br />
+<br />
+<input type="submit" value="Submit" />
+<input type="reset" value="Reset" />
+</form>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table width="100%" cellspacing="0" cellpadding="0" border="0" summary="This is table displays line separator at end of the page." class="plaintable"><tbody><tr><td width="100%" colspan="2" class="bgtabon"><img width="10" vspace="0" hspace="0" height="3" border="0" name="web_transparent" title="Transparent Image" class="headerImg" alt="Transparent Image" src="/wtlgifs/web_transparent.gif" /></td></tr></tbody></table>
+<a class="skiplinks" onblur="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Skip to top of page'; return true" href="#top">Skip to top of page</a>
+</div>
+<div class="footerbeforediv">
+
+</div>
+<div class="footerafterdiv">
+
+</div>
+<div class="globalafterdiv">
+
+</div>
+<div class="globalfooterdiv">
+
+</div>
+<div class="pagefooterdiv">
+<span class="releasetext">Release: 1.1</span>
+</div>
+<div class="poweredbydiv">
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+
+
+</body></html>
