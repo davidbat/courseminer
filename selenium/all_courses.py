@@ -59,12 +59,26 @@ def my_test(driver, ids, sem):
 		#print option.text
 		if option.text == sem:
 			option.click()
+			break
 
+	time.sleep(0.5)
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
 	# Wait for page
 	time.sleep(wait_low)
 	cid = driver.find_element_by_id('crn_id')
-	cid.send_keys(ids)
+	#cid = driver.find_element_by_xpath("//input[@name='crn_id']")
+	#print cid
+	#time.sleep(10)
+	#cid.send_keys(ids)
+	print cid.get_attribute('value')
+	t = 0
+	while cid.get_attribute('value') == "" and t < 20:
+		t += 1
+		cid.send_keys(ids)
+		if t % 10 == 1:
+			print "still stuck after ", t * 10, "secs"
+		time.sleep(10)
+
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
 	with open(path + sem_hash[sem] + "/" + ids, "w") as fn:
@@ -89,6 +103,7 @@ if __name__ == '__main__':
 				exit(0)
 	except IOError:
 		print ""
-	driver = webdriver.Firefox(fp)
+	print "Processing", sem, ids
+	driver = webdriver.Firefox()
 	my_test(driver, ids, sem)
 	driver.close()

@@ -4,7 +4,7 @@ cat sems | while read sem
 do
 	for i in 1 2 3 4 5 6 7 8 9
 	do
-		echo $sem, $i 
+		#echo $sem, $i 
 		python all_courses.py $i "`echo $sem | tr -d "\n"`"
 		if [ $? -ne 0 ]
 		then

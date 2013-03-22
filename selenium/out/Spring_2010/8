@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<meta content="no-cache" name="Cache-Control" http-equiv="Pragma" />
+<meta content="no-cache" name="Cache-Control" http-equiv="Cache-Control" />
+<link type="text/css" href="/css/web_defaultapp.css" rel="stylesheet" />
+<link media="print" type="text/css" href="/css/web_defaultprint.css" rel="stylesheet" />
+<title>Class Schedule Listing</title>
+<meta content="text/javascript" name="Default_Script_Language" http-equiv="Content-Script-Type" />
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding --&gt;
+</script>
+<script type="text/javascript" language="JavaScript">
+&lt;!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding --&gt;
+</script>
+</head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a class="skiplinks" onblur="window.status=''; return true" onfocus="window.status='Go to Main Content'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Go to Main Content'; return true" href="#main_content">Go to Main Content</a>
+</div>
+<table width="100%" summary="This table displays Menu Items and Banner Search textbox." class="plaintable">
+<tbody><tr>
+<td class="pldefault">
+<div class="headerlinksdiv2">
+ 
+</div>
+</td>
+<td class="pldefault"><p class="rightaligntext">
+<span class="pageheaderlinks">
+<a class="submenulinktext2" onblur="window.status=''; return true" onfocus="window.status='';  return true" onmouseout="window.status=''; return true" onmouseover="window.status='';  return true" target="_blank" onclick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" accesskey="H" href="/wtlhelp/twbhhelp.htm">HELP</a>
+|
+<a class="submenulinktext2" accesskey="3" href="twbkwbis.P_Logout">EXIT</a>
+</span>
+</p></td>
+</tr>
+</tbody></table>
+</div>
+<div class="pagetitlediv">
+<table width="100%" summary="This table displays title and static header displays." class="plaintable">
+<tbody><tr>
+<td class="pldefault">
+<h2>Class Schedule Listing</h2>
+</td>
+<td class="pldefault">
+ 
+</td>
+<td class="pldefault"><p class="rightaligntext">
+</p><div class="staticheaders">
+Spring 2010 Semester<br />
+Mar 22, 2013<br />
+</div>
+</td>
+</tr>
+<tr>
+<td width="100%" colspan="3" class="bg3"><img border="0" width="10" vspace="0" hspace="0" height="3" name="web_transparent" title="Transparent Image" class="headerImg" alt="Transparent Image" src="/wtlgifs/web_transparent.gif" /></td>
+</tr>
+</tbody></table>
+<a name="main_content"></a>
+</div>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+
+<input type="hidden" value="dummy" name="sel_crn" />
+<input type="hidden" value="dummy" name="assoc_term_in" />
+<input type="hidden" value="dummy" name="ADD_BTN" />
+
+<br />
+<table summary="This layout table holds message information" class="plaintable">
+<tbody><tr>
+<td class="pldefault">
+ 
+</td>
+<td class="pldefault">
+No classes were found that meet your search criteria
+<br />
+</td>
+</tr>
+</tbody></table>
+<br />
+<table width="50%" summary="This is for formatting of the bottom links." class="datadisplaytable">
+<tbody><tr>
+<td class="ntdefault">
+<a onblur="window.status='';  return true" onmouseout="window.status='';  return true" onfocus="window.status='Return to Previous';  return true" onmouseover="window.status='Return to Previous';  return true" href="javascript:history.go(-1)">Return to Previous</a>
+</td>
+<td class="ntdefault"> </td>
+</tr>
+</tbody></table>
+
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" summary="This is table displays line separator at end of the page." class="plaintable"><tbody><tr><td width="100%" colspan="2" class="bgtabon"><img border="0" width="10" vspace="0" hspace="0" height="3" name="web_transparent" title="Transparent Image" class="headerImg" alt="Transparent Image" src="/wtlgifs/web_transparent.gif" /></td></tr></tbody></table>
+<a class="skiplinks" onblur="window.status=''; return true" onfocus="window.status='Skip to top of page'; return true" onmouseout="window.status=''; return true" onmouseover="window.status='Skip to top of page'; return true" href="#top">Skip to top of page</a>
+</div>
+<div class="footerbeforediv">
+
+</div>
+<div class="footerafterdiv">
+
+</div>
+<div class="globalafterdiv">
+
+</div>
+<div class="globalfooterdiv">
+
+</div>
+<div class="pagefooterdiv">
+<span class="releasetext">Release: 1.1</span>
+</div>
+<div class="poweredbydiv">
+</div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+
+
+</body></html>
