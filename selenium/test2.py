@@ -4,10 +4,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import selenium.webdriver.support.ui as ui
 import time 
-wait_time = 3
+wait_time = 10
+wait_low = 5
 fp = webdriver.FirefoxProfile()
 fp.set_preference('browser.sessionstore.postdata', 1)
-#fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
+fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
 
 driver = webdriver.Firefox(fp)
 
@@ -39,13 +40,13 @@ def my_test():
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
 	# Wait for page
-	time.sleep(2)
+	time.sleep(wait_low)
 	cid = driver.find_element_by_id("crn_id")
 	cid.send_keys("36228")
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
 	print driver.page_source
-	time.sleep(3)
+	time.sleep(wait_low)
 	driver.find_element_by_xpath("//td[@class='ntdefault']/a").click()
 
 
