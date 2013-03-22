@@ -22,9 +22,8 @@ def create_student_hash(crn_hash):
 					sem_stud_course[sem][stud_id] = [crn_hash[sem][crn]]
 			else:
 				sem_stud_course[sem] = { stud_id : [crn_hash[sem][crn]] }
-			print "CRN - ", crn, " is present in the list of CRNS-CIDS"
 		else:
-			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
+			print "sem - ", sem, "CRN - ", crn, " is not present in the list of CRNS-CIDS"
 	return sem_stud_course
 
 #print sem_stud_course
