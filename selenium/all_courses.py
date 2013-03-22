@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import selenium.webdriver.support.ui as ui
 import time
-from bs4 import BeautifulSoup
+#from bs4 import BeautifulSoup
 
 sem_hash =  {   'Fall 2009 Semester (View only)':'Fall_2009',
 				'Fall 2010 Semester (View only)':'Fall_2010',
@@ -24,17 +24,16 @@ sem_hash =  {   'Fall 2009 Semester (View only)':'Fall_2009',
 				'Summer Full 2011 Semester (View only)':'Summer_Full_2011',
 				'Summer Full 2012 Semester (View only)':'Summer_Full_2012' }
 
-wait_time = 7
-wait_low = 3
+wait_time = 3
+wait_low = 2
 fp = webdriver.FirefoxProfile()
 fp.set_preference('browser.sessionstore.postdata', 1)
-fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
+#fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
 
-driver = webdriver.Firefox(fp)
 
 path = "/home/dave/Dropbox/my stuff/dm/courseminer/selenium/out/"
 
-def my_test(ids, sem):
+def my_test(driver, ids, sem):
 	
 	driver.set_page_load_timeout(30)
 	driver.get('https://myneu.neu.edu/')
@@ -64,7 +63,7 @@ def my_test(ids, sem):
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
 	# Wait for page
 	time.sleep(wait_low)
-	cid = driver.find_element_by_id("crn_id")
+	cid = driver.find_element_by_id('crn_id')
 	cid.send_keys(ids)
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
@@ -73,13 +72,23 @@ def my_test(ids, sem):
 		fn.write(tmp_str.encode('utf-8'))
 	#time.sleep(wait_low)
 	#driver.find_element_by_xpath("//td[@class='ntdefault']/a").click()
-	driver.close()
-	exit(0)
+	#driver.close()
+	#exit(0)
 
 if __name__ == '__main__':
 	ids = str(sys.argv[1])
 	sem = str(sys.argv[2])
+
 	if sem not in sem_hash:
 		print "Could not find", sem, " semester"
 		exit(1)
-	my_test(ids, sem)
+	try:
+		with open(path + sem_hash[sem] + "/" + ids, "r") as fn:
+			if len(fn.readlines()) > 10000:
+				print sem, ids, "file already exists"
+				exit(0)
+	except IOError:
+		print ""
+	driver = webdriver.Firefox(fp)
+	my_test(driver, ids, sem)
+	driver.close()

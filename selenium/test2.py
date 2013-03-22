@@ -8,7 +8,7 @@ wait_time = 10
 wait_low = 5
 fp = webdriver.FirefoxProfile()
 fp.set_preference('browser.sessionstore.postdata', 1)
-fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
+#fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
 
 driver = webdriver.Firefox(fp)
 
