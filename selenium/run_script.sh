@@ -6,6 +6,7 @@ do
 	do
 		echo $sem, $i 
 		python all_courses.py $i `echo $sems | tr -d "\n"`
+		killall firefox
 		if [ $? -ne 0 ]
 		then
 			echo $sem $i had a problem

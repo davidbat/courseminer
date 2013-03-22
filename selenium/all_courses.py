@@ -6,26 +6,26 @@ import selenium.webdriver.support.ui as ui
 import time
 from bs4 import BeautifulSoup
 
-sem_hash =  {   'Fall 2009 (View only)':'Fall_2009',
-				'Fall 2010 (View only)':'Fall_2010',
-				'Fall 2011 (View only)':'Fall_2011',
-				'Fall 2012 (View only)':'Fall_2012',
-				'Spring 2010 (View only)':'Spring_2010',
-				'Spring 2011 (View only)':'Spring_2011',
-				'Spring 2012 (View only)':'Spring_2012',
-				'Spring 2013':'Spring_2013',
-				'Summer 1 2010 (View only)':'Summer_1_2010',
-				'Summer 1 2011 (View only)':'Summer_1_2011',
-				'Summer 1 2012 (View only)':'Summer_1_2012',
-				'Summer 2 2010 (View only)':'Summer_2_2010',
-				'Summer 2 2011 (View only)':'Summer_2_2011',
-				'Summer 2 2012 (View only)':'Summer_2_2012',
-				'Summer Full 2010 (View only)':'Summer_Full_2010',
-				'Summer Full 2011 (View only)':'Summer_Full_2011',
-				'Summer Full 2012 (View only)':'Summer_Full_2012' }
+sem_hash =  {   'Fall 2009 Semester (View only)':'Fall_2009',
+				'Fall 2010 Semester (View only)':'Fall_2010',
+				'Fall 2011 Semester (View only)':'Fall_2011',
+				'Fall 2012 Semester (View only)':'Fall_2012',
+				'Spring 2010 Semester (View only)':'Spring_2010',
+				'Spring 2011 Semester (View only)':'Spring_2011',
+				'Spring 2012 Semester (View only)':'Spring_2012',
+				'Spring 2013 Semester':'Spring_2013',
+				'Summer 1 2010 Semester (View only)':'Summer_1_2010',
+				'Summer 1 2011 Semester (View only)':'Summer_1_2011',
+				'Summer 1 2012 Semester (View only)':'Summer_1_2012',
+				'Summer 2 2010 Semester (View only)':'Summer_2_2010',
+				'Summer 2 2011 Semester (View only)':'Summer_2_2011',
+				'Summer 2 2012 Semester (View only)':'Summer_2_2012',
+				'Summer Full 2010 Semester (View only)':'Summer_Full_2010',
+				'Summer Full 2011 Semester (View only)':'Summer_Full_2011',
+				'Summer Full 2012 Semester (View only)':'Summer_Full_2012' }
 
-wait_time = 10
-wait_low = 5
+wait_time = 7
+wait_low = 3
 fp = webdriver.FirefoxProfile()
 fp.set_preference('browser.sessionstore.postdata', 1)
 fp = webdriver.FirefoxProfile('/home/dave/.mozilla/firefox/yoijpybx.default/')
@@ -57,7 +57,8 @@ def my_test(ids, sem):
 
 	el = driver.find_element_by_id('term_input_id')
 	for option in el.find_elements_by_tag_name('option'):
-		if option.text == 'Spring 2013 Semester':
+		#print option.text
+		if option.text == sem:
 			option.click()
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
@@ -68,9 +69,9 @@ def my_test(ids, sem):
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
 	with open(path + sem_hash[sem] + "/" + ids, "w") as fn:
-		print driver.page_source
-		fn.write(BeautifulSoup(driver.page_source))
-	time.sleep(wait_low)
+		tmp_str = driver.page_source
+		fn.write(tmp_str.encode('utf-8'))
+	#time.sleep(wait_low)
 	#driver.find_element_by_xpath("//td[@class='ntdefault']/a").click()
 	driver.close()
 	exit(0)
