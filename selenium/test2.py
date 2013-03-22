@@ -42,12 +42,12 @@ def my_test():
 	# Wait for page
 	time.sleep(wait_low)
 	cid = driver.find_element_by_id("crn_id")
-	cid.send_keys("36228")
+	cid.send_keys("9")
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
-	print driver.page_source
-	time.sleep(wait_low)
-	driver.find_element_by_xpath("//td[@class='ntdefault']/a").click()
+	#print driver.page_source
+	#time.sleep(wait_low)
+	#driver.find_element_by_xpath("//td[@class='ntdefault']/a").click()
 
 
 if __name__ == '__main__':
