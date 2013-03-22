@@ -77,7 +77,7 @@ def my_test(driver, ids, sem):
 		cid.send_keys(ids)
 		if t % 10 == 1:
 			print "still stuck after ", t * 10, "secs"
-		time.sleep(10)
+		time.sleep(7)
 
 
 	driver.find_element_by_xpath("//input[@value='Submit']").click()
