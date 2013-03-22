@@ -1,0 +1,1 @@
+cat unique_sems | while read i; do old=`echo $i | cut -d "-" -f 1`; new=`echo $i | cut -d "-" -f 2`; sed -i "s/$old/$new/" missing; done
