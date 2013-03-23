@@ -1,1 +1,2 @@
 python predictor.py CS5010 CS5011 CS5100 CS5800 CS6200 | grep -v "^[0-9]" | perl -lne 'print join " ", reverse split / /' | sort -n
+more output.txt |grep "^70 65" 

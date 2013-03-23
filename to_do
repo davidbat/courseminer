@@ -1,1 +1,2 @@
 1. Pull out info from myneu for all the not present CRNS
+2. We've got students who do the same course twice. How can we handle that if the same course is predicted twice.
