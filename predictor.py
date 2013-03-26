@@ -1,5 +1,17 @@
 import sys
 
+# replaces multiple occurances of course in out[0..1] with 1 occurance. If the occurance
+# is originally only 1, then it deletes it from the list.
+def replace_mult(out, course):
+	for item in out:
+		new_item = filter(lambda x:x != course, item)
+		if item.count(course) > 1:
+			item = [course] + new_item
+		else:
+			# 1 or zero occurance
+			item = new_item
+	return out
+
 def ReadFile(fn):
 	features = []
 	for line in open(fn).readlines():
@@ -21,7 +33,11 @@ for courses in student_course_info:
 	#print courses
 	out = list(fp)
 	for course in courses:
+		# Replace mult works but screws up probabilities completely and takes too long. So don't use it
+		#out = replace_mult(out, course)
 		out	= [ filter(lambda x:x != course, item) for item in out if item.count(course) > 0 ]
+		out	= [ item for item in out if len(item) > 1 ]
+
 		#print out
 	#tmp_out	= [ item for item in out if item.count(course) == 1 ]
 	#tmp_out_2 = [ filter(lambda x:x != course, item) for item in out if item.count(course) > 1 ]
@@ -30,7 +46,6 @@ for courses in student_course_info:
 		#print out
 		#for each in out:		
 		#	each = filter(lambda row:row!=course, each)
-
 	#print courses
 	if len(out) < 2:
 		out = list (fp)
@@ -60,7 +75,7 @@ for courses in student_course_info:
 		course_hash[item[0]] += ( 2 * float(item[1])/my_sum )
 		temp_sum += 2 * float(item[1])/my_sum
 
-	print temp_sum
+	#print temp_sum
 	if temp_sum == 0 :
 		print out
 if not course_hash.has_key('CS5010'):
@@ -86,7 +101,7 @@ sum = 0
 for key in course_hash:
 	print key, " - ", course_hash[key]
 	sum += course_hash[key]
-print sum
+#print sum
 
 #for line in out:
 	#print " ".join(line)
