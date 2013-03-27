@@ -24,7 +24,7 @@ def ReadFile(fn):
 	return features
 
 fp = ReadFile("final.txt")
-new_students = int(sys.argv[1])
+new_students = float(sys.argv[1])
 student_course_info = ReadFile(sys.argv[2])
 
 course_hash = {} 
@@ -60,7 +60,7 @@ for courses in student_course_info:
 
 	prob = []
 	for item in out:
-		if len(item) == 2:
+		if len(item) == 2 and item[0] != 'CS5010':
 			#print item
 			prob.append(item)
 
@@ -78,29 +78,37 @@ for courses in student_course_info:
 	#print temp_sum
 	if temp_sum == 0 :
 		print out
-if not course_hash.has_key('CS5010'):
-	course_hash['CS5010'] = 0
-course_hash['CS5010'] += new_students
+#if not course_hash.has_key('CS5010'):
+#	course_hash['CS5010'] = 0
+course_hash['CS5010'] = new_students
 
 out = list(fp)
 #out = [ item for item in out if item.count(course) > 0 ]
 #print out
 
-#prob = []
-#for item in out:
-#	if len(item) == 2 and item[0] != 'CS5010':
-#		prob.append(item)
-#my_sum = sum(map(lambda x:float(x[1]),prob))
-#for item in prob:
-#	if not course_hash.has_key(item[0]):
-			#print item[0]
-#			course_hash[item[0]] = 0
-#	course_hash[item[0]] += (float(item[1])/my_sum * 100 )
+#csum = 0 
+#for key in course_hash:
+#	print key, " - ", course_hash[key]
+#	csum += course_hash[key]
 
-sum = 0 
+prob = []
+#course_hash = {}
+for item in out:
+	if len(item) == 2 and item[0] != 'CS5010':
+		#print item[1]
+		prob.append(item)
+my_sum = sum(map(lambda x:float(x[1]),prob))
+
+for item in prob:
+	if not course_hash.has_key(item[0]):
+			#print item[0]
+			course_hash[item[0]] = 0
+	course_hash[item[0]] += new_students * (float(item[1])/my_sum)
+#print "\n\n"
+csum = 0 
 for key in course_hash:
 	print key, " - ", course_hash[key]
-	sum += course_hash[key]
+	csum += course_hash[key]
 #print sum
 
 #for line in out:
