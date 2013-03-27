@@ -106,4 +106,5 @@ if __name__ == '__main__':
 	print "Processing", sem, ids
 	driver = webdriver.Firefox()
 	my_test(driver, ids, sem)
-	driver.close()
+	driver.quit()
+	#driver.close()
