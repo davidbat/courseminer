@@ -1,2 +1,6 @@
 1. Pull out info from myneu for all the not present CRNS
 2. We've got students who do the same course twice. How can we handle that if the same course is predicted twice.
+3. We don't have info for the IA courses so we should ignore them.
+4. Create error calculator.
+5. Adding data from 1. is going to be useless because we will have info of only the CS students who took those courses and not others. Hence we cannot predict their capacity.
+6. IMP- Because of 5., we should implement predictor in such a way as to predict over everything, and we should then pull out the info of the courses that are ccis and maybe club the rest into a single bucket? (or maybe predict capacity of ccis students in the non ccis courses?)
