@@ -74,6 +74,7 @@ for courses in student_course_info:
 		#for each in out:		
 		#	each = filter(lambda row:row!=course, each)
 	#print courses
+	# have to remove courses from out below -
 	if len(out) < 2:
 		out = list (fp)
 
