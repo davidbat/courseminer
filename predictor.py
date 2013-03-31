@@ -23,12 +23,39 @@ def ReadFile(fn):
 	#    features[f][index] = col[f]
 	return features
 
+def random_prediction(possible_courses, course_hash, out, n):
+	prob = []
+	#course_hash = {}
+	for item in out:
+		if len(item) == 2 and item[0] != 'CS5010':
+			#print item[1]
+			prob.append(item)
+
+	not_required = []
+	if poss_flag == True: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
+	prob = filter(lambda x: x[0] not in not_required, prob)
+	my_sum = sum(map(lambda x:float(x[1]),prob))
+	if poss_flag and len(prob) > len(possible_courses): print len(prob)
+	for item in prob:
+		if not course_hash.has_key(item[0]):
+				#print item[0]
+				course_hash[item[0]] = 0
+		course_hash[item[0]] += n * (float(item[1])/my_sum)
+
+
+
 fp = ReadFile("final.txt")
-new_students = int(sys.argv[1])
-student_course_info = ReadFile(sys.argv[2])
-
+poss_flag = False
+ar = 0
+if sys.argv[1] == "-p":
+	ar = 1
+	poss_flag = True
+new_students = float(sys.argv[ar+1])
+student_course_info = ReadFile(sys.argv[ar+2])
+possible_courses = []
+if poss_flag: possible_courses = map(lambda st:st[:-1], open(sys.argv[ar+3]).readlines())
 course_hash = {} 
-
+randoms = 0
 for courses in student_course_info:
 	#print courses
 	out = list(fp)
@@ -47,6 +74,7 @@ for courses in student_course_info:
 		#for each in out:		
 		#	each = filter(lambda row:row!=course, each)
 	#print courses
+	# have to remove courses from out below -
 	if len(out) < 2:
 		out = list (fp)
 
@@ -60,10 +88,14 @@ for courses in student_course_info:
 
 	prob = []
 	for item in out:
-		if len(item) == 2:
+		if len(item) == 2 and item[0] != 'CS5010':
 			#print item
 			prob.append(item)
 
+	not_required = []
+	if poss_flag: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
+	prob = filter(lambda x: x[0] not in not_required, prob)
+	if poss_flag and len(prob) > len(possible_courses): print "Something wrong, courses went over possible list"
 	my_sum = sum(map(lambda x:float(x[1]),prob))
 
 	temp_sum = 0
@@ -77,32 +109,32 @@ for courses in student_course_info:
 
 	#print temp_sum
 	if temp_sum == 0 :
-		print out
-if not course_hash.has_key('CS5010'):
-	course_hash['CS5010'] = 0
-course_hash['CS5010'] += new_students
-
+		randoms += 1
+		#print "Should not be here"
+		#print out
+#if not course_hash.has_key('CS5010'):
+#	course_hash['CS5010'] = 0
+course_hash['CS5010'] = new_students
+print "Could not find information for ", randoms, " students"
 out = list(fp)
+random_prediction(possible_courses, course_hash, out, new_students + randoms * 2)
 #out = [ item for item in out if item.count(course) > 0 ]
 #print out
 
-#prob = []
-#for item in out:
-#	if len(item) == 2 and item[0] != 'CS5010':
-#		prob.append(item)
-#my_sum = sum(map(lambda x:float(x[1]),prob))
-#for item in prob:
-#	if not course_hash.has_key(item[0]):
-			#print item[0]
-#			course_hash[item[0]] = 0
-#	course_hash[item[0]] += (float(item[1])/my_sum * 100 )
+#csum = 0 
+#for key in course_hash:
+#	print key, " - ", course_hash[key]
+#	csum += course_hash[key]
 
-sum = 0 
-for key in course_hash:
-	print key, " - ", course_hash[key]
-	sum += course_hash[key]
 #print sum
 
 #for line in out:
 	#print " ".join(line)
 #	print " ".join(filter(lambda x:x not in dont_want,line))
+
+#print "\n\n"
+csum = 0 
+for key in course_hash:
+	print key, " - ", course_hash[key]
+	csum += course_hash[key]
+print "Total sum of courses taken - ",  csum
