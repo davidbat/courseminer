@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-import os
+import os,sys
 
-path = "/home/rushabh/courseminer/courseminer/selenium/parser/"
+path = os.getcwd()+"/"
 
 for (path, dirs, files) in os.walk(path):
         for file in files:
