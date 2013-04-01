@@ -16,11 +16,6 @@ def ReadFile(fn):
 	features = []
 	for line in open(fn).readlines():
 		features.append(map(lambda i: i, line.split()))
-	# dont normalize because gaussian gets worse
-	#for index in range(len(features[0]) - 1):
-	#  col = normList(map(lambda row:row[index], features))
-	#  for f in range(len(features)):
-	#    features[f][index] = col[f]
 	return features
 
 def random_prediction(possible_courses, course_hash, out, n):
@@ -42,6 +37,22 @@ def random_prediction(possible_courses, course_hash, out, n):
 				course_hash[item[0]] = 0
 		course_hash[item[0]] += n * (float(item[1])/my_sum)
 
+
+def calculate_error(actual_hash, predicted_hash):
+	mse = 0
+	cnt = 0
+	for key in predicted_hash:
+		actual = 0
+		if key in actual_hash:
+			actual = actual_hash[key]
+			cnt += 1
+		else:
+			continue
+		diff = abs(actual - round(predicted_hash[key]))
+		mse += diff ** 2
+		print key, actual, round(predicted_hash[key]), \
+			diff, diff ** 2
+	print "MSE - ", mse / (cnt * 2)
 
 
 
@@ -85,35 +96,22 @@ for courses in student_course_info:
 
 	random_prediction(possible_courses, course_hash, out, 2)
 
-	'''not_required = []
-	if poss_flag: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
-	prob = filter(lambda x: x[0] not in not_required, prob)
-	if poss_flag and len(prob) > len(possible_courses): print "Something wrong, courses went over possible list"
-	my_sum = sum(map(lambda x:float(x[1]),prob))
 
-	temp_sum = 0
-	for item in prob:
-		#print item
-		if not course_hash.has_key(item[0]):
-			#print item[0]
-			course_hash[item[0]] = 0
-		course_hash[item[0]] += ( 2 * float(item[1])/my_sum )
-		temp_sum += 2 * float(item[1])/my_sum
-
-	#print temp_sum
-	if temp_sum == 0 :
-		randoms += 1
-		#print "Should not be here"
-		#print out'''
-#if not course_hash.has_key('CS5010'):
-#	course_hash['CS5010'] = 0
 course_hash['CS5010'] = new_students
-#print "Could not find information for ", randoms, " students"
 out = list(fp)
 random_prediction(possible_courses, course_hash, out, new_students)
 
 csum = 0 
 for key in course_hash:
-	print key, " - ", course_hash[key]
+	#print key, " - ", course_hash[key]
 	csum += course_hash[key]
+
+actual_hash = {}
+for line in ReadFile('./data/stud_spring_actual.txt'):
+	#print line
+	if line[0] in actual_hash:
+		actual_hash[line[0]] += float(line[1])
+	else:
+		actual_hash[line[0]] = float(line[1])
+calculate_error(actual_hash, course_hash)
 print "Total sum of courses taken - ",  csum
