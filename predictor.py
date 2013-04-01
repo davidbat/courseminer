@@ -1,5 +1,5 @@
 import sys
-
+smoothing_const = 0.1
 # replaces multiple occurances of course in out[0..1] with 1 occurance. If the occurance
 # is originally only 1, then it deletes it from the list.
 def replace_mult(out, course):
@@ -18,13 +18,17 @@ def ReadFile(fn):
 		features.append(map(lambda i: i, line.split()))
 	return features
 
-def random_prediction(possible_courses, course_hash, out, n):
-	prob = []
+def random_prediction(all_courses, possible_courses, course_hash, out, n):
+	prob_hash = {}
+	for course in all_courses:
+		prob_hash[course] = smoothing_const
 	#course_hash = {}
 	for item in out:
 		if len(item) == 2 and item[0] != 'CS5010':
 			#print item[1]
-			prob.append(item)
+			prob_hash[item[0]] += int(item[1])
+
+	prob = map(lambda k:[k,prob_hash[k]],prob_hash)
 
 	not_required = []
 	if poss_flag: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
@@ -45,9 +49,9 @@ def calculate_error(actual_hash, predicted_hash):
 		actual = 0
 		if key in actual_hash:
 			actual = actual_hash[key]
-			cnt += 1
-		else:
-			continue
+		cnt += 1	
+		#else:
+		#	continue
 		diff = abs(actual - round(predicted_hash[key]))
 		mse += diff ** 2
 		print key, actual, round(predicted_hash[key]), \
@@ -57,6 +61,7 @@ def calculate_error(actual_hash, predicted_hash):
 
 
 fp = ReadFile("final.txt")
+all_courses = map(lambda row:row[1], ReadFile("CID_hash.txt"))
 poss_flag = False
 ar = 0
 if sys.argv[1] == "-p":
@@ -87,19 +92,12 @@ for courses in student_course_info:
 	# Code handles multiple occurances of a course by replacing all of them with ''. Gotta replace 3 with 2 and
 	# not ''
 
-	prob = []
-	for item in out:
-		if len(item) == 2 and item[0] != 'CS5010':
-			#print item
-			prob.append(item)
-
-
-	random_prediction(possible_courses, course_hash, out, 2)
+	random_prediction(all_courses, possible_courses, course_hash, out, 2)
 
 
 course_hash['CS5010'] = new_students
 out = list(fp)
-random_prediction(possible_courses, course_hash, out, new_students)
+random_prediction(all_courses, possible_courses, course_hash, out, new_students)
 
 csum = 0 
 for key in course_hash:
