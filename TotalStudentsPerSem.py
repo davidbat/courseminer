@@ -29,6 +29,9 @@ with open('CourseEnrollmentInfo.csv') as csvfile:
 out_index = 10
 output = "classes.output.csv"
 out_fd = open(output, 'wb')
+output_actual = "stud_actual.txt"
+act_fd = open(output_actual, 'wb')
+
 #out = open(output, "w")
 out = csv.writer(out_fd)
 with open("classes.csv", 'rb') as csvfile:
@@ -47,7 +50,9 @@ with open("classes.csv", 'rb') as csvfile:
 		line.insert(out_index, str(grad))
    		
    		out.writerow(line)
-
+		if sem == sys.argv[1]:
+            		act_fd.write(line[8] + "\t" + str(grad) + "\n")
+			
 		#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		#out.write(",".join(line) + "\n")
 out_fd.close()

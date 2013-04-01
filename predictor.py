@@ -105,7 +105,7 @@ for key in course_hash:
 	csum += course_hash[key]
 
 actual_hash = {}
-for line in ReadFile('./data/stud_spring_actual.txt'):
+for line in ReadFile('./stud_actual.txt'):
 	#print line
 	if line[0] in actual_hash:
 		actual_hash[line[0]] += float(line[1])

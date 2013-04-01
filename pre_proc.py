@@ -26,12 +26,17 @@ def create_student_hash(crn_hash, cid_hash):
 		else:
 			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
 
+	spring_studs = map(lambda line:line.strip(), open('eligible_stud.txt').readlines())
+	print spring_studs
 	with open('stud_info.txt', 'w') as std:
 		for studid in stud_course:
+			print studid
+			if studid not in spring_studs:
+				continue
 			dupliates = filter(lambda x:stud_course[studid].count(x) > 1, stud_course[studid])
 			if dupliates != []:
 				print "Duplicate courses - ", " ".join(map(lambda item:inv_cid_hash[item], dupliates)), "taken by ", studid
-			std.write(studid + " " + " ".join(stud_course[studid]) + "\n")
+			std.write(" ".join(map(lambda item:inv_cid_hash[item],stud_course[studid])) + "\n")
 	return stud_course
 
 #print sem_stud_course

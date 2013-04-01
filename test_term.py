@@ -28,7 +28,7 @@ def create_student_hash(crn_hash, cid_hash):
 
 	spring_studs = map(lambda line:line.strip(), open('spring_stud.txt').readlines())
 	print spring_studs
-	with open('stud_spring_info.txt', 'w') as std:
+	with open('stud_info.txt', 'w') as std:
 		for studid in stud_course:
 			print studid
 			if studid not in spring_studs:
