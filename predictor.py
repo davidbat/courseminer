@@ -61,25 +61,22 @@ for courses in student_course_info:
 	out = list(fp)
 	for course in courses:
 		# Replace mult works but screws up probabilities completely and takes too long. So don't use it
-		#out = replace_mult(out, course)
 		out	= [ filter(lambda x:x != course, item) for item in out if item.count(course) > 0 ]
 		out	= [ item for item in out if len(item) > 1 ]
 
-		#print out
-	#tmp_out	= [ item for item in out if item.count(course) == 1 ]
-	#tmp_out_2 = [ filter(lambda x:x != course, item) for item in out if item.count(course) > 1 ]
-	#out = tmp_out + tmp_out_2
-		#out = [ item for item in out if item.count(course) > 0 ]
-		#print out
-		#for each in out:		
-		#	each = filter(lambda row:row!=course, each)
-	#print courses
-	# have to remove courses from out below -
-	if len(out) < 2:
-		out = list (fp)
+
+	
+
+	if len(out) < 1:
+		out = list(fp)
+		for course in courses:
+			out	= filter(lambda x:x != course, out)
+			out	= [ item for item in out if len(item) > 1 ]
+
+
+
 
 	# NOTE TO SOME :-
-	# Man I'm tired now. The above line is totally hacked in. Doesn't work for [['7'], ['4']]
 	# Code handles multiple occurances of a course by replacing all of them with ''. Gotta replace 3 with 2 and
 	# not ''
 
