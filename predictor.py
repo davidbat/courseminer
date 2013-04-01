@@ -1,5 +1,5 @@
 import sys
-
+smoothing_const = 0.1
 # replaces multiple occurances of course in out[0..1] with 1 occurance. If the occurance
 # is originally only 1, then it deletes it from the list.
 def replace_mult(out, course):
@@ -16,26 +16,25 @@ def ReadFile(fn):
 	features = []
 	for line in open(fn).readlines():
 		features.append(map(lambda i: i, line.split()))
-	# dont normalize because gaussian gets worse
-	#for index in range(len(features[0]) - 1):
-	#  col = normList(map(lambda row:row[index], features))
-	#  for f in range(len(features)):
-	#    features[f][index] = col[f]
 	return features
 
-def random_prediction(possible_courses, course_hash, out, n):
-	prob = []
+def random_prediction(all_courses, possible_courses, course_hash, out, n):
+	prob_hash = {}
+	for course in all_courses:
+		prob_hash[course] = smoothing_const
 	#course_hash = {}
 	for item in out:
 		if len(item) == 2 and item[0] != 'CS5010':
 			#print item[1]
-			prob.append(item)
+			prob_hash[item[0]] += int(item[1])
+
+	prob = map(lambda k:[k,prob_hash[k]],prob_hash)
 
 	not_required = []
-	if poss_flag == True: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
+	if poss_flag: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
 	prob = filter(lambda x: x[0] not in not_required, prob)
+	if poss_flag and len(prob) > len(possible_courses): print "Something wrong, courses went over possible list"
 	my_sum = sum(map(lambda x:float(x[1]),prob))
-	if poss_flag and len(prob) > len(possible_courses): print len(prob)
 	for item in prob:
 		if not course_hash.has_key(item[0]):
 				#print item[0]
@@ -43,8 +42,26 @@ def random_prediction(possible_courses, course_hash, out, n):
 		course_hash[item[0]] += n * (float(item[1])/my_sum)
 
 
+def calculate_error(actual_hash, predicted_hash):
+	mse = 0
+	cnt = 0
+	for key in predicted_hash:
+		actual = 0
+		if key in actual_hash:
+			actual = actual_hash[key]
+		cnt += 1	
+		#else:
+		#	continue
+		diff = abs(actual - round(predicted_hash[key]))
+		mse += diff ** 2
+		print key, actual, round(predicted_hash[key]), \
+			diff, diff ** 2
+	print "MSE - ", mse / (cnt * 2)
+
+
 
 fp = ReadFile("final.txt")
+all_courses = map(lambda row:row[1], ReadFile("CID_hash.txt"))
 poss_flag = False
 ar = 0
 if sys.argv[1] == "-p":
@@ -63,10 +80,7 @@ for courses in student_course_info:
 		# Replace mult works but screws up probabilities completely and takes too long. So don't use it
 		out	= [ filter(lambda x:x != course, item) for item in out if item.count(course) > 0 ]
 		out	= [ item for item in out if len(item) > 1 ]
-
-
 	
-
 	if len(out) < 1:
 		out = list(fp)
 		for course in courses:
@@ -74,64 +88,28 @@ for courses in student_course_info:
 			out	= [ item for item in out if len(item) > 1 ]
 
 
-
-
 	# NOTE TO SOME :-
 	# Code handles multiple occurances of a course by replacing all of them with ''. Gotta replace 3 with 2 and
 	# not ''
 
+	random_prediction(all_courses, possible_courses, course_hash, out, 2)
 
-	#dont_want = []# ['CS6949', 'CS6964']
 
-	prob = []
-	for item in out:
-		if len(item) == 2 and item[0] != 'CS5010':
-			#print item
-			prob.append(item)
-
-	not_required = []
-	if poss_flag: not_required = list(set(map(lambda x:x[0], prob)) - set(possible_courses))
-	prob = filter(lambda x: x[0] not in not_required, prob)
-	if poss_flag and len(prob) > len(possible_courses): print "Something wrong, courses went over possible list"
-	my_sum = sum(map(lambda x:float(x[1]),prob))
-
-	temp_sum = 0
-	for item in prob:
-		#print item
-		if not course_hash.has_key(item[0]):
-			#print item[0]
-			course_hash[item[0]] = 0
-		course_hash[item[0]] += ( 2 * float(item[1])/my_sum )
-		temp_sum += 2 * float(item[1])/my_sum
-
-	#print temp_sum
-	if temp_sum == 0 :
-		randoms += 1
-		#print "Should not be here"
-		#print out
-#if not course_hash.has_key('CS5010'):
-#	course_hash['CS5010'] = 0
 course_hash['CS5010'] = new_students
-print "Could not find information for ", randoms, " students"
 out = list(fp)
-random_prediction(possible_courses, course_hash, out, new_students + randoms * 2)
-#out = [ item for item in out if item.count(course) > 0 ]
-#print out
+random_prediction(all_courses, possible_courses, course_hash, out, new_students)
 
-#csum = 0 
-#for key in course_hash:
-#	print key, " - ", course_hash[key]
-#	csum += course_hash[key]
-
-#print sum
-
-#for line in out:
-	#print " ".join(line)
-#	print " ".join(filter(lambda x:x not in dont_want,line))
-
-#print "\n\n"
 csum = 0 
 for key in course_hash:
-	print key, " - ", course_hash[key]
+	#print key, " - ", course_hash[key]
 	csum += course_hash[key]
+
+actual_hash = {}
+for line in ReadFile('./stud_actual.txt'):
+	#print line
+	if line[0] in actual_hash:
+		actual_hash[line[0]] += float(line[1])
+	else:
+		actual_hash[line[0]] = float(line[1])
+calculate_error(actual_hash, course_hash)
 print "Total sum of courses taken - ",  csum
