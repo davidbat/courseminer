@@ -17,17 +17,17 @@ my_set=`python find_sems.py "$cur_sem"`
 echo $my_set
 cat grad_info.csv | egrep -v "$my_set"  > grad_info2.csv
 
-new_stud=`python eligible_student_sem.py "Fall 2012" GR | cut -d " " -f 2`
+new_stud=`python eligible_student_sem.py "$cur_sem" GR | cut -d " " -f 2`
 
 echo $new_stud new students
-
+echo `wc -l eligible_stud.txt` eligible students from previous semesters
 python pre_proc.py >/dev/null
 
 sh java_run.sh $min_sup > /dev/null
 
 python remap.py CID_hash.txt output.txt > /dev/null
 
-python TotalStudentsPerSem.py "Fall 2012" 
+python TotalStudentsPerSem.py "$cur_sem" 
 
 #python test_term.py
 

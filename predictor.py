@@ -49,6 +49,8 @@ def calculate_error(actual_hash, predicted_hash):
 		actual = 0
 		if key in actual_hash:
 			actual = actual_hash[key]
+		if round(predicted_hash[key]) == 0 and actual == 0:
+			continue
 		cnt += 1	
 		#else:
 		#	continue

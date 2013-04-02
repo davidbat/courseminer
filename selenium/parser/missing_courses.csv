@@ -13,7 +13,6 @@ Fall 2012,xyz,Financial Management,0,4,Robert,Westwater,10024,FINA2201,40,42,
 Fall 2009,xyz,Recitation for CHEM 1214,0,0,Christopher,Toher,10026,CHEM1216,35,34,
 Fall 2011,xyz,Recitation for CHEM 1211,0,0,Rein,Kirss,10032,CHEM1213,30,38,
 Fall 2012,xyz,Interactive Tools,0,1,Alexander,Turnwall,10032,ARTF2224,15,12,
-
 Fall 2012,xyz,Information Resource Management,0,4,Yang,Lee,10034,MISM3305,40,21,
 Fall 2011,xyz,Interactive Tools,0,1,Alexander,Turnwall,10036,ARTF2224,18,18,
 Fall 2011,xyz,Information Resource Management,0,4,Peter,Tarasewich,10038,MISM3305,19,20,
@@ -40,7 +39,6 @@ Fall 2010,xyz,3D Tools: Form Basics,0,1,Benjamin,Caras,10077,ARTF1125,15,18,
 Fall 2011,xyz,Enhancing Honors,0,1,Maureen,Kelleher,10077,HONR1102,19,19,
 Fall 2010,xyz,3D Tools: Form Basics,0,1,Benjamin,Caras,10078,ARTF1125,18,19,
 Fall 2010,xyz,Principles of Microeconomics,0,4,Mykhaylo,Trubskyy,10085,ECON1116,48,43,
-
 Fall 2010,xyz,Lab for CHEM 1214,0,1,Edward,Witten,10088,CHEM1215,16,15,
 Fall 2011,xyz,Enhancing Honors,0,1,Maureen,Kelleher,10088,HONR1102,19,19,
 Fall 2009,xyz,Film Analysis,0,4,David,Grotell,10089,CINE2150,38,38,
@@ -168,7 +166,6 @@ Fall 2009,xyz,Natural Disasters and Catastrophes,0,4,Jennifer,Cole,10350,ENVR110
 Fall 2012,xyz,Calculus and Differential Equations for Biology 2,0,4,Arshag,Hajian,10350,MATH1252,30,30,
 Fall 2010,xyz,Co-op and Experiential Learning Reflection Seminar 1,0,1,Richard,Porter,10355,MATH3000,30,18,
 Fall 2009,xyz,Developmental Psychology,0,4,Christina,Crowe,10356,PSYC3404,75,76,
-
 Fall 2011,xyz,Lab for PHYS 1145,0,1,Longhai,Lai,10362,PHYS1146,10,10,
 Fall 2010,xyz,Small Business Service and Retail Creation,0,4,Edmund,Clark,10363,ENTR4503,36,17,
 Fall 2009,xyz,Elementary Japanese 2,0,4,Rei,Inouye,10364,JPNS1102,18,12,
@@ -178,8 +175,6 @@ Fall 2010,xyz,Leadership in a Complex World,0,4,Gary,Soldato,10371,ARMY4402,10,5
 Fall 2012,xyz,Calculus 2 for Sci/Engr (Hon),0,4,Leonid,Petrov,10373,MATH1342,49,44,
 Fall 2009,xyz,Cervantes and His Times,0,4,Stephen,Sadow,10374,LITR3502,35,18,
 Fall 2012,xyz,General Biology 1,0,4,Mary-Susan,Potts-Santone,10382,BIOL1111,200,121,
-
-
 Fall 2011,xyz,Introduction to Logic,0,4,Rory,Smead,10390,PHIL1115,49,49,
 Fall 2012,xyz,Lab for PHYS 1161,0,1,Mengxi,Liu,10398,PHYS1162,10,6,
 Fall 2012,xyz,Lab for PHYS 1161,0,1,Jin,Xu,10399,PHYS1162,10,7,
@@ -192,7 +187,6 @@ Fall 2010,xyz,Lab for PHYS 1145,0,1,Ismet,Altunkaynak,10414,PHYS1146,10,10,
 Fall 2011,xyz,Moral Philosophy,0,4,Ronald,Sandler,10416,PHIL3435,19,12,
 Fall 2009,xyz,Lab for BIOL 1113,0,1,Aaron,Roth,10418,BIOL1114,24,24,
 Fall 2011,xyz,Financial Management,0,4,Gary,Osmond,10418,FINA2201,40,39,
-
 Fall 2011,xyz,Calculus 2 for Sci/Engr (Hon),0,4,Robert,Lupi,10423,MATH1342,49,47,
 Fall 2011,xyz,VLSI Design,0,4,Yong-Bin,Kim,10428,EECE4524,19,5,
 Fall 2009,xyz,Elementary Italian 1 (Hon),0,4,Charlene,Palladino,10438,ITLN1101,18,10,
@@ -211,7 +205,6 @@ Fall 2012,xyz,Introduction to Language and Linguistics,0,4,Mary,Hughes,10469,LIN
 Fall 2010,xyz,Moral Philosophy,0,4,Nelson,Lande,10472,PHIL3435,35,16,
 Fall 2010,xyz,Financial Management,0,4,Joseph,Meador,10473,FINA2201,40,42,
 Fall 2009,xyz,Introduction to American History,0,4,Sean,Delaney,10476,HIST1130,49,47,
-
 Fall 2010,xyz,Calculus 2 for Sci/Engr (Hon),0,4,Oleksandr,Foksha,10479,MATH1342,49,47,
 Fall 2012,xyz,College Writing,0,4,Paul,Babin,10480,ENGL1111,19,12,
 Fall 2012,xyz,College Writing,0,4,Jonathan,Benda,10481,ENGL1111,19,18,
@@ -253,9 +246,7 @@ Fall 2012,xyz,Calculus 2 for Science and Engineering,0,4,Robert,Lupi,10573,MATH1
 Fall 2011,xyz,Photography 1,0,4,Neal,Rantoul,10576,ARTD3460,15,14,
 Fall 2010,xyz,Topics in Contemporary Issues: Focus on Analysis,0,4,Jennifer,Cole,10577,HONR3342,19,18,
 Fall 2011,xyz,4D Tools: Motion Basics,0,1,Nicole,Bedard,10582,ARTF2221,18,19,
-
 Fall 2010,xyz,College Writing,0,4,Shun,Kiang,10587,ENGL1111,19,19,
-
 Fall 2012,xyz,College Writing (HON),0,4,Edward,Moss,10588,ENGL1111,19,8,
 Fall 2011,xyz,4D Tools: Motion Basics,0,1,Nicole,Bedard,10589,ARTF2221,18,18,
 Fall 2010,xyz,Calculus 2 for Science and Engineering,0,4,Donald,King,10591,MATH1342,35,36,
@@ -318,7 +309,6 @@ Fall 2012,xyz,Music Lessons 1,0,1,Junauro,Landgrebe,10691,MUSC1901,199,121,
 Fall 2012,xyz,Interactive Real-Time Performance,0,4,Ronald,Smith,10692,MUST4520,19,6,
 Fall 2012,xyz,Calculus for Business and Economics,0,4,Rajini,Jesudason,10696,MATH1231,55,53,
 Fall 2011,xyz,Lab for CHEM 1211,0,1,Edward,Witten,10697,CHEM1212,19,19,
-
 Fall 2009,xyz,Modern Philosophy,0,4,Nelson,Lande,10703,PHIL2330,38,34,
 Fall 2012,xyz,Calculus 3 for Science and Engineering,0,4,David,Massey,10707,MATH2321,80,80,
 Fall 2009,xyz,Financial Management,0,4,Joseph,Meador,10709,FINA2201,40,39,
@@ -340,8 +330,6 @@ Fall 2012,xyz,Physics for Engineering 1,0,3,Enrique,Moreno,10735,PHYS1151,60,63,
 Fall 2010,xyz,College Writing (HON),0,4,Alicia,Peaker,10740,ENGL1111,19,9,
 Fall 2012,xyz,Physics for Life Sciences 1,0,4,Ginestra,Bianconi,10741,PHYS1145,145,132,
 Fall 2010,xyz,Calculus 1 for Science and Engineering,0,4,Masoumeh,Shafiei,10742,MATH1341,35,20,
-
-
 Fall 2010,xyz,Recitation for CHEM 1211,0,0,Eugene,Smotkin,10746,CHEM1213,30,14,
 Fall 2012,xyz,Investments,0,4,Vincent,Muscolino,10746,FINA3303,40,40,
 Fall 2010,xyz,Lab for PHYS 1145 (HON),0,1,Leith,Rankine,10750,PHYS1146,10,8,
@@ -387,7 +375,6 @@ Fall 2012,xyz,Advanced Writing in the Disciplines,0,4,Suzanne,Richard,10804,ENGL
 Fall 2011,xyz,Physics for Engineering 2,0,3,Alessandra,Credico,10807,PHYS1155,120,131,
 Fall 2011,xyz,Interactive Learning Seminar for PHYS 1151,0,1,Enrique,Moreno,10808,PHYS1153,18,14,
 Fall 2012,xyz,Advanced Writing in the Disciplines,0,4,Arturo,Zilleruelo,10808,ENGL3301,19,19,
-
 Fall 2011,xyz,Lab for PHYS 1151,0,1,Michael,Percuoco,10809,PHYS1152,10,9,
 Fall 2011,xyz,Physics for Engineering 1,0,3,Enrique,Moreno,10810,PHYS1151,49,55,
 Fall 2010,xyz,Music Industry 1,0,4,James,Anderson,10811,MUSI1230,36,36,
@@ -438,10 +425,7 @@ Fall 2010,xyz,Calculus 2 for Science and Engineering,0,4,Donald,King,10885,MATH1
 Fall 2010,xyz,Calculus 1 for Science and Engineering,0,4,Leila,Khatami,10886,MATH1341,30,26,
 Fall 2009,xyz,The Entrepreneurial Universe,0,4,John,Friar,10889,ENTR2201,40,39,
 Fall 2012,xyz,Architecture and Global Cultures| Prehistory to 1400,0,4,Deborah,Buelow,10890,ARCH1310,36,36,
-
-
 Fall 2009,xyz,College Writing,0,4,Victoria,Papa,10894,ENGL1111,19,19,
-
 Fall 2012,xyz,Photo Basics,0,4,Elisabeth,Neville,10894,ARTD2360,11,11,
 Fall 2009,xyz,College Writing,0,4,David,Ober,10896,ENGL1111,19,18,
 Fall 2012,xyz,3D Foundation,0,4,Edwin,Andrews,10897,ARTF1124,18,19,
@@ -517,7 +501,6 @@ Fall 2012,xyz,Introduction to Marketing,0,4,Frederick,Wright,10986,MKTG2201,40,3
 Fall 2010,xyz,Advanced Writing in the Disciplines,0,4,Faviana,Olivier,10987,ENGL3301,19,19,
 Fall 2010,xyz,Advanced Writing in the Disciplines,0,4,Faviana,Olivier,10989,ENGL3301,19,19,
 Fall 2012,xyz,Introduction to Marketing,0,4,Paul,Fombelle,10989,MKTG2201,40,43,
-
 Fall 2010,xyz,Adv Writing Discipline (Hon),0,4,Cecelia,Musselman,10993,ENGL3301,19,19,
 Fall 2010,xyz,Advanced Writing in the Disciplines,0,4,Victoria,Papa,10996,ENGL3301,19,19,
 Fall 2012,xyz,Introduction to Marketing,0,4,Jeffrey,Sieloff,10996,MKTG2201,40,43,
@@ -636,9 +619,7 @@ Fall 2011,xyz,Investments,0,4,Nicole,Boyson,11169,FINA3303,40,41,
 Fall 2009,xyz,Music Lessons 1,0,1,Junauro,Landgrebe,11170,MUSC1901,99,82,
 Fall 2011,xyz,Investments,0,4,Nicole,Boyson,11170,FINA3303,40,39,
 Fall 2011,xyz,Corporate Finance,0,4,Eliot,Sherman,11171,FINA3301,40,35,
-
 Fall 2012,xyz,Laboratory in Social Psychology,0,4,Stephen,Harkins,11173,PSYC4614,19,21,
-
 Fall 2011,xyz,Financial Management,0,4,Gary,Osmond,11175,FINA2201,40,40,
 Fall 2012,xyz,Cognition,0,4,Allison,Baker,11175,PSYC3466,75,82,
 Fall 2012,xyz,Psychology of Language,0,4,Iris,Berent,11176,PSYC3464,75,72,
@@ -702,7 +683,6 @@ Fall 2011,xyz,French Film and Culture,0,4,Michele,Danh,11236,CLTR1280,35,34,
 Fall 2009,xyz,Astronomy,0,4,Saeqa,Vrtilek,11237,PHYS1111,125,91,
 Fall 2010,xyz,Computers and Society,0,4,Judith,Perrolle,11241,SOCL4528,60,53,
 Fall 2011,xyz,Integrated Anatomy and Physiology 1,0,4,Christopher,Richardson,11243,BIOL1117,152,148,
-
 Fall 2009,xyz,Developing Adaptive Leaders,0,4,Gary,Soldato,11246,ARMY4401,19,7,
 Fall 2012,xyz,Principles of Macroeconomics,0,4,Peter,Simon,11247,ECON1115,200,200,
 Fall 2012,xyz,Interactive Learning Seminar for PHYS 1155,0,1,Allan,Widom,11248,PHYS1157,18,19,
@@ -828,7 +808,6 @@ Fall 2010,xyz,Principles of Microeconomics,0,4,Laura,Wholley,11372,ECON1116,48,4
 Fall 2012,xyz,Lab for BIOL 1111,0,1,Mary-Susan,Potts-Santone,11372,BIOL1112,19,19,
 Fall 2010,xyz,Principles of Microeconomics,0,4,Xiaoting,Hu,11374,ECON1116,48,48,
 Fall 2010,xyz,Principles of Microeconomics,0,4,Shaun,O'Brien,11375,ECON1116,48,47,
-
 Fall 2011,xyz,Principles of Macroeconomics,0,4,Peter,Simon,11377,ECON1115,200,196,
 Fall 2010,xyz,Principles of Microeconomics,0,4,Shaun,O'Brien,11378,ECON1116,48,42,
 Fall 2010,xyz,Principles of Macroeconomics,0,4,Tess,Forsell,11379,ECON1115,48,48,
@@ -838,16 +817,13 @@ Fall 2010,xyz,Principles of Macroeconomics,0,4,Arhan,Ertan,11382,ECON1115,48,48,
 Fall 2009,xyz,Digital Logic Design,0,4,Amir,Farhat,11383,EECE2322,30,28,
 Fall 2010,xyz,Principles of Macroecon (HON),0,4,Peter,Simon,11383,ECON1115,48,39,
 Fall 2012,xyz,International Financial Management,0,4,Gopala,Vasudevan,11383,FINA4320,40,40,
-
 Fall 2011,xyz,Beethoven,0,4,Brian,Robison,11385,MUSC1116,40,40,
 Fall 2012,xyz,International Marketing,0,4,Samuel,Rabino,11385,MKTG4512,40,38,
-
 Fall 2010,xyz,Lab for BIOL 1101,0,1,H,Detrich,11388,BIOL1102,19,19,
 Fall 2009,xyz,Opportunity Assessment and Entrepreneurship Marketing,0,4,Frederick,Crane,11391,ENTR3301,40,40,
 Fall 2010,xyz,Lab for BIOL 1101,0,1,H,Detrich,11392,BIOL1102,19,19,
 Fall 2012,xyz,Data Communications,0,4,Rajiv,Shridhar,11395,MISM3404,19,18,
 Fall 2010,xyz,Principles of Biology 1,0,4,H,Detrich,11396,BIOL1101,210,181,
-
 Fall 2009,xyz,College Writing,0,4,Kara,Brown,11398,ENGL1111,19,19,
 Fall 2011,xyz,Business Statistics,0,4,Mohamed,Habibullah,11403,MGSC1201,40,41,
 Fall 2009,xyz,College Writing,0,4,Sandra,Clyne,11405,ENGL1111,19,19,
@@ -860,14 +836,8 @@ Fall 2012,xyz,Introduction to Japanese Pop Culture,0,4,Jennifer,Cullen,11408,CLT
 Fall 2009,xyz,College Writing,0,4,Jennifer,Bankard,11412,ENGL1111,19,18,
 Fall 2011,xyz,Engineering Design (HON),0,4,Richard,Whalen,11412,GE1110,29,30,
 Fall 2009,xyz,College Writing,0,4,Erica,Zilleruelo,11413,ENGL1111,19,19,
-
-
-
 Fall 2009,xyz,College Writing,0,4,Shannon,Garner-Balandrin,11416,ENGL1111,19,18,
-
-
 Fall 2012,xyz,Calculus 1 for Science and Engineering,0,4,Robert,Case,11417,MATH1341,40,40,
-
 Fall 2012,xyz,Architecture and Global Cultures| Prehistory to 1400,0,4,Anne-Sophie,Divenyi,11419,ARCH1310,36,35,
 Fall 2010,xyz,Social Psychology,0,4,Alisha,Pollastri,11420,PSYC3402,75,76,
 Fall 2010,xyz,Social Psychology,0,4,Karen,Spikes,11421,PSYC3402,75,76,
@@ -902,9 +872,7 @@ Fall 2011,xyz,General Chemistry 2,0,4,Christopher,Toher,11455,CHEM1214,87,90,
 Fall 2012,xyz,College Writing,0,4,Masoud,Ghorbaninejad,11457,ENGL1111,19,17,
 Fall 2011,xyz,Lab for CHEM 1214,0,1,Edward,Witten,11458,CHEM1215,16,16,
 Fall 2011,xyz,Recitation for CHEM 1214,0,0,Christopher,Toher,11460,CHEM1216,35,40,
-
 Fall 2012,xyz,Drawing 1 Foundation,0,4,Jason,Polins,11463,ARTF1120,18,18,
-
 Fall 2012,xyz,Recitation for POLS 1160,0,0,Suzanne,Ogden,11471,POLS1161,15,14,
 Fall 2009,xyz,2D Foundation,0,4,John,Kane,11477,ARTF1122,18,19,
 Fall 2009,xyz,2D Foundation,0,4,Andrea,Raynor,11478,ARTF1122,18,19,
@@ -925,7 +893,6 @@ Fall 2010,xyz,Criminal Due Process,0,4,Krista,Larsen,11542,CRIM2100,35,35,
 Fall 2011,xyz,Digital Audio Processing,0,4,Christopher,Anderson,11542,MUST3421,14,7,
 Fall 2010,xyz,Organizational Behavior,0,4,Richard,Dejordy,11544,ORGB3201,40,26,
 Fall 2011,xyz,Data Communications,0,4,Rajiv,Shridhar,11544,MISM3404,19,17,
-
 Fall 2010,xyz,Financial Accounting and Reporting,0,4,Paul,Janell,11551,ACCT1201,40,41,
 Fall 2009,xyz,Operations Management,0,2,Robert,Millen,11554,MGSC3401,40,42,
 Fall 2010,xyz,Organizational Behavior,0,4,Richard,Dejordy,11555,ORGB3201,40,40,
@@ -969,7 +936,6 @@ Fall 2010,xyz,Recitation for CHEM 1211,0,0,Geoffrey,Davies,11624,CHEM1213,30,22,
 Fall 2009,xyz,Calculus 1,0,4,Shih-Wei,Yang,11630,MATH1241,35,37,
 Fall 2009,xyz,Computers and Society,0,4,Judith,Perrolle,11640,SOCL4528,60,46,
 Fall 2010,xyz,Ordinary Differential Equations,0,4,Rajaa,Talli,11642,MATH2351,35,30,
-
 Fall 2010,xyz,Introduction to Law| Policy| and Society,0,4,Edward,Kammerer,11654,LPSC2301,48,34,
 Fall 2009,xyz,Multicultural Children’s Literature,0,4,Tobie,Atlas,11665,EDUC1150,25,25,
 Fall 2009,xyz,History of Electronic Music,0,4,Michael,Frengel,11671,MUST2315,19,12,
@@ -1003,7 +969,6 @@ Fall 2009,xyz,Linear Algebra,0,4,Mark,Mixer,11744,MATH2331,35,31,
 Fall 2009,xyz,Differential Equations and Linear Algebra for Engineering,0,4,Robert,Lupi,11750,MATH2341,65,62,
 Fall 2010,xyz,History of World Architecture 1,0,4,Patrick,Haughey,11754,ARCH1310,40,35,
 Fall 2010,xyz,Principles of Microeconomics,0,4,Sungwoo,Kim,11757,ECON1116,48,47,
-
 Fall 2009,xyz,Introduction to French Culture,0,4,Walter,Gershuny,11763,CLTR1501,35,38,
 Fall 2010,xyz,Lab for BIOL 1113,0,1,Aaron,Roth,11766,BIOL1114,19,19,
 Fall 2010,xyz,Lab for BIOL 1111,0,1,Mary-Susan,Potts-Santone,11768,BIOL1112,19,19,
@@ -1028,7 +993,6 @@ Fall 2009,xyz,Principles of Macroeconomics,0,4,Xiaoting,Hu,11797,ECON1115,49,47,
 Fall 2009,xyz,Principles of Macroeconomics,0,4,Andre,Switala,11798,ECON1115,49,48,
 Fall 2009,xyz,Principles of Macroeconomics,0,4,Andre,Switala,11799,ECON1115,49,48,
 Fall 2009,xyz,Principles of Macroecon (HON),0,4,Peter,Simon,11800,ECON1115,49,49,
-
 Fall 2009,xyz,Principles of Macroeconomics,0,4,Andrea,Germiniasi,11806,ECON1115,49,50,
 Fall 2009,xyz,Lab for BIOL 1101,0,1,Joelle,Carlo,11810,BIOL1102,20,19,
 Fall 2009,xyz,Lab for BIOL 1101,0,1,Joelle,Carlo,11812,BIOL1102,19,18,
@@ -1036,10 +1000,7 @@ Fall 2009,xyz,Principles of Biology 1,0,4,Joelle,Carlo,11815,BIOL1101,210,196,
 Fall 2009,xyz,Comparative Politics,0,4,Marketa,Vavreckova,11823,POLS1155,90,87,
 Fall 2010,xyz,Lab for PHYS 1155,0,1,Thomas,Hamrick,11826,PHYS1156,10,9,
 Fall 2010,xyz,Intermediate German 2—BSIB,0,4,Diana,Erinna,11828,GRMN2202,18,4,
-
-
 Fall 2009,xyz,Psychology of Language,0,4,Iris,Berent,11836,PSYC3464,75,71,
-
 Fall 2009,xyz,Social Psychology,0,4,Amy,Szarkowski,11841,PSYC3402,75,74,
 Fall 2009,xyz,Social Psychology,0,4,Karen,Spikes,11842,PSYC3402,76,76,
 Fall 2009,xyz,Personality,0,4,Dawn,Cisewski,11843,PSYC3400,75,77,
@@ -1068,7 +1029,6 @@ Fall 2009,xyz,Interactive Learning Session for PHYS 1155,0,0,Mohamed,El-Rayess,1
 Fall 2009,xyz,Beethoven,0,4,Mark,Kroll,11952,MUSC1116,36,34,
 Fall 2009,xyz,Music Industry 2,0,4,Leon,Janikian,11953,MUSI1231,36,33,
 Fall 2009,xyz,Growth and Decline of Cities and Suburbs,0,4,Chase,Billingham,11961,URBS2357,19,15,
-
 Fall 2009,xyz,Interpreting the Day’s News,0,4,William,Kirtz,11981,JRNL1150,49,42,
 Fall 2009,xyz,Financial Accounting and Reporting,0,4,Paul,Janell,11985,ACCT1201,40,41,
 Fall 2009,xyz,Organizational Behavior,0,4,Marla,Baskerville,11990,ORGB3201,40,40,
@@ -1100,7 +1060,6 @@ Fall 2009,xyz,General Chemistry for Engineers,0,4,Paul,DiMilla,12203,CHEM1151,11
 Fall 2009,xyz,Nutrition,0,4,Judith,Richman,12210,HSCI1105,60,62,
 Fall 2009,xyz,Introduction to Japanese Pop Culture,0,4,Rei,Inouye,12216,CLTR1700,35,35,
 Fall 2009,xyz,Principles of Organizational Communication,0,4,Alan,Zaremba,12237,COMM1231,28,28,
-
 Fall 2009,xyz,Principles of Microeconomics,0,4,Yi,Zhang,12257,ECON1116,49,49,
 Fall 2009,xyz,Lab for PHYS 1151,0,1,Peter,Mistark,12258,PHYS1152,10,9,
 Fall 2009,xyz,College Writing,0,4,Amanda,Runyan,12262,ENGL1111,19,14,
@@ -1233,10 +1192,8 @@ Fall 2012,xyz,Physics for Engineering 2,0,3,Latika,Menon,13374,PHYS1155,140,144,
 Fall 2010,xyz,Organizational Behavior,0,4,Susan,Vroman,13385,ORGB3209,60,50,
 Fall 2010,xyz,Organizational Behavior,0,4,John,Griffith,13386,ORGB3209,60,59,
 Fall 2012,xyz,Comparative Politics,0,4,Kirsten,Hardy,13387,POLS1155,80,72,
-
 Fall 2010,xyz,Financial Accounting and Reporting,0,4,Cynthia,Jackson,13392,ACCT1201,40,40,
 Fall 2010,xyz,Financial Accounting and Reporting,0,4,Michael,Cottrill,13393,ACCT1201,40,40,
-
 Fall 2010,xyz,Opportunity Assessment and Entrepreneurship Marketing,0,4,Gordon,Adomdza,13395,ENTR3301,40,22,
 Fall 2012,xyz,Enhancing Honors,0,1,Colleen,Cronin,13398,HONR1102,19,14,
 Fall 2012,xyz,Enhancing Honors,0,1,Colleen,Cronin,13399,HONR1102,19,13,
@@ -1249,7 +1206,6 @@ Fall 2010,xyz,Introduction to Language and Linguistics,0,4,Sarah,Hulsey,13424,LI
 Fall 2012,xyz,2D Foundation,0,4,Sophia,Ainslie,13424,ARTF1122,18,17,
 Fall 2012,xyz,2D Tools: Imaging Basics,0,1,Elisabeth,Neville,13425,ARTF1123,16,18,
 Fall 2012,xyz,2D Tools: Imaging Basics,0,1,Elisabeth,Neville,13426,ARTF1123,18,18,
-
 Fall 2010,xyz,Recitation for POLS 1160,0,0,Philip,D'Agati,13432,POLS1161,15,13,
 Fall 2010,xyz,Sound Design,0,4,David,Grimes,13478,MUST2320,19,8,
 Fall 2010,xyz,Introduction to Languages| Literature| and Culture,0,4,Holbrook,Robinson,13483,CLTR1120,19,18,
@@ -1303,11 +1259,8 @@ Fall 2010,xyz,Calculus 2 for Science and Engineering,0,4,Salvatore,Stella,13822,
 Fall 2012,xyz,Enhancing Honors,0,1,Colleen,Cronin,13825,HONR1102,19,14,
 Fall 2012,xyz,Enhancing Honors,0,1,Colleen,Cronin,13826,HONR1102,19,14,
 Fall 2012,xyz,Intermediate French 1,0,4,Catherine,Dunand,13837,FRNH2101,18,17,
-
-
 Fall 2011,xyz,Enhancing Honors,0,1,Maureen,Kelleher,13848,HONR1102,19,19,
 Fall 2011,xyz,Environmental Science,0,4,Jennifer,Cole,13855,ENVR1101,190,179,
-
 Fall 2011,xyz,World History since 1945,0,4,Katherine,Luongo,13871,HIST2211,49,43,
 Fall 2010,xyz,Calculus 2 for Science and Engineering,0,4,Piper,Harron,13873,MATH1342,35,34,
 Fall 2011,xyz,Law and Social Justice,0,4,Thomas,Koenig,13873,SOCL1205,49,30,
@@ -1316,7 +1269,6 @@ Fall 2010,xyz,Calculus 2 for Science and Engineering,0,4,Robert,Lupi,13883,MATH1
 Fall 2011,xyz,2D Foundation,0,4,Ryan,Shelley,13884,ARTF1122,15,12,
 Fall 2011,xyz,2D Tools: Imaging Basics,0,1,Elisabeth,Neville,13886,ARTF1123,18,17,
 Fall 2011,xyz,2D Tools: Imaging Basics,0,1,Elisabeth,Neville,13887,ARTF1123,18,14,
-
 Fall 2012,xyz,Recitation for CHEM 1211,0,0,Rein,Kirss,13907,CHEM1213,30,25,
 Fall 2011,xyz,Law and Psychology,0,3,Carlos,Cuevas,14020,CRIM7224,25,17,
 Fall 2012,xyz,Statistics,0,4,Gustavo,Vicentini,14030,ECON2350,45,44,
@@ -1332,7 +1284,6 @@ Fall 2012,xyz,Co-op Work Experience,0,0,Lisa,Campagnoni,14051,COOP3945,999,59,
 Fall 2012,xyz,Lab for CHEM 1211,0,1,Edward,Witten,14057,CHEM1212,18,15,
 Fall 2012,xyz,Lab for CHEM 1211,0,1,Edward,Witten,14059,CHEM1212,18,16,
 Fall 2011,xyz,Real Estate Finance,0,4,Shiawee,Yang,14070,FINA4516,40,42,
-
 Fall 2010,xyz,3D Foundation,0,4,Benjamin,Caras,14111,ARTF1124,18,19,
 Fall 2010,xyz,Calculus for Business and Economics,0,4,Olga,Lepsky,14125,MATH1231,19,18,
 Fall 2011,xyz,Principles of Macroeconomics,0,4,Sean,Isakower,14136,ECON1115,48,49,
@@ -1374,11 +1325,8 @@ Fall 2012,xyz,Innovation!,0,4,Gordon,Adomdza,14541,ENTR2301,40,41,
 Fall 2012,xyz,Innovation!,0,4,Gordon,Adomdza,14542,ENTR2301,40,39,
 Fall 2012,xyz,Entrepreneurial Marketing,0,4,Justin,Craig,14544,ENTR2303,19,18,
 Fall 2012,xyz,Introduction to Product Design for Entrepreneurs,0,4,Tucker,Marion,14545,ENTR3330,40,40,
-
 Fall 2012,xyz,Personal Finance,0,4,Eliot,Sherman,14548,FINA1209,15,14,
 Fall 2012,xyz,Personal Finance,0,4,Eliot,Sherman,14552,FINA1209,15,13,
-
-
 Fall 2012,xyz,Language and Culture,0,4,Heather,Littlefield,14565,LING3412,19,17,
 Fall 2012,xyz,Photo Tools,0,1,Luis,Brens,14585,ARTD2361,11,11,
 Fall 2011,xyz,Nutrition,0,4,Judith,Richman,14596,HSCI1105,49,49,
@@ -1401,7 +1349,6 @@ Fall 2011,xyz,Co-op Work Experience,0,0,Karyn,Rosen,14829,COOP3945,999,62,
 Fall 2011,xyz,Lab for CHEM 1211,0,1,Edward,Witten,14835,CHEM1212,0,12,
 Fall 2011,xyz,Lab for CHEM 1211,0,1,Edward,Witten,14839,CHEM1212,18,18,
 Fall 2012,xyz,Mergers and Acquisitions,0,4,Olubunmi,Faleye,14847,FINA4420,40,34,
-
 Fall 2012,xyz,Global Art + Design History: Renaissance to Modern,0,4,Timothy,Orwig,14870,ARTH1111,28,30,
 Fall 2012,xyz,Bioinformatics Computational Methods 1,0,4,Chesley,Leslin,14894,BIOL6308,19,16,
 Fall 2010,xyz,Co-op Work Experience--CS,0,0,Melissa,Peikin,14897,COOP3945,9999,38,
@@ -1431,8 +1378,6 @@ Fall 2012,xyz,ST:NewStrategies AgainstCancer,0,4,Lee,Makowski,15009,HONR1206,40,
 Fall 2012,xyz,Lab for PHYS 1155,0,1,Apichart,Hortiangtham,15012,PHYS1156,10,10,
 Fall 2010,xyz,Elementary Japanese 2,0,4,Tomoko,Katayama,15014,JPNS1102,18,7,
 Fall 2009,xyz,Lab for PHYS 1147,0,1,Susan,Ghiassian,15015,PHYS1148,10,10,
-
-
 Fall 2010,xyz,Seminar in Psycholinguistics,0,4,Peggy,Lee,15020,PSYC4658,19,16,
 Fall 2009,xyz,Calculus 2 for Science and Engineering,0,4,Oleksandr,Foksha,15084,MATH1342,19,18,
 Fall 2012,xyz,Popular Music| Sexuality| and the New Global Order,0,4,Alessandra,Ciucci,15107,MUSC1139,76,34,
@@ -1440,11 +1385,8 @@ Fall 2010,xyz,Introduction to Russian Civilization,0,4,Harlow,Robinson,15112,HIS
 Fall 2010,xyz,History of Espionage,0,4,Jeffrey,Burds,15115,HIST1389,130,121,
 Fall 2009,xyz,Co-op Work Experience-AS,0,0,Craig,Bettinson,15124,COOP3945,9999,148,
 Fall 2012,xyz,Evaluating Health-Care Quality,0,3,Gary,Young,15125,PHTH5232,40,11,
-
 Fall 2010,xyz,Physics for Engineering 2,0,4,Henry,Smith,15149,PHYS1155,120,82,
 Fall 2009,xyz,Photo Tools,0,1,Andrea,Greitzer,15152,ARTD2361,15,11,
-
-
 Fall 2009,xyz,Introduction to Rhetoric,0,4,Patricia,Sullivan,15178,ENGL1160,49,41,
 Fall 2009,xyz,Horror Fiction,0,4,Gary,Goshgarian,15179,ENGL1200,49,48,
 Fall 2009,xyz,Learning and Motivation,0,4,Perrin,Cohen,15189,PSYC3450,75,73,
@@ -1523,7 +1465,6 @@ Fall 2010,xyz,Economics of the Middle East,0,4,Mohammad,Alam,15443,ECON1292,48,4
 Fall 2009,xyz,Topics in Research and Inquiry: Focus on Analysis,0,4,Waleed,Meleis,15444,HONR3302,19,19,
 Fall 2010,xyz,Music in Popular Culture (HON),0,4,Alessandra,Ciucci,15457,MUSC1110,38,27,
 Fall 2010,xyz,Intro to World Music (HON),0,4,Julie,Strand,15459,MUSC1127,19,19,
-
 Fall 2012,xyz,Recitation for CHEM 1211,0,0,Geoffrey,Davies,15494,CHEM1213,30,23,
 Fall 2012,xyz,Lab for BIOL 1113,0,1,Aaron,Roth,15497,BIOL1114,19,14,
 Fall 2010,xyz,Eastern Religions,0,4,Arthi,Devarajan,15506,RELS1275,45,45,
@@ -1540,7 +1481,6 @@ Fall 2010,xyz,Financial Management,0,4,Richard,Swasey,15536,FINA2201,40,42,
 Fall 2012,xyz,Lab for BIOL 1113,0,1,Aaron,Roth,15540,BIOL1114,19,10,
 Fall 2009,xyz,Elementary ASL 1,0,4,Paul,Schreyer,15542,AMSL1101,18,15,
 Fall 2009,xyz,Backgrounds of Chinese Culture,0,4,Hua,Dong,15543,CLTR1500,35,34,
-
 Fall 2010,xyz,Black Popular Culture: Music| Movies| and More,0,4,Emmett,Price,15549,AFAM1113,500,341,
 Fall 2010,xyz,The Shape and Dynamics of Conflicts in Africa,0,4,Richard,Wamai,15551,AFRS3465,35,11,
 Fall 2009,xyz,Public Speaking,0,4,Michael,Hoppmann,15558,COMM1112,19,19,
@@ -1591,8 +1531,6 @@ Fall 2010,xyz,Advanced Writing in the Disciplines,0,4,Christen,Enos,15748,ENGL33
 Fall 2009,xyz,Introduction to Languages| Literature| and Culture,0,4,Holbrook,Robinson,15749,CLTR1120,19,19,
 Fall 2010,xyz,Interactive Foundation,0,4,Matthew,Rich,15758,ARTF2223,18,16,
 Fall 2010,xyz,Interactive Tools,0,1,Seth,Merriam,15759,ARTF2224,15,21,
-
-
 Fall 2011,xyz,Elementary Japanese 1,0,4,Matsuko,Levin,15763,JPNS1101,18,7,
 Fall 2011,xyz,Advanced Japanese 1,0,4,Matsuko,Levin,15764,JPNS3101,12,7,
 Fall 2010,xyz,Group Theory,0,4,Alexandru,Suciu,15767,MATH3175,19,19,
@@ -1711,7 +1649,6 @@ Fall 2010,xyz,Lab for CHEM 1211,0,1,Edward,Witten,16252,CHEM1212,18,14,
 Fall 2010,xyz,Lab for CHEM 1211,0,1,Edward,Witten,16253,CHEM1212,18,18,
 Fall 2012,xyz,Recitation for ECON 1116,0,0,Natalia,Kopyra,16255,ECON1126,20,18,
 Fall 2012,xyz,Recitation for ECON 1116,0,0,Thomas,PlaHovinsak,16257,ECON1126,20,21,
-
 Fall 2009,xyz,Calculus 2 for Science and Engineering,0,4,Piper,Harron,16275,MATH1342,35,35,
 Fall 2011,xyz,Musicianship 1,0,1,Won-Hee,An,16289,MUSC1241,19,12,
 Fall 2009,xyz,Strategic Management and Leadership in Health Care,0,3,George,Moran,16292,PHTH5226,30,13,
@@ -1738,7 +1675,6 @@ Fall 2012,xyz,Programming for Games,0,4,Kevin,Dill,16447,GAME2150,15,11,
 Fall 2012,xyz,Recitation for ECON 1116,0,0,Abdullah,Tirgil,16459,ECON1126,20,17,
 Fall 2012,xyz,Recitation for ECON 1116,0,0,Abdullah,Tirgil,16460,ECON1126,20,13,
 Fall 2012,xyz,High-Level Design of Hardware-Software Systems,0,4,Gunar,Schirner,16489,EECE7368,20,13,
-
 Fall 2012,xyz,The Scope and Dynamics of Conflicts in Africa,0,4,Richard,Wamai,16516,AFRS2465,35,7,
 Fall 2009,xyz,3D Foundation,0,4,Lauren,Kalman,16529,ARTF1124,18,17,
 Fall 2009,xyz,3D Tools: Form Basics,0,1,Andrew,Bouchard,16530,ARTF1125,18,19,
@@ -1762,14 +1698,12 @@ Fall 2011,xyz,Interactive Learning Seminar for PHYS 1155,0,1,Younggil,Song,16695
 Fall 2012,xyz,Financial Management,0,4,Ahmet,Kurt,16704,FINA2201,36,35,
 Fall 2009,xyz,Lab for CHEM 1211,0,1,Edward,Witten,16717,CHEM1212,12,12,
 Fall 2009,xyz,Lab for CHEM 1214,0,1,Edward,Witten,16727,CHEM1215,12,13,
-
 Fall 2009,xyz,Directed Study,0,1 to 4,John,Engen,16793,HONR4992,0,0,
 Fall 2009,xyz,Introductory Writing,0,4,Carol,Ziemian,16888,ENGL1110,15,10,
 Fall 2012,xyz,Intensive Arabic 1,0,4,Shakir,Mustafa,16891,ARAB1701,12,3,
 Fall 2009,xyz,Calculus 2 for Science and Engineering,0,4,Ilir,Toli,16896,MATH1342,19,19,
 Fall 2012,xyz,Music as a Social Expression,0,4,Alessandra,Ciucci,16966,MUSC1103,36,33,
 Fall 2012,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Kara,Brown,16986,ENGL1102,15,15,
-
 Spring 2011,xyz,Global Markets and Local Culture,0,4,Jeffrey,Juris,30004,ANTH2305,35,32,
 Spring 2010,xyz,Global Markets and Local Culture,0,4,Jeffrey,Juris,30006,ANTH2305,49,48,
 Spring 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,30006,ENGL1102,15,14,
@@ -1799,7 +1733,6 @@ Spring 2012,xyz,Calculus 3 for Science and Engineering,0,4,Marco,Rainho,30062,MA
 Spring 2011,xyz,Social Entrepreneurship,0,4,Dennis,Shaughnessy,30066,ENTR2206,60,60,
 Spring 2011,xyz,Calculus 3 for Science and Engineering,0,4,Yaping,Yang,30068,MATH2321,45,39,
 Spring 2011,xyz,Backgrounds of Chinese Culture,0,4,Devon,Dear,30069,CLTR1500,35,36,
-
 Spring 2011,xyz,Calculus 3 for Science and Engineering,0,4,David,Moser,30074,MATH2321,39,39,
 Spring 2013,xyz,Lab for EECE 2322,0,1,Amir,Farhat,30074,EECE2323,20,20,
 Spring 2012,xyz,Animation Tools,0,1,Andrew,Bouchard,30077,ARTD2371,18,14,
@@ -1812,7 +1745,6 @@ Spring 2010,xyz,Global Climate Change,0,4,Daniel,Douglass,30091,ENVR1110,76,78,
 Spring 2012,xyz,Intermediate French 2,0,4,Sali,Ziane,30095,FRNH2102,18,18,
 Spring 2010,xyz,Financial Management,0,4,Joseph,Meador,30098,FINA2201,40,40,
 Spring 2013,xyz,Recitation for CHEM 1214,0,0,Thomas,Gilbert,30103,CHEM1216,30,8,
-
 Spring 2010,xyz,Seminar in Psycholinguistics,0,4,Harlan,Lane,30111,PSYC4658,20,15,
 Spring 2013,xyz,Elementary Japanese 2,0,4,Matsuko,Levin,30111,JPNS1102,18,18,
 Spring 2013,xyz,Elementary Japanese 1,0,4,Kumiko,Tsuji,30113,JPNS1101,18,17,
@@ -1883,7 +1815,6 @@ Spring 2010,xyz,Elementary Japanese 1,0,4,Tomoko,Katayama,30241,JPNS1101,18,6,
 Spring 2013,xyz,Elementary Chinese 2,0,4,Hua,Dong,30243,CHNS1102,18,16,
 Spring 2010,xyz,Elementary Japanese 1,0,4,Yuki,Sakurai,30244,JPNS1101,18,16,
 Spring 2010,xyz,Elementary Chinese 1,0,4,Qinghong,Cai,30245,CHNS1101,18,16,
-
 Spring 2013,xyz,Elementary Arabic 1,0,4,Shakir,Mustafa,30249,ARAB1101,18,11,
 Spring 2010,xyz,Introduction to Japanese Pop Culture,0,4,Rei,Inouye,30250,CLTR1700,35,35,
 Spring 2010,xyz,Topics in Research and Inquiry: Focus on Analysis,0,4,Jeffrey,Burds,30255,HONR3302,19,11,
@@ -1922,7 +1853,6 @@ Spring 2013,xyz,Lab for BIOL 1111,0,1,Aaron,Roth,30298,BIOL1112,19,19,
 Spring 2011,xyz,Elementary Chinese 1,0,4,Qinghong,Cai,30302,CHNS1101,18,11,
 Spring 2012,xyz,Marketing Communications in the New Millennium,0,4,Susan,Sieloff,30302,MKTG4504,40,39,
 Spring 2011,xyz,Intermediate Arabic 1,0,4,Shakir,Mustafa,30303,ARAB2101,18,10,
-
 Spring 2012,xyz,Financial Management,0,4,Richard,IV,30304,FINA2201,40,40,
 Spring 2013,xyz,General Biology 1,0,4,Aaron,Roth,30306,BIOL1111,195,112,
 Spring 2012,xyz,Dif Eq &amp; Lin Alg fr Engr (HON),0,4,Robert,McOwen,30308,MATH2341,30,19,
@@ -1988,7 +1918,6 @@ Spring 2012,xyz,Calculus 2 for Science and Engineering,0,4,David,Massey,30398,MA
 Spring 2012,xyz,Calculus 2 for Science and Engineering,0,4,Ryan,Kinser,30399,MATH1342,49,49,
 Spring 2013,xyz,Lab for PHYS 1145,0,1,Apichart,Hortiangtham,30399,PHYS1146,10,10,
 Spring 2010,xyz,Elementary German 1,0,4,Sermin,Muctehitzade,30401,GRMN1101,18,17,
-
 Spring 2013,xyz,Lab for PHYS 1145,0,1,Ran,Huo,30401,PHYS1146,10,10,
 Spring 2013,xyz,Lab for PHYS 1145,0,1,David,Francescone,30402,PHYS1146,10,10,
 Spring 2010,xyz,Contemporary China,0,4,James,Bradford,30403,HIST1254,49,20,
@@ -2020,7 +1949,6 @@ Spring 2013,xyz,3D Foundation,0,4,Edwin,Andrews,30443,ARTF1124,20,16,
 Spring 2010,xyz,Lab for ENVR 4106,0,1,Peter,Rosen,30444,ENVR4107,19,14,
 Spring 2010,xyz,Coastal Processes,0,4,Peter,Rosen,30445,ENVR4106,19,14,
 Spring 2013,xyz,2D Foundation,0,4,Julia,Hechtman,30445,ARTF1122,20,9,
-
 Spring 2012,xyz,Lab for PHYS 1151,0,1,Qing,Jin,30447,PHYS1152,10,10,
 Spring 2011,xyz,Venture Creation and Entrepreneurial Finance,0,4,Dennis,Shaughnessy,30451,ENTR4501,40,40,
 Spring 2011,xyz,Calculus 2 for Science and Engineering,0,4,Jason,Ribeiro,30452,MATH1342,35,34,
@@ -2136,7 +2064,6 @@ Spring 2010,xyz,Principles of Music Literature,0,4,Evan,Johnson,30631,MUSC2308,1
 Spring 2013,xyz,Interact Learn PHYS 1151,0,1,Lili,Wang,30633,PHYS1153,18,18,
 Spring 2012,xyz,Introduction to Criminal Justice,0,4,Matthew,Dolliver,30634,CRIM1100,40,32,
 Spring 2011,xyz,Public Speaking,0,4,Joseph,Schwartz,30635,COMM1112,19,19,
-
 Spring 2011,xyz,Lab for BIOL 1111,0,1,Aaron,Roth,30648,BIOL1112,24,20,
 Spring 2013,xyz,Gender in a Changing Society,0,4,Margot,Abels,30648,SOCL1260,49,49,
 Spring 2013,xyz,Physics for Life Sciences 2,0,4,Enrique,Moreno,30649,PHYS1147,110,130,
@@ -2185,7 +2112,6 @@ Spring 2011,xyz,Building Your Management Skills,0,4,Francis,Spital,30692,MGMT330
 Spring 2012,xyz,Electricity and Magnetism,0,4,George,Alverson,30692,PHYS3602,40,31,
 Spring 2011,xyz,Building Your Management Skills,0,4,John,Griffith,30693,MGMT3303,40,40,
 Spring 2013,xyz,Laboratory in Cognition,0,4,Neal,Pearlmutter,30694,PSYC4612,19,19,
-
 Spring 2013,xyz,Psychobiology,0,4,Michele,Zee,30695,PSYC3458,210,206,
 Spring 2013,xyz,Sensation and Perception,0,4,Rhea,Eskew,30696,PSYC3452,75,74,
 Spring 2013,xyz,Social Psychology,0,4,Karen,Spikes,30699,PSYC3402,75,75,
@@ -2238,22 +2164,14 @@ Spring 2012,xyz,Introduction to Philosophy,0,4,Kerry,Dugan,30766,PHIL1101,40,40,
 Spring 2010,xyz,Corrections,0,4,Carlos,Monteiro,30767,CRIM3300,40,43,
 Spring 2013,xyz,Linear Algebra,0,4,Gordana,Todorov,30768,MATH2331,30,33,
 Spring 2011,xyz,Introduction to Language and Linguistics,0,4,Sarah,Hulsey,30769,LING1150,19,20,
-
 Spring 2013,xyz,Ordinary Differential Equations,0,4,Alexandru,Suciu,30769,MATH2351,49,58,
-
-
 Spring 2013,xyz,Co-op and Experiential Learning Reflection Seminar 1,0,1,Richard,Porter,30772,MATH3000,25,18,
 Spring 2010,xyz,Principles of Microeconomics,0,4,David,Hom,30773,ECON1116,49,49,
-
 Spring 2013,xyz,Calculus 2 for Science and Engineering,0,4,Edgar,Karapetian,30775,MATH1342,49,28,
 Spring 2010,xyz,Film Analysis,0,4,David,Grotell,30776,CINE2150,48,47,
 Spring 2013,xyz,Calculus 1 for Science and Engineering,0,4,Ramis,Movassagh,30777,MATH1341,49,44,
-
 Spring 2013,xyz,Calculus 1 for Science and Engineering,0,4,Sungmun,Cho,30778,MATH1341,49,48,
 Spring 2011,xyz,Computers and Society,0,4,Judith,Perrolle,30779,SOCL4528,60,51,
-
-
-
 Spring 2011,xyz,Physics for Engineering 2,0,4,Enrique,Moreno,30782,PHYS1155,90,91,
 Spring 2012,xyz,Foundations of Psychology,0,4,Krista,Hill,30782,PSYC1101,190,189,
 Spring 2010,xyz,3D Foundation,0,4,Edwin,Andrews,30785,ARTF1124,19,15,
@@ -2267,12 +2185,9 @@ Spring 2011,xyz,Interactive Learning Session for PHYS 1151,0,0,Christopher,Daly,
 Spring 2011,xyz,Interactive Learning Session for PHYS 1151,0,0,Jeffrey,Sokoloff,30791,PHYS1153,36,34,
 Spring 2013,xyz,Calculus and Differential Equations for Biology 1,0,4,Carlos,Curley,30792,MATH1251,55,53,
 Spring 2011,xyz,Interactive Learning Session for PHYS 1151,0,0,Jeffrey,Sokoloff,30797,PHYS1153,36,36,
-
 Spring 2011,xyz,Physics for Life Sciences 2,0,4,Enrique,Moreno,30805,PHYS1147,101,100,
-
 Spring 2010,xyz,Moral and Social Problems in Health Care,0,4,Joseph,Wellbank,30807,PHIL1165,100,99,
 Spring 2013,xyz,Calculus for Business and Economics,0,4,Yaping,Yang,30807,MATH1231,40,33,
-
 Spring 2013,xyz,4D Tools: Motion Basics,0,1,Nicole,Bedard,30808,ARTF2221,20,20,
 Spring 2010,xyz,Musicianship 1,0,1,Won-Hee,An,30810,MUSC1241,19,7,
 Spring 2010,xyz,Probability and Statistics,0,4,John,Lindhe,30811,MATH3081,35,37,
@@ -2293,7 +2208,6 @@ Spring 2011,xyz,Composition Lessons,0,1,Ronald,Smith,30829,MUSC1903,49,32,
 Spring 2011,xyz,Music Lessons 1,0,1,Junauro,Landgrebe,30831,MUSC1901,150,139,
 Spring 2010,xyz,Introduction to Language and Linguistics,0,4,Sarah,Hulsey,30832,LING1150,49,47,
 Spring 2011,xyz,Music Technology Capstone/Senior Recital,0,4,Ronald,Smith,30833,MUST4611,15,11,
-
 Spring 2011,xyz,Managerial Accounting,0,4,Xiaotao,Liu,30841,ACCT2301,40,40,
 Spring 2013,xyz,Sales Management,0,4,Dan,Dunn,30842,MKTG3420,40,40,
 Spring 2012,xyz,History of Mathematics,0,4,Marco,Rainho,30843,MATH2201,35,35,
@@ -2318,12 +2232,8 @@ Spring 2013,xyz,Information Resource Management,0,4,Yang,Lee,30861,MISM3305,40,1
 Spring 2012,xyz,Calculus 1 for Science and Engineering,0,4,Nizar,Zaarour,30862,MATH1341,35,38,
 Spring 2012,xyz,Calculus 1 for Science and Engineering,0,4,Nizar,Zaarour,30863,MATH1341,45,63,
 Spring 2012,xyz,Intensive Calculus for Engineers,0,6,Shu-Shih,Wu,30864,MATH1340,27,18,
-
 Spring 2011,xyz,Psychobiology,0,4,Lesley,Ricci,30865,PSYC3458,125,124,
-
 Spring 2011,xyz,Sensation and Perception,0,4,Franklin,Naarendorp,30866,PSYC3452,80,83,
-
-
 Spring 2011,xyz,Statistics in Psychological Research,0,4,Stephen,Harkins,30872,PSYC2320,60,63,
 Spring 2011,xyz,Foundations of Psychology,0,4,James,Akula,30874,PSYC1101,190,30,
 Spring 2011,xyz,Foundations of Psychology,0,4,Mark,Halko,30875,PSYC1101,190,166,
@@ -2346,10 +2256,8 @@ Spring 2013,xyz,3D Foundation,0,4,Benjamin,Caras,30898,ARTF1124,20,12,
 Spring 2013,xyz,Drawing 1 Foundation,0,4,Jason,Polins,30899,ARTF1120,16,17,
 Spring 2012,xyz,Mathematical Thinking,0,4,Dennis,Ledis,30902,MATH1215,19,18,
 Spring 2013,xyz,Global Art + Design History: Ancient to Medieval,0,4,Timothy,Orwig,30902,ARTH1110,24,25,
-
 Spring 2010,xyz,Lab for BIOL 1111,0,1,Aaron,Roth,30904,BIOL1112,24,23,
 Spring 2012,xyz,Latino| Latin American| and Caribbean Studies,0,4,Anny,Rivera-Ottenberger,30905,LACS1220,27,25,
-
 Spring 2012,xyz,East Asian Studies,0,4,Thomas,Havens,30906,ASNS1150,99,36,
 Spring 2011,xyz,Internetworking Design Lab,0,1,Kaushik,Chowdhury,30908,EECE4629,15,13,
 Spring 2011,xyz,Computer and Telecommunication Networks,0,4,Kaushik,Chowdhury,30910,EECE4628,40,42,
@@ -2414,22 +2322,17 @@ Spring 2013,xyz,Managerial Accounting,0,4,Edward,Dinan,30956,ACCT2301,40,40,
 Spring 2011,xyz,Calculus 2 for Science and Engineering,0,4,Ilya,Scheidwasser,30957,MATH1342,65,66,
 Spring 2013,xyz,Advanced Writing in the Technical Professions,0,4,Tabitha,Clark,30957,ENGL3302,19,15,
 Spring 2011,xyz,Calculus 2 for Science and Engineering,0,4,Ilanit,Helfand,30958,MATH1342,40,38,
-
 Spring 2013,xyz,Advanced Writing in the Technical Professions,0,4,Thomas,Akbari,30958,ENGL3302,19,15,
 Spring 2011,xyz,Calc 2 for Sci/Engr (HON),0,4,Petar,Topalov,30959,MATH1342,28,10,
-
 Spring 2013,xyz,Advanced Writing in the Technical Professions,0,4,Mary,Balestraci,30959,ENGL3302,19,11,
 Spring 2011,xyz,Calculus 1 for Science and Engineering,0,4,MARYAM,ASIL,30960,MATH1341,35,35,
 Spring 2013,xyz,Adv Writing in Discipline-SOL,0,4,Jonathan,Benda,30960,ENGL3301,15,15,
 Spring 2011,xyz,Calculus 1 for Science and Engineering,0,4,Rajaa,Talli,30961,MATH1341,45,50,
-
 Spring 2013,xyz,Advanced Writing in the Disciplines,0,4,Laurie,Edwards,30961,ENGL3301,19,19,
 Spring 2012,xyz,Strategy in Action,0,4,Irem,Demirkan,30962,STRT4501,35,35,
 Spring 2013,xyz,Financial Accounting and Reporting,0,4,Edward,Dinan,30962,ACCT1201,36,36,
-
 Spring 2013,xyz,Advanced Writing in the Disciplines,0,4,Edward,Moss,30963,ENGL3301,19,18,
 Spring 2013,xyz,Financial Accounting and Reporting,0,4,Cynthia,Jackson,30964,ACCT1201,40,38,
-
 Spring 2010,xyz,Recitation for CHEM 1101,0,0,Ken,Chung,30967,CHEM1103,30,8,
 Spring 2010,xyz,Psychology of Language,0,4,Lydia,Volaitis,30969,PSYC3464,75,76,
 Spring 2013,xyz,Advanced Writing in the Disciplines,0,4,Kathryn,Templeton,30971,ENGL3301,19,16,
@@ -2470,7 +2373,6 @@ Spring 2012,xyz,Corporate Finance,0,4,Richard,Swasey,31022,FINA3301,40,27,
 Spring 2012,xyz,Corporate Finance,0,4,Richard,Swasey,31023,FINA3301,40,34,
 Spring 2012,xyz,Corporate Finance,0,4,Jack,Mazur,31024,FINA3301,40,40,
 Spring 2013,xyz,College Writing,0,4,David,Ober,31024,ENGL1111,19,18,
-
 Spring 2010,xyz,International Business and Global Social Responsibility,0,4,Denise,Dunlap,31026,INTB1203,40,35,
 Spring 2012,xyz,Financial Management,0,4,Tiantian,Gu,31026,FINA2201,40,40,
 Spring 2012,xyz,Introduction to Tactical Leadership,0,1,Robby,Jenkins,31033,ARMY1102,25,7,
@@ -2516,7 +2418,6 @@ Spring 2011,xyz,Information Resource Management,0,4,Peter,Tarasewich,31062,MISM3
 Spring 2012,xyz,Financial Accounting and Reporting,0,4,Michael,Cottrill,31063,ACCT1201,40,42,
 Spring 2012,xyz,Fin Acctng &amp; Reporting,0,4,Ganesh,Krishnamoorthy,31064,ACCT1201,40,43,
 Spring 2010,xyz,Interactive Learning Session for PHYS 1151,0,0,Sergey,Kravchenko,31069,PHYS1153,36,36,
-
 Spring 2012,xyz,Financial Accounting and Reporting,0,4,Ganesh,Krishnamoorthy,31069,ACCT1201,40,43,
 Spring 2011,xyz,Strategy in Action,0,4,Bert,Spector,31070,STRT4501,35,35,
 Spring 2011,xyz,Strategy in Action,0,4,Anna,Lamin,31072,STRT4501,35,34,
@@ -2684,7 +2585,6 @@ Spring 2013,xyz,Small Business Service and Retail Creation,0,4,Edmund,Clark,3131
 Spring 2010,xyz,French Film and Culture,0,4,Michele,Danh,31314,CLTR1280,35,35,
 Spring 2012,xyz,Introduction to Philosophy,0,4,Michael,Meyer,31317,PHIL1101,40,24,
 Spring 2011,xyz,Statistics,0,4,Kamran,Dadkhah,31318,ECON2350,45,46,
-
 Spring 2012,xyz,Fixed-Income Securities,0,4,Nicole,Boyson,31319,FINA4604,40,47,
 Spring 2012,xyz,Calculus 3 for Science and Engineering,0,4,Terence,Gaffney,31320,MATH2321,49,53,
 Spring 2010,xyz,Interpreting the Day’s News,0,4,William,Kirtz,31321,JRNL1150,85,72,
@@ -2721,7 +2621,6 @@ Spring 2013,xyz,Advanced Writing in the Disciplines,0,4,Laurie,Edwards,31358,ENG
 Spring 2010,xyz,Introduction to Marketing,0,4,Nancy,Upton,31362,MKTG2201,35,17,
 Spring 2011,xyz,Introduction to Communication Studies,0,4,Erin,Meyers,31362,COMM1101,35,34,
 Spring 2010,xyz,Introduction to Marketing,0,4,Susan,Sieloff,31363,MKTG2201,40,34,
-
 Spring 2011,xyz,Lab for BIOL 1103,0,1,Rebeca,Rosengaus,31367,BIOL1104,19,16,
 Spring 2013,xyz,Lab for BIOL 1103,0,1,Rebeca,Rosengaus,31368,BIOL1104,19,15,
 Spring 2011,xyz,Principles of Biology 2,0,4,Rebeca,Rosengaus,31369,BIOL1103,190,154,
@@ -2757,7 +2656,6 @@ Spring 2012,xyz,General Chemistry 2,0,4,Geoffrey,Davies,31427,CHEM1214,196,197,
 Spring 2013,xyz,Co-op Work Experience-CS,0,0,Melissa,Peikin,31427,COOP3945,999,37,
 Spring 2012,xyz,Public Speaking,0,4,Carleton,Gholz,31430,COMM1112,19,19,
 Spring 2013,xyz,Co-op Work Experience-CS,0,0,Aileen,Yates,31430,COOP3945,999,37,
-
 Spring 2011,xyz,College Writing,0,4,Lauren,Thacker,31437,ENGL1111,19,17,
 Spring 2011,xyz,Introduction to Philosophy,0,4,Michael,Meyer,31440,PHIL1101,38,32,
 Spring 2011,xyz,Foundations of Psych (HON),0,4,Martin,Block,31441,PSYC1101,40,33,
@@ -2766,11 +2664,9 @@ Spring 2011,xyz,Calculus 3 for Science and Engineering,0,4,David,Moser,31443,MAT
 Spring 2012,xyz,Engr Prob Solv and Comp(HON),0,4,Gilead,Tadmor,31444,GE1111,0,14,
 Spring 2010,xyz,Investments,0,4,Dan,Provost,31453,FINA3303,40,8,
 Spring 2010,xyz,Corporate Finance,0,4,Eliot,Sherman,31456,FINA3301,40,39,
-
 Spring 2010,xyz,Corporate Finance,0,4,Eliot,Sherman,31457,FINA3301,40,40,
 Spring 2012,xyz,Calc 2 for Sci/Engr (HON),0,4,David,Massey,31458,MATH1342,59,40,
 Spring 2010,xyz,Financial Management,0,4,Karthik,Krishnan,31459,FINA2201,40,40,
-
 Spring 2010,xyz,Financial Management,0,4,Jack,Mazur,31464,FINA2201,40,41,
 Spring 2010,xyz,Financial Management,0,4,Joseph,Meador,31465,FINA2201,40,37,
 Spring 2012,xyz,Calculus for Business and Economics,0,4,Rajaa,Talli,31467,MATH1231,35,33,
@@ -2791,8 +2687,6 @@ Spring 2010,xyz,Managerial Accounting,0,4,Kimberly,Moreno,31488,ACCT2301,40,40,
 Spring 2010,xyz,Advanced Writing in the Technical Professions,0,4,Erica,Zilleruelo,31489,ENGL3302,19,19,
 Spring 2010,xyz,Advanced Writing in the Technical Professions,0,4,Thomas,Akbari,31492,ENGL3302,19,19,
 Spring 2010,xyz,Managerial Accounting,0,4,William,Bruns,31493,ACCT2301,40,41,
-
-
 Spring 2010,xyz,Advanced Writing in the Technical Professions,0,4,Jeffrey,Cottrell,31495,ENGL3302,19,19,
 Spring 2011,xyz,2D Foundation,0,4,Julia,Hechtman,31498,ARTF1122,19,19,
 Spring 2012,xyz,Combinatorial Mathematics,0,4,Anthony,Iarrobino,31498,MATH3533,25,26,
@@ -2813,7 +2707,6 @@ Spring 2011,xyz,Electronic Marketing,0,4,Fareena,Sultan,31538,MKTG4508,40,22,
 Spring 2012,xyz,College Writing,0,4,Aparna,Mujumdar,31543,ENGL1111,19,15,
 Spring 2010,xyz,College Writing,0,4,Laurie,Nardone,31544,ENGL1111,19,18,
 Spring 2010,xyz,College Writing,0,4,Megan,Tarquinio,31560,ENGL1111,19,19,
-
 Spring 2011,xyz,General Chemistry 2,0,4,Geoffrey,Davies,31565,CHEM1214,196,176,
 Spring 2012,xyz,Co-op Work Experience-CS,0,0,Melissa,Peikin,31566,COOP3945,999,35,
 Spring 2012,xyz,Co-op Work Experience-CS,0,0,Aileen,Yates,31569,COOP3945,999,40,
@@ -2910,7 +2803,6 @@ Spring 2010,xyz,Legal Argumentation| Advocacy| and Citizenship,0,4,Michael,Hoppm
 Spring 2010,xyz,Small Business Service and Retail Creation,0,4,Edmund,Clark,31978,ENTR4503,35,27,
 Spring 2010,xyz,Beginning Scuba,0,1,Daniel,Easa,31988,BIOL1105,16,14,
 Spring 2010,xyz,Management of Financial Institutions,0,4,Richard,Swasey,31989,FINA4314,40,19,
-
 Spring 2010,xyz,Lab for PHYS 1151,0,1,Fangze,Liu,32011,PHYS1152,10,10,
 Spring 2010,xyz,Lab for BIOL 2301,0,1,Steven,Vollmer,32034,BIOL2302,16,16,
 Spring 2010,xyz,Principles of Microeconomics,0,4,Ilter,Bakkal,32039,ECON1116,49,47,
@@ -3011,7 +2903,6 @@ Spring 2013,xyz,Seminar in Cognition,0,4,Craig,Gruber,32983,PSYC4660,19,18,
 Spring 2011,xyz,Business Statistics,0,4,Dimitrios,Fotiadis,32986,MGSC1201,40,37,
 Spring 2012,xyz,Financl Accounting &amp; Rpt (HON),0,4,Ronen,Gal-Or,32986,ACCT1201,19,22,
 Spring 2011,xyz,Marketing Research,0,4,Felicia,Lassk,32990,MKTG3401,40,40,
-
 Spring 2013,xyz,Interpreting the Day’s News,0,4,Alan,Schroeder,33012,JRNL1150,49,50,
 Spring 2012,xyz,Lab for CHEM 2313,0,1,John,Bottomy,33019,CHEM2314,19,22,
 Spring 2013,xyz,Lab for ENVR 1200,0,1,Daniel,Douglass,33019,ENVR1201,30,29,
@@ -3050,12 +2941,9 @@ Spring 2013,xyz,Linear Algebra,0,4,Gordana,Todorov,33340,MATH2331,30,35,
 Spring 2013,xyz,Elementary Chinese 2,0,4,Hua,Dong,33363,CHNS1102,18,13,
 Spring 2011,xyz,Ethics| Values| and Diversity,0,4,Alicia,Girgenti,33395,CRIM1200,30,30,
 Spring 2011,xyz,Prncp of Microeconomics,0,4,Zhiheng,Pan,33401,ECON1116,48,48,
-
 Spring 2011,xyz,Microbial Biotechnology,0,4,Kim,Lewis,33412,BIOL5549,48,18,
 Spring 2011,xyz,Linguistic Analysis,0,4,Sarah,Hulsey,33416,LING2350,29,31,
-
 Spring 2012,xyz,Introduction to Language and Linguistics,0,4,Mary,Hughes,33421,LING1150,19,18,
-
 Spring 2011,xyz,Organizational Behavior,0,4,John,Griffith,33434,ORGB3209,60,57,
 Spring 2011,xyz,Organizational Behavior,0,4,Susan,Vroman,33435,ORGB3209,60,48,
 Spring 2011,xyz,Organizational Behavior,0,4,Paulette,McCarty,33436,ORGB3209,60,60,
@@ -3072,8 +2960,6 @@ Spring 2011,xyz,Interactive Media and Society,0,4,Timothy,Norris,33504,IM1110,49
 Spring 2011,xyz,Digital Narrative 1,0,4,Cynthia,Baron,33505,IM2100,15,15,
 Spring 2011,xyz,Programming for Digital Media,0,4,James,Dolan,33506,IM2250,18,3,
 Spring 2011,xyz,Interactive Media Capstone 2,0,4,Terrence,Masson,33508,IM4701,12,12,
-
-
 Spring 2011,xyz,Feature Writing,0,4,Lisa,Chedekel,33546,JRNL5306,19,8,
 Spring 2012,xyz,Drugs &amp; Intoxicants in Wrld Hi,0,4,James,Bradford,33556,HIST2304,105,46,
 Spring 2011,xyz,Financial Accounting and Reporting,0,4,Sharon,Bruns,33573,ACCT1201,40,40,
@@ -3084,7 +2970,6 @@ Spring 2012,xyz,Recitation for POLS 1160,0,0,Kirsten,Hardy,33610,POLS1161,15,13,
 Spring 2012,xyz,Real Analysis,0,4,Dennis,Ledis,33636,MATH3150,35,32,
 Spring 2011,xyz,Latin American Film,0,4,Alan,West-Duran,33639,CLTR1240,35,36,
 Spring 2012,xyz,Calculus and Differential Equations for Biology 2,0,4,Samuel,Blank,33641,MATH1252,29,26,
-
 Spring 2013,xyz,Recitation for GAME 1110,0,0,Karen,Dsouza,33697,GAME1111,30,16,
 Spring 2011,xyz,Linear Algebra,0,4,Jayant,Shah,33698,MATH2331,19,19,
 Spring 2013,xyz,Calculus and Differential Equations for Biology 2,0,4,Mark,Ramras,33701,MATH1252,49,6,
@@ -3123,7 +3008,6 @@ Spring 2013,xyz,Recitation for GAME 1110,0,0,Karen,Dsouza,34087,GAME1111,30,18,
 Spring 2013,xyz,Introduction to Contemporary Moral Issues,0,4,John,Weagraff,34096,PHIL1102,45,20,
 Spring 2013,xyz,Chinese Philosophy and Religion,0,4,Jung,Lee,34101,RELS1290,45,10,
 Spring 2011,xyz,Advanced Writing in the Disciplines,0,4,Matthew,Noonan,34105,ENGL3301,19,17,
-
 Spring 2013,xyz,Drugs and Behavior,0,4,Denise,Jackson,34109,PSYC1250,75,74,
 Spring 2013,xyz,Personality,0,4,William,Sharp,34111,PSYC3400,80,79,
 Spring 2013,xyz,Social Psychology,0,4,Maria,Gendron,34112,PSYC3402,75,74,
@@ -3131,13 +3015,9 @@ Spring 2013,xyz,Learning Principles and Behavior Analysis,0,4,Amanda,Laprime,341
 Spring 2013,xyz,Laboratory in Sensation and Perception,0,4,Adam,Reeves,34118,PSYC4622,19,16,
 Spring 2013,xyz,Introduction to Film Analysis,0,4,Michael,Dow,34126,CINE1895,25,25,
 Spring 2013,xyz,American Film and Culture,0,4,Michael,Dow,34128,CINE1230,35,31,
-
 Spring 2010,xyz,Web Development Tools and Methods,0,4,Khaled,Bugrara,34142,INFO6250,45,44,
-
 Spring 2013,xyz,Middle East Studies,0,4,Denis,Sullivan,34153,INTL1160,73,27,
 Spring 2013,xyz,Introduction to Criminal Justice,0,4,Chad,Posick,34157,CRIM1100,50,32,
-
-
 Spring 2013,xyz,Earth Landforms and Processes,0,4,Richard,Bailey,34230,ENVR2340,27,25,
 Spring 2013,xyz,Lab for ENVR 2340,0,1,Richard,Bailey,34231,ENVR2341,27,25,
 Spring 2013,xyz,Public Budgeting and Financial Management,0,3,Francis,Jr,34238,POLS7303,25,9,
@@ -3151,7 +3031,6 @@ Spring 2013,xyz,Seminar in Linguistics,0,4,Christopher,Doty,34428,LING4654,19,14
 Spring 2013,xyz,Elementary Arabic 1,0,4,Muna,Bruce,34431,ARAB1101,18,15,
 Spring 2010,xyz,Managerial Accounting,0,4,Shirley,Hunter,34449,ACCT2301,40,39,
 Spring 2012,xyz,Twentieth-Century Music,0,4,John,MacCallum,34450,MUSC1125,38,19,
-
 Spring 2010,xyz,Corporate Finance,0,4,Jack,Mazur,34455,FINA3301,40,45,
 Spring 2010,xyz,Real Estate Finance,0,4,Shiawee,Yang,34459,FINA4516,40,42,
 Spring 2010,xyz,International Business and Global Social Responsibility,0,4,William,Tita,34460,INTB1203,35,35,
@@ -3197,7 +3076,6 @@ Spring 2011,xyz,Introduction to Language and Linguistics,0,4,Paraskevi,Tsakali,3
 Spring 2011,xyz,Language and Culture,0,4,Heather,Littlefield,34588,LING3412,49,27,
 Spring 2011,xyz,Jews and American Popular Culture,0,4,Lawrence,Lowenthal,34591,JWSS2269,40,30,
 Spring 2011,xyz,Modern Physics,0,4,Emanuela,Barberis,34592,PHYS2303,40,45,
-
 Spring 2011,xyz,Moral and Social Problems in Health Care,0,4,Joseph,Wellbank,34613,PHIL1165,60,61,
 Spring 2011,xyz,The Meaning of Death,0,4,Susan,Setta,34618,RELS1220,125,105,
 Spring 2011,xyz,Apocalypticism in Film,0,4,Shawn,Dolansky,34619,RELS1260,65,64,
@@ -3254,7 +3132,6 @@ Spring 2013,xyz,Lab for IA 5210,0,0,Frederick,Howell,34944,IA5211,25,15,
 Spring 2013,xyz,Cyberlaw: Privacy| Ethics| and Digital Rights,0,4,Kyle,Courtney,34945,IA5240,25,19,
 Spring 2010,xyz,Fourier Series and PDEs,0,4,Solomon,Jekel,34948,MATH4545,40,43,
 Spring 2010,xyz,Topology,0,4,Alexandru,Suciu,34950,MATH4565,35,8,
-
 Spring 2010,xyz,Financial Accounting and Reporting,0,4,Daniel,Archabal,34960,ACCT1209,60,61,
 Spring 2010,xyz,Financial Management,0,4,Mark,Gooley,34962,FINA2209,60,62,
 Spring 2011,xyz,Principles of Macroeconomics,0,4,Kossi,Makpayo,34963,ECON1115,48,48,
@@ -3288,7 +3165,6 @@ Spring 2013,xyz,Linguistic Analysis,0,4,Heather,Littlefield,35066,LING2350,19,16
 Spring 2011,xyz,Elementary German 2,0,4,Sermin,Muctehitzade,35078,GRMN1102,18,18,
 Spring 2011,xyz,Advanced Japanese 1,0,4,Matsuko,Levin,35085,JPNS3101,18,7,
 Spring 2011,xyz,Elementary Japanese 2,0,4,Matsuko,Levin,35088,JPNS1102,18,11,
-
 Spring 2013,xyz,Software Security Practices,0,4,Leonard,Wisniewski,35099,IA6120,25,22,
 Spring 2011,xyz,Topics in Contemporary Issues: An Historical| Ethical| or Aesthetic Perspective,0,4,David,Grotell,35109,HONR3341,19,16,
 Spring 2013,xyz,Apocalypticism in Film,0,4,Sheila,Winborne,35110,RELS1260,45,45,
@@ -3328,9 +3204,6 @@ Spring 2012,xyz,Modern Jewish Diaspora,0,4,James,Ross,35306,RELS2313,40,8,
 Spring 2012,xyz,Advanced Debates in Law and Public Policy,0,4,Edward,Kammerer,35310,LPSC4304,30,9,
 Spring 2013,xyz,Lab for PHYS 1151,0,1,Trung,Nguyen,35311,PHYS1152,10,10,
 Spring 2013,xyz,Lab for PHYS 1151,0,1,Longhai,Lai,35313,PHYS1152,10,8,
-
-
-
 Spring 2012,xyz,Laboratory in Psycholinguistics,0,4,Neal,Pearlmutter,35322,PSYC4610,19,19,
 Spring 2012,xyz,Laboratory in Sensation and Perception,0,4,Adam,Reeves,35323,PSYC4622,19,20,
 Spring 2010,xyz,Introduction to Language and Linguistics,0,4,Sarah,Hulsey,35328,LING1150,19,19,
@@ -3382,7 +3255,6 @@ Spring 2012,xyz,Leadership Seminar,0,4,David,Boyd,35559,MGMT4603,40,41,
 Spring 2012,xyz,Operations Management,0,2,Yu,Xia,35564,MGSC2201,40,40,
 Spring 2010,xyz,Principles of Experimental Physics,0,4,Nathan,Israeloff,35571,PHYS5318,12,8,
 Spring 2012,xyz,Introduction to Marketing,0,4,Susan,Sieloff,35572,MKTG2209,15,12,
-
 Spring 2010,xyz,Group Theory,0,4,Gordana,Todorov,35613,MATH3175,25,25,
 Spring 2010,xyz,Physics for Engineering 1,0,4,Henry,Smith,35617,PHYS1151,110,20,
 Spring 2010,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,35630,ENGL1102,15,15,
@@ -3436,7 +3308,6 @@ Spring 2013,xyz,Microfinance: Lending to the Poor,0,4,Sophie,Bacq,35885,ENTR3219
 Spring 2013,xyz,Negotiating in Business,0,4,Edward,Wertheim,35892,MGMT3302,40,40,
 Spring 2013,xyz,The Management Practices of Great Organizations,0,4,Leonard,Glick,35895,MGMT4310,40,33,
 Spring 2013,xyz,Marketing in the Service Sector,0,4,Paul,Fombelle,35899,MKTG4502,40,36,
-
 Spring 2013,xyz,Age of Dinosaurs,0,4,Richard,Bailey,35913,ENVR1103,48,47,
 Spring 2013,xyz,Science Fiction,0,4,Gary,Goshgarian,35925,ENGL3406,49,39,
 Spring 2013,xyz,19thC MajorFig:Emerson/Thoreau,0,4,Theo,Davis,35929,ENGL4686,35,23,
@@ -3458,7 +3329,6 @@ Spring 2013,xyz,Economics of the Creative Industries,0,4,Gregory,Wassall,35996,E
 Spring 2011,xyz,Creative Writing,0,4,Samuel,Bernstein,36002,ENGL3372,15,15,
 Spring 2012,xyz,Introduction to Cooperative Education,0,0,Behrooz,Satvat,36004,ENCP6000,75,86,
 Spring 2012,xyz,Topics in Research and Inquiry: Focus on Analysis,0,4,Jeffrey,Burds,36029,HONR3302,19,18,
-
 Spring 2012,xyz,Topics in Contemporary Issues,0,4,David,Lazer,36047,HONR3343,19,12,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Xi,Shen,36047,ECON1126,18,18,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36050,ECON1126,18,22,
@@ -3470,17 +3340,14 @@ Spring 2013,xyz,Recitation for ECON 1116,0,0,Abdullah,Tirgil,36059,ECON1126,18,2
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36061,ECON1126,18,14, Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36061,ECON1126,18,15,
 Spring 2012,xyz,Mobile and Wireless Networking,0,4,Kaushik,Chowdhury,36064,EECE7364,99,47,
 Spring 2012,xyz,Calculus 3 for Science and Engineering,0,4,Stephen,Miller,36078,MATH2321,49,52,
-
 Spring 2013,xyz,White-Collar Crime,0,3,Nikos,Passas,36140,CRIM7252,25,22,
 Spring 2013,xyz,America and the Sea,0,4,William,Jr,36146,HIST2348,49,38,
 Spring 2012,xyz,Mathematical Statistics,0,4,Aidong,Ding,36164,MATH7342,15,12,
 Spring 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,36171,ENGL1102,15,15,
 Spring 2012,xyz,Ancient Rome,0,4,Christopher,Gilbert,36185,HIST1271,49,48,
-
 Spring 2012,xyz,America at War,0,4,Ballard,Campbell,36193,HIST2213,49,26,
 Spring 2012,xyz,Special Topics in Art + Design Studio,0,4,Benjamin,Ridgway,36195,ARTE4901,18,14,
 Spring 2013,xyz,Sexual Orientation and Gender Expression in Practice and Policy,0,4,Leandra,Smollin,36200,HUSV2800,19,15,
-
 Spring 2013,xyz,Introduction to Web Development,0,4,Martin,Schedlbauer,36231,IS1500,52,47,
 Spring 2013,xyz,Music of Africa,0,4,Julie,Strand,36236,MUSC1128,42,8,
 Spring 2013,xyz,Guitar Class,0,4,Robert,Ward,36239,MUSC1134,30,30,
@@ -3505,13 +3372,11 @@ Spring 2012,xyz,Personal Finance,0,4,Eliot,Sherman,36342,FINA1209,15,12,
 Spring 2013,xyz,ST:Short Film Prod. and Devel.,0,4,Terrence,Masson,36343,ARTE4901,18,10,
 Spring 2012,xyz,Photo Basics for Nonmajors,0,4,Andrea,Greitzer,36352,ARTD2350,20,24,
 Spring 2012,xyz,2D Foundation,0,4,Ryan,Shelley,36354,ARTF1122,20,12,
-
 Spring 2012,xyz,Apocalypticism in Film,0,4,Sheila,Winborne,36372,RELS1260,40,40,
 Spring 2013,xyz,Wired/Unwired: Cybercultures and Technopolitics,0,4,Jeffrey,Juris,36372,ANTH3418,19,20,
 Spring 2013,xyz,Financial Management,0,4,Jack,Mazur,36373,FINA2201,40,40,
 Spring 2013,xyz,Managerial Accounting,0,4,Donald,May,36374,ACCT2301,40,40,
 Spring 2013,xyz,Financial Accounting and Reporting,0,4,Thomas,Giampietro,36375,ACCT1201,40,38,
-
 Spring 2012,xyz,Valuation and Value Creation,0,4,Mark,Gooley,36405,FINA4410,40,43,
 Spring 2013,xyz,Business Process Engineering,0,4,Joseph,Raynus,36405,INFO7260,30,27,
 Spring 2013,xyz,International Business and Global Social Responsibility,0,4,Elitsa,Banalieva,36408,INTB1203,40,39,
@@ -3532,28 +3397,18 @@ Spring 2013,xyz,ST:Foundations of Game Design,0,4,Alessandro,Canossa,36628,GAME3
 Spring 2012,xyz,Co-op Work Experience,0,0,Megan,Richmond,36638,COOP3945,999,45,
 Spring 2012,xyz,Data Management and Database Design,0,4,Dimitrios,Fotiadis,36640,INFO6210,40,44,
 Spring 2012,xyz,Introduction to Information Technology Auditing,0,4,John,Beveridge,36641,INFO7325,40,27,
-
 Spring 2013,xyz,Math Fundamentals for Games,0,4,Andras,Lorincz,36672,MATH1260,30,29,
 Spring 2013,xyz,Institutional Leadership and the Public Manager,0,3,Elaine,Walker,36682,POLS7305,25,14,
 Spring 2013,xyz,Advanced Writing in the Disciplines,0,4,Christen,Enos,36705,ENGL3301,19,19,
 Spring 2013,xyz,Digital Narrative 1,0,4,Mary,Hopper,36723,IM2100,17,17,
 Spring 2013,xyz,Typography 1,0,4,John,Kane,36733,ARTG2250,15,11,
 Spring 2013,xyz,Lab for PHYS 1147,0,1,Jesse,Thompson,36739,PHYS1148,10,10,
-
 Spring 2013,xyz,Digital Logic Design,0,4,Rafael,Tena,36793,EECE2322,40,30,
-
 Spring 2013,xyz,Photo Basics for Nonmajors,0,4,Andrea,Raynor,36845,ARTD2350,11,12,
 Spring 2013,xyz,Calculus 3 for Science and Engineering,0,4,Sungmun,Cho,36846,MATH2321,30,30,
 Spring 2013,xyz,Lab for CHEM 2313,0,1,John,Bottomy,36860,CHEM2314,6,11,
 Spring 2013,xyz,Public Speaking,0,4,Rachel,Gans,36917,COMM1112,19,18,
-
 Spring 2013,xyz,Statistics for Health Science,0,3,Sanjay,Kumar,36930,NRSG5120,22,25,
-
 Spring 2013,xyz,Thesis,0,2 to 4,William,Robertson,37042,IA7990,5,1,
 Spring 2013,xyz,Readings,0,1 to 4,Nikos,Passas,37043,IA8982,5,2,
-
 Spring 2013,xyz,Readings,0,1 to 4,Nikos,Passas,37208,IA8982,5,1,
-
-
-
-

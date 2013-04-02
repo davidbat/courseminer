@@ -56,4 +56,5 @@ with open("classes.csv", 'rb') as csvfile:
 		#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		#out.write(",".join(line) + "\n")
 out_fd.close()
+act_fd.close()
 		
