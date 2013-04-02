@@ -2,13 +2,28 @@
 import sys
 import csv
 hm = {}
+stud_hash = {}
+program = [ "MSCS Computer Science" ]
+#program = ['MS Health Informatics']
 
+with open('Student_Information.csv') as studfile:
+	for line in studfile.readlines():
+		stud = line.strip().split(",")
+		if stud[1] in program: 
+			stud_hash[stud[5]] = stud[1]
+
+
+#print stud_hash
 with open('CourseEnrollmentInfo.csv') as csvfile:
 	enroll_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 	for enroll in enroll_data:
 		sem = enroll[0]
 		crn = enroll[1]
 		lvl = enroll[2]
+		nid = enroll[3]
+		if nid not in stud_hash:
+			continue
+
 		if sem not in hm:
 			hm[sem] = {}
 			hm[sem][crn] = {}
@@ -41,7 +56,7 @@ with open("classes.csv", 'rb') as csvfile:
 		crn = line[7]
 		grad = 0
 		undergrad = 0
-		if crn in hm[sem]:
+		if sem in hm and crn in hm[sem]:
 			if "Graduate" in hm[sem][crn]:
 				grad = hm[sem][crn]['Graduate']
 			if "Undergraduate" in hm[sem][crn]:
@@ -51,7 +66,7 @@ with open("classes.csv", 'rb') as csvfile:
    		
    		out.writerow(line)
 		if sem == sys.argv[1]:
-            		act_fd.write(line[8] + "\t" + str(grad) + "\n")
+			act_fd.write(line[8] + "\t" + str(grad) + "\n")
 			
 		#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		#out.write(",".join(line) + "\n")

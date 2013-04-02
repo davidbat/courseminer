@@ -1,7 +1,16 @@
 import csv
 
+program = [ "MSCS Computer Science" ]
+#program = ['MS Health Informatics']
+stud_hash = {}
+with open('Student_Information.csv') as studfile:
+	for line in studfile.readlines():
+		stud = line.strip().split(",")
+		if stud[1] in program: 
+			stud_hash[stud[5]] = stud[1]
+
 unwanted_cids = ['CS6949', 'CS6964', 'CS5011']
-def create_student_hash(crn_hash, cid_hash):
+def create_student_hash(crn_hash, cid_hash, stud_hash):
 	inv_cid_hash = {v:k for k, v in cid_hash.items()}
 	lines = []
 	with open("grad_info2.csv", 'rb') as csvfile:
@@ -14,7 +23,7 @@ def create_student_hash(crn_hash, cid_hash):
 	for each in lines:
 		#print each
 		sem, crn, level, stud_id  = each
-
+		if stud_id not in stud_hash: continue
 		#print sem, crn, level, stud_id, crn_hash[sem][crn]
 		if crn_hash[sem].has_key(crn):
 			if stud_course.has_key(stud_id):
@@ -27,10 +36,10 @@ def create_student_hash(crn_hash, cid_hash):
 			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
 
 	spring_studs = map(lambda line:line.strip(), open('eligible_stud.txt').readlines())
-	print spring_studs
+	#print spring_studs
 	with open('stud_info.txt', 'w') as std:
 		for studid in stud_course:
-			print studid
+			#print studid
 			if studid not in spring_studs:
 				continue
 			dupliates = filter(lambda x:stud_course[studid].count(x) > 1, stud_course[studid])
@@ -40,9 +49,9 @@ def create_student_hash(crn_hash, cid_hash):
 	return stud_course
 
 #print sem_stud_course
-def write_out(crn_hash, cid_hash):
+def write_out(crn_hash, cid_hash, stud_hash):
 	out = open("courses.txt", "w")
-	stud_course = create_student_hash(crn_hash, cid_hash)
+	stud_course = create_student_hash(crn_hash, cid_hash, stud_hash)
 	for stud_id in stud_course:
 		out.write(" ".join(stud_course[stud_id]) + "\n")
 	out.close()
@@ -89,6 +98,6 @@ def create_common_id():
 	#print sem_crn_hash
 	for ids in cid_hash:
 		fcid.write(cid_hash[ids] + " " + ids + "\n")
-	write_out(sem_crn_hash, cid_hash)
+	write_out(sem_crn_hash, cid_hash, stud_hash)
 
 create_common_id()

@@ -45,19 +45,24 @@ def random_prediction(all_courses, possible_courses, course_hash, out, n):
 def calculate_error(actual_hash, predicted_hash):
 	mse = 0
 	cnt = 0
+	fd = open("Predicted_values.txt", "w")
+	print "Course\tActual\tPredict\tDiff\tMSE"
 	for key in predicted_hash:
 		actual = 0
 		if key in actual_hash:
 			actual = actual_hash[key]
-		if round(predicted_hash[key]) == 0 and actual == 0:
+		if (round(predicted_hash[key]) == 0 and actual == 0) or (round(predicted_hash[key]) == 1 and actual == 0):
 			continue
 		cnt += 1	
 		#else:
 		#	continue
 		diff = abs(actual - round(predicted_hash[key]))
 		mse += diff ** 2
-		print key, actual, round(predicted_hash[key]), \
-			diff, diff ** 2
+		output_str = key + "\t" + str(actual) + "\t" + str(round(predicted_hash[key])) + "\t" + \
+			str(diff) + "\t" + str(diff ** 2)
+		print output_str
+		fd.write(output_str + "\n")
+	fd.close()
 	print "MSE - ", mse / (cnt * 2)
 
 
