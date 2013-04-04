@@ -18,13 +18,15 @@ def ReadFile(fn):
 		features.append(map(lambda i: i, line.split()))
 	return features
 
-def random_prediction(all_courses, possible_courses, course_hash, out, n):
+
+# We can remove my_courses or set it to empty because it increases MSE (Spring 2013)
+def random_prediction(my_courses, all_courses, possible_courses, course_hash, out, n):
 	prob_hash = {}
 	for course in all_courses:
 		prob_hash[course] = smoothing_const
 	#course_hash = {}
 	for item in out:
-		if len(item) == 2 and item[0] != 'CS5010':
+		if len(item) == 2 and item[0] != 'CS5010' and item[0] not in my_courses:
 			#print item[1]
 			prob_hash[item[0]] += int(item[1])
 
@@ -99,12 +101,12 @@ for courses in student_course_info:
 	# Code handles multiple occurances of a course by replacing all of them with ''. Gotta replace 3 with 2 and
 	# not ''
 
-	random_prediction(all_courses, possible_courses, course_hash, out, 2)
+	random_prediction(courses, all_courses, possible_courses, course_hash, out, 2)
 
 
 course_hash['CS5010'] = new_students
 out = list(fp)
-random_prediction(all_courses, possible_courses, course_hash, out, new_students)
+random_prediction([], all_courses, possible_courses, course_hash, out, new_students)
 
 csum = 0 
 for key in course_hash:
