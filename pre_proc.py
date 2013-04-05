@@ -1,43 +1,69 @@
 import csv
-def create_student_hash(crn_hash):
+
+#program = ['MS Health Informatics']
+
+def students_in_program(program):
+	stud_hash = {}
+	with open('Student_Information.csv') as studfile:
+		for line in studfile.readlines():
+			stud = line.strip().split(",")
+			if stud[1] in program: 
+				stud_hash[stud[5]] = stud[1]
+	#print stud_hash
+	return stud_hash
+
+
+def create_student_hash(crn_hash, cid_hash, stud_hash):
+	inv_cid_hash = {v:k for k, v in cid_hash.items()}
 	lines = []
-	with open("CourseEnrollmentInfo.csv", 'rb') as csvfile:
+	with open("grad_info2.csv", 'rb') as csvfile:
 		class_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for row in class_data:
 			#print row
 			lines.append(row)
 	
-	sem_stud_course = {}
+	stud_course = {}
 	for each in lines:
 		#print each
 		sem, crn, level, stud_id  = each
-
+		if stud_id not in stud_hash: continue
 		#print sem, crn, level, stud_id, crn_hash[sem][crn]
 		if crn_hash[sem].has_key(crn):
-			if sem_stud_course.has_key(sem):
-				if sem_stud_course[sem].has_key(stud_id):
-					#print sem_stud_course[sem][stud_id]
-					sem_stud_course[sem][stud_id].append(crn_hash[sem][crn])
-				else:
-					sem_stud_course[sem][stud_id] = [crn_hash[sem][crn]]
+			if stud_course.has_key(stud_id):
+				if crn_hash[sem][crn] != "UNWANTED":
+					stud_course[stud_id].append(crn_hash[sem][crn])
 			else:
-				sem_stud_course[sem] = { stud_id : [crn_hash[sem][crn]] }
-			print "CRN - ", crn, " is present in the list of CRNS-CIDS"
+				if crn_hash[sem][crn] != "UNWANTED":
+					stud_course[stud_id] = [crn_hash[sem][crn]]
 		else:
-			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
-	return sem_stud_course
+			print "CRN - ", crn, "for ", sem, " is not present in the list of CRNS-CIDS"
+	return stud_course
+'''
+	elig_studs = map(lambda line:line.strip(), open('eligible_stud.txt').readlines())
+	#print elig_studs
+	with open('stud_info.txt', 'w') as std:
+		for studid in stud_course:
+			#print studid
+			if studid not in elig_studs:
+				continue
+			print "here"
+			dupliates = filter(lambda x:stud_course[studid].count(x) > 1, stud_course[studid])
+			if dupliates != []:
+				print "Duplicate courses - ", " ".join(map(lambda item:inv_cid_hash[item], dupliates)), "taken by ", studid
+			std.write(stud_id + " " + " ".join(map(lambda item:inv_cid_hash[item],stud_course[studid])) + "\n")
+	return stud_course'''
 
 #print sem_stud_course
-def write_out(crn_hash):
+def write_out(crn_hash, cid_hash, stud_hash):
 	out = open("courses.txt", "w")
-	sem_stud_course = create_student_hash(crn_hash)
-	for sem in sem_stud_course.keys():
-		for stud_id in sem_stud_course[sem]:
-			out.write(" ".join(sem_stud_course[sem][stud_id]) + "\n")
+	stud_course = create_student_hash(crn_hash, cid_hash, stud_hash)
+	for stud_id in stud_course:
+		out.write(stud_id + " " + " ".join(stud_course[stud_id]) + "\n")
 	out.close()
 
 
-def create_common_id():
+def create_common_id(program):
+	unwanted_cids = ['CS6949', 'CS6964', 'CS5011']
 	lines = []
 	fcid = open("CID_hash.txt", "w")
 	with open("classes.csv", 'rb') as csvfile:
@@ -61,20 +87,22 @@ def create_common_id():
 			if sem_crn_hash[sem].has_key(crn):
 				print "CRN ", crn, " has multiple courses in semsester - ", sem, ". Course ids are - ", cid, sem_crn_hash[sem][crn] 
 			else:
-				if not cid_hash.has_key(cid):
-					new_id += 1
-					cid_hash[cid] = str(new_id)
-				sem_crn_hash[sem][crn] = cid_hash[cid]
+				if cid in unwanted_cids:
+					sem_crn_hash[sem][crn] = "UNWANTED"
+				else:					
+					if not cid_hash.has_key(cid):
+						cid_hash[cid] = cid
+					sem_crn_hash[sem][crn] = cid_hash[cid]
 				
 			#crn_hash[crn].append(crn)	
 		else:
 			if not cid_hash.has_key(cid):
-				new_id += 1
-				cid_hash[cid] = str(new_id)
+				cid_hash[cid] = cid
 			sem_crn_hash[sem] = { crn : cid_hash[cid] }
 	#print sem_crn_hash
 	for ids in cid_hash:
 		fcid.write(cid_hash[ids] + " " + ids + "\n")
-	write_out(sem_crn_hash)
+	write_out(sem_crn_hash, cid_hash, students_in_program(program))
 
-create_common_id()
+if __name__ == "__main__":
+	create_common_id(program)
