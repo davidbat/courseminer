@@ -163,10 +163,22 @@ for course in [c1]:#uniq_courses:
 means = [ 0.5 for item in  range(len(uniq_courses) + len(frequent_pairs)) ]
 
 
+student_course_map_c1 = {}
+student_course_map_hash = {}
+for each in student_course_map:
+  if c1 in each[1:]:
+    student_course_map_c1[each[0]] = each[1:]
+  else:
+    student_course_map_hash[each[0]] = each[1:]
+
+# test has all the students eligible this sem with the courses they took
 test = AL.create_student_hash(program, cur_sem)
 test_list = []
 for key in test:
-  test_list.append([key] + test[key])
+  if key not in student_course_map_c1:
+    if key in student_course_map_hash:
+      test_list.append([key] + student_course_map_hash[key] + test[key])
+    else:
 
 # TEST is wrong. it should have entire history of the student but we keep only courses taken this sem.
 test_mapped = course_label(uniq_courses, c1, test)
