@@ -1,0 +1,1 @@
+cat final.txt | while read line; do if [ `echo $line | tr -s " " "\n" | wc -l` -eq 3 ]; then  echo $line; fi; done
