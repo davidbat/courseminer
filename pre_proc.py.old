@@ -1,48 +1,38 @@
 import csv
-
-program = [ "MSCS Computer Science" ]
-#program = ['MS Health Informatics']
-stud_hash = {}
-with open('Student_Information.csv') as studfile:
-	for line in studfile.readlines():
-		stud = line.strip().split(",")
-		if stud[1] in program: 
-			stud_hash[stud[5]] = stud[1]
-
-unwanted_cids = ['CS6949', 'CS6964', 'CS5011']
-def create_student_hash(crn_hash, cid_hash, stud_hash):
-	inv_cid_hash = {v:k for k, v in cid_hash.items()}
+def create_student_hash(crn_hash):
 	lines = []
-	with open("grad_info.csv", 'rb') as csvfile:
+	with open("CourseEnrollmentInfo.csv", 'rb') as csvfile:
 		class_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for row in class_data:
 			#print row
 			lines.append(row)
 	
-	stud_course = {}
+	sem_stud_course = {}
 	for each in lines:
 		#print each
 		sem, crn, level, stud_id  = each
-		if stud_id not in stud_hash: continue
+
 		#print sem, crn, level, stud_id, crn_hash[sem][crn]
 		if crn_hash[sem].has_key(crn):
-			if stud_course.has_key(stud_id):
-				if crn_hash[sem][crn] != "UNWANTED":
-					stud_course[stud_id].append(crn_hash[sem][crn])
+			if sem_stud_course.has_key(sem):
+				if sem_stud_course[sem].has_key(stud_id):
+					#print sem_stud_course[sem][stud_id]
+					sem_stud_course[sem][stud_id].append(crn_hash[sem][crn])
+				else:
+					sem_stud_course[sem][stud_id] = [crn_hash[sem][crn]]
 			else:
-				if crn_hash[sem][crn] != "UNWANTED":
-					stud_course[stud_id] = [crn_hash[sem][crn]]
+				sem_stud_course[sem] = { stud_id : [crn_hash[sem][crn]] }
 		else:
-			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
-
-	return stud_course
+			print crn, "for", sem, " is not present in the list of CRNS-CIDS"
+	return sem_stud_course
 
 #print sem_stud_course
-def write_out(crn_hash, cid_hash, stud_hash):
+def write_out(crn_hash):
 	out = open("courses.txt", "w")
-	stud_course = create_student_hash(crn_hash, cid_hash, stud_hash)
-	for stud_id in stud_course:
-		out.write(" ".join(stud_course[stud_id]) + "\n")
+	sem_stud_course = create_student_hash(crn_hash)
+	for sem in sem_stud_course.keys():
+		for stud_id in sem_stud_course[sem]:
+			out.write(" ".join(sem_stud_course[sem][stud_id]) + "\n")
 	out.close()
 
 
@@ -70,13 +60,10 @@ def create_common_id():
 			if sem_crn_hash[sem].has_key(crn):
 				print "CRN ", crn, " has multiple courses in semsester - ", sem, ". Course ids are - ", cid, sem_crn_hash[sem][crn] 
 			else:
-				if cid in unwanted_cids:
-					sem_crn_hash[sem][crn] = "UNWANTED"
-				else:					
-					if not cid_hash.has_key(cid):
-						new_id += 1
-						cid_hash[cid] = str(new_id)
-					sem_crn_hash[sem][crn] = cid_hash[cid]
+				if not cid_hash.has_key(cid):
+					new_id += 1
+					cid_hash[cid] = str(new_id)
+				sem_crn_hash[sem][crn] = cid_hash[cid]
 				
 			#crn_hash[crn].append(crn)	
 		else:
@@ -87,6 +74,6 @@ def create_common_id():
 	#print sem_crn_hash
 	for ids in cid_hash:
 		fcid.write(cid_hash[ids] + " " + ids + "\n")
-	write_out(sem_crn_hash, cid_hash, stud_hash)
+	write_out(sem_crn_hash)
 
 create_common_id()
