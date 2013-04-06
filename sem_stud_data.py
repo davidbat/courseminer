@@ -25,9 +25,11 @@ def prev_sems(cur_sem):
 	cur_sem_indx = all_sems.index(cur_sem)
 	return all_sems[:cur_sem_indx]
 
-def students_in_program(program, cur_sem):
+def students_in_program(program, cur_sem, current_flag=False):
 	student_sem_list = {}
 	previous_sem = prev_sems(cur_sem)
+	if current_flag:
+		previous_sem = [cur_sem]
 	for stud in ReadFile('Student_Information.csv'):
 		if stud[1] in program and stud[0] in previous_sem \
 			and stud[4] == "Eligible to Register":
@@ -55,7 +57,7 @@ def read_grad_info(program, cur_sem, lvl):
 
 		if line[1] not in crn_hash[sem].keys():
 			#print sorted(crn_hash[sem].keys())
-			print "Could not find CRN for - ", line[1], sem
+			#print "Could not find CRN for - ", line[1], sem
 			continue
 		crn = crn_hash[sem][line[1]]
 		if slvl == lvl:
@@ -68,12 +70,20 @@ def read_grad_info(program, cur_sem, lvl):
 				grad_hash[sem] = { sid:[crn] }
 	return grad_hash
 
-def stud_sem_wise_course_map(program, cur_sem, lvl):
+def stud_sem_wise_course_map(program, cur_sem, lvl, current_flag=False):
 	student_hash = {}
-	student_sem_list = students_in_program(program, cur_sem)
+	uniq_courses = []
+	student_sem_list = students_in_program(program, cur_sem, current_flag)
 	grad_hash = read_grad_info(program, cur_sem, lvl)
-	for sem in prev_sems(cur_sem):
-		for stud_id in student_sem_list[sem]:
+	previous_sem = prev_sems(cur_sem)
+	if current_flag:
+		previous_sem += [cur_sem]
+	for sem in previous_sem:		
+		if current_flag:
+			stud_list = student_sem_list[cur_sem]
+		else:
+			stud_list = student_sem_list[sem]
+		for stud_id in stud_list:
 			if stud_id in student_hash:
 				for sems in sorted(student_hash[stud_id].keys()):
 					if student_hash[stud_id][sems] == []:
@@ -83,15 +93,43 @@ def stud_sem_wise_course_map(program, cur_sem, lvl):
 						# taken only a Coop (or one of the unwanted) courses
 						if stud_id in grad_hash[sem]:
 							student_hash[stud_id][sems] = grad_hash[sem][stud_id]
+							uniq_courses += student_hash[stud_id][sems] 
 						break
 			else:
 				student_hash[stud_id] = { 'sem1':[], 'sem2':[], 'sem3':[], 'sem4':[] }
 				if stud_id in grad_hash[sem]:
 					student_hash[stud_id]['sem1'] = grad_hash[sem][stud_id]
-
-	print student_hash
+	return list(set(uniq_courses)), student_hash
+'''
+def cur_sem_course_map(program, cur_sem, lvl):
+	student_hash = {}
+	student_sem_list = students_in_program(program, cur_sem, True)
+	grad_hash = read_grad_info(program, cur_sem, lvl)
+	for sem in prev_sems(cur_sem) + [cur_sem]:
+		for stud_id in student_sem_list[cur_sem]:
+			if stud_id in student_hash:
+				check_flag = True
+				for sems in sorted(student_hash[stud_id].keys()):
+					if student_hash[stud_id][sems] == []:
+						check_flag = False
+						# print stud_id, sem, sems
+						# We assume that if stud_id is not in the grad_hash for 
+						# that sem then the student is Eligible to register but has
+						# taken only a Coop (or one of the unwanted) courses
+						if stud_id in grad_hash[sem]:
+							student_hash[stud_id][sems] = grad_hash[sem][stud_id]
+						break
+				if check_flag:
+					print "Student -", stud_id, "has more than 4 valid sems"
+			else:
+				student_hash[stud_id] = { 'sem1':[], 'sem2':[], 'sem3':[], 'sem4':[] }
+				if stud_id in grad_hash[sem]:
+					student_hash[stud_id]['sem1'] = grad_hash[sem][stud_id]
+	print student_hash'''
 
 if __name__ == "__main__":
-	dunno([ 'MSCS Computer Science' ], "Spring 2013", "Graduate")
-
+	#stud_sem_wise_course_map([ 'MSCS Computer Science' ], "Spring 2013", "Graduate")
+	(a,b) = stud_sem_wise_course_map([ 'MSCS Computer Science' ], "Spring 2013", "Graduate",True)
+	print a, b
+	#cur_sem_course_map([ 'MSCS Computer Science' ], "Spring 2013", "Graduate")
 
