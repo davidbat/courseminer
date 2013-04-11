@@ -46,7 +46,7 @@ def ReadFile(fn, delim = ","):
 		features.append(map(lambda i: i, line.strip().split(delim)))
 	return features
 
-def read_grad_info(program, cur_sem, lvl):	
+def read_grad_info(program, cur_sem, lvl):
 	crn_hash = create_common_id(program)
 	
 	grad_hash = {}
@@ -73,6 +73,7 @@ def read_grad_info(program, cur_sem, lvl):
 def stud_sem_wise_course_map(program, cur_sem, lvl, current_flag=False):
 	student_hash = {}
 	uniq_courses = []
+	prev_sems_stud_sem_list = students_in_program(program, cur_sem, False)
 	student_sem_list = students_in_program(program, cur_sem, current_flag)
 	grad_hash = read_grad_info(program, cur_sem, lvl)
 	previous_sem = prev_sems(cur_sem)
@@ -91,7 +92,7 @@ def stud_sem_wise_course_map(program, cur_sem, lvl, current_flag=False):
 						# We assume that if stud_id is not in the grad_hash for 
 						# that sem then the student is Eligible to register but has
 						# taken only a Coop (or one of the unwanted) courses
-						if stud_id in grad_hash[sem]:
+						if stud_id in grad_hash[sem] and (sem == cur_sem or stud_id in prev_sems_stud_sem_list[sem]):
 							student_hash[stud_id][sems] = grad_hash[sem][stud_id]
 							uniq_courses += student_hash[stud_id][sems] 
 						break
