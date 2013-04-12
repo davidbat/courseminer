@@ -54,6 +54,7 @@ def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
 	output_actual = "stud_actual.txt"
 	act_fd = open(output_actual, 'wb')
 	total = {}
+	actual_courses = {}
 	#out = open(output, "w")
 	out = csv.writer(out_fd)
 	with open("classes.csv", 'rb') as csvfile:
@@ -84,12 +85,18 @@ def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
 
 
 	   		out.writerow(line)
-			if sem == cur_sem:
-				act_fd.write(line[8] + "\t" + str(grad) + "\n")
+			if sem == cur_sem and grad != 0:
+				if cid not in actual_courses:
+					actual_courses[cid] = 0.0
+				actual_courses[cid] += grad
+				#act_fd.write(line[8] + "\t" + str(grad) + "\n")
 				
 			#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
 			#out.write(",".join(line) + "\n")
-	print total
+	for key, value in actual_courses.iteritems():
+		act_fd.write(key + "\t" + str(value) + "\n")
+
+	#print total
 	for sem in prior:
 		if 'Summer' in sem:
 			continue
@@ -104,8 +111,8 @@ def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
 		print cid, avg_prior[cid]['val'], avg_prior[cid]['cnt']
 		avg_prior[cid] = avg_prior[cid]['val'] / avg_prior[cid]['cnt']
 
-	out_fd.close()
 	act_fd.close()
+	out_fd.close()
 	return avg_prior
 
 		

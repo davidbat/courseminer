@@ -12,20 +12,19 @@ def get_frequent_pairs():
 	return map(lambda row:row[:-1] ,SS.ReadFile("frequent_pairs.txt", " "))
 
 SEM_NUMBER = [ 'sem2', 'sem3', 'sem4' ]
+dont_predict = [ 'CS5010' ]
 
-DUMMY = 999
 poss_flag = False
 opt = 0
 if sys.argv[1] == "-p":
-	opt = 2
-	poss_fn = sys.argv[2]
+	opt = 1
+	poss_fn = "stud_actual.txt"
 	poss_flag = True
-new_students = sys.argv[opt+1]
-cur_sem = sys.argv[opt+2]
+cur_sem = sys.argv[opt+1]
 
 program = [ 'MSCS Computer Science' ]
-if len(sys.argv) > opt+3:
-	program = sys.argv[opt+3:]
+if len(sys.argv) > opt+2:
+	program = sys.argv[opt+2:]
 
 prior = TSP.calculate_students(cur_sem, program)
 print "prior =", prior['CS5800']
@@ -90,11 +89,12 @@ def calculate_error(actual_hash, predicted_hash):
 	cnt = 0
 	fd = open("Predicted_values.txt", "w")
 	print "Course\tActual\tPredict\tDiff\tMSE"
-	for key in predicted_hash:
+	for key in sorted(predicted_hash):
 		actual = 0
 		if key in actual_hash:
 			actual = actual_hash[key]
-		if not poss_flag and (round(predicted_hash[key]) == 0 and actual == 0) or (round(predicted_hash[key]) == 1 and actual == 0):
+		if not poss_flag and ((round(predicted_hash[key]) == 0 and actual == 0) 
+			or (round(predicted_hash[key]) == 1 and actual == 0)):
 			continue
 		cnt += 1	
 		#else:
@@ -114,9 +114,10 @@ course_label_hash = course_label(unique_courses, student_course_map)
 #test = course_label(unique_courses,student_cur_course_map, True)
 
 poss_courses = unique_courses
+actual_courses = {key: float(value) for (key, value) in map(lambda row:row.strip().split(), open(poss_fn).readlines())}
 if poss_flag:
-	poss_courses = map(lambda row:row.strip(), open(poss_fn).readlines())
-	print poss_courses
+	poss_courses = actual_courses.keys()
+	#print poss_courses
 
 course_predictor = {} 
 means = [ 0.5 for item in range(len(unique_courses+frequent_pairs)) ]
@@ -134,17 +135,19 @@ for course in poss_courses:
 course_capacity = {}
 for course in course_predictor:
 	course_capacity[course] = 0.0
-
+new_students = 0
+predict_over = set(course_capacity.keys()) - set(dont_predict)
 for stud_id in student_cur_course_map:
 	last_sem = find_last_sem(student_cur_course_map[stud_id])
 	# Need random prediction here and for new students
 	if last_sem == 'sem1':
+		new_students += 1
 		continue
 	prob = {}
 	prev_sem_data = []
 	for each_sem in ['sem1'] + SEM_NUMBER[:SEM_NUMBER.index(last_sem)]:
 			prev_sem_data += student_cur_course_map[stud_id][each_sem]
-	for course in course_predictor:
+	for course in predict_over:
 		features = map(lambda x:1 if x in prev_sem_data else 0, unique_courses) + \
 			map(lambda courses:1 if courses[0] in prev_sem_data and courses[1] in prev_sem_data else 0, frequent_pairs)
 		label = [ 1 if course in student_cur_course_map[stud_id][last_sem] else 0 ]
@@ -157,15 +160,17 @@ for stud_id in student_cur_course_map:
 	# stud probably did a course again if he's here
 	# or we actually don't have a prediction
 	if Z == 0:
-		Z = sum(map(lambda k:prior[k], course_capacity))
+		Z = sum(map(lambda k:prior[k], predict_over))
 		print stud_id, "don't know what course to give him"
-		for course in course_capacity:
+		for course in predict_over:
 			course_capacity[course] += 2.0 * prior[course] / Z
 		continue
 	for course in prob:
 		course_capacity[course] += 2 * prob[course] / Z
-Z = sum(map(lambda k:prior[k], course_capacity))
-for course in course_capacity:
+print "NEW STUDENTS =", new_students
+Z = sum(map(lambda k:prior[k], predict_over))
+for course in predict_over:
 	course_capacity[course] += float(new_students) * prior[course] / Z
+course_capacity['CS5010'] += new_students
 print "output"
-pprint(course_capacity)
+calculate_error(actual_courses, course_capacity)
