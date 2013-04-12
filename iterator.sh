@@ -5,13 +5,28 @@ then
 	echo Need to supply semester
 	exit
 fi
-cur_sem=$1
-if [ $# -eq 1 ]
+poss="F"
+if [ "$1" = "-p" ]
 then
-	min_sup="0.3%"
+	echo here
+	poss="T"
+	cur_sem=$2
+	if [ $# -eq 2 ]
+	then
+		min_sup="0.3%"
+	else
+		min_sup=$3
+	fi
 else
-	min_sup=$2
+	cur_sem=$1
+	if [ $# -eq 1 ]
+	then
+		min_sup="0.3%"
+	else
+		min_sup=$3
+	fi
 fi
+
 echo $cur_sem
 my_set=`python find_sems.py "$cur_sem"`
 echo $my_set
@@ -31,4 +46,8 @@ python TotalStudentsPerSem.py "$cur_sem"
 
 #python test_term.py
 
-python predictor.py $new_stud stud_info.txt 
+if [ $poss = "T" ]; then
+	python predictor.py "-p" $new_stud stud_info.txt 
+else
+	python predictor.py $new_stud stud_info.txt 
+fi

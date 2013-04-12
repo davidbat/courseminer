@@ -46,7 +46,7 @@ output = "classes.output.csv"
 out_fd = open(output, 'wb')
 output_actual = "stud_actual.txt"
 act_fd = open(output_actual, 'wb')
-
+actual_courses = {}
 #out = open(output, "w")
 out = csv.writer(out_fd)
 with open("classes.csv", 'rb') as csvfile:
@@ -54,6 +54,7 @@ with open("classes.csv", 'rb') as csvfile:
 	for line in class_data:
 		sem = line[0]
 		crn = line[7]
+		cid = line[8]
 		grad = 0
 		undergrad = 0
 		if sem in hm and crn in hm[sem]:
@@ -65,11 +66,16 @@ with open("classes.csv", 'rb') as csvfile:
 		line.insert(out_index, str(grad))
    		
    		out.writerow(line)
-		if sem == sys.argv[1]:
-			act_fd.write(line[8] + "\t" + str(grad) + "\n")
+		if sem == sys.argv[1] and grad != 0:
+			if cid not in actual_courses:
+				actual_courses[cid] = 0.0
+			actual_courses[cid] += grad
 			
 		#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		#out.write(",".join(line) + "\n")
+
+for key, value in actual_courses.iteritems():
+	act_fd.write(key + "\t" + str(value) + "\n")
 out_fd.close()
 act_fd.close()
 		

@@ -1,4 +1,5 @@
 import sys
+import math
 smoothing_const = 0.1
 # replaces multiple occurances of course in out[0..1] with 1 occurance. If the occurance
 # is originally only 1, then it deletes it from the list.
@@ -49,7 +50,7 @@ def calculate_error(actual_hash, predicted_hash):
 	cnt = 0
 	fd = open("Predicted_values.txt", "w")
 	print "Course\tActual\tPredict\tDiff\tMSE"
-	for key in predicted_hash:
+	for key in sorted(predicted_hash):
 		actual = 0
 		if key in actual_hash:
 			actual = actual_hash[key]
@@ -65,7 +66,8 @@ def calculate_error(actual_hash, predicted_hash):
 		print output_str
 		fd.write(output_str + "\n")
 	fd.close()
-	print "MSE - ", mse / (cnt * 2)
+	print "MSE - ", mse / cnt	
+	print "RMSE - ", math.sqrt(mse / cnt)
 
 
 
@@ -79,7 +81,10 @@ if sys.argv[1] == "-p":
 new_students = float(sys.argv[ar+1])
 student_course_info = ReadFile(sys.argv[ar+2])
 possible_courses = []
-if poss_flag: possible_courses = map(lambda st:st[:-1], open(sys.argv[ar+3]).readlines())
+poss_fn = "stud_actual.txt"
+actual_hash = {key: float(value) for (key, value) in map(lambda row:row.strip().split(), open(poss_fn).readlines())}
+if poss_flag:
+	possible_courses = actual_hash.keys()
 course_hash = {} 
 randoms = 0
 for courses in student_course_info:
@@ -113,12 +118,5 @@ for key in course_hash:
 	#print key, " - ", course_hash[key]
 	csum += course_hash[key]
 
-actual_hash = {}
-for line in ReadFile('./stud_actual.txt'):
-	#print line
-	if line[0] in actual_hash:
-		actual_hash[line[0]] += float(line[1])
-	else:
-		actual_hash[line[0]] = float(line[1])
 calculate_error(actual_hash, course_hash)
 print "Total sum of courses taken - ",  csum
