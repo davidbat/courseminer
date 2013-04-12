@@ -16,9 +16,9 @@ dont_predict = [ 'CS5010' ]
 
 poss_flag = False
 opt = 0
+poss_fn = "stud_actual.txt"
 if sys.argv[1] == "-p":
 	opt = 1
-	poss_fn = "stud_actual.txt"
 	poss_flag = True
 cur_sem = sys.argv[opt+1]
 
@@ -106,7 +106,8 @@ def calculate_error(actual_hash, predicted_hash):
 		print output_str
 		fd.write(output_str + "\n")
 	fd.close()
-	print "MSE - ", mse / (cnt * 2)
+	print "MSE - ", mse / cnt
+	print "RMSE - ", math.sqrt(mse / cnt)
 
 
 
