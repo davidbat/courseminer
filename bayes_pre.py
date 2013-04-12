@@ -20,14 +20,15 @@ if sys.argv[1] == "-p":
 	opt = 2
 	poss_fn = sys.argv[2]
 	poss_flag = True
-cur_sem = sys.argv[opt+1]
+new_students = sys.argv[opt+1]
+cur_sem = sys.argv[opt+2]
 
 program = [ 'MSCS Computer Science' ]
-if len(sys.argv) > opt+2:
-	program = sys.argv[opt+2:]
+if len(sys.argv) > opt+3:
+	program = sys.argv[opt+3:]
 
-TSP.calculate_students(cur_sem, program)
-
+prior = TSP.calculate_students(cur_sem, program)
+print "prior =", prior['CS5800']
 # false means that we want all prev sems
 # true means only cur sem enrolled students
 uniq_coursesx, student_course_map = SS.stud_sem_wise_course_map(program, cur_sem, "Graduate", False)
@@ -126,7 +127,7 @@ for course in poss_courses:
 	course_predictor[course] = { 'sem2':[], 'sem3':[], 'sem4':[] }
 	for sem in SEM_NUMBER:
 
-		course_predictor[course][sem] = bayes_mod(course_label_hash[course][sem], means, 0.5)
+		course_predictor[course][sem] = bayes_mod(course_label_hash[course][sem], means)
 		#FP, FN, P, N, ERR, ROC_TPR, ROC_FPR, AUC = bayes_mod(course_label_hash[course][sem], means, test[course][sem], 0.5)
 		#print course ," ->  error = %.2f" % ERR, "\tAUC = %.2f" % AUC, "\tFP = %.2f" % FP, "\tFN = %.2f" % FN, "\tP = ", P, "\tN = ", N
 
@@ -148,16 +149,23 @@ for stud_id in student_cur_course_map:
 			map(lambda courses:1 if courses[0] in prev_sem_data and courses[1] in prev_sem_data else 0, frequent_pairs)
 		label = [ 1 if course in student_cur_course_map[stud_id][last_sem] else 0 ]
 		
-		prob[course] = predict_bayes(course_predictor[course][last_sem], means, features + label)
+		prob[course] = predict_bayes(course_predictor[course][last_sem], 
+			means, features + label, prior[course])
 	print stud_id, student_cur_course_map[stud_id], prev_sem_data
 	pprint(prob)
 	Z = sum(map(lambda k:prob[k], prob))
 	# stud probably did a course again if he's here
 	# or we actually don't have a prediction
 	if Z == 0:
+		Z = sum(map(lambda k:prior[k], course_capacity))
 		print stud_id, "don't know what course to give him"
+		for course in course_capacity:
+			course_capacity[course] += 2.0 * prior[course] / Z
 		continue
 	for course in prob:
-		course_capacity[course] += prob[course] / Z
+		course_capacity[course] += 2 * prob[course] / Z
+Z = sum(map(lambda k:prior[k], course_capacity))
+for course in course_capacity:
+	course_capacity[course] += float(new_students) * prior[course] / Z
 print "output"
 pprint(course_capacity)

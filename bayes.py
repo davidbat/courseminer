@@ -85,7 +85,7 @@ def bayes(db, means, test, prior_spam):
 	return [FP, FN, P, N, 1 - ((TP + TN) / (P + N)), ROC_TPR, ROC_FPR, AUC]
 
 
-def bayes_mod(db, means, prior_spam):
+def bayes_mod(db, means):
 	bern_db = []
 	#for each in db:
 	# bern_db.append(map(lambda val, mean:int(val > mean) , each, attributes))
@@ -114,9 +114,9 @@ def bayes_mod(db, means, prior_spam):
 	return bern_db
 
 
-def predict_bayes(model, means, data_point):
-	spam = 0.0
-	nspam = 0.0
+def predict_bayes(model, means, data_point, prior):
+	spam = math.log(prior, 2)
+	nspam = math.log((1 - prior), 2)
 	for i in range(len(data_point) - 1):
 		if data_point[i] <= means[i]:
 			spam += math.log(model[i][0], 2)
