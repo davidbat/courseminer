@@ -238,8 +238,8 @@ Fall 2009,xyz,College Writing,0,4,Victoria,Papa,10894,ENGL1111,19,19,
 Fall 2009,xyz,College Writing (HON),0,4,Carol,Ziemian,11041,ENGL1111,19,6,
 Fall 2009,xyz,College Writing (HON),0,4,Carol,Ziemian,11998,ENGL1111,19,17,
 Fall 2009,xyz,College Writing (HON),0,4,Jennifer,Martin,10134,ENGL1111,19,12,
-Fall 2009,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Mary,Annas,10903,ENGL1102,15,15,
-Fall 2009,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Sandra,Clyne,10905,ENGL1102,15,15,
+Fall 2009,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Mary,Annas,10903,ENGL1102,15,15,
+Fall 2009,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Sandra,Clyne,10905,ENGL1102,15,15,
 Fall 2009,xyz,Communication and Quality of Life,0,4,Carey,Noland,15280,COMM4530,34,33,
 Fall 2009,xyz,Comparative Politics,0,4,Marketa,Vavreckova,11823,POLS1155,90,87,
 Fall 2009,xyz,Composition Lessons,0,1,Ronald,Smith,11168,MUSC1903,49,33,
@@ -318,7 +318,7 @@ Fall 2009,xyz,Interactive Tools,0,1,Seth,Merriam,10019,ARTF2224,19,16,
 Fall 2009,xyz,Interactive Tools,0,1,Seth,Merriam,10062,ARTF2224,19,19,
 Fall 2009,xyz,International Business and Global Social Responsibility,0,4,Elitsa,Banalieva,10514,INTB1203,40,40,
 Fall 2009,xyz,Interpersonal Communication,0,4,Elise,Dallimore,12350,COMM3230,19,18,
-Fall 2009,xyz,Interpreting the Day’s News,0,4,William,Kirtz,11981,JRNL1150,49,42,
+Fall 2009,xyz,Interpreting the Day???s News,0,4,William,Kirtz,11981,JRNL1150,49,42,
 Fall 2009,xyz,Introduction to American History,0,4,Michael,Mezzano,11858,HIST1130,49,49,
 Fall 2009,xyz,Introduction to American History,0,4,Sean,Delaney,10476,HIST1130,49,47,
 Fall 2009,xyz,Introduction to Communication Studies,0,4,Thomas,Nakayama,11122,COMM1101,250,208,
@@ -394,7 +394,7 @@ Fall 2009,xyz,Math Fundamentals for Games,0,4,Thomas,Sherman,16001,MATH1260,19,9
 Fall 2009,xyz,Media| Culture| and Society,0,4,Carmen,McClish,11492,COMM1220,35,35,
 Fall 2009,xyz,Modern Philosophy,0,4,Nelson,Lande,10703,PHIL2330,38,34,
 Fall 2009,xyz,Modern Physics,0,4,Brent,Nelson,15617,PHYS2303,36,41,
-Fall 2009,xyz,Multicultural Children’s Literature,0,4,Tobie,Atlas,11665,EDUC1150,25,25,
+Fall 2009,xyz,Multicultural Children???s Literature,0,4,Tobie,Atlas,11665,EDUC1150,25,25,
 Fall 2009,xyz,Multimedia Capstone 1,0,4,Terrence,Masson,11276,MMST4700,12,12,
 Fall 2009,xyz,Multimedia Studies History,0,4,Timothy,Norris,11277,MMST3500,19,18,
 Fall 2009,xyz,Multivariate Analysis 1,0,3,Glenn,Pierce,12659,CRIM7715,15,9,
@@ -763,7 +763,7 @@ Fall 2010,xyz,College Writing (HON),0,4,Carol,Ziemian,11561,ENGL1111,19,15,
 Fall 2010,xyz,College Writing (HON),0,4,Karen,Garneau,15609,ENGL1111,19,15,
 Fall 2010,xyz,College Writing (HON),0,4,Megan,Tarquinio,10075,ENGL1111,19,9,
 Fall 2010,xyz,College Writing (HON),0,4,Megan,Tarquinio,15610,ENGL1111,19,17,
-Fall 2010,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,16378,ENGL1102,15,16,
+Fall 2010,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Trudy,Stone,16378,ENGL1102,15,16,
 Fall 2010,xyz,Comparative Study of Cultures,0,4,Susan,Setta,15846,HONR1200,74,55,
 Fall 2010,xyz,Composition Lessons,0,1,Ronald,Smith,10852,MUSC1903,49,29,
 Fall 2010,xyz,Computer Architecture,0,4,David,Kaeli,12806,EECE7352,50,42,
@@ -887,7 +887,7 @@ Fall 2010,xyz,Interactive Tools,0,1,Seth,Merriam,10040,ARTF2224,18,17,
 Fall 2010,xyz,Interactive Tools,0,1,Seth,Merriam,10089,ARTF2224,18,17,
 Fall 2010,xyz,Interactive Tools,0,1,Seth,Merriam,15759,ARTF2224,15,21,
 Fall 2010,xyz,Intermediate Chinese 2,0,4,Jinqing,Li,11522,CHNS2102,18,8,
-Fall 2010,xyz,Intermediate German 2—BSIB,0,4,Diana,Erinna,11828,GRMN2202,18,4,
+Fall 2010,xyz,Intermediate German 2???BSIB,0,4,Diana,Erinna,11828,GRMN2202,18,4,
 Fall 2010,xyz,Intermediate Japanese 1,0,4,Matsuko,Levin,10258,JPNS2101,18,17,
 Fall 2010,xyz,Intermediate Japanese 2,0,4,Matsuko,Levin,10191,JPNS2102,9,3,
 Fall 2010,xyz,International Business and Global Social Responsibility,0,4,Ronald,Thomas,10970,INTB1203,40,40,
@@ -1057,17 +1057,17 @@ Fall 2010,xyz,Understanding the Bible,0,4,Nicole,Ruane,11774,RELS1150,40,36,
 Fall 2010,xyz,Video Basics,0,4,Ann,Steuernagel,10669,ARTD2380,15,15,
 Fall 2010,xyz,Video Tools,0,1,Janet,Gilmore,12989,ARTD2381,15,15,
 Fall 2011,Bouve College of Hlth Sciences,Business Hlth-Care Informatics,3,3,James,Noga,11737,HINF6202,30,22,M 1800-2030
-Fall 2011,Bouve College of Hlth Sciences,Creation of Medical Knowledge,3,3,Daniel,Ries,16328,HINF6205,25,24, -
-Fall 2011,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Feinberg,14489,HINF6220,25,20, -
+Fall 2011,Bouve College of Hlth Sciences,Creation of Medical Knowledge,3,3,Daniel,Ries,16328,HINF6205,25,24,0
+Fall 2011,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Feinberg,14489,HINF6220,25,20,0
 Fall 2011,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Ries,13169,HINF6220,0,0,R 1800-2030
-Fall 2011,Bouve College of Hlth Sciences,Data Management in Health Care,3,3,Craig,Johnson,14932,HINF5102,30,21, -
+Fall 2011,Bouve College of Hlth Sciences,Data Management in Health Care,3,3,Craig,Johnson,14932,HINF5102,30,21,0
 Fall 2011,Bouve College of Hlth Sciences,Emerging Health Technologies,3,3,Steven,Flammini,11689,HINF6330,25,15,W 1800-2030
 Fall 2011,Bouve College of Hlth Sciences,Genomics and Bioinformatics,3,3,Gil,Alterovitz,11693,HINF6340,25,0,R 1800-2030
 Fall 2011,Bouve College of Hlth Sciences,Health/Medicine Nonclnicians,3,3,,,12993,HINF0200,35,0,R 1800-2030
-Fall 2011,Bouve College of Hlth Sciences,Health/Medicine Nonclnicians,3,3,Rebecca,Scott,14490,HINF0200,25,6, -
-Fall 2011,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,13172,HINF7701,30,2, -
-Fall 2011,Bouve College of Hlth Sciences,Hlth Inf Internship,1,1,Daniel,Feinberg,13171,HINF7370,0,0, -
-Fall 2011,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Catherine,Turner,14491,HINF5101,40,38, -
+Fall 2011,Bouve College of Hlth Sciences,Health/Medicine Nonclnicians,3,3,Rebecca,Scott,14490,HINF0200,25,6,0
+Fall 2011,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,13172,HINF7701,30,2,0
+Fall 2011,Bouve College of Hlth Sciences,Hlth Inf Internship,1,1,Daniel,Feinberg,13171,HINF7370,0,0,0
+Fall 2011,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Catherine,Turner,14491,HINF5101,40,38,0
 Fall 2011,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Jeffrey,Brown,13632,HINF5101,75,21,W 1800-2030
 Fall 2011,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Todd,Rothenhaus,13173,HINF5101,75,0,W 1800-2030
 Fall 2011,Bouve College of Hlth Sciences,KeyStandrds Health Infrmatics,3,3,Daniel,Ries,13170,HINF6355,30,0,W 1800-2030
@@ -1092,7 +1092,7 @@ Fall 2011,Coll of Computer & Info Sci,Computer Organization,4,4,Gene,Cooperman,1
 Fall 2011,Coll of Computer & Info Sci,Computer Organization,4,4,Gene,Cooperman,11040,CS2600,60,56,MWR 1335-1440
 Fall 2011,Coll of Computer & Info Sci,Computer Systems,4,4,Peter,Desnoyers,12314,CS5600,64,60,T 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Computer System Security,4,4,David,LaPorte,14253,IA5130,45,36,S 0900-1200
-Fall 2011,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,16645,CS6964,75,63, -
+Fall 2011,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,16645,CS6964,75,63,0
 Fall 2011,Coll of Computer & Info Sci,CS & Its Applications,4,4,John,Casey,12668,CS1100,45,45,MW 1450-1630
 Fall 2011,Coll of Computer & Info Sci,CS & Its Applications,4,4,John,Casey,12670,CS1100,45,47,TF 0950-1130
 Fall 2011,Coll of Computer & Info Sci,CS & Its Applications,4,4,Leena,Razzaq,12671,CS1100,45,44,TF 1335-1515
@@ -1100,38 +1100,38 @@ Fall 2011,Coll of Computer & Info Sci,CS & Its Applications,4,4,Leena,Razzaq,126
 Fall 2011,Coll of Computer & Info Sci,CS & Its Applications,4,4,Martin,Schedlbauer,12669,CS1100,45,47,TF 0800-0940
 Fall 2011,Coll of Computer & Info Sci,CS & Its Applications,4,4,Travis,Mayberry,12667,CS1100,45,45,MR 1145-1325
 Fall 2011,Coll of Computer & Info Sci,Cyberlaw,4,4,Kyle,Courtney,14255,IA5240,0,0,S 1300-1600
-Fall 2011,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Leonard,Wisniewski,14411,IA5001,40,9, -
-Fall 2011,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Themis,Papageorge,15990,IA5001,25,0, -
+Fall 2011,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Leonard,Wisniewski,14411,IA5001,40,9,0
+Fall 2011,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Themis,Papageorge,15990,IA5001,25,0,0
 Fall 2011,Coll of Computer & Info Sci,Database Design,4,4,Kenneth,Baclawski,11034,CS3200,60,42,MW 1450-1630
-Fall 2011,Coll of Computer & Info Sci,Decisn Makng: Crit Infrastruct,4,4,Lennart,Long,15702,IA5250,19,15, -
-Fall 2011,Coll of Computer & Info Sci,Directed Study,1,6,Gene,Cooperman,16454,CS4992,1,1, -
+Fall 2011,Coll of Computer & Info Sci,Decisn Makng: Crit Infrastruct,4,4,Lennart,Long,15702,IA5250,19,15,0
+Fall 2011,Coll of Computer & Info Sci,Directed Study,1,6,Gene,Cooperman,16454,CS4992,1,1,0
 Fall 2011,Coll of Computer & Info Sci,Discrete Structures,4,4,Rajmohan,Rajaraman,11061,CS1800,87,87,MWR 1335-1440
 Fall 2011,Coll of Computer & Info Sci,Discrete Structures,4,4,Ravi,Sundaram,11062,CS1800,87,86,MWR 1030-1135
-Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,16413,CS9990,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Mitchell,Wand,16768,CS9990,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Olin,Shivers,16785,CS9990,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,16795,CS9990,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,16677,CS9990,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Albert-Laszlo,Barabasi,16584,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Emanuele,Viola,16770,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,16270,CS9996,5,4, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,16663,CS9996,5,3, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,16097,CS9996,5,4, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,16412,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,16651,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,16415,CS9996,5,5, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,16772,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,16730,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers,16604,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,16272,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,16676,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Ravi,Sundaram,16771,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,16200,CS9996,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Tharpe,Strickland,15988,CS9996,0,0, -
-Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,16315,CS9996,5,3, -
+Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,16413,CS9990,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Mitchell,Wand,16768,CS9990,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Olin,Shivers,16785,CS9990,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,16795,CS9990,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,16677,CS9990,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Albert-Laszlo,Barabasi,16584,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Emanuele,Viola,16770,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,16270,CS9996,5,4,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,16663,CS9996,5,3,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,16097,CS9996,5,4,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,16412,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,16651,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,16415,CS9996,5,5,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,16772,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,16730,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers,16604,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,16272,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,16676,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Ravi,Sundaram,16771,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,16200,CS9996,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Tharpe,Strickland,15988,CS9996,0,0,0
+Fall 2011,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,16315,CS9996,5,3,0
 Fall 2011,Coll of Computer & Info Sci,Fndtns Artificial Intellegence,4,4,Amy,Sliva,16182,CS5100,35,35,R 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Richard,Moore,14252,IA5010,40,31,S 1300-1600
-Fall 2011,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Richard,Moore,14412,IA5010,40,11, -
+Fall 2011,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Richard,Moore,14412,IA5010,40,11,0
 Fall 2011,Coll of Computer & Info Sci,Fundamentals - Computer Netwkg,4,4,Guevara,Noubir,12312,CS5700,65,57,W 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Fundamentals of Computer Sci 1,4,4,Amal,Ahmed,11058,CS2500,100,100,MWR 1635-1740
 Fall 2011,Coll of Computer & Info Sci,Fundamentals of Computer Sci 1,4,4,Olin,Shivers,11059,CS2500,100,98,MWR 0915-1020
@@ -1140,7 +1140,7 @@ Fall 2011,Coll of Computer & Info Sci,Fund of Computer Sci 1(Hon),4,4,David,Van 
 Fall 2011,Coll of Computer & Info Sci,Grad Co-op Seminar,0,0,Melvin,Simms,13077,CS6949,60,57,R 1600-1730
 Fall 2011,Coll of Computer & Info Sci,Grad Co-op Seminar,0,0,Melvin,Simms,14813,CS6949,50,49,R 1450-1600
 Fall 2011,Coll of Computer & Info Sci,Grad Co-op Seminar,0,0,Melvin,Simms,16335,CS6949,50,49,T 1100-1230
-Fall 2011,Coll of Computer & Info Sci,Independent Study,2,4,Engin,Kirda,16801,IA5978,5,1, -
+Fall 2011,Coll of Computer & Info Sci,Independent Study,2,4,Engin,Kirda,16801,IA5978,5,1,0
 Fall 2011,Coll of Computer & Info Sci,Int Principle Programming Lang,4,4,Matthias,Felleisen,11750,CS7400,40,21,TF 0950-1130
 Fall 2011,Coll of Computer & Info Sci,Intro to Database Systems,4,4,Kenneth,Baclawski,12313,CS5200,70,70,R 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Lab for CS 1500,1,1,Virgiliu,Pavlu,11395,CS1501,38,38,M 1450-1630
@@ -1160,7 +1160,7 @@ Fall 2011,Coll of Computer & Info Sci,Lab for CS 7380,0,0,Marsette,Vona,16599,CS
 Fall 2011,Coll of Computer & Info Sci,Logic and Computation,4,4,Pete,Manolios,10424,CS2800,38,35,MWR 1635-1740
 Fall 2011,Coll of Computer & Info Sci,Machine Learning,4,4,Javed,Aslam,14131,CS6140,40,24,W 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Managing Software Development,4,4,Karl,Lieberherr,15641,CS5500,40,11,M 1800-2100
-Fall 2011,Coll of Computer & Info Sci,Master's Project,4,4,Kenneth,Baclawski,16796,CS8674,5,2, -
+Fall 2011,Coll of Computer & Info Sci,Master's Project,4,4,Kenneth,Baclawski,16796,CS8674,5,2,0
 Fall 2011,Coll of Computer & Info Sci,Network Fundamentals,4,4,Guevara,Noubir,10015,CS4700,6,5,W 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Network Security,4,4,William,Robertson,12604,CS4740,20,9,R 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Network Security,4,4,William,Robertson,15640,CS6740,50,27,R 1800-2100
@@ -1171,21 +1171,21 @@ Fall 2011,Coll of Computer & Info Sci,Principles of Programming Lang,4,4,Eliyahu
 Fall 2011,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Aaron,Turon,13018,CS5010,66,57,T 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,12510,CS5010,100,91,M 1800-2100
 Fall 2011,Coll of Computer & Info Sci,Programming Languages,4,4,Eliyahu,Barzilay,11397,CS4400,50,21,WF 1145-1325
-Fall 2011,Coll of Computer & Info Sci,Readings,1,4,Themis,Papageorge,16386,IA8982,6,6, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Alan,Mislove,16802,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Albert-Laszlo,Barabasi,16794,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Alessandro,Vespignani,16786,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Gene,Cooperman,16743,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Javed,Aslam,16783,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Matthias,Felleisen,16414,CS8982,5,2, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Mirek,Riedewald,16784,CS8982,5,2, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Mitchell,Wand,16769,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Olin,Shivers,16736,CS8982,5,2, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Pete,Manolios,16787,CS8982,5,2, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Peter,Desnoyers,16675,CS8982,5,2, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Rajmohan,Rajaraman,16734,CS8982,5,2, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Thomas,Wahl,16735,CS8982,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Timothy,Bickmore,16662,CS8982,5,1, -
+Fall 2011,Coll of Computer & Info Sci,Readings,1,4,Themis,Papageorge,16386,IA8982,6,6,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Alan,Mislove,16802,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Albert-Laszlo,Barabasi,16794,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Alessandro,Vespignani,16786,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Gene,Cooperman,16743,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Javed,Aslam,16783,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Matthias,Felleisen,16414,CS8982,5,2,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Mirek,Riedewald,16784,CS8982,5,2,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Mitchell,Wand,16769,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Olin,Shivers,16736,CS8982,5,2,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Pete,Manolios,16787,CS8982,5,2,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Peter,Desnoyers,16675,CS8982,5,2,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Rajmohan,Rajaraman,16734,CS8982,5,2,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Thomas,Wahl,16735,CS8982,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Readings,2,4,Timothy,Bickmore,16662,CS8982,5,1,0
 Fall 2011,Coll of Computer & Info Sci,Recitation for CS 1800,0,0,Rajmohan,Rajaraman,10291,CS1801,30,30,T 1145-1325
 Fall 2011,Coll of Computer & Info Sci,Recitation for CS 1800,0,0,Rajmohan,Rajaraman,10292,CS1801,30,30,T 0950-1130
 Fall 2011,Coll of Computer & Info Sci,Recitation for CS 1800,0,0,Rajmohan,Rajaraman,10299,CS1801,30,26,F 1335-1515
@@ -1196,11 +1196,11 @@ Fall 2011,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,1
 Fall 2011,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,12074,CS5011,30,25,F 0950-1130
 Fall 2011,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,12410,CS5011,48,44,F 1145-1325
 Fall 2011,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,12515,CS5011,45,44,F 1335-1515
-Fall 2011,Coll of Computer & Info Sci,Research,2,4,Alessandro,Vespignani,16815,CS8986,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Research,2,4,Matthias,Felleisen,16737,CS8984,5,1, -
+Fall 2011,Coll of Computer & Info Sci,Research,2,4,Alessandro,Vespignani,16815,CS8986,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Research,2,4,Matthias,Felleisen,16737,CS8984,5,1,0
 Fall 2011,Coll of Computer & Info Sci,Robotic Science and Systems,4,4,Marsette,Vona,15962,CS4610,32,11,MWR 0915-1020
 Fall 2011,Coll of Computer & Info Sci,Security Risk Mgt & Assessment,4,4,Themis,Papageorge,14254,IA5200,40,18,S 0900-1200
-Fall 2011,Coll of Computer & Info Sci,Security Risk Mgt & Assessment,4,4,Themis,Papageorge,14438,IA5200,40,6, -
+Fall 2011,Coll of Computer & Info Sci,Security Risk Mgt & Assessment,4,4,Themis,Papageorge,14438,IA5200,40,6,0
 Fall 2011,Coll of Computer & Info Sci,Senior Seminar,1,1,Raoul,Smith,11032,CS4000,40,19,T 1145-1325
 Fall 2011,Coll of Computer & Info Sci,Social Computing,4,4,Alan,Mislove,16358,CS5750,25,0,"T 1145-1325, R 1450-1630"
 Fall 2011,Coll of Computer & Info Sci,Software Development,4,4,William,Clinger,11031,CS4500,60,43,TF 1525-1705
@@ -1210,8 +1210,8 @@ Fall 2011,Coll of Computer & Info Sci,Spec Topic Graphics/Image Proc,4,4,Marsett
 Fall 2011,Coll of Computer & Info Sci,Spec Topics Computer Systems,4,4,Marsette,Vona,16403,CS7680,25,0,MWR 0915-1020
 Fall 2011,Coll of Computer & Info Sci,Systems & Networks,4,4,Alan,Mislove,11033,CS3600,60,29,MWR 1030-1135
 Fall 2011,Coll of Computer & Info Sci,Theory of Computation,4,4,Emanuele,Viola,11035,CS3800,60,39,MWR 0915-1020
-Fall 2011,Coll of Computer & Info Sci,Thesis,4,4,Guevara,Noubir,16630,CS7990,5,1, -
-Fall 2011,Coll of Computer & Info Sci,Thesis,4,4,Virgiliu,Pavlu,16652,CS7990,5,1, -
+Fall 2011,Coll of Computer & Info Sci,Thesis,4,4,Guevara,Noubir,16630,CS7990,5,1,0
+Fall 2011,Coll of Computer & Info Sci,Thesis,4,4,Virgiliu,Pavlu,16652,CS7990,5,1,0
 Fall 2011,xyz,2D Foundation,0,4,Andrea,Raynor,11013,ARTF1122,18,18,
 Fall 2011,xyz,2D Foundation,0,4,Jamal,Thorne,11014,ARTF1122,18,17,
 Fall 2011,xyz,2D Foundation,0,4,Ryan,Shelley,13884,ARTF1122,15,12,
@@ -1337,8 +1337,8 @@ Fall 2011,xyz,College Writing (HON),0,4,Cecelia,Musselman,10654,ENGL1111,19,7,
 Fall 2011,xyz,College Writing (HON),0,4,Genie,Giaimo,14241,ENGL1111,19,19,
 Fall 2011,xyz,College Writing (HON),0,4,Megan,Tarquinio,14242,ENGL1111,19,18,
 Fall 2011,xyz,College Writing (HON),0,4,Thomas,Akbari,10653,ENGL1111,19,16,
-Fall 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Jonathan,Benda,14345,ENGL1102,15,15,
-Fall 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Misty,Woodbury,10049,ENGL1102,15,15,
+Fall 2011,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Jonathan,Benda,14345,ENGL1102,15,15,
+Fall 2011,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Misty,Woodbury,10049,ENGL1102,15,15,
 Fall 2011,xyz,Color 1 Foundation,0,1,Sophia,Ainslie,13631,ARTF1102,18,16,
 Fall 2011,xyz,Comparative Politics,0,4,William,Miles,11288,POLS1155,19,19,
 Fall 2011,xyz,Composition for Electronic Instruments,0,4,Michael,Frengel,11443,MUST4610,14,10,
@@ -1465,7 +1465,7 @@ Fall 2011,xyz,Intermediate German 1,0,4,Diana,Erinna,12538,GRMN2101,18,7,
 Fall 2011,xyz,Intermediate Japanese 2,0,4,Matsuko,Levin,10160,JPNS2102,18,8,
 Fall 2011,xyz,Intermediate Portuguese 1,0,4,Simone,Elias,14198,PORT2101,18,9,
 Fall 2011,xyz,International Financial Management,0,4,Anand,Venkateswaran,11527,FINA4320,40,41,
-Fall 2011,xyz,Interpreting the Day’s News,0,4,William,Kirtz,11406,JRNL1150,49,49,
+Fall 2011,xyz,Interpreting the Day???s News,0,4,William,Kirtz,11406,JRNL1150,49,49,
 Fall 2011,xyz,Introduction to American History,0,4,Charissa,Threat,11319,HIST1130,49,35,
 Fall 2011,xyz,Introduction to Japanese Pop Culture,0,4,Jennifer,Cullen,11559,CLTR1700,35,34,
 Fall 2011,xyz,Introduction to Language and Linguistics,0,4,Bronwyn,Bjorkman,13284,LING1150,19,18,
@@ -1490,7 +1490,7 @@ Fall 2011,xyz,Introduction to Sociology,0,4,J.,Judge,11272,SOCL1101,125,42,
 Fall 2011,xyz,Introduction to Spanish Culture,0,4,Barbara,Corbett,11224,CLTR1504,35,33,
 Fall 2011,xyz,Introduction to the Study of Engineering,0,1,Rachelle,Reisberg,10043,GE1000,35,35,
 Fall 2011,xyz,Introduction to World History,0,4,Tara,Dixon,10484,HIST1110,49,19,
-Fall 2011,xyz,Introductory Writing—SOL (Speakers of Other Languages),0,4,Brent,Griffin,11558,ENGL1101,15,13,
+Fall 2011,xyz,Introductory Writing???SOL (Speakers of Other Languages),0,4,Brent,Griffin,11558,ENGL1101,15,13,
 Fall 2011,xyz,Intro to Lang &amp; Ling. (HON),0,4,Janet,Randall,11141,LING1150,19,18,
 Fall 2011,xyz,Investments,0,4,Nicole,Boyson,11169,FINA3303,40,41,
 Fall 2011,xyz,Investments,0,4,Nicole,Boyson,11170,FINA3303,40,39,
@@ -1666,17 +1666,17 @@ Fall 2011,xyz,Weather and Climate,0,4,Annette,Govindarajan,10178,ENVR1111,60,59,
 Fall 2011,xyz,Web Design and Development,0,4,Seth,Merriam,14047,IM2400,15,15,
 Fall 2011,xyz,Web Development Tools,0,1,Seth,Merriam,14044,IM2401,15,15,
 Fall 2011,xyz,What'sPlaying@Symphony?(HON),0,4,Brian,Robison,15946,MUSC1136,38,37,
-Fall 2011,xyz,Women’s Studies,0,4,Leandra,Smollin,10517,WMNS1103,40,28,
+Fall 2011,xyz,Women???s Studies,0,4,Leandra,Smollin,10517,WMNS1103,40,28,
 Fall 2011,xyz,World History since 1945,0,4,Katherine,Luongo,13871,HIST2211,49,43,
 Fall 2012,Bouve College of Hlth Sciences,Business Hlth-Care Informatics,3,3,Marie,Maloney,11571,HINF6202,30,24,M 1800-2030
-Fall 2012,Bouve College of Hlth Sciences,Creation of Medical Knowledge,3,3,Daniel,Ries,15255,HINF6205,25,38, -
-Fall 2012,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Feinberg,13806,HINF6220,25,20, -
-Fall 2012,Bouve College of Hlth Sciences,Data Management in Health Care,3,3,Mary,Griskewicz,14105,HINF5102,30,28, -
-Fall 2012,Bouve College of Hlth Sciences,Directed Study,3,3,Steve,Flammini,15789,HINF5976,0,0, -
+Fall 2012,Bouve College of Hlth Sciences,Creation of Medical Knowledge,3,3,Daniel,Ries,15255,HINF6205,25,38,0
+Fall 2012,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Feinberg,13806,HINF6220,25,20,0
+Fall 2012,Bouve College of Hlth Sciences,Data Management in Health Care,3,3,Mary,Griskewicz,14105,HINF5102,30,28,0
+Fall 2012,Bouve College of Hlth Sciences,Directed Study,3,3,Steve,Flammini,15789,HINF5976,0,0,0
 Fall 2012,Bouve College of Hlth Sciences,Emerging Health Technologies,3,3,Adam,Powell,11528,HINF6330,25,6,W 1800-2030
-Fall 2012,Bouve College of Hlth Sciences,Health/Medicine Nonclnicians,3,3,Rebecca,Scott,13807,HINF0200,25,10, -
-Fall 2012,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,12854,HINF7701,30,16, -
-Fall 2012,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Catherine,Turner,13808,HINF5101,40,29, -
+Fall 2012,Bouve College of Hlth Sciences,Health/Medicine Nonclnicians,3,3,Rebecca,Scott,13807,HINF0200,25,10,0
+Fall 2012,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,12854,HINF7701,30,16,0
+Fall 2012,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Catherine,Turner,13808,HINF5101,40,29,0
 Fall 2012,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Catherine,Turner,16981,HINF5101,0,0,R 1700-2000
 Fall 2012,Bouve College of Hlth Sciences,Intro to Health Informatics,3,3,Jeffrey,Brown,13255,HINF5101,75,35,W 1800-2030
 Fall 2012,Bouve College of Hlth Sciences,Org Behavior & Change Mgmt,3,3,Shari,Robbins,11572,HINF6201,25,18,T 1800-2030
@@ -1694,8 +1694,8 @@ Fall 2012,Coll of Computer & Info Sci,Computer Organization,4,4,Gene,Cooperman,1
 Fall 2012,Coll of Computer & Info Sci,Computer Organization,4,4,Gene,Cooperman,10943,CS2600,60,28,MW 1450-1630
 Fall 2012,Coll of Computer & Info Sci,Computer Systems,4,4,Peter,Desnoyers,12103,CS5600,72,64,M 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Computer System Security,4,4,David,LaPorte,13673,IA5130,45,37,S 1300-1600
-Fall 2012,Coll of Computer & Info Sci,Computer System Security,4,4,David,LaPorte,16226,IA5130,25,13, -
-Fall 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,15559,CS6964,75,73, -
+Fall 2012,Coll of Computer & Info Sci,Computer System Security,4,4,David,LaPorte,16226,IA5130,25,13,0
+Fall 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,15559,CS6964,75,73,0
 Fall 2012,Coll of Computer & Info Sci,Cryptography & Comm Security,4,4,Erik-Oliver,Blass,16220,CS6750,25,9,TF 0950-1130
 Fall 2012,Coll of Computer & Info Sci,CS/IS Overview 1,1,1,Aileen,Kent Yates,10954,CS1200,19,28,T 1335-1515
 Fall 2012,Coll of Computer & Info Sci,CS/IS Overview 1,1,1,Barbara,Lechner,17039,CS1200,19,17,W 1750-1855
@@ -1710,36 +1710,36 @@ Fall 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Leena,Razzaq,124
 Fall 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Leena,Razzaq,12420,CS1100,45,47,TF 1525-1705
 Fall 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Maryam,Aziz,12419,CS1100,45,48,WF 1145-1325
 Fall 2012,Coll of Computer & Info Sci,Database Design,4,4,Mirek,Riedewald,10937,CS3200,60,44,MW 1450-1630
-Fall 2012,Coll of Computer & Info Sci,Decisn Makng: Crit Infrastruct,4,4,Bryce,Cunningham,14658,IA5250,19,12, -
-Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,David,Van Horn,17047,CS4992,2,2, -
-Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,Gene,Cooperman,16502,CS4992,1,1, -
-Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,Guevara,Noubir,16948,CS4992,0,0, -
-Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,Matthias,Felleisen,17113,CS4992,2,1, -
+Fall 2012,Coll of Computer & Info Sci,Decisn Makng: Crit Infrastruct,4,4,Bryce,Cunningham,14658,IA5250,19,12,0
+Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,David,Van Horn,17047,CS4992,2,2,0
+Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,Gene,Cooperman,16502,CS4992,1,1,0
+Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,Guevara,Noubir,16948,CS4992,0,0,0
+Fall 2012,Coll of Computer & Info Sci,Directed Study,1,6,Matthias,Felleisen,17113,CS4992,2,1,0
 Fall 2012,Coll of Computer & Info Sci,Discrete Structures,4,4,Harriet,Fell,10965,CS1800,95,89,MWR 1030-1135
 Fall 2012,Coll of Computer & Info Sci,Discrete Structures,4,4,Ravi,Sundaram,10964,CS1800,95,91,MWR 1635-1740
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Agnes,Chan,17124,CS9990,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Alan,Mislove,17228,CS9990,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Javed,Aslam,17076,CS9990,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,17049,CS9990,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Mirek,Riedewald,17074,CS9990,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,17050,CS9990,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,17127,CS9990,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Rajmohan,Rajaraman,17143,CS9990,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,16795,CS9996,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,17119,CS9996,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,17033,CS9996,5,3, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,16977,CS9996,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,17054,CS9996,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,16976,CS9996,5,3, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,17053,CS9996,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,17122,CS9996,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers,17110,CS9996,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,17034,CS9996,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,17104,CS9996,0,0, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,16712,CS9996,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,16693,CS9996,5,3, -
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Agnes,Chan,17124,CS9990,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Alan,Mislove,17228,CS9990,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Javed,Aslam,17076,CS9990,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,17049,CS9990,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Mirek,Riedewald,17074,CS9990,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,17050,CS9990,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,17127,CS9990,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation,2,4,Rajmohan,Rajaraman,17143,CS9990,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,16795,CS9996,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,17119,CS9996,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,17033,CS9996,5,3,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,16977,CS9996,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,17054,CS9996,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,16976,CS9996,5,3,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,17053,CS9996,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,17122,CS9996,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers,17110,CS9996,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,17034,CS9996,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,17104,CS9996,0,0,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,16712,CS9996,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,16693,CS9996,5,3,0
 Fall 2012,Coll of Computer & Info Sci,Fndtns Artificial Intellegence,4,4,Gillian,Smith,15115,CS5100,35,44,R 1800-2100
-Fall 2012,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Derek,Brodeur,13775,IA5010,40,5, -
+Fall 2012,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Derek,Brodeur,13775,IA5010,40,5,0
 Fall 2012,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Themis,Papageorge,13672,IA5010,40,39,S 0900-1200
 Fall 2012,Coll of Computer & Info Sci,Fundamentals - Computer Netwkg,4,4,Christopher,Wilson,12101,CS5700,65,65,W 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Fundamentals of Computer Sci 1,4,4,Marsette,Vona,10961,CS2500,85,77,MWR 1335-1440
@@ -1753,7 +1753,7 @@ Fall 2012,Coll of Computer & Info Sci,Grad Co-op Seminar,0,0,Melvin,Simms,15261,
 Fall 2012,Coll of Computer & Info Sci,Grad Co-op Seminar,0,0,Melvin,Simms,16604,CS6949,55,43,T 1230-1400
 Fall 2012,Coll of Computer & Info Sci,Information Retrieval,4,4,David,Smith,16790,CS6200,70,53,R 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Information System Forensics,4,4,Frederick,Howell,16222,IA5210,25,15,S 1300-1600
-Fall 2012,Coll of Computer & Info Sci,Information System Forensics,4,4,Frederick,Howell,16227,IA5210,0,0, -
+Fall 2012,Coll of Computer & Info Sci,Information System Forensics,4,4,Frederick,Howell,16227,IA5210,0,0,0
 Fall 2012,Coll of Computer & Info Sci,Int Principle Programming Lang,4,4,Matthias,Felleisen,11584,CS7400,40,23,TF 0950-1130
 Fall 2012,Coll of Computer & Info Sci,Intro to Database Systems,4,4,Jose,Annunziato,12102,CS5200,70,69,R 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Lab for CS 1500,1,1,Virgil,Pavlu,11262,CS1501,48,47,M 1450-1630
@@ -1773,16 +1773,16 @@ Fall 2012,Coll of Computer & Info Sci,Lab for CS 2800,1,1,Thomas,Wahl,17057,CS28
 Fall 2012,Coll of Computer & Info Sci,Lab for CS 4610,1,1,Marsette,Vona,14906,CS4611,25,0,MW 1450-1630
 Fall 2012,Coll of Computer & Info Sci,Lab for CS 5335,0,0,Marsette,Vona,16626,CS5336,25,0,MW 1450-1630
 Fall 2012,Coll of Computer & Info Sci,Lab for IA 5130,0,0,David,LaPorte,16428,IA5131,40,37,MW 1800-2100
-Fall 2012,Coll of Computer & Info Sci,Lab for IA 5130,0,0,David,LaPorte,16442,IA5131,25,12, -
+Fall 2012,Coll of Computer & Info Sci,Lab for IA 5130,0,0,David,LaPorte,16442,IA5131,25,12,0
 Fall 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,16223,IA5211,0,0,S 1300-1600
 Fall 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,16224,IA5211,25,15,T 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,16225,IA5211,0,0,R 1800-2100
-Fall 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,16228,IA5211,0,0, -
+Fall 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,16228,IA5211,0,0,0
 Fall 2012,Coll of Computer & Info Sci,Logic and Computation,4,4,Thomas,Wahl,10374,CS2800,38,44,MWR 1635-1740
 Fall 2012,Coll of Computer & Info Sci,Machine Learning,4,4,Javed,Aslam,13599,CS6140,40,44,W 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Managing Software Development,4,4,William,Clinger,14601,CS5500,40,33,W 1800-2100
-Fall 2012,Coll of Computer & Info Sci,Master's Project,4,4,David,Van Horn,17232,CS8674,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Master's Project,4,4,Timothy,Bickmore,16912,CS8674,5,1, -
+Fall 2012,Coll of Computer & Info Sci,Master's Project,4,4,David,Van Horn,17232,CS8674,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Master's Project,4,4,Timothy,Bickmore,16912,CS8674,5,1,0
 Fall 2012,Coll of Computer & Info Sci,Mobile Application Development,4,4,Stephen,Intille,16210,CS4520,14,12,TF 1525-1705
 Fall 2012,Coll of Computer & Info Sci,Mobile Application Development,4,4,Stephen,Intille,16219,CS5520,50,44,TF 1525-1705
 Fall 2012,Coll of Computer & Info Sci,Network Fundamentals,4,4,Christopher,Wilson,10013,CS4700,19,2,W 1800-2100
@@ -1796,29 +1796,29 @@ Fall 2012,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Henry,Roth
 Fall 2012,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,12289,CS5010,100,0,MW 1450-1630
 Fall 2012,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,16867,CS5010,175,160,M 1800-2100
 Fall 2012,Coll of Computer & Info Sci,Programming Languages,4,4,Eliyahu,Barzilay,11264,CS4400,19,14,WF 1145-1325
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Agnes,Chan,17125,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Alan,Mislove,17211,CS8982,5,3, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Alessandro,Vespignani,17155,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Amal,Ahmed,17188,CS8982,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Amy,Sliva,17214,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Christopher,Wilson,17249,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Emanuele,Viola,17215,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Gene,Cooperman,17248,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,17077,CS8982,10,8, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Magy,Seif El-Nasr,17123,CS8982,10,5, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Matthias,Felleisen,17048,CS8982,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,17075,CS8982,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Mitchell,Wand,17159,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Olin,Shivers,17105,CS8982,5,4, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Pete,Manolios,17051,CS8982,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Peter,Desnoyers,17126,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Rajmohan,Rajaraman,17157,CS8982,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Ravi,Sundaram,17156,CS8982,5,3, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Samuel,Tobin-Hochstadt,17227,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Thomas,Wahl,17152,CS8982,5,3, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Timothy,Bickmore,17213,CS8982,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,William,Robertson,17073,CS8982,5,2, -
-Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Yun,Fu,17216,CS8982,5,2, -
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Agnes,Chan,17125,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Alan,Mislove,17211,CS8982,5,3,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Alessandro,Vespignani,17155,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Amal,Ahmed,17188,CS8982,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Amy,Sliva,17214,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Christopher,Wilson,17249,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Emanuele,Viola,17215,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Gene,Cooperman,17248,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,17077,CS8982,10,8,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Magy,Seif El-Nasr,17123,CS8982,10,5,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Matthias,Felleisen,17048,CS8982,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,17075,CS8982,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Mitchell,Wand,17159,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Olin,Shivers,17105,CS8982,5,4,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Pete,Manolios,17051,CS8982,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Peter,Desnoyers,17126,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Rajmohan,Rajaraman,17157,CS8982,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Ravi,Sundaram,17156,CS8982,5,3,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Samuel,Tobin-Hochstadt,17227,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Thomas,Wahl,17152,CS8982,5,3,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Timothy,Bickmore,17213,CS8982,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,William,Robertson,17073,CS8982,5,2,0
+Fall 2012,Coll of Computer & Info Sci,Readings,4,8,Yun,Fu,17216,CS8982,5,2,0
 Fall 2012,Coll of Computer & Info Sci,Recitation for CS 1800,0,0,Ravi,Sundaram,10255,CS1801,35,33,T 1145-1325
 Fall 2012,Coll of Computer & Info Sci,Recitation for CS 1800,0,0,Ravi,Sundaram,10256,CS1801,35,21,T 0950-1130
 Fall 2012,Coll of Computer & Info Sci,Recitation for CS 1800,0,0,Ravi,Sundaram,10263,CS1801,35,31,F 1335-1515
@@ -1830,15 +1830,15 @@ Fall 2012,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,1
 Fall 2012,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,12197,CS5011,52,50,F 1145-1325
 Fall 2012,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,12292,CS5011,52,50,F 1335-1515
 Fall 2012,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,16980,CS5011,60,43,R 1700-1840
-Fall 2012,Coll of Computer & Info Sci,Research,2,4,Guevara,Noubir,17162,CS8984,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Research,2,4,Ravi,Sundaram,17161,CS8984,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Gene,Cooperman,17163,CS8949,0,0, -
-Fall 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Guevara,Noubir,16927,CS8949,5,1, -
-Fall 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Pete,Manolios,16975,CS8949,5,1, -
+Fall 2012,Coll of Computer & Info Sci,Research,2,4,Guevara,Noubir,17162,CS8984,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Research,2,4,Ravi,Sundaram,17161,CS8984,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Gene,Cooperman,17163,CS8949,0,0,0
+Fall 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Guevara,Noubir,16927,CS8949,5,1,0
+Fall 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Pete,Manolios,16975,CS8949,5,1,0
 Fall 2012,Coll of Computer & Info Sci,Robotic Science and Systems,4,4,Marsette,Vona,14905,CS4610,25,0,TF 0950-1130
 Fall 2012,Coll of Computer & Info Sci,Robotic Science and Systems,4,4,Marsette,Vona,16625,CS5335,25,0,TF 0950-1130
 Fall 2012,Coll of Computer & Info Sci,Security Risk Mgt & Assessment,4,4,Themis,Papageorge,13674,IA5200,40,23,R 1800-2100
-Fall 2012,Coll of Computer & Info Sci,Security Risk Mgt & Assessment,4,4,Themis,Papageorge,13786,IA5200,0,0, -
+Fall 2012,Coll of Computer & Info Sci,Security Risk Mgt & Assessment,4,4,Themis,Papageorge,13786,IA5200,0,0,0
 Fall 2012,Coll of Computer & Info Sci,Senior Seminar,1,1,Raoul,Smith,10935,CS4000,19,19,T 1145-1325
 Fall 2012,Coll of Computer & Info Sci,Software Development,4,4,Jessica,Schmidt,10934,CS4500,60,41,TF 1335-1515
 Fall 2012,Coll of Computer & Info Sci,Software Vulnerabilities,4,4,Engin,Kirda,14946,CS5770,40,37,T 1800-2100
@@ -1847,7 +1847,7 @@ Fall 2012,Coll of Computer & Info Sci,Spec Topics Computer Systems,4,4,Peter,Des
 Fall 2012,Coll of Computer & Info Sci,Spec Topics Networks,4,4,William,Robertson,16297,CS7780,25,11,MW 1450-1630
 Fall 2012,Coll of Computer & Info Sci,Systems & Networks,4,4,Alan,Mislove,10936,CS3600,60,34,MWR 1030-1135
 Fall 2012,Coll of Computer & Info Sci,Theory of Computation,4,4,Emanuele,Viola,10938,CS3800,60,60,MWR 1335-1440
-Fall 2012,Coll of Computer & Info Sci,Thesis,4,4,Javed,Aslam,17244,CS7990,5,1, -
+Fall 2012,Coll of Computer & Info Sci,Thesis,4,4,Javed,Aslam,17244,CS7990,5,1,0
 Fall 2012,xyz,2D Foundation,0,4,Berenice,Beard,10919,ARTF1122,18,18,
 Fall 2012,xyz,2D Foundation,0,4,Berenice,Beard,13423,ARTF1122,18,20,
 Fall 2012,xyz,2D Foundation,0,4,Jeffrey,Hull,10920,ARTF1122,18,16,
@@ -1962,8 +1962,8 @@ Fall 2012,xyz,College Writing,0,4,Paul,Babin,10480,ENGL1111,19,12,
 Fall 2012,xyz,College Writing (HON),0,4,Asimina,Nikolopoulou,13667,ENGL1111,19,7,
 Fall 2012,xyz,College Writing (HON),0,4,Edward,Moss,10588,ENGL1111,19,8,
 Fall 2012,xyz,College Writing (HON),0,4,Kathryn,Templeton,13666,ENGL1111,19,6,
-Fall 2012,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Kara,Brown,16986,ENGL1102,15,15,
-Fall 2012,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,13075,ENGL1102,15,15,
+Fall 2012,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Kara,Brown,16986,ENGL1102,15,15,
+Fall 2012,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Trudy,Stone,13075,ENGL1102,15,15,
 Fall 2012,xyz,Color 1 Foundation,0,1,Sophia,Ainslie,13252,ARTF1102,18,17,
 Fall 2012,xyz,Coltrane (HON),0,4,Leonard,Brown,16148,MUSC1135,36,21,
 Fall 2012,xyz,Comparative Politics,0,4,Kirsten,Hardy,13387,POLS1155,80,72,
@@ -1986,7 +1986,7 @@ Fall 2012,xyz,Corporate Finance,0,4,Olubunmi,Faleye,11059,FINA3301,40,38,
 Fall 2012,xyz,Corporate Finance,0,4,Richard,Swasey,11057,FINA3301,40,37,
 Fall 2012,xyz,Criminal Law,0,4,Sharon,Fray-Witzer,10911,CRIM3100,27,11,
 Fall 2012,xyz,Criminology,0,4,Kevin,Drakulich,15950,CRIM2200,90,52,
-Fall 2012,xyz,Dante’s Inferno and Medieval Italian Culture,0,4,Alessio,Tognetti,13640,LITR1250,35,33,
+Fall 2012,xyz,Dante???s Inferno and Medieval Italian Culture,0,4,Alessio,Tognetti,13640,LITR1250,35,33,
 Fall 2012,xyz,Data Communications,0,4,Rajiv,Shridhar,11395,MISM3404,19,18,
 Fall 2012,xyz,Discrete Mathematics,0,4,Maxim,Braverman,11095,MATH2310,25,23,
 Fall 2012,xyz,Drawing 1 Foundation,0,4,Jason,Polins,10921,ARTF1120,18,19,
@@ -2118,8 +2118,8 @@ Fall 2012,xyz,Intermediate Spanish 1,0,4,Maria,Brucato,10176,SPNS2101,18,17,
 Fall 2012,xyz,International Financial Management,0,4,Gopala,Vasudevan,11383,FINA4320,40,40,
 Fall 2012,xyz,International Marketing,0,4,Samuel,Rabino,11385,MKTG4512,40,38,
 Fall 2012,xyz,International Relations,0,4,Suzanne,Ogden,11161,POLS1160,90,85,
-Fall 2012,xyz,Interpreting the Day’s News,0,4,Michael,Beaudet,11361,JRNL1150,49,49,
-Fall 2012,xyz,Interpreting the Day’s News,0,4,William,Kirtz,11272,JRNL1150,49,48,
+Fall 2012,xyz,Interpreting the Day???s News,0,4,Michael,Beaudet,11361,JRNL1150,49,49,
+Fall 2012,xyz,Interpreting the Day???s News,0,4,William,Kirtz,11272,JRNL1150,49,48,
 Fall 2012,xyz,Introduction to Communication Studies,0,4,Jesica,Speed,10658,COMM1101,19,19,
 Fall 2012,xyz,Introduction to Contemporary Moral Issues,0,4,Benjamin,Sherman,15952,PHIL1102,45,43,
 Fall 2012,xyz,Introduction to Criminal Justice,0,4,John,Passmore,10254,CRIM1100,49,47,
@@ -2148,7 +2148,7 @@ Fall 2012,xyz,Introduction to Product Design for Entrepreneurs,0,4,Tucker,Marion
 Fall 2012,xyz,Introduction to Religion,0,4,Jung,Lee,14374,RELS1110,38,27,
 Fall 2012,xyz,Introduction to Sociology,0,4,T,Jones,10296,SOCL1101,115,103,
 Fall 2012,xyz,Introduction to Spanish Culture,0,4,Daniel,Voionmaa,16539,CLTR1504,19,19,
-Fall 2012,xyz,Introduction to Women’s| Gender| and Sexuality Studies,0,4,Brett,Nava-Coulter,10455,WMNS1103,40,37,
+Fall 2012,xyz,Introduction to Women???s| Gender| and Sexuality Studies,0,4,Brett,Nava-Coulter,10455,WMNS1103,40,37,
 Fall 2012,xyz,Investments,0,4,Tunde,Kovacs,12486,FINA3303,40,43,
 Fall 2012,xyz,Investments,0,4,Tunde,Kovacs,12487,FINA3303,40,42,
 Fall 2012,xyz,Investments,0,4,Vincent,Muscolino,10746,FINA3303,40,40,
@@ -2551,9 +2551,9 @@ Spring 2010,xyz,College Writing,0,4,Megan,Tarquinio,31560,ENGL1111,19,19,
 Spring 2010,xyz,College Writing,0,4,Natalie,Tua'one,31612,ENGL1111,19,17,
 Spring 2010,xyz,College Writing,0,4,Shun,Kiang,35644,ENGL1111,19,17,
 Spring 2010,xyz,College Writing,0,4,Tabitha,Kenlon,31596,ENGL1111,19,16,
-Spring 2010,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Matthew,Noonan,30017,ENGL1102,14,14,
-Spring 2010,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Sandra,Clyne,34644,ENGL1102,15,15,
-Spring 2010,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,35630,ENGL1102,15,15,
+Spring 2010,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Matthew,Noonan,30017,ENGL1102,14,14,
+Spring 2010,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Sandra,Clyne,34644,ENGL1102,15,15,
+Spring 2010,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Trudy,Stone,35630,ENGL1102,15,15,
 Spring 2010,xyz,Combinatorial Mathematics,0,4,Ilanit,Helfand,32087,MATH3533,35,13,
 Spring 2010,xyz,Composition Lessons,0,1,Ronald,Smith,31107,MUSC1903,50,33,
 Spring 2010,xyz,Computer Architecture for Computer Scientists,0,4,Fabrizio,Lombardi,31754,EECE3230,40,18,
@@ -2659,7 +2659,7 @@ Spring 2010,xyz,International Business and Global Social Responsibility,0,4,Will
 Spring 2010,xyz,International Business and Global Social Responsibility,0,4,William,Tita,34460,INTB1203,35,35,
 Spring 2010,xyz,International Perspectives,0,4,Holbrook,Robinson,31812,LITR3500,35,22,
 Spring 2010,xyz,Interpreting Earth History,0,1,Richard,Bailey,30587,ENVR1203,15,15,
-Spring 2010,xyz,Interpreting the Day’s News,0,4,William,Kirtz,31321,JRNL1150,85,72,
+Spring 2010,xyz,Interpreting the Day???s News,0,4,William,Kirtz,31321,JRNL1150,85,72,
 Spring 2010,xyz,Introduction to Arabic Culture,0,4,Shakir,Mustafa,30182,CLTR1150,35,33,
 Spring 2010,xyz,Introduction to Art,0,4,Karen,Pike,31422,ARTF1140,49,54,
 Spring 2010,xyz,Introduction to Criminal Justice,0,4,Krista,Larsen,30766,CRIM1100,35,36,
@@ -3065,9 +3065,9 @@ Spring 2011,xyz,College Writing,0,4,Leslie,Dickinson,30714,ENGL1111,19,19,
 Spring 2011,xyz,College Writing,0,4,Nicole,Day,31701,ENGL1111,19,14,
 Spring 2011,xyz,College Writing,0,4,Sandra,Clyne,35861,ENGL1111,19,14,
 Spring 2011,xyz,College Writing,0,4,Susan,Soroka,31214,ENGL1111,19,18,
-Spring 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Christen,Enos,31285,ENGL1102,15,15,
-Spring 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,30006,ENGL1102,15,14,
-Spring 2011,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Trudy,Stone,36171,ENGL1102,15,15,
+Spring 2011,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Christen,Enos,31285,ENGL1102,15,15,
+Spring 2011,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Trudy,Stone,30006,ENGL1102,15,14,
+Spring 2011,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Trudy,Stone,36171,ENGL1102,15,15,
 Spring 2011,xyz,Combinatorial Mathematics,0,4,Anthony,Iarrobino,31644,MATH3533,25,11,
 Spring 2011,xyz,Competitive HRM Practices,0,2,Elaine,Walker,31771,MGMT3404,40,23,
 Spring 2011,xyz,Composition Lessons,0,1,Ronald,Smith,30829,MUSC1903,49,32,
@@ -3190,7 +3190,7 @@ Spring 2011,xyz,Internal Case Competition Challenge,0,4,Raymond,Kinnunen,32974,S
 Spring 2011,xyz,International Business and Global Social Responsibility,0,4,Elaine,Walker,30157,INTB1203,40,35,
 Spring 2011,xyz,Internetworking Design Lab,0,1,Kaushik,Chowdhury,30908,EECE4629,15,13,
 Spring 2011,xyz,Interpreting Earth History,0,1,Richard,Bailey,30405,ENVR1203,40,37,
-Spring 2011,xyz,Interpreting the Day’s News,0,4,William,Kirtz,31014,JRNL1150,45,35,
+Spring 2011,xyz,Interpreting the Day???s News,0,4,William,Kirtz,31014,JRNL1150,45,35,
 Spring 2011,xyz,Introduction to American History,0,4,Richard,Deese,30627,HIST1130,49,17,
 Spring 2011,xyz,Introduction to Communication Studies,0,4,Erin,Meyers,31362,COMM1101,35,34,
 Spring 2011,xyz,Introduction to Criminal Justice,0,4,Kristen,Chierus,34064,CRIM1100,50,38,
@@ -3281,7 +3281,7 @@ Spring 2011,xyz,Modern Physics,0,4,Emanuela,Barberis,34592,PHYS2303,40,45,
 Spring 2011,xyz,Modern Poetry,0,4,Guy,Rotella,34653,ENGL4674,49,22,
 Spring 2011,xyz,Molecular Cell Biology,0,4,Rebecca,Dunn,35299,BIOL3407,48,49,
 Spring 2011,xyz,Moral and Social Problems in Health Care,0,4,Joseph,Wellbank,34613,PHIL1165,60,61,
-Spring 2011,xyz,Multicultural Children’s Literature,0,4,Tobie,Atlas,31642,EDUC1150,25,18,
+Spring 2011,xyz,Multicultural Children???s Literature,0,4,Tobie,Atlas,31642,EDUC1150,25,18,
 Spring 2011,xyz,Musicianship 2,0,1,Won-Hee,An,30590,MUSC1242,19,16,
 Spring 2011,xyz,Music Industry 1,0,4,Leon,Janikian,30844,MUSI1230,36,37,
 Spring 2011,xyz,Music Lessons 1,0,1,Junauro,Landgrebe,30831,MUSC1901,150,139,
@@ -3404,16 +3404,16 @@ Spring 2011,xyz,Wind Ensemble,0,1,Allen,Feinstein,30028,MUSC1907,49,29,
 Spring 2011,xyz,World History since 1945,0,4,Alexis,Rappas,35724,HIST2211,49,49,
 Spring 2012,Bouve College of Hlth Sciences,American Health-Care System,3,3,,,36158,HINF5105,0,0,M 1800-2100
 Spring 2012,Bouve College of Hlth Sciences,American Health-Care System,3,3,Jenna,Sirkin,33138,HINF5105,40,23,T 1800-2000
-Spring 2012,Bouve College of Hlth Sciences,American Health-Care System,3,3,Jenna,Sirkin,34035,HINF5105,40,36, -
-Spring 2012,Bouve College of Hlth Sciences,Business Hlth-Care Informatics,3,3,Marie,Maloney,36172,HINF6202,40,34, -
+Spring 2012,Bouve College of Hlth Sciences,American Health-Care System,3,3,Jenna,Sirkin,34035,HINF5105,40,36,0
+Spring 2012,Bouve College of Hlth Sciences,Business Hlth-Care Informatics,3,3,Marie,Maloney,36172,HINF6202,40,34,0
 Spring 2012,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Feinberg,34037,HINF6220,40,18,R 1800-2030
 Spring 2012,Bouve College of Hlth Sciences,Data Management in Health Care,3,3,Craig,Johnson,33136,HINF5102,40,30,M 1800-2000
 Spring 2012,Bouve College of Hlth Sciences,Health Systems Lab,3,3,Arvind,Kumar,31633,HINF6225,20,18,W 1800-2030
-Spring 2012,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,33231,HINF7701,25,6, -
-Spring 2012,Bouve College of Hlth Sciences,KeyStandrds Health Infrmatics,3,3,Daniel,Ries,33135,HINF6355,40,19, -
+Spring 2012,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,33231,HINF7701,25,6,0
+Spring 2012,Bouve College of Hlth Sciences,KeyStandrds Health Infrmatics,3,3,Daniel,Ries,33135,HINF6355,40,19,0
 Spring 2012,Bouve College of Hlth Sciences,Legal Issues Hlth Informatics,3,3,Joseph,Ternullo,34446,HINF6325,40,0,R 1800-2030
-Spring 2012,Bouve College of Hlth Sciences,Management Issues in Hlth IT,3,3,George,Moran,36173,HINF6335,35,18, -
-Spring 2012,Bouve College of Hlth Sciences,Project Management,3,3,Scott,Bradley,33137,HINF6215,40,18, -
+Spring 2012,Bouve College of Hlth Sciences,Management Issues in Hlth IT,3,3,George,Moran,36173,HINF6335,35,18,0
+Spring 2012,Bouve College of Hlth Sciences,Project Management,3,3,Scott,Bradley,33137,HINF6215,40,18,0
 Spring 2012,Coll of Computer & Info Sci,Algorithms,4,4,Chinmoy,Dutta,32420,CS5800,50,52,W 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Algorithms,4,4,Virgiliu,Pavlu,31746,CS5800,80,45,"R 1450-1630, T 1145-1325"
 Spring 2012,Coll of Computer & Info Sci,Algorithms & Data,4,4,Karl,Lieberherr,30829,CS4800,68,35,MWR 1335-1440
@@ -3421,14 +3421,14 @@ Spring 2012,Coll of Computer & Info Sci,Applied Cryptography,4,4,Richard,Moore,3
 Spring 2012,Coll of Computer & Info Sci,Applied Geometric Rep & Comput,4,4,Marsette,Vona,36155,CS5350,25,9,MW 1730-1920
 Spring 2012,Coll of Computer & Info Sci,Artificial Intelligence,4,4,Carole,Hafner,30489,CS4100,68,33,"R 1450-1630, T 1145-1325"
 Spring 2012,Coll of Computer & Info Sci,Capstone Project,4,4,Michael,Higgins,31743,IA7900,40,24,S 1300-1600
-Spring 2012,Coll of Computer & Info Sci,Capstone Project,4,4,Michael,Higgins,33801,IA7900,40,4, -
+Spring 2012,Coll of Computer & Info Sci,Capstone Project,4,4,Michael,Higgins,33801,IA7900,40,4,0
 Spring 2012,Coll of Computer & Info Sci,Compilers,4,4,Olin,Shivers,32679,CS4410,19,9,R 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Compilers,4,4,Olin,Shivers,32718,CS6410,40,10,R 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Computer Graphics,4,4,Magy,Seif El-Nasr,31370,CS4300,68,30,MW 1450-1630
 Spring 2012,Coll of Computer & Info Sci,Computer/Human Interaction,4,4,Stephen,Intille,35630,CS5340,30,23,R 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Computer Organization,4,4,John,Casey,30867,CS2600,68,27,"R 1450-1630, T 1145-1325"
 Spring 2012,Coll of Computer & Info Sci,Computer Systems,4,4,Peter,Desnoyers,35626,CS5600,50,65,M 1800-2100
-Spring 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,34957,CS6964,75,37, -
+Spring 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,34957,CS6964,75,37,0
 Spring 2012,Coll of Computer & Info Sci,CS/IS Overview 2: Co-op Prep,1,1,Aileen,Kent Yates,30869,CS1210,72,71,F 1145-1325
 Spring 2012,Coll of Computer & Info Sci,CS/IS Overview 2: Co-op Prep,1,1,Melissa,Peikin,30870,CS1210,72,66,F 0950-1130
 Spring 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,John,Casey,32683,CS1100,45,46,TF 0950-1130
@@ -3437,34 +3437,34 @@ Spring 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Martin,Schedlb
 Spring 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Travis,Mayberry,32686,CS1100,45,46,TF 1525-1705
 Spring 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Viera,Proulx,32685,CS1100,45,46,TF 1335-1515
 Spring 2012,Coll of Computer & Info Sci,Cyberlaw,4,4,Kyle,Courtney,36202,IA5240,25,8,S 1300-1700
-Spring 2012,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Derek,Brodeur,32953,IA5001,40,0, -
+Spring 2012,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Derek,Brodeur,32953,IA5001,40,0,0
 Spring 2012,Coll of Computer & Info Sci,Database Design,4,4,Mirek,Riedewald,30835,CS3200,68,43,MW 1450-1630
 Spring 2012,Coll of Computer & Info Sci,Database Management Sys,4,4,Kenneth,Baclawski,35628,CS5200,30,30,W 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Data Mining Techniques,4,4,Mirek,Riedewald,32715,CS6220,40,19,M 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Decisn Makng: Crit Infrastruct,4,4,Lennart,Long,33105,IA5250,40,0,W 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Discrete Structures,4,4,Harriet,Fell,30871,CS1800,48,27,TRF 1145-1250
-Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,36445,CS9990,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Olin,Shivers,36746,CS9990,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,36856,CS9990,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,36845,CS9990,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Albert-Laszlo,Barabasi,36654,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Emanuele,Viola,36759,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,36773,CS9996,5,4, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,36653,CS9996,5,3, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,36395,CS9996,5,5, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,36826,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,36707,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,36444,CS9996,5,5, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,36776,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,36745,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers,36493,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Pete,Manolios,36820,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,36774,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,36758,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Ravi,Sundaram,36825,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,36450,CS9996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,36492,CS9996,5,3, -
-Spring 2012,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Richard,Moore,32714,IA5010,40,17, -
+Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,36445,CS9990,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Olin,Shivers,36746,CS9990,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,36856,CS9990,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,36845,CS9990,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Albert-Laszlo,Barabasi,36654,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Emanuele,Viola,36759,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,36773,CS9996,5,4,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,36653,CS9996,5,3,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,36395,CS9996,5,5,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,36826,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,36707,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,36444,CS9996,5,5,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,36776,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,36745,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers,36493,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Pete,Manolios,36820,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,36774,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,36758,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Ravi,Sundaram,36825,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,36450,CS9996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,36492,CS9996,5,3,0
+Spring 2012,Coll of Computer & Info Sci,Found of Information Assurance,4,4,Richard,Moore,32714,IA5010,40,17,0
 Spring 2012,Coll of Computer & Info Sci,Fundamentals - Computer Netwkg,4,4,Guevara,Noubir,31745,CS5700,55,20,M 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Fundamentals of Computer Sci 1,4,4,Amy,Sliva,36619,CS2500,0,28,MWR 1635-1740
 Spring 2012,Coll of Computer & Info Sci,Fundamentals of Computer Sci 1,4,4,Leena,Razzaq,30643,CS2500,50,53,MWR 1030-1135
@@ -3474,10 +3474,10 @@ Spring 2012,Coll of Computer & Info Sci,Fundam of Computer Sci 2 (HON),4,4,David
 Spring 2012,Coll of Computer & Info Sci,Grad Co-op Seminar,0,0,Melvin,Simms,34558,CS6949,50,20,R 1600-1730
 Spring 2012,Coll of Computer & Info Sci,High Performance Computing,4,4,Gene,Cooperman,33744,CS4650,30,1,T 1800-2100
 Spring 2012,Coll of Computer & Info Sci,High Performance Computing,4,4,Gene,Cooperman,33796,CS5650,40,8,T 1800-2100
-Spring 2012,Coll of Computer & Info Sci,Independent Study,1,6,Gene,Cooperman,36785,CS4993,1,1, -
+Spring 2012,Coll of Computer & Info Sci,Independent Study,1,6,Gene,Cooperman,36785,CS4993,1,1,0
 Spring 2012,Coll of Computer & Info Sci,Information Retrieval,4,4,Javed,Aslam,35629,CS6200,150,118,T 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Information System Forensics,4,4,Frederick,Howell,31740,IA5210,40,23,S 1300-1600
-Spring 2012,Coll of Computer & Info Sci,Information System Forensics,4,4,Frederick,Howell,33799,IA5210,40,27, -
+Spring 2012,Coll of Computer & Info Sci,Information System Forensics,4,4,Frederick,Howell,33799,IA5210,40,27,0
 Spring 2012,Coll of Computer & Info Sci,Intensive Computer Systems,4,4,Peter,Desnoyers,31741,CS7600,40,19,TF 0950-1130
 Spring 2012,Coll of Computer & Info Sci,Lab for CS 2500,1,1,Leena,Razzaq,30642,CS2501,44,39,M 1450-1630
 Spring 2012,Coll of Computer & Info Sci,Lab for CS 2500,1,1,Leena,Razzaq,34690,CS2501,44,42,W 1450-1630
@@ -3497,46 +3497,46 @@ Spring 2012,Coll of Computer & Info Sci,Lab for CS 2800,1,1,Pete,Manolios,31516,
 Spring 2012,Coll of Computer & Info Sci,Lab for CS 2800,1,1,Pete,Manolios,31521,CS2801,19,19,F 1430-1520
 Spring 2012,Coll of Computer & Info Sci,Lab for CS 2800,1,1,Pete,Manolios,35475,CS2801,19,7,F 1715-1805
 Spring 2012,Coll of Computer & Info Sci,Lab for IA 5150,0,0,Kevin,Amorin,36198,IA5151,25,25,WF 1800-2100
-Spring 2012,Coll of Computer & Info Sci,Lab for IA 5150,0,0,Kevin,Amorin,36199,IA5151,25,15, -
+Spring 2012,Coll of Computer & Info Sci,Lab for IA 5150,0,0,Kevin,Amorin,36199,IA5151,25,15,0
 Spring 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,36200,IA5211,25,24,TR 1800-2100
-Spring 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,36201,IA5211,25,26, -
+Spring 2012,Coll of Computer & Info Sci,Lab for IA 5210,0,0,Frederick,Howell,36201,IA5211,25,26,0
 Spring 2012,Coll of Computer & Info Sci,Logic and Computation,4,4,Pete,Manolios,30162,CS2800,80,81,MWR 1030-1135
 Spring 2012,Coll of Computer & Info Sci,Logic and Computation,4,4,Thomas,Wahl,30161,CS2800,80,54,MWR 1635-1740
 Spring 2012,Coll of Computer & Info Sci,Managing Software Development,4,4,Kenneth,Baclawski,32431,CS5500,50,65,R 1800-2100
-Spring 2012,Coll of Computer & Info Sci,Master's Project,4,4,Magy,Seif El-Nasr,36881,CS8674,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Master's Project,4,4,Rajmohan,Rajaraman,36888,CS8674,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Master's Project,4,4,Stephen,Intille,36892,CS8674,5,1, -
+Spring 2012,Coll of Computer & Info Sci,Master's Project,4,4,Magy,Seif El-Nasr,36881,CS8674,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Master's Project,4,4,Rajmohan,Rajaraman,36888,CS8674,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Master's Project,4,4,Stephen,Intille,36892,CS8674,5,1,0
 Spring 2012,Coll of Computer & Info Sci,Network Fundamentals,4,4,Guevara,Noubir,30320,CS4700,15,8,M 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Network Security,4,4,William,Robertson,31742,CS6740,55,29,W 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Network Security,4,4,William,Robertson,32682,CS4740,15,12,W 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Network Security Practices,4,4,Kevin,Amorin,32719,IA5150,40,27,S 0900-1200
-Spring 2012,Coll of Computer & Info Sci,Network Security Practices,4,4,Kevin,Amorin,33133,IA5150,40,16, -
+Spring 2012,Coll of Computer & Info Sci,Network Security Practices,4,4,Kevin,Amorin,33133,IA5150,40,16,0
 Spring 2012,Coll of Computer & Info Sci,Object-Oriented Design,4,4,William,Clinger,30868,CS3500,68,36,TF 0950-1130
 Spring 2012,Coll of Computer & Info Sci,Principles of Programming Lang,4,4,Eliyahu,Barzilay,32082,CS5400,10,3,WF 1145-1325
 Spring 2012,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,31641,CS5010,40,21,T 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Programming Languages,4,4,Eliyahu,Barzilay,30831,CS4400,50,34,WF 1145-1325
-Spring 2012,Coll of Computer & Info Sci,Readings,1,4,Engin,Kirda,36870,IA8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,1,4,Guevara,Noubir,36871,IA8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Agnes,Chan,36828,CS8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Alan,Mislove,36857,CS8982,5,3, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Amal,Ahmed,36821,CS8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,36708,CS8982,5,3, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Magy,Seif El-Nasr,36742,CS8982,5,3, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Matthias,Felleisen,36899,CS8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,36829,CS8982,5,2, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Olin,Shivers,36747,CS8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Pete,Manolios,36852,CS8982,5,2, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Rajmohan,Rajaraman,36855,CS8982,5,2, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Ravi,Sundaram,36872,CS8982,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Thomas,Wahl,36882,CS8982,5,1, -
+Spring 2012,Coll of Computer & Info Sci,Readings,1,4,Engin,Kirda,36870,IA8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,1,4,Guevara,Noubir,36871,IA8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Agnes,Chan,36828,CS8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Alan,Mislove,36857,CS8982,5,3,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Amal,Ahmed,36821,CS8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,36708,CS8982,5,3,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Magy,Seif El-Nasr,36742,CS8982,5,3,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Matthias,Felleisen,36899,CS8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,36829,CS8982,5,2,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Olin,Shivers,36747,CS8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Pete,Manolios,36852,CS8982,5,2,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Rajmohan,Rajaraman,36855,CS8982,5,2,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Ravi,Sundaram,36872,CS8982,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Readings,4,8,Thomas,Wahl,36882,CS8982,5,1,0
 Spring 2012,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,32537,CS5011,40,21,R 1145-1325
-Spring 2012,Coll of Computer & Info Sci,Research,2,4,Mirek,Riedewald,36846,CS8986,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Research,4,8,Alan,Mislove,36709,CS4991,1,1, -
-Spring 2012,Coll of Computer & Info Sci,Research,4,8,William,Robertson,36497,CS4991,1,1, -
+Spring 2012,Coll of Computer & Info Sci,Research,2,4,Mirek,Riedewald,36846,CS8986,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Research,4,8,Alan,Mislove,36709,CS4991,1,1,0
+Spring 2012,Coll of Computer & Info Sci,Research,4,8,William,Robertson,36497,CS4991,1,1,0
 Spring 2012,Coll of Computer & Info Sci,Senior Seminar,1,1,Raoul,Smith,30832,CS4000,56,35,T 1145-1325
 Spring 2012,Coll of Computer & Info Sci,Senior Seminar,1,1,Raoul,Smith,30833,CS4000,56,29,T 0950-1130
 Spring 2012,Coll of Computer & Info Sci,Software Development,4,4,William,Clinger,30830,CS4500,68,43,TF 1525-1705
-Spring 2012,Coll of Computer & Info Sci,Software Security Practices,4,4,Leonard,Wisniewski,36360,IA6120,0,0, -
+Spring 2012,Coll of Computer & Info Sci,Software Security Practices,4,4,Leonard,Wisniewski,36360,IA6120,0,0,0
 Spring 2012,Coll of Computer & Info Sci,Software Security Practices,4,4,Leonard,Wisniewski,36361,IA6120,25,6,R 1800-2100
 Spring 2012,Coll of Computer & Info Sci,Software Testing,4,4,Viera,Proulx,35988,CS4510,40,0,MW 1450-1630
 Spring 2012,Coll of Computer & Info Sci,Special Topics Software Engr,4,4,Olin,Shivers,35633,CS7580,0,0,TF 1335-1515
@@ -3547,8 +3547,8 @@ Spring 2012,Coll of Computer & Info Sci,ST: Programming Language,4,4,Amal,Ahmed,
 Spring 2012,Coll of Computer & Info Sci,Systems & Networks,4,4,Alan,Mislove,30834,CS3600,68,49,MWR 1030-1135
 Spring 2012,Coll of Computer & Info Sci,Theory of Computation,4,4,Emanuele,Viola,30866,CS3800,68,58,TF 1335-1515
 Spring 2012,Coll of Computer & Info Sci,Theory of Computation,4,4,Emanuele,Viola,32081,CS7805,28,17,"M 1450-1630, R 0845-1025"
-Spring 2012,Coll of Computer & Info Sci,Thesis Continuation,0,0,Guevara,Noubir,36574,CS7996,5,1, -
-Spring 2012,Coll of Computer & Info Sci,Thesis Continuation,0,0,Virgiliu,Pavlu,36594,CS7996,5,1, -
+Spring 2012,Coll of Computer & Info Sci,Thesis Continuation,0,0,Guevara,Noubir,36574,CS7996,5,1,0
+Spring 2012,Coll of Computer & Info Sci,Thesis Continuation,0,0,Virgiliu,Pavlu,36594,CS7996,5,1,0
 Spring 2012,Coll of Computer & Info Sci,Web Development,4,4,Harriet,Fell,30319,CS4550,68,27,TF 1335-1515
 Spring 2012,Coll of Computer & Info Sci,Web Development,4,4,Richard,Rasala,31744,CS5610,64,60,TF 1525-1705
 Spring 2012,Coll of Computer & Info Sci,Wireless Network,4,4,Guevara,Noubir,35631,CS6710,30,10,MW 1450-1630
@@ -3652,7 +3652,7 @@ Spring 2012,xyz,College Writing,0,4,Christen,Enos,34676,ENGL1111,19,17,
 Spring 2012,xyz,College Writing,0,4,Eileen,Farrell,31144,ENGL1111,19,19,
 Spring 2012,xyz,College Writing,0,4,Ellen,Noonan,30178,ENGL1111,15,7,
 Spring 2012,xyz,College Writing,0,4,Michael,Dedek,31158,ENGL1111,19,15,
-Spring 2012,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Jonathan,Benda,33274,ENGL1102,15,15,
+Spring 2012,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Jonathan,Benda,33274,ENGL1102,15,15,
 Spring 2012,xyz,Color 1 Foundation,0,1,Sophia,Ainslie,30144,ARTF1102,20,19,
 Spring 2012,xyz,Combinatorial Mathematics,0,4,Anthony,Iarrobino,31498,MATH3533,25,26,
 Spring 2012,xyz,Comparative Politics,0,4,Christopher,Cunningham,30787,POLS1155,90,70,
@@ -3772,7 +3772,7 @@ Spring 2012,xyz,International Financial Management,0,4,Gopala,Vasudevan,31015,FI
 Spring 2012,xyz,International Relations,0,4,Kirsten,Hardy,30972,POLS1160,110,101,
 Spring 2012,xyz,Internetworking Design Lab,0,1,Kaushik,Chowdhury,30811,EECE4629,15,13,
 Spring 2012,xyz,Interpreting Earth History,0,1,Richard,Bailey,30360,ENVR1203,40,23,
-Spring 2012,xyz,Interpreting the Day’s News,0,4,Charles,Fountain,33474,JRNL1150,49,48,
+Spring 2012,xyz,Interpreting the Day???s News,0,4,Charles,Fountain,33474,JRNL1150,49,48,
 Spring 2012,xyz,Int. Learn for PHYS 1151,0,1,Vasilka,Sopova,36264,PHYS1153,18,17,
 Spring 2012,xyz,Introduction to Communication Studies,0,4,Kevin,Visconti,31518,COMM1101,35,31,
 Spring 2012,xyz,Introduction to Contemporary Moral Issues,0,4,Kerry,Dugan,35296,PHIL1102,40,40,
@@ -3861,7 +3861,7 @@ Spring 2012,xyz,Managing Operations in a Technology-Based Start-Up Firm,0,4,Thom
 Spring 2012,xyz,Marketing Communications in the New Millennium,0,4,Susan,Sieloff,30302,MKTG4504,40,39,
 Spring 2012,xyz,Marketing Management,0,4,Frederick,Wright,30941,MKTG3301,40,40,
 Spring 2012,xyz,Marketing Research,0,4,Felicia,Lassk,30937,MKTG3401,40,40,
-Spring 2012,xyz,Masterpieces of Spanish Literature: Eighteenth–Twentieth Century,0,4,Barbara,Corbett,30046,LITR4560,19,14,
+Spring 2012,xyz,Masterpieces of Spanish Literature: Eighteenth???Twentieth Century,0,4,Barbara,Corbett,30046,LITR4560,19,14,
 Spring 2012,xyz,Mathematical Statistics,0,4,Aidong,Ding,36164,MATH7342,15,12,
 Spring 2012,xyz,Mathematical Thinking,0,4,Dennis,Ledis,30902,MATH1215,19,18,
 Spring 2012,xyz,Microeconomic Theory,0,4,Ilter,Bakkal,31205,ECON2316,48,47,
@@ -3973,19 +3973,19 @@ Spring 2012,xyz,Violence in the Family,0,4,Brandy,Hubbard,32629,SOCL1256,65,54,
 Spring 2012,xyz,Weather and Climate,0,4,Annette,Govindarajan,35977,ENVR1111,63,63,
 Spring 2012,xyz,Wind Ensemble,0,1,Allen,Feinstein,30025,MUSC1907,49,21,
 Spring 2012,xyz,World History since 1945,0,4,Burleigh,Hendrickson,34513,HIST2211,49,20,
-Spring 2013,Bouve College of Hlth Sciences,American Health-Care System,3,3,Mary,Griskewicz,33341,HINF5105,40,34, -
+Spring 2013,Bouve College of Hlth Sciences,American Health-Care System,3,3,Mary,Griskewicz,33341,HINF5105,40,34,0
 Spring 2013,Bouve College of Hlth Sciences,American Health-Care System,3,3,Richard,Lynch,32781,HINF5105,40,20,T 1800-2000
-Spring 2013,Bouve College of Hlth Sciences,Business Hlth-Care Informatics,3,3,Marie,Maloney,34916,HINF6202,40,25, -
+Spring 2013,Bouve College of Hlth Sciences,Business Hlth-Care Informatics,3,3,Marie,Maloney,34916,HINF6202,40,25,0
 Spring 2013,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Feinberg,33342,HINF6220,40,16,R 1800-2030
 Spring 2013,Bouve College of Hlth Sciences,Data Management in Health Care,3,3,Craig,Johnson,32779,HINF5102,40,18,M 1800-2000
-Spring 2013,Bouve College of Hlth Sciences,Directed Study,1,4,Daniel,Feinberg,37223,HINF7976,5,1, -
-Spring 2013,Bouve College of Hlth Sciences,Directed Study,1,4,Stephen,Intille,37217,HINF7976,5,4, -
+Spring 2013,Bouve College of Hlth Sciences,Directed Study,1,4,Daniel,Feinberg,37223,HINF7976,5,1,0
+Spring 2013,Bouve College of Hlth Sciences,Directed Study,1,4,Stephen,Intille,37217,HINF7976,5,4,0
 Spring 2013,Bouve College of Hlth Sciences,Health Systems Lab,3,3,Arvind,Kumar,31482,HINF6225,20,20,W 1800-2030
-Spring 2013,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,32849,HINF7701,25,9, -
-Spring 2013,Bouve College of Hlth Sciences,KeyStandrds Health Infrmatics,3,3,Daniel,Ries,32778,HINF6355,40,30, -
-Spring 2013,Bouve College of Hlth Sciences,Management Issues in Hlth IT,3,3,George,Moran,34917,HINF6335,35,17, -
-Spring 2013,Bouve College of Hlth Sciences,Org Behavior & Change Mgmt,3,3,Shari,Robbins,36862,HINF6201,40,32, -
-Spring 2013,Bouve College of Hlth Sciences,Project Management,3,3,Scott,Bradley,32780,HINF6215,40,22, -
+Spring 2013,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,32849,HINF7701,25,9,0
+Spring 2013,Bouve College of Hlth Sciences,KeyStandrds Health Infrmatics,3,3,Daniel,Ries,32778,HINF6355,40,30,0
+Spring 2013,Bouve College of Hlth Sciences,Management Issues in Hlth IT,3,3,George,Moran,34917,HINF6335,35,17,0
+Spring 2013,Bouve College of Hlth Sciences,Org Behavior & Change Mgmt,3,3,Shari,Robbins,36862,HINF6201,40,32,0
+Spring 2013,Bouve College of Hlth Sciences,Project Management,3,3,Scott,Bradley,32780,HINF6215,40,22,0
 Spring 2013,Coll of Computer & Info Sci,Algorithms,4,4,Kenneth,Baclawski,36743,CS5800,75,74,T 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Algorithms,4,4,Kenneth,Baclawski,36912,CS5800,75,73,W 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Algorithms,4,4,Ravi,Sundaram,31575,CS5800,75,62,W 1800-2100
@@ -3998,8 +3998,8 @@ Spring 2013,Coll of Computer & Info Sci,Computer Graphics,4,4,Gillian,Smith,3618
 Spring 2013,Coll of Computer & Info Sci,Computer/Human Interaction,4,4,Andrea,Parker,34407,CS5340,40,24,R 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Computer Organization,4,4,Gene,Cooperman,30782,CS2600,68,26,TF 1525-1705
 Spring 2013,Coll of Computer & Info Sci,Computer Systems,4,4,Abutalib,Aghayev,34403,CS5600,50,44,M 1800-2100
-Spring 2013,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Karyn,Rosen,37005,CS6964,75,23, -
-Spring 2013,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,33936,CS6964,75,45, -
+Spring 2013,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Karyn,Rosen,37005,CS6964,75,23,0
+Spring 2013,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,33936,CS6964,75,45,0
 Spring 2013,Coll of Computer & Info Sci,CS/IS Overview 2: Co-op Prep,1,1,Aileen,Kent Yates,30784,CS1210,40,19,F 1145-1325
 Spring 2013,Coll of Computer & Info Sci,CS/IS Overview 2: Co-op Prep,1,1,Melissa,Peikin,30785,CS1210,60,0,F 0950-1130
 Spring 2013,Coll of Computer & Info Sci,CS/IS Overview 2: Co-op Prep,1,1,Melissa,Peikin,36227,CS1210,60,0,T 0950-1130
@@ -4009,45 +4009,45 @@ Spring 2013,Coll of Computer & Info Sci,CS & Its Applications,4,4,John,Casey,324
 Spring 2013,Coll of Computer & Info Sci,CS & Its Applications,4,4,Leena,Razzaq,34258,CS1100,52,51,"R 1450-1630, T 1145-1325"
 Spring 2013,Coll of Computer & Info Sci,CS & Its Applications,4,4,Martin,Schedlbauer,32409,CS1100,52,52,WF 1145-1325
 Spring 2013,Coll of Computer & Info Sci,Database Design,4,4,Kathleen,Durant,30755,CS3200,68,60,MW 1450-1630
-Spring 2013,Coll of Computer & Info Sci,Database Management Sys,4,4,Daniel,Ries,36615,CS5200,20,21, -
+Spring 2013,Coll of Computer & Info Sci,Database Management Sys,4,4,Daniel,Ries,36615,CS5200,20,21,0
 Spring 2013,Coll of Computer & Info Sci,Database Management Sys,4,4,Jose,Annunziato,34405,CS5200,73,73,W 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Data Mining Techniques,4,4,Yizhou,Sun,32435,CS6220,40,40,M 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Discrete Structures,4,4,Timothy,Smith,30786,CS1800,60,58,MWR 1635-1740
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Agnes,Chan,37130,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Alan,Mislove,37209,CS9990,5,4, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Alessandro,Vespignani,37244,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Engin,Kirda,37036,CS9990,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Gene,Cooperman,37175,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Guevara,Noubir,37118,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Javed,Aslam,37075,CS9990,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,35182,CS9990,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Mirek,Riedewald,37128,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Mitchell,Wand,35627,CS9990,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Olin,Shivers III,35473,CS9990,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,35579,CS9990,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,35568,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Rajmohan,Rajaraman,37100,CS9990,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Ravi,Sundaram,37174,CS9990,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Timothy,Bickmore,37098,CS9990,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Albert-Laszlo,Barabasi,35385,CS9996,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Emanuele,Viola,35486,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,35499,CS9996,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,35384,CS9996,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,35132,CS9996,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,35550,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,35437,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,35181,CS9996,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,35502,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,35472,CS9996,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers III,35227,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Pete,Manolios,35544,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,35500,CS9996,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,35485,CS9996,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Ravi,Sundaram,35549,CS9996,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,35187,CS9996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,35226,CS9996,5,2, -
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Agnes,Chan,37130,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Alan,Mislove,37209,CS9990,5,4,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Alessandro,Vespignani,37244,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Engin,Kirda,37036,CS9990,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Gene,Cooperman,37175,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Guevara,Noubir,37118,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Javed,Aslam,37075,CS9990,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Matthias,Felleisen,35182,CS9990,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Mirek,Riedewald,37128,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Mitchell,Wand,35627,CS9990,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Olin,Shivers III,35473,CS9990,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Pete,Manolios,35579,CS9990,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Peter,Desnoyers,35568,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Rajmohan,Rajaraman,37100,CS9990,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Ravi,Sundaram,37174,CS9990,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation,2,4,Timothy,Bickmore,37098,CS9990,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Albert-Laszlo,Barabasi,35385,CS9996,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Emanuele,Viola,35486,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Gene,Cooperman,35499,CS9996,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Guevara,Noubir,35384,CS9996,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,35132,CS9996,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Karl,Lieberherr,35550,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Marsette,Vona,35437,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,35181,CS9996,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mirek,Riedewald,35502,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Mitchell,Wand,35472,CS9996,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Olin,Shivers III,35227,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Pete,Manolios,35544,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Peter,Desnoyers,35500,CS9996,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rajmohan,Rajaraman,35485,CS9996,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Ravi,Sundaram,35549,CS9996,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Rupal,Patel,35187,CS9996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Timothy,Bickmore,35226,CS9996,5,2,0
 Spring 2013,Coll of Computer & Info Sci,Empirical Research Methods,4,4,Timothy,Bickmore,36192,CS6350,25,6,TF 1335-1515
-Spring 2013,Coll of Computer & Info Sci,Exam Preparation - Doctoral,0,0,Auroop,Ganguly,37119,CS8960,5,1, -
+Spring 2013,Coll of Computer & Info Sci,Exam Preparation - Doctoral,0,0,Auroop,Ganguly,37119,CS8960,5,1,0
 Spring 2013,Coll of Computer & Info Sci,Fndtns Artificial Intellegence,4,4,Magy,Seif El-Nasr,35860,CS5100,35,19,WF 1145-1325
 Spring 2013,Coll of Computer & Info Sci,Found/Formal Methd SW Analysis,4,4,Pete,Manolios,36194,CS6540,25,0,W 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Fundamentals - Computer Netwkg,4,4,Christopher,Wilson,31574,CS5700,55,42,M 1800-2100
@@ -4082,9 +4082,9 @@ Spring 2013,Coll of Computer & Info Sci,Logic and Computation,4,4,Pete,Manolios,
 Spring 2013,Coll of Computer & Info Sci,Logic and Computation,4,4,Thomas,Wahl,30139,CS2800,85,60,MWR 1635-1740
 Spring 2013,Coll of Computer & Info Sci,Machine Learning,4,4,Virgil,Pavlu,36190,CS6140,50,21,T 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Managing Software Development,4,4,William,Clinger,32197,CS5500,100,49,R 1800-2100
-Spring 2013,Coll of Computer & Info Sci,Master's Project,4,4,Magy,Seif El-Nasr,35604,CS8674,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Master's Project,4,4,Rajmohan,Rajaraman,35611,CS8674,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Master's Project,4,4,Stephen,Intille,35615,CS8674,0,0, -
+Spring 2013,Coll of Computer & Info Sci,Master's Project,4,4,Magy,Seif El-Nasr,35604,CS8674,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Master's Project,4,4,Rajmohan,Rajaraman,35611,CS8674,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Master's Project,4,4,Stephen,Intille,35615,CS8674,0,0,0
 Spring 2013,Coll of Computer & Info Sci,Mobile Application Development,4,4,Stephen,Intille,36188,CS5520,50,22,MW 1450-1630
 Spring 2013,Coll of Computer & Info Sci,Mobile Application Development,4,4,Stephen,Intille,36228,CS4520,19,15,MW 1450-1630
 Spring 2013,Coll of Computer & Info Sci,Natural Language Processing,4,4,David,Smith,36189,CS6120,25,21,R 1800-2100
@@ -4092,44 +4092,44 @@ Spring 2013,Coll of Computer & Info Sci,Network Fundamentals,4,4,Christopher,Wil
 Spring 2013,Coll of Computer & Info Sci,Network Security,4,4,,,36776,CS6740,0,0,R 1900-2100
 Spring 2013,Coll of Computer & Info Sci,Network Security,4,4,Guevara,Noubir,31571,CS6740,55,28,W 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Network Security,4,4,Guevara,Noubir,32407,CS4740,15,6,W 1800-2100
-Spring 2013,Coll of Computer & Info Sci,Network Security,4,4,Guevara,Noubir,36613,CS6740,0,0, -
+Spring 2013,Coll of Computer & Info Sci,Network Security,4,4,Guevara,Noubir,36613,CS6740,0,0,0
 Spring 2013,Coll of Computer & Info Sci,Object-Oriented Design,4,4,Jessica,Schmidt,30783,CS3500,68,41,TF 0950-1130
 Spring 2013,Coll of Computer & Info Sci,Parallel Data Processing,4,4,Mirek,Riedewald,36191,CS6240,45,41,T 1800-2100
 Spring 2013,Coll of Computer & Info Sci,Principles of Programming Lang,4,4,Eliyahu,Barzilay,31878,CS5400,10,3,WF 1145-1325
 Spring 2013,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,,,36775,CS5010,0,0,M 1900-2100
 Spring 2013,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,31490,CS5010,50,53,T 1800-2100
-Spring 2013,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,36612,CS5010,20,0, -
+Spring 2013,Coll of Computer & Info Sci,Programming Design Paradigm,4,4,Mitchell,Wand,36612,CS5010,20,0,0
 Spring 2013,Coll of Computer & Info Sci,Programming Languages,4,4,Eliyahu,Barzilay,30751,CS4400,50,24,WF 1145-1325
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Agnes,Chan,35551,CS8982,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Alan,Mislove,35580,CS8982,5,4, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Alessandro,Vespignani,37224,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Amal,Ahmed,35545,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Christopher,Wilson,37226,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Engin,Kirda,37029,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Gene,Cooperman,37127,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Guevara,Noubir,36842,CS8982,5,3, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,35438,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Karl,Lieberherr,37178,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Magy,Seif El-Nasr,35469,CS8982,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Matthias,Felleisen,35622,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,35552,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Olin,Shivers III,35474,CS8982,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Pete,Manolios,35575,CS8982,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Peter,Desnoyers,37091,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Rajmohan,Rajaraman,35578,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Ravi,Sundaram,35595,CS8982,5,2, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Stephen,Intille,37225,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Thomas,Wahl,35605,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Timothy,Bickmore,37099,CS8982,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Yun,Fu,37115,CS8982,5,2, -
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Agnes,Chan,35551,CS8982,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Alan,Mislove,35580,CS8982,5,4,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Alessandro,Vespignani,37224,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Amal,Ahmed,35545,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Christopher,Wilson,37226,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Engin,Kirda,37029,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Gene,Cooperman,37127,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Guevara,Noubir,36842,CS8982,5,3,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,35438,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Karl,Lieberherr,37178,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Magy,Seif El-Nasr,35469,CS8982,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Matthias,Felleisen,35622,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,35552,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Olin,Shivers III,35474,CS8982,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Pete,Manolios,35575,CS8982,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Peter,Desnoyers,37091,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Rajmohan,Rajaraman,35578,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Ravi,Sundaram,35595,CS8982,5,2,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Stephen,Intille,37225,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Thomas,Wahl,35605,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Timothy,Bickmore,37099,CS8982,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Readings,4,8,Yun,Fu,37115,CS8982,5,2,0
 Spring 2013,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,32286,CS5011,50,53,R 1145-1325
-Spring 2013,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,36614,CS5011,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Research,2,4,Javed,Aslam,35658,CS8984,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Research,2,4,Mirek,Riedewald,35569,CS8986,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Research,4,8,David,Van Horn,36810,CS4991,2,1, -
-Spring 2013,Coll of Computer & Info Sci,Research Work Experience,0,0,Gene,Cooperman,37116,CS8949,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Research Work Experience,0,0,Guevara,Noubir,37028,CS8949,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Research Work Experience,0,0,Ravi,Sundaram,35654,CS8949,0,0, -
+Spring 2013,Coll of Computer & Info Sci,Recitation For CS 5010,0,0,Mitchell,Wand,36614,CS5011,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Research,2,4,Javed,Aslam,35658,CS8984,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Research,2,4,Mirek,Riedewald,35569,CS8986,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Research,4,8,David,Van Horn,36810,CS4991,2,1,0
+Spring 2013,Coll of Computer & Info Sci,Research Work Experience,0,0,Gene,Cooperman,37116,CS8949,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Research Work Experience,0,0,Guevara,Noubir,37028,CS8949,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Research Work Experience,0,0,Ravi,Sundaram,35654,CS8949,0,0,0
 Spring 2013,Coll of Computer & Info Sci,Robotic Science and Systems,4,4,Marsette,Vona,36186,CS5335,25,11,TF 0950-1130
 Spring 2013,Coll of Computer & Info Sci,Robotic Science and Systems,4,4,Marsette,Vona,36229,CS4610,19,19,TF 0950-1130
 Spring 2013,Coll of Computer & Info Sci,Senior Seminar,1,1,Raoul,Smith,30752,CS4000,60,36,T 1145-1325
@@ -4143,11 +4143,11 @@ Spring 2013,Coll of Computer & Info Sci,ST Theory: Adv. Cryptography,4,4,Yevgeni
 Spring 2013,Coll of Computer & Info Sci,Systems & Networks,4,4,Alan,Mislove,30754,CS3600,68,47,MWR 1335-1440
 Spring 2013,Coll of Computer & Info Sci,Theory of Computation,4,4,Emanuele,Viola,31877,CS7805,28,18,MW 1450-1630
 Spring 2013,Coll of Computer & Info Sci,Theory of Computation,4,4,Viera,Proulx,30781,CS3800,50,41,R 1800-2100
-Spring 2013,Coll of Computer & Info Sci,Thesis,4,4,Marsette,Vona,35637,CS7990,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Thesis,4,4,Timothy,Bickmore,37251,CS7990,1,1, -
-Spring 2013,Coll of Computer & Info Sci,Thesis Continuation,0,0,Guevara,Noubir,35306,CS7996,0,0, -
-Spring 2013,Coll of Computer & Info Sci,Thesis Continuation,0,0,Javed,Aslam,36933,CS7996,5,1, -
-Spring 2013,Coll of Computer & Info Sci,Thesis Continuation,0,0,Virgil,Pavlu,35326,CS7996,0,0, -
+Spring 2013,Coll of Computer & Info Sci,Thesis,4,4,Marsette,Vona,35637,CS7990,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Thesis,4,4,Timothy,Bickmore,37251,CS7990,1,1,0
+Spring 2013,Coll of Computer & Info Sci,Thesis Continuation,0,0,Guevara,Noubir,35306,CS7996,0,0,0
+Spring 2013,Coll of Computer & Info Sci,Thesis Continuation,0,0,Javed,Aslam,36933,CS7996,5,1,0
+Spring 2013,Coll of Computer & Info Sci,Thesis Continuation,0,0,Virgil,Pavlu,35326,CS7996,0,0,0
 Spring 2013,Coll of Computer & Info Sci,Web Development,4,4,Harriet,Fell,30284,CS4550,60,32,TF 1335-1515
 Spring 2013,Coll of Computer & Info Sci,Web Development,4,4,Richard,Rasala,31573,CS5610,64,109,TF 1525-1705
 Spring 2013,xyz,19thC MajorFig:Emerson/Thoreau,0,4,Theo,Davis,35929,ENGL4686,35,23,
@@ -4246,9 +4246,9 @@ Spring 2013,xyz,College Writing,0,4,Kathleen,Gonso,33781,ENGL1111,19,18,
 Spring 2013,xyz,College Writing,0,4,Lauren,Thacker,31010,ENGL1111,19,18,
 Spring 2013,xyz,College Writing,0,4,Susan,Spilecki,31021,ENGL1111,19,19,
 Spring 2013,xyz,College Writing,0,4,Susan,Spilecki,31038,ENGL1111,19,19,
-Spring 2013,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Jonathan,Benda,30006,ENGL1102,15,15,
-Spring 2013,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Kathleen,Gonso,32809,ENGL1102,15,15,
-Spring 2013,xyz,College Writing—SOL (Speakers of Other Languages),0,4,Shun,Kiang,35375,ENGL1102,15,15,
+Spring 2013,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Jonathan,Benda,30006,ENGL1102,15,15,
+Spring 2013,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Kathleen,Gonso,32809,ENGL1102,15,15,
+Spring 2013,xyz,College Writing???SOL (Speakers of Other Languages),0,4,Shun,Kiang,35375,ENGL1102,15,15,
 Spring 2013,xyz,Color 1 Foundation,0,1,Sophia,Ainslie,30127,ARTF1102,20,20,
 Spring 2013,xyz,Color 2 Foundation,0,1,Elisabeth,Neville,32626,ARTF1104,18,18,
 Spring 2013,xyz,Composition Lessons,0,1,Ronald,Smith,30669,MUSC1903,49,21,
@@ -4377,7 +4377,7 @@ Spring 2013,xyz,International Business and Global Social Responsibility,0,4,Elit
 Spring 2013,xyz,International Financial Management,0,4,Gopala,Vasudevan,30916,FINA4320,40,39,
 Spring 2013,xyz,International Financial Management,0,4,Gopala,Vasudevan,30917,FINA4320,40,18,
 Spring 2013,xyz,International Relations,0,4,Denise,Horn,30878,POLS1160,90,91,
-Spring 2013,xyz,Interpreting the Day’s News,0,4,Alan,Schroeder,33012,JRNL1150,49,50,
+Spring 2013,xyz,Interpreting the Day???s News,0,4,Alan,Schroeder,33012,JRNL1150,49,50,
 Spring 2013,xyz,Int. Learn for PHYS 1151,0,1,Jin,Xu,35004,PHYS1153,18,18,
 Spring 2013,xyz,Introduction to Arabic Culture,0,4,Shakir,Mustafa,33727,CLTR1502,35,18,
 Spring 2013,xyz,Introduction to Communication Studies,0,4,Dale,Herbeck,31139,COMM1101,100,100,
@@ -4416,7 +4416,8 @@ Spring 2013,xyz,Lab for BIOL 2323,0,1,James,Manning,31234,BIOL2324,16,18,
 Spring 2013,xyz,Lab for CHEM 1211,0,1,Edward,Witten,30548,CHEM1212,12,12,
 Spring 2013,xyz,Lab for CHEM 1211,0,1,Edward,Witten,33806,CHEM1212,12,12,
 Spring 2013,xyz,Lab for CHEM 1211,0,1,Edward,Witten,36519,CHEM1212,12,12,
-Spring 2013,xyz,Lab for CHEM 1214,0,1,Christopher,Toher,36609,CHEM1215,12,12, Spring 2013,xyz,Lab for CHEM 1214,0,1,Edward,Witten,36609,CHEM1215,12,12,
+Spring 2013,xyz,Lab for CHEM 1214,0,1,Christopher,Toher,36609,CHEM1215,12,12,
+ Spring 2013,xyz,Lab for CHEM 1214,0,1,Edward,Witten,36609,CHEM1215,12,12,
 Spring 2013,xyz,Lab for CHEM 1214,0,1,Edward,Witten,30544,CHEM1215,12,12,
 Spring 2013,xyz,Lab for CHEM 1214,0,1,Edward,Witten,35140,CHEM1215,12,10,
 Spring 2013,xyz,Lab for CHEM 2311,0,1,John,Bottomy,30600,CHEM2312,12,12,
@@ -4498,8 +4499,8 @@ Spring 2013,xyz,Numerical Analysis,0,4,Jayant,Shah,35991,MATH3530,25,28,
 Spring 2013,xyz,Orchestra,0,1,Evan,Bennett,30666,MUSC1906,99,57,
 Spring 2013,xyz,Ordinary Differential Equations,0,4,Alexandru,Suciu,30769,MATH2351,49,58,
 Spring 2013,xyz,Organic Chemistry 1,0,4,Sanga,Kugabalasooriar,30601,CHEM2311,114,138,
-Spring 2013,xyz,Organic Chemistry 2,0,4,John,Bottomy,31388,CHEM2313,180,126, Spring 2013,xyz,Organic Chemistry 2,0,4,Sanga,Kugabalasooriar,31388,CHEM2313,180,126,
-Spring 2013,xyz,Organic Chemistry 2,0,4,John,Bottomy,32687,CHEM2313,103,95, Spring 2013,xyz,Organic Chemistry 2,0,4,Sanga,Kugabalasooriar,32687,CHEM2313,103,95,
+Spring 2013,xyz,Organic Chemistry 2,0,4,John,Bottomy,31388,CHEM2313,180,126,
+Spring 2013,xyz,Organic Chemistry 2,0,4,John,Bottomy,32687,CHEM2313,103,95,
 Spring 2013,xyz,Organic Chemistry 2,0,4,Oyindasola,Oyelaran,31236,CHEM2313,100,98,
 Spring 2013,xyz,Organizational Behavior,0,4,Barbara,Larson,32595,ORGB3209,60,58,
 Spring 2013,xyz,Organizational Behavior,0,4,Barbara,Larson,32596,ORGB3209,60,58,
@@ -4558,7 +4559,7 @@ Spring 2013,xyz,Reason| Risk| and Evidence,0,4,Rory,Smead,35942,PHIL1114,45,30,
 Spring 2013,xyz,Recitation for CHEM 1211,0,0,Edward,Witten,30545,CHEM1213,30,25,
 Spring 2013,xyz,Recitation for CHEM 1211,0,0,Edward,Witten,30546,CHEM1213,42,48,
 Spring 2013,xyz,Recitation for CHEM 1211,0,0,Edward,Witten,30547,CHEM1213,30,40,
-Spring 2013,xyz,Recitation for CHEM 1214,0,0,Geoffrey,Davies,30469,CHEM1216,30,27, Spring 2013,xyz,Recitation for CHEM 1214,0,0,Thomas,Gilbert,30469,CHEM1216,30,27,
+Spring 2013,xyz,Recitation for CHEM 1214,0,0,Geoffrey,Davies,30469,CHEM1216,30,27,
 Spring 2013,xyz,Recitation for CHEM 1214,0,0,Geoffrey,Davies,31412,CHEM1216,35,36,
 Spring 2013,xyz,Recitation for CHEM 1214,0,0,Thomas,Gilbert,30103,CHEM1216,30,8,
 Spring 2013,xyz,Recitation for CHEM 2311,0,0,Pamela,Stenberg,35020,CHEM2319,150,137,
@@ -4570,7 +4571,7 @@ Spring 2013,xyz,Recitation for ECON 1115,0,0,Michael,Brisson,34503,ECON1125,25,2
 Spring 2013,xyz,Recitation for ECON 1115,0,0,Michael,Brisson,34505,ECON1125,25,28,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Abdullah,Tirgil,36059,ECON1126,18,21,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36050,ECON1126,18,22,
-Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36061,ECON1126,18,14, Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36061,ECON1126,18,15,
+Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36061,ECON1126,18,14,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Thomas,PlaHovinsak,36055,ECON1126,18,20,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Thomas,PlaHovinsak,36057,ECON1126,18,19,
 Spring 2013,xyz,Recitation for ECON 1116,0,0,Xi,Shen,36047,ECON1126,18,18,
@@ -4659,22 +4660,22 @@ Summer 1 2011,Coll of Computer & Info Sci,Mobile Application Development,4,4,Ste
 Summer 1 2011,Coll of Computer & Info Sci,Mobile Application Development,4,4,Stephen,Intille,40788,CS5520,30,15,
 Summer 1 2011,Coll of Computer & Info Sci,Object-Oriented Design,4,4,William,Clinger,40785,CS3500,50,10,
 Summer 1 2012,Coll of Computer & Info Sci,"Algorithms, Data Structur Engr",4,4,Virgiliu,Pavlu,40126,CS1500,45,37,MTWR 0800-0940
-Summer 1 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,40385,CS6964,75,132, -
+Summer 1 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,40385,CS6964,75,132,0
 Summer 1 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Leena,Razzaq,40305,CS1100,45,44,MTWR 1520-1700
-Summer 1 2012,Coll of Computer & Info Sci,Directed Study,1,6,Richard,Rasala,41054,CS4992,1,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Directed Study,1,6,Stephen,Intille,41127,CS4992,1,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Directed Study,2,4,Javed,Aslam,41140,CS5976,5,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Directed Study,2,4,Richard,Rasala,41040,CS5976,5,1, -
+Summer 1 2012,Coll of Computer & Info Sci,Directed Study,1,6,Richard,Rasala,41054,CS4992,1,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Directed Study,1,6,Stephen,Intille,41127,CS4992,1,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Directed Study,2,4,Javed,Aslam,41140,CS5976,5,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Directed Study,2,4,Richard,Rasala,41040,CS5976,5,1,0
 Summer 1 2012,Coll of Computer & Info Sci,Fundamentals of Computer Sci 2,4,4,David,Van Horn,40306,CS2510,48,25,MTWR 0950-1130
 Summer 1 2012,Coll of Computer & Info Sci,Lab for CS 1500,1,1,Virgiliu,Pavlu,40127,CS1501,45,37,TR 1140-1320
 Summer 1 2012,Coll of Computer & Info Sci,Lab for CS 2510,1,1,David,Van Horn,40307,CS2511,48,25,TR 1330-1510
-Summer 1 2012,Coll of Computer & Info Sci,Master's Project,4,4,Agnes,Chan,41038,CS8674,5,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Master's Project,4,4,Mirek,Riedewald,41110,CS8674,5,1, -
+Summer 1 2012,Coll of Computer & Info Sci,Master's Project,4,4,Agnes,Chan,41038,CS8674,5,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Master's Project,4,4,Mirek,Riedewald,41110,CS8674,5,1,0
 Summer 1 2012,Coll of Computer & Info Sci,Object-Oriented Design,4,4,William,Clinger,40473,CS3500,50,11,MTWR 1520-1700
-Summer 1 2012,Coll of Computer & Info Sci,Readings,4,8,Martin,Schedlbauer,41125,CS8982,5,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,41109,CS8982,5,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Readings,4,8,Stephen,Intille,41130,CS8982,5,1, -
-Summer 1 2012,Coll of Computer & Info Sci,Research,4,8,William,Clinger,40980,CS4991,5,1, -
+Summer 1 2012,Coll of Computer & Info Sci,Readings,4,8,Martin,Schedlbauer,41125,CS8982,5,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,41109,CS8982,5,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Readings,4,8,Stephen,Intille,41130,CS8982,5,1,0
+Summer 1 2012,Coll of Computer & Info Sci,Research,4,8,William,Clinger,40980,CS4991,5,1,0
 Summer 2 2010,Coll of Computer & Info Sci,"Algorithms, Data Structur Engr",4,4,Peter,Douglass,20322,CS1500,45,10,
 Summer 2 2010,Coll of Computer & Info Sci,CS & Its Applications,4,4,Jeffrey,Satterley,20689,CS1100,45,37,
 Summer 2 2010,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,20920,CS9996,0,1,
@@ -4690,11 +4691,11 @@ Summer 2 2011,Coll of Computer & Info Sci,Directed Study,1,6,Richard,Rasala,6080
 Summer 2 2011,Coll of Computer & Info Sci,Directed Study,1,6,Richard,Rasala,60812,CS4992,1,1,
 Summer 2 2011,Coll of Computer & Info Sci,Lab for CS 1500,1,1,Chinmoy,Dutta,60143,CS1501,45,18,
 Summer 2 2012,Coll of Computer & Info Sci,"Algorithms, Data Structur Engr",4,4,Jose,Annunziato,60113,CS1500,45,19,MTWR 1800-1940
-Summer 2 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,60332,CS6964,100,57, -
+Summer 2 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,60332,CS6964,100,57,0
 Summer 2 2012,Coll of Computer & Info Sci,CS & Its Applications,4,4,Peter,Golbus,60264,CS1100,45,39,MTWR 1520-1700
-Summer 2 2012,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Derek,Brodeur,60716,IA5001,20,13, -
+Summer 2 2012,Coll of Computer & Info Sci,Cyberspace Tech & Applications,3,3,Derek,Brodeur,60716,IA5001,20,13,0
 Summer 2 2012,Coll of Computer & Info Sci,Lab for CS 1500,1,1,Jose,Annunziato,60114,CS1501,45,19,TR 1140-1320
-Summer 2 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Rajmohan,Rajaraman,60831,CS8949,5,1, -
+Summer 2 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Rajmohan,Rajaraman,60831,CS8949,5,1,0
 Summer Full 2010,Bouve College of Hlth Sciences,American Health-Care System,3,3,George,Moran,51831,HINF5105,25,15,
 Summer Full 2010,Bouve College of Hlth Sciences,Database Design and Security,3,3,Daniel,Ries,51915,HINF6220,30,28,
 Summer Full 2010,Bouve College of Hlth Sciences,Design for Usability Health,3,3,,,50170,HINF6345,25,0,
@@ -4739,26 +4740,30 @@ Summer Full 2011,Coll of Computer & Info Sci,Research Work Experience,0,0,Javed,
 Summer Full 2011,Coll of Computer & Info Sci,Research Work Experience,0,0,Olin,Shivers,51123,CS8949,0,0,
 Summer Full 2011,Coll of Computer & Info Sci,Research Work Experience,0,0,Peter,Desnoyers,51768,CS8949,5,2,
 Summer Full 2011,Coll of Computer & Info Sci,Research Work Experience,0,0,Ravi,Sundaram,51047,CS8949,0,0,
-Summer Full 2012,Bouve College of Hlth Sciences,Design for Usability Health,3,3,Kathleen,Aubrey,50057,HINF6345,35,28, -
-Summer Full 2012,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,50058,HINF7701,40,10, -
-Summer Full 2012,Bouve College of Hlth Sciences,Hlth Inf Internship,1,1,Daniel,Feinberg,50041,HINF7370,0,0, -
+Summer Full 2012,Bouve College of Hlth Sciences,Design for Usability Health,3,3,Kathleen,Aubrey,50057,HINF6345,35,28,0
+Summer Full 2012,Bouve College of Hlth Sciences,Hlth Inf Capstone Project,3,3,Daniel,Feinberg,50058,HINF7701,40,10,0
+Summer Full 2012,Bouve College of Hlth Sciences,Hlth Inf Internship,1,1,Daniel,Feinberg,50041,HINF7370,0,0,0
 Summer Full 2012,Bouve College of Hlth Sciences,KeyStandrds Health Infrmatics,3,3,,,50056,HINF6355,25,0,M 1800-2030
 Summer Full 2012,Bouve College of Hlth Sciences,Project Management,3,3,Scott,Bradley,51710,HINF6215,35,12,R 1800-2030
-Summer Full 2012,Bouve College of Hlth Sciences,Public Health Informatics,3,3,Daniel,Ollendorf,51642,HINF6350,40,28, -
-Summer Full 2012,Bouve College of Hlth Sciences,Strategic Topics Programming,3,3,Daniel,Feinberg,50073,HINF6230,30,12, -
-Summer Full 2012,Coll of Computer & Info Sci,Applied Cryptography,4,4,Agnes,Chan,50734,IA5120,35,18, -
-Summer Full 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,51466,CS6964,10,0, -
-Summer Full 2012,Coll of Computer & Info Sci,Cyberlaw,4,4,Kyle,Courtney,51015,IA5240,40,9, -
-Summer Full 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,51727,CS9996,5,2, -
-Summer Full 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,51715,CS9996,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Master's Project,4,4,Magy,Seif El-Nasr,51765,CS8674,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Readings,1,4,Frederick,Howell,51756,IA8982,5,2, -
-Summer Full 2012,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,51762,CS8982,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,51742,CS8982,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Engin,Kirda,51704,CS8949,2,2, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Gene,Cooperman,51707,CS8949,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Magy,Seif El-Nasr,51749,CS8949,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Mirek,Riedewald,51726,CS8949,5,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Pete,Manolios,51705,CS8949,1,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Peter,Desnoyers,51714,CS8949,1,1, -
-Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Rajmohan,Rajaraman,51755,CS8949,5,1, -
+Summer Full 2012,Bouve College of Hlth Sciences,Public Health Informatics,3,3,Daniel,Ollendorf,51642,HINF6350,40,28,0
+Summer Full 2012,Bouve College of Hlth Sciences,Strategic Topics Programming,3,3,Daniel,Feinberg,50073,HINF6230,30,12,0
+Summer Full 2012,Coll of Computer & Info Sci,Applied Cryptography,4,4,Agnes,Chan,50734,IA5120,35,18,0
+Summer Full 2012,Coll of Computer & Info Sci,Co-op Work Experience,0,0,Melvin,Simms,51466,CS6964,10,0,0
+Summer Full 2012,Coll of Computer & Info Sci,Cyberlaw,4,4,Kyle,Courtney,51015,IA5240,40,9,0
+Summer Full 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Javed,Aslam,51727,CS9996,5,2,0
+Summer Full 2012,Coll of Computer & Info Sci,Dissertation Continuation,0,0,Matthias,Felleisen,51715,CS9996,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Master's Project,4,4,Magy,Seif El-Nasr,51765,CS8674,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Readings,1,4,Frederick,Howell,51756,IA8982,5,2,0
+Summer Full 2012,Coll of Computer & Info Sci,Readings,4,8,Javed,Aslam,51762,CS8982,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Readings,4,8,Mirek,Riedewald,51742,CS8982,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Engin,Kirda,51704,CS8949,2,2,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Gene,Cooperman,51707,CS8949,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Magy,Seif El-Nasr,51749,CS8949,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Mirek,Riedewald,51726,CS8949,5,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Pete,Manolios,51705,CS8949,1,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Peter,Desnoyers,51714,CS8949,1,1,0
+Summer Full 2012,Coll of Computer & Info Sci,Research Work Experience,0,0,Rajmohan,Rajaraman,51755,CS8949,5,1,0
+ Spring 2013,xyz,Recitation for ECON 1116,0,0,Rand,Ghayad,36061,ECON1126,18,15,0
+ Spring 2013,xyz,Recitation for CHEM 1214,0,0,Thomas,Gilbert,30469,CHEM1216,30,27,0
+ Spring 2013,xyz,Organic Chemistry 2,0,4,Sanga,Kugabalasooriar,31388,CHEM2313,180,126,0
+ Spring 2013,xyz,Organic Chemistry 2,0,4,Sanga,Kugabalasooriar,32687,CHEM2313,103,95,0
