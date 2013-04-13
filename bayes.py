@@ -90,6 +90,8 @@ def bayes_mod(db, means):
 	#for each in db:
 	# bern_db.append(map(lambda val, mean:int(val > mean) , each, attributes))
 	# for every feature
+	if len(db) == 0:
+		return []
 	num_features = len(db[0]) - 1
 	num_spam = sum(map(lambda val:val[-1], db))
 	num_nspam = len(db) - num_spam
@@ -115,6 +117,8 @@ def bayes_mod(db, means):
 
 
 def predict_bayes(model, means, data_point, prior):
+	if model == []:
+		return prior
 	spam = math.log(prior, 2)
 	nspam = math.log((1 - prior), 2)
 	for i in range(len(data_point) - 1):

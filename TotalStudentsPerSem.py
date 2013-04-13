@@ -8,8 +8,15 @@ if len(sys.argv) == 3:
 		program = sys.argv[2:]
 
 cur_sem = sys.argv[1]
+
+def prev_sems(cur_sem):
+	all_sems = ['Fall 2009', 'Spring 2010', 'Fall 2010', 'Spring 2011', 'Fall 2011', 'Spring 2012', 'Fall 2012', 'Spring 2013']
+	cur_sem_indx = all_sems.index(cur_sem)
+	return all_sems[:cur_sem_indx]
+
+
 def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ]):
-	print lvl
+	#print lvl
 	prior = {}
 	avg_prior = {}
 	#program = ['MS Health Informatics']
@@ -27,6 +34,8 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 			sem = enroll[0]
 			crn = enroll[1]
 			slvl = enroll[2]
+			if slvl != lvl:
+				continue
 			nid = enroll[3]
 			if nid not in stud_hash:
 				continue
@@ -69,12 +78,11 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 					grad = hm[sem][crn]['GR']
 				if "UG" in hm[sem][crn]:
 					undergrad = hm[sem][crn]['UG']
-			print lvl
 			if lvl == 'GR':
 				val = grad
 			else:
 				val = undergrad
-				print val
+				#print val
 			line.insert(out_index, str(val))
 			#line.insert(out_index, str(grad))
 			if sem not in total:
@@ -102,8 +110,16 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 		act_fd.write(key + "\t" + str(value) + "\n")
 
 	#print total
-	for sem in prior:
+	for sem in prev_sems(cur_sem) + [cur_sem]:
+		# Don't use current sem to calculate the prior
 		if 'Summer' in sem:
+			continue
+		#print sem
+		# Initialize priors for new courses this semester to 0
+		if sem == cur_sem:
+			for cid in prior[sem]:
+				if cid not in avg_prior:
+					avg_prior[cid] = { 'val':0.0, 'cnt':1.0 }
 			continue
 		for cid in prior[sem]:
 			if cid in avg_prior:
@@ -112,9 +128,12 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 			else:
 				avg_prior[cid] = { 'val':prior[sem][cid] / total[sem] ,'cnt':1 }
 
+	tot = 1.0
+	smoother = tot / len(avg_prior) 
 	for cid in avg_prior:
-		print cid, avg_prior[cid]['val'], avg_prior[cid]['cnt']
-		avg_prior[cid] = avg_prior[cid]['val'] / avg_prior[cid]['cnt']
+		#print cid, avg_prior[cid]['val'], avg_prior[cid]['cnt']
+		avg_prior[cid] = (avg_prior[cid]['val'] + smoother) / (avg_prior[cid]['cnt'] + tot)
+
 
 	act_fd.close()
 	out_fd.close()

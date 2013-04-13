@@ -73,6 +73,9 @@ def read_grad_info(program, cur_sem, lvl):
 	return grad_hash
 
 def stud_sem_wise_course_map(program, cur_sem, lvl, current_flag=False):
+	SEMS_TO_TAKE = [ 'sem1', 'sem2', 'sem3', 'sem4' ]
+	if lvl == "UG":
+		SEMS_TO_TAKE += [ 'sem5', 'sem6', 'sem7']#, 'sem8' ]
 	student_hash = {}
 	uniq_courses = []
 	prev_sems_stud_sem_list = students_in_program(program, cur_sem, False)
@@ -99,36 +102,12 @@ def stud_sem_wise_course_map(program, cur_sem, lvl, current_flag=False):
 							uniq_courses += student_hash[stud_id][sems] 
 						break
 			else:
-				student_hash[stud_id] = { 'sem1':[], 'sem2':[], 'sem3':[], 'sem4':[] }
+				student_hash[stud_id] = {}
+				for stud_sem in SEMS_TO_TAKE:
+					student_hash[stud_id][stud_sem] = []
 				if stud_id in grad_hash[sem]:
 					student_hash[stud_id]['sem1'] = grad_hash[sem][stud_id]
 	return list(set(uniq_courses)), student_hash
-'''
-def cur_sem_course_map(program, cur_sem, lvl):
-	student_hash = {}
-	student_sem_list = students_in_program(program, cur_sem, True)
-	grad_hash = read_grad_info(program, cur_sem, lvl)
-	for sem in prev_sems(cur_sem) + [cur_sem]:
-		for stud_id in student_sem_list[cur_sem]:
-			if stud_id in student_hash:
-				check_flag = True
-				for sems in sorted(student_hash[stud_id].keys()):
-					if student_hash[stud_id][sems] == []:
-						check_flag = False
-						# print stud_id, sem, sems
-						# We assume that if stud_id is not in the grad_hash for 
-						# that sem then the student is Eligible to register but has
-						# taken only a Coop (or one of the unwanted) courses
-						if stud_id in grad_hash[sem]:
-							student_hash[stud_id][sems] = grad_hash[sem][stud_id]
-						break
-				if check_flag:
-					print "Student -", stud_id, "has more than 4 valid sems"
-			else:
-				student_hash[stud_id] = { 'sem1':[], 'sem2':[], 'sem3':[], 'sem4':[] }
-				if stud_id in grad_hash[sem]:
-					student_hash[stud_id]['sem1'] = grad_hash[sem][stud_id]
-	print student_hash'''
 
 if __name__ == "__main__":
 	#stud_sem_wise_course_map([ 'MSCS Computer Science' ], "Spring 2013", "Graduate")

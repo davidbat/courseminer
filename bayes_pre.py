@@ -25,11 +25,11 @@ parser.add_option("-p", "--program",
                   action = "store", dest="program", default= 'MSCS Computer Science',
                   help="program to predict over.\n'MSCS Computer Science' is the default program.")
 parser.add_option("-l", "--level",
-                  action = "store", dest="level", default= "Graduate",
+                  action = "store", dest="level", default= "GR",
                   help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
 (options, args) = parser.parse_args()
 
-print options
+#print options
 if args != []:
 	print "Too many or too few options specified. Use -h to see usage"
 	exit()
@@ -39,7 +39,7 @@ if args != []:
 def get_frequent_pairs():
 	return map(lambda row:row[:-1] ,SS.ReadFile("frequent_pairs.txt", " "))
 
-SEM_NUMBER = [ 'sem2', 'sem3', 'sem4' ]
+
 dont_predict = [ 'CS5010' ]
 
 options = vars(options)
@@ -48,6 +48,13 @@ poss_flag = options['poss_flag']
 program = options['program'].split(',')
 level = options['level']
 poss_fn = "stud_actual.txt"
+if level == "GR":
+	SEM_NUMBER = [ 'sem2', 'sem3', 'sem4' ]
+	course_taken = 2.0
+else:
+	SEM_NUMBER = [ 'sem2', 'sem3', 'sem4', 'sem5', 'sem6', 'sem7']#, 'sem8' ]
+	course_taken = 3.0
+
 
 prior = TSP.calculate_students(cur_sem, level, program)
 #print "prior =", prior['CS5800']
@@ -74,21 +81,18 @@ def find_last_sem(sem_hash):
 
 def course_label(uniq_courses, student_course_map, test_flag=False):
 	course_label_hash = {}
-	features = { 'sem2':{}, 'sem3':{}, 'sem4':{} }
+	features = {}
+	for sem in SEM_NUMBER:
+		features[sem] = {}
 	students_last_sem = {}
 	for stud_id in student_course_map:
 		students_last_sem[stud_id] = find_last_sem(student_course_map[stud_id])
-		sem1 = student_course_map[stud_id]['sem1']
-		sem2 = student_course_map[stud_id]['sem2']
-		sem3 = student_course_map[stud_id]['sem3']
-		sem4 = student_course_map[stud_id]['sem4']
-		features['sem2'][stud_id] = map(lambda x:1 if x in sem1 else 0, uniq_courses) + \
-			map(lambda courses:1 if courses[0] in sem1 and courses[1] in sem1 else 0, frequent_pairs)
-		features['sem3'][stud_id] = map(lambda x:1 if x in sem1+sem2 else 0, uniq_courses) + \
-			map(lambda courses:1 if courses[0] in sem1+sem2 and courses[1] in sem1 else 0, frequent_pairs)
-		features['sem4'][stud_id] = map(lambda x:1 if x in sem1+sem2+sem3 else 0, uniq_courses) + \
-			map(lambda courses:1 if courses[0] in sem1+sem2+sem3 and courses[1] in sem1 else 0, frequent_pairs)
-
+		sem_cnt = 0
+		prev_sem_data = student_course_map[stud_id]['sem1']
+		for sem in SEM_NUMBER:
+			features[sem][stud_id] = map(lambda x:1 if x in prev_sem_data else 0, uniq_courses) + \
+				map(lambda courses:1 if courses[0] in prev_sem_data and courses[1] in prev_sem_data else 0, frequent_pairs)
+			prev_sem_data += student_course_map[stud_id][sem]
 
 	for course in uniq_courses:
 		course_label_hash[course] = {}
@@ -111,7 +115,7 @@ def calculate_error(actual_hash, predicted_hash):
 	mse = 0
 	cnt = 0
 	fd = open("Predicted_values.txt", "w")
-	print "Course\tActual\tPredict\tDiff\tMSE"
+	print "Course\t\tActual\tPredict\tDiff\tMSE"
 	for key in sorted(predicted_hash):
 		actual = 0
 		if key in actual_hash:
@@ -124,7 +128,10 @@ def calculate_error(actual_hash, predicted_hash):
 		#	continue
 		diff = abs(actual - round(predicted_hash[key]))
 		mse += diff ** 2
-		output_str = key + "\t" + str(actual) + "\t" + str(round(predicted_hash[key])) + "\t" + \
+		tabs = '\t'
+		if len(key) <= 6:
+			tabs += '\t'
+		output_str = key + tabs + str(actual) + "\t" + str(round(predicted_hash[key])) + "\t" + \
 			str(diff) + "\t" + str(diff ** 2)
 		print output_str
 		fd.write(output_str + "\n")
@@ -147,11 +154,12 @@ course_predictor = {}
 means = [ 0.5 for item in range(len(unique_courses+frequent_pairs)) ]
 for course in poss_courses:
 	if course not in course_label_hash:
-		print course, " not available"
+		print course, "details not available from previous student history"
 		continue
-	course_predictor[course] = { 'sem2':[], 'sem3':[], 'sem4':[] }
+	course_predictor[course] = {}
 	for sem in SEM_NUMBER:
-
+		course_predictor[course][sem] = []
+	for sem in SEM_NUMBER:
 		course_predictor[course][sem] = bayes_mod(course_label_hash[course][sem], means)
 		#FP, FN, P, N, ERR, ROC_TPR, ROC_FPR, AUC = bayes_mod(course_label_hash[course][sem], means, test[course][sem], 0.5)
 		#print course ," ->  error = %.2f" % ERR, "\tAUC = %.2f" % AUC, "\tFP = %.2f" % FP, "\tFN = %.2f" % FN, "\tP = ", P, "\tN = ", N
@@ -175,11 +183,11 @@ for stud_id in student_cur_course_map:
 		features = map(lambda x:1 if x in prev_sem_data else 0, unique_courses) + \
 			map(lambda courses:1 if courses[0] in prev_sem_data and courses[1] in prev_sem_data else 0, frequent_pairs)
 		label = [ 1 if course in student_cur_course_map[stud_id][last_sem] else 0 ]
-		
+		#print course, prior[course]
 		prob[course] = predict_bayes(course_predictor[course][last_sem], 
 			means, features + label, prior[course])
-	print stud_id, student_cur_course_map[stud_id], prev_sem_data
-	pprint(prob)
+	#print stud_id, student_cur_course_map[stud_id], prev_sem_data
+	#pprint(prob)
 	Z = sum(map(lambda k:prob[k], prob))
 	# stud probably did a course again if he's here
 	# or we actually don't have a prediction
@@ -187,17 +195,17 @@ for stud_id in student_cur_course_map:
 		Z = sum(map(lambda k:prior[k], predict_over))
 		print stud_id, "don't know what course to give him"
 		for course in predict_over:
-			course_capacity[course] += 2.0 * prior[course] / Z
+			course_capacity[course] += course_taken * prior[course] / Z
 		continue
 	for course in prob:
-		course_capacity[course] += 2 * prob[course] / Z
+		course_capacity[course] += course_taken * prob[course] / Z
 print "NEW STUDENTS =", new_students
 Z = sum(map(lambda k:prior[k], predict_over))
 
 if level == 'GR':
 	course_capacity['CS5010'] += new_students
 else:
-	new_students = new_students * 2
+	new_students = new_students * course_taken
 
 for course in predict_over:
 	course_capacity[course] += float(new_students) * prior[course] / Z
