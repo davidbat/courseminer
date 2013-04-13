@@ -1,12 +1,40 @@
 import sys
 import TotalStudentsPerSem as TSP
-import pre_proc as PP
-import csv
-import eligible_student_sem as ES
-import actual_labels as AL
-import math
 import sem_stud_data as SS
 from bayes import bayes, bayes_mod, predict_bayes
+from optparse import OptionParser
+import csv
+import math
+
+#import pre_proc as PP
+
+#import eligible_student_sem as ES
+#import actual_labels as AL
+
+
+
+
+parser = OptionParser()
+parser.add_option("-r", "--restrict",
+				  action = "store_true", dest="poss_flag", default=False,
+                  help="Restrict predictions to courses available for the semester.")
+parser.add_option("-s", "--sem",
+                  action = "store", dest="cur_sem",
+                  help="semester to predict over.")
+parser.add_option("-p", "--program",
+                  action = "store", dest="program", default= 'MSCS Computer Science',
+                  help="program to predict over.\n'MSCS Computer Science' is the default program.")
+parser.add_option("-l", "--level",
+                  action = "store", dest="level", default= "Graduate",
+                  help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
+(options, args) = parser.parse_args()
+
+print options
+if args != []:
+	print "Too many or too few options specified. Use -h to see usage"
+	exit()
+
+
 
 def get_frequent_pairs():
 	return map(lambda row:row[:-1] ,SS.ReadFile("frequent_pairs.txt", " "))
@@ -14,24 +42,19 @@ def get_frequent_pairs():
 SEM_NUMBER = [ 'sem2', 'sem3', 'sem4' ]
 dont_predict = [ 'CS5010' ]
 
-poss_flag = False
-opt = 0
+options = vars(options)
+cur_sem = options['cur_sem']
+poss_flag = options['poss_flag']
+program = options['program'].split(',')
+level = options['level']
 poss_fn = "stud_actual.txt"
-if sys.argv[1] == "-p":
-	opt = 1
-	poss_flag = True
-cur_sem = sys.argv[opt+1]
 
-program = [ 'MSCS Computer Science' ]
-if len(sys.argv) > opt+2:
-	program = sys.argv[opt+2:]
-
-prior = TSP.calculate_students(cur_sem, program)
-print "prior =", prior['CS5800']
+prior = TSP.calculate_students(cur_sem, level, program)
+#print "prior =", prior['CS5800']
 # false means that we want all prev sems
 # true means only cur sem enrolled students
-uniq_coursesx, student_course_map = SS.stud_sem_wise_course_map(program, cur_sem, "Graduate", False)
-uniq_coursesz, student_cur_course_map = SS.stud_sem_wise_course_map(program, cur_sem, "Graduate", True)
+uniq_coursesx, student_course_map = SS.stud_sem_wise_course_map(program, cur_sem, level, False)
+uniq_coursesz, student_cur_course_map = SS.stud_sem_wise_course_map(program, cur_sem, level, True)
 
 unique_courses = list(set(uniq_coursesx + uniq_coursesz))
 
@@ -170,8 +193,13 @@ for stud_id in student_cur_course_map:
 		course_capacity[course] += 2 * prob[course] / Z
 print "NEW STUDENTS =", new_students
 Z = sum(map(lambda k:prior[k], predict_over))
+
+if level == 'GR':
+	course_capacity['CS5010'] += new_students
+else:
+	new_students = new_students * 2
+
 for course in predict_over:
 	course_capacity[course] += float(new_students) * prior[course] / Z
-course_capacity['CS5010'] += new_students
 print "output"
 calculate_error(actual_courses, course_capacity)

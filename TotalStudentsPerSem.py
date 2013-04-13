@@ -8,7 +8,8 @@ if len(sys.argv) == 3:
 		program = sys.argv[2:]
 
 cur_sem = sys.argv[1]
-def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
+def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ]):
+	print lvl
 	prior = {}
 	avg_prior = {}
 	#program = ['MS Health Informatics']
@@ -19,14 +20,13 @@ def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
 			if stud[1] in program: 
 				stud_hash[stud[5]] = stud[1]
 
-
 	#print stud_hash
 	with open('CourseEnrollmentInfo.csv') as csvfile:
 		enroll_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for enroll in enroll_data:
 			sem = enroll[0]
 			crn = enroll[1]
-			lvl = enroll[2]
+			slvl = enroll[2]
 			nid = enroll[3]
 			if nid not in stud_hash:
 				continue
@@ -34,17 +34,16 @@ def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
 			if sem not in hm:
 				hm[sem] = {}
 				hm[sem][crn] = {}
-				hm[sem][crn][lvl] = 1
+				hm[sem][crn][slvl] = 1
 			else:
 				if crn not in hm[sem]:
 					hm[sem][crn] = {}
-					hm[sem][crn][lvl] = 1
+					hm[sem][crn][slvl] = 1
 				else:
 					if lvl in hm[sem][crn]:
-						hm[sem][crn][lvl] += 1
+						hm[sem][crn][slvl] += 1
 					else:
-						hm[sem][crn][lvl] = 1
-				
+						hm[sem][crn][slvl] = 1
 
 	# max, grad, undergrad, actual
 	#fid=open('classes.output.csv','w')
@@ -66,29 +65,35 @@ def calculate_students(cur_sem, program=[ "MSCS Computer Science" ]):
 			grad = 0
 			undergrad = 0
 			if sem in hm and crn in hm[sem]:
-				if "Graduate" in hm[sem][crn]:
-					grad = hm[sem][crn]['Graduate']
-				if "Undergraduate" in hm[sem][crn]:
-					undergrad = hm[sem][crn]['Undergraduate']
-			line.insert(out_index, str(undergrad))
-			line.insert(out_index, str(grad))
+				if "GR" in hm[sem][crn]:
+					grad = hm[sem][crn]['GR']
+				if "UG" in hm[sem][crn]:
+					undergrad = hm[sem][crn]['UG']
+			print lvl
+			if lvl == 'GR':
+				val = grad
+			else:
+				val = undergrad
+				print val
+			line.insert(out_index, str(val))
+			#line.insert(out_index, str(grad))
 			if sem not in total:
 				total[sem] = 0.0
 
-			total[sem] += grad
+			total[sem] += val
 			if sem not in prior:
-				prior[sem] = { cid:grad }
+				prior[sem] = { cid:val }
 			elif cid not in prior[sem]:
-	   			prior[sem][cid] = grad
+	   			prior[sem][cid] = val
 	   		else:
-	   			prior[sem][cid] += grad
+	   			prior[sem][cid] += val
 
 
 	   		out.writerow(line)
-			if sem == cur_sem and grad != 0:
+			if sem == cur_sem and val != 0:
 				if cid not in actual_courses:
 					actual_courses[cid] = 0.0
-				actual_courses[cid] += grad
+				actual_courses[cid] += val
 				#act_fd.write(line[8] + "\t" + str(grad) + "\n")
 				
 			#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
