@@ -117,7 +117,7 @@ def calculate_error(actual_hash, predicted_hash):
 	fd = open("Predicted_values.txt", "w")
 	print "Course\t\tActual\tPredict\tDiff\tMSE"
 	for key in sorted(predicted_hash):
-		actual = 0
+		actual = 0.0
 		if key in actual_hash:
 			actual = actual_hash[key]
 		if not poss_flag and ((round(predicted_hash[key]) == 0 and actual == 0) 
