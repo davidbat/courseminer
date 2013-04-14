@@ -1,7 +1,7 @@
 import sys
 import TotalStudentsPerSem as TSP
 import sem_stud_data as SS
-from bayes import bayes, bayes_mod, predict_bayes
+from bayes import bayes_mod, predict_bayes
 from optparse import OptionParser
 import csv
 import math
