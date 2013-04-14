@@ -116,6 +116,8 @@ def bayes_mod(db, means):
 	return bern_db
 
 
+
+
 def predict_bayes(model, means, data_point, prior):
 	if model == []:
 		return prior
@@ -129,3 +131,5 @@ def predict_bayes(model, means, data_point, prior):
 			spam += math.log(model[i][1], 2)
 			nspam += math.log(model[i][3], 2)
 	return 1.0 if spam > nspam else 0.0
+	
+	#return math.exp(spam)
