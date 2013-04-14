@@ -1,15 +1,5 @@
 import csv
 
-program = [ "MSCS Computer Science" ]
-#program = ['MS Health Informatics']
-stud_hash = {}
-with open('Student_Information.csv') as studfile:
-	for line in studfile.readlines():
-		stud = line.strip().split(",")
-		if stud[1] in program: 
-			stud_hash[stud[5]] = stud[1]
-
-unwanted_cids = ['CS6949', 'CS6964', 'CS5011']
 def create_student_hash(crn_hash, cid_hash, stud_hash):
 	inv_cid_hash = {v:k for k, v in cid_hash.items()}
 	lines = []
@@ -32,8 +22,8 @@ def create_student_hash(crn_hash, cid_hash, stud_hash):
 			else:
 				if crn_hash[sem][crn] != "UNWANTED":
 					stud_course[stud_id] = [crn_hash[sem][crn]]
-		else:
-			print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
+		#else:
+		#	print "CRN - ", crn, " is not present in the list of CRNS-CIDS"
 
 	spring_studs = map(lambda line:line.strip(), open('eligible_stud.txt').readlines())
 	#print spring_studs
@@ -57,9 +47,19 @@ def write_out(crn_hash, cid_hash, stud_hash):
 	out.close()
 
 
-def create_common_id():
+def create_common_id(program = [ "MSCS Computer Science" ]):
 	lines = []
+	unwanted_cids = ['CS6949', 'CS6964', 'CS5011', 'BUSN1100','COOP3945',
+			'CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
 	fcid = open("CID_hash.txt", "w")
+
+	stud_hash = {}
+	with open('Student_Information.csv') as studfile:
+		for line in studfile.readlines():
+			stud = line.strip().split(",")
+			if stud[1] in program: 
+				stud_hash[stud[5]] = stud[1]
+
 	with open("classes.csv", 'rb') as csvfile:
 		class_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for row in class_data:
@@ -78,9 +78,9 @@ def create_common_id():
 		crn = line_list[7]
 		#print cid, crn
 		if sem_crn_hash.has_key(sem):
-			if sem_crn_hash[sem].has_key(crn):
-				print "CRN ", crn, " has multiple courses in semsester - ", sem, ". Course ids are - ", cid, sem_crn_hash[sem][crn] 
-			else:
+			if not sem_crn_hash[sem].has_key(crn):
+			#	print "CRN ", crn, " has multiple courses in semsester - ", sem, ". Course ids are - ", cid, sem_crn_hash[sem][crn] 
+			#else:
 				if cid in unwanted_cids:
 					sem_crn_hash[sem][crn] = "UNWANTED"
 				else:					
@@ -100,4 +100,6 @@ def create_common_id():
 		fcid.write(cid_hash[ids] + " " + ids + "\n")
 	write_out(sem_crn_hash, cid_hash, stud_hash)
 
-create_common_id()
+
+if __name__ == "__main__":
+	create_common_id()

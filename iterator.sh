@@ -8,7 +8,6 @@ fi
 poss="F"
 if [ "$1" = "-p" ]
 then
-	echo here
 	poss="T"
 	cur_sem=$2
 	if [ $# -eq 2 ]
@@ -30,7 +29,7 @@ fi
 echo $cur_sem
 my_set=`python find_sems.py "$cur_sem"`
 echo $my_set
-cat grad_info.csv | egrep -v "$my_set"  > grad_info2.csv
+cat CourseEnrollmentInfo.csv | grep "GR" | egrep -v "$my_set"  > grad_info2.csv
 
 new_stud=`python eligible_student_sem.py "$cur_sem" GR | cut -d " " -f 2`
 
@@ -42,12 +41,11 @@ sh java_run.sh $min_sup > /dev/null
 
 python remap.py CID_hash.txt output.txt > /dev/null
 
-python TotalStudentsPerSem.py "$cur_sem" 
+python TotalStudentsPerSem.py "$cur_sem" 'GR'
 
 #python test_term.py
-
 if [ $poss = "T" ]; then
-	python predictor.py "-p" $new_stud stud_info.txt 
+	python predictor.py "-p" 'GR' $new_stud  stud_info.txt 
 else
-	python predictor.py $new_stud stud_info.txt 
+	python predictor.py 'GR' $new_stud  stud_info.txt 
 fi
