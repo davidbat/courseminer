@@ -1,7 +1,7 @@
 import sys
 import TotalStudentsPerSem as TSP
 import sem_stud_data as SS
-from bayes import bayes, bayes_mod, predict_bayes
+from bayes import bayes_mod, predict_bayes
 from optparse import OptionParser
 import csv
 import math
@@ -53,7 +53,7 @@ if level == "GR":
 	course_taken = 2.0
 else:
 	SEM_NUMBER = [ 'sem2', 'sem3', 'sem4', 'sem5', 'sem6', 'sem7']#, 'sem8' ]
-	course_taken = 3.0
+	course_taken = 4.0
 
 
 prior = TSP.calculate_students(cur_sem, level, program)
