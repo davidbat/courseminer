@@ -49,6 +49,7 @@ def write_out(crn_hash, cid_hash, stud_hash):
 
 def create_common_id(program = [ "MSCS Computer Science" ]):
 	lines = []
+	#print program
 	unwanted_cids = ['CS6949', 'CS6964', 'CS5011', 'BUSN1100','COOP3945',
 			'CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
 	fcid = open("CID_hash.txt", "w")
