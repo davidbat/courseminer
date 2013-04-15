@@ -61,4 +61,7 @@ os.system("python remap.py CID_hash.txt output.txt > /dev/null")
 
 TSP.calculate_students(cur_sem, level, program)
 #print float(new_students), level, poss_flag
+
+os.system('cat final.txt| grep "^[A-Z]\+[0-9]\+ [0-9]\+" | cut -d " " -f1 > ordered_final.txt')
+
 Pred.main(float(new_students), level, poss_flag)

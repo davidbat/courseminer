@@ -19,10 +19,13 @@ def random_prediction(my_courses, all_courses, possible_courses, course_hash, ou
 	for course in all_courses:
 		prob_hash[course] = smoothing_const
 	#course_hash = {}
-	for item in out:
-		if len(item) == 2 and item[0] not in unwanted_cids and item[0] not in my_courses:
+	for key in out.keys():
+		if key == 'val':
+			continue
+		#if len(item) == 2 and item[0] not in unwanted_cids and item[0] not in my_courses:
+		if key not in unwanted_cids and key not in my_courses:
 			#print item[1]
-			prob_hash[item[0]] += int(item[1])
+			prob_hash[key] += int(out[key]['val'])
 
 	prob = map(lambda k:[k,prob_hash[k]],prob_hash)
 
@@ -34,7 +37,7 @@ def random_prediction(my_courses, all_courses, possible_courses, course_hash, ou
 	for item in prob:
 		if not course_hash.has_key(item[0]):
 				#print item[0]
-				course_hash[item[0]] = 0
+				course_hash[item[0]] = 0.0
 		course_hash[item[0]] += n * (float(item[1])/my_sum)
 
 
@@ -62,6 +65,47 @@ def calculate_error(actual_hash, predicted_hash, poss_flag):
 	print "MSE - ", mse / cnt	
 	print "RMSE - ", math.sqrt(mse / cnt)
 
+
+def fp_hasher(fp):
+	fp_hash = {}
+	for items in fp:
+		fp_hash_ref = fp_hash
+		for itm_indx in range(len(items) - 1):
+			if items[itm_indx] not in fp_hash_ref.keys():
+				fp_hash_ref[items[itm_indx]] = {}
+			fp_hash_ref = fp_hash_ref[items[itm_indx]]
+		fp_hash_ref['val'] = items[-1]
+	return fp_hash
+
+
+def ref_fp_hash(fp_hash, items):
+	fp_hash_ref = fp_hash
+	for item in items:
+		if item in fp_hash_ref:
+			fp_hash_ref = fp_hash_ref[item]
+		else:
+			return -1
+	return fp_hash_ref
+
+def order_courses(ordered_courses, courses):
+	order = []
+	slack = 0
+	slack_limit = 3
+	for course in courses:
+		if course not in ordered_courses:
+			slack += 1
+			if slack > slack_limit:
+				print courses
+				print "We are out of sync in our courses"
+				order = []
+				break
+			continue
+		order.append([course, ordered_courses.index(course)])
+	if order == []:
+		return []
+	else:
+		return map(lambda row:row[0], sorted(order, key=lambda course: course[1]))
+
 def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn = "stud_info.txt"):
 	#print "pss = ", poss_flag
 	if level == 'GR':
@@ -71,15 +115,32 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 	#print courses_taken
 	student_course_info = ReadFile(student_course_info_fn)
 	fp = ReadFile("final.txt")
+	fp_hash = fp_hasher(fp)
 	all_courses = map(lambda row:row[1], ReadFile("CID_hash.txt"))
 	possible_courses = []
 	poss_fn = "stud_actual.txt"
 	actual_hash = {key: float(value) for (key, value) in map(lambda row:row.strip().split(), open(poss_fn).readlines())}
 	if poss_flag:
 		possible_courses = actual_hash.keys()
-	course_hash = {} 
+	course_hash = {}
+	ordered_courses = map(lambda line:line.strip(), open("ordered_final.txt").readlines())
+
+
+	# MAke this more efficient!!
 	for courses in student_course_info:
 		#print courses
+		out = fp_hash
+		ord_courses = order_courses(ordered_courses, courses)
+		for course in ord_courses:
+			# Replace mult works but screws up probabilities completely and takes too long. So don't use it
+			if course in out:
+				out	= out[course]
+			else:
+				#print "here"
+				out = []
+				break
+
+			'''
 		out = list(fp)
 		for course in courses:
 			# Replace mult works but screws up probabilities completely and takes too long. So don't use it
@@ -91,19 +152,25 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 			for course in courses:
 				out	= filter(lambda x:x != course, out)
 				out	= [ item for item in out if len(item) > 1 ]
+			'''
+		if len(out) < 1:
+			out = fp_hash
+			#for course in courses:
+			#	out	= filter(lambda x:x != course, out)
+			#	out	= [ item for item in out if len(item) > 1 ]
 
 
 		# NOTE TO SOME :-
 		# Code handles multiple occurances of a course by replacing all of them with ''. Gotta replace 3 with 2 and
 		# not ''
 
-		random_prediction(courses, all_courses, possible_courses, course_hash, out, courses_taken, poss_flag, level)
+		random_prediction(ord_courses, all_courses, possible_courses, course_hash, out, courses_taken, poss_flag, level)
 
 	if level == 'GR':
 		course_hash['CS5010'] = new_students
 	else:
 		new_students *= courses_taken
-	out = list(fp)
+	out = fp_hash
 	random_prediction([], all_courses, possible_courses, course_hash, out, new_students, poss_flag, level)
 
 	csum = 0 
