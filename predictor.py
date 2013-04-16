@@ -1,5 +1,7 @@
 import sys
 import math
+
+# Read file into hash
 def ReadFile(fn):
 	features = []
 	for line in open(fn).readlines():
@@ -7,7 +9,10 @@ def ReadFile(fn):
 	return features
 
 
-# We can remove my_courses or set it to empty because it increases MSE (Spring 2013)
+# Compile a probability distibution for all courses based on 'out' and save it in course_hash.
+# This is run for a student. 
+# Probabilities are smoother by 'smoothing_const'
+# Courses that are in my_courses are ignored (as they have already been taken)
 def random_prediction(my_courses, all_courses, possible_courses, course_hash, out, n, poss_flag, level = 'GR'):
 	smoothing_const = 0.1
 	unwanted_cids = [ 	'CS1210', 'CS1501', 'CS1801', 'CS2501', 'CS2511', 'CS2801', 'CS2900', 'CS2901', 
@@ -16,15 +21,12 @@ def random_prediction(my_courses, all_courses, possible_courses, course_hash, ou
 						'IA5131', 'IA5151', 'IA5211', 'IA5978', 'IA5984', 'IA8982', 'CS6964',
 						'BUSN1100','COOP3945','CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
 	if level == 'GR':
-		# add pdp
 		unwanted_cids += [ 'CS5010' ]
 	prob_hash = {}
 	for course in all_courses:
 		prob_hash[course] = smoothing_const
-	#course_hash = {}
 	for item in out:
 		if len(item) == 2 and item[0] not in unwanted_cids and item[0] not in my_courses:
-			#print item[1]
 			prob_hash[item[0]] += int(item[1])
 
 	prob = map(lambda k:[k,prob_hash[k]],prob_hash)
@@ -36,11 +38,12 @@ def random_prediction(my_courses, all_courses, possible_courses, course_hash, ou
 	my_sum = sum(map(lambda x:float(x[1]),prob))
 	for item in prob:
 		if not course_hash.has_key(item[0]):
-				#print item[0]
 				course_hash[item[0]] = 0
 		course_hash[item[0]] += n * (float(item[1])/my_sum)
 
 
+# calculate error will calculate the MSE between the number of students
+# that actually took a course and the predicted value.
 def calculate_error(actual_hash, predicted_hash, poss_flag):
 	mse = 0
 	cnt = 0
@@ -68,13 +71,15 @@ def calculate_error(actual_hash, predicted_hash, poss_flag):
 	print "MSE - ", mse / cnt	
 	print "RMSE - ", math.sqrt(mse / cnt)
 
+
+# main does the actual predicting. It iterates over every student in the current semester,
+# and calculates the probabilities that the student takes various courses.
+# The calcualted probabilities are saved into course_hash
 def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn = "stud_info.txt"):
-	#print "pss = ", poss_flag
 	if level == 'GR':
 		courses_taken = 2.0
 	else:
 		courses_taken = 4.0
-	#print courses_taken
 	student_course_info = ReadFile(student_course_info_fn)
 	fp = ReadFile("final.txt")
 	all_courses = map(lambda row:row[1], ReadFile("CID_hash.txt"))
@@ -85,10 +90,8 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 		possible_courses = actual_hash.keys()
 	course_hash = {} 
 	for courses in student_course_info:
-		#print courses
 		out = list(fp)
 		for course in courses:
-			# Replace mult works but screws up probabilities completely and takes too long. So don't use it
 			out	= [ filter(lambda x:x != course, item) for item in out if item.count(course) > 0 ]
 			out	= [ item for item in out if len(item) > 1 ]
 		
@@ -97,11 +100,6 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 			for course in courses:
 				out	= filter(lambda x:x != course, out)
 				out	= [ item for item in out if len(item) > 1 ]
-
-
-		# NOTE TO SOME :-
-		# Code handles multiple occurances of a course by replacing all of them with ''. Gotta replace 3 with 2 and
-		# not ''
 
 		random_prediction(courses, all_courses, possible_courses, course_hash, out, courses_taken, poss_flag, level)
 
@@ -114,7 +112,6 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 
 	csum = 0 
 	for key in course_hash:
-		#print key, " - ", course_hash[key]
 		csum += course_hash[key]
 
 	calculate_error(actual_hash, course_hash, poss_flag)

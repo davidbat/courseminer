@@ -10,20 +10,20 @@ import predictor as Pred
 parser = OptionParser()
 parser.add_option("-r", "--restrict",
 				  action = "store_true", dest="poss_flag", default=False,
-                  help="Restrict predictions to courses available for the semester.")
+                  help="Restrict predictions to courses available for the semester.[Optional]")
 parser.add_option("-s", "--sem",
                   action = "store", dest="cur_sem",
                   help="semester to predict over.")
 parser.add_option("-p", "--program",
                   action = "store", dest="program", default= 'MSCS Computer Science',
                   help="programs to predict over. They should be comma seperated single string, no extra spaces\
-                  	\n'MSCS Computer Science' is the default program.")
+                  	\n'MSCS Computer Science' is the default program.[Optional]")
 parser.add_option("-l", "--level",
                   action = "store", dest="level", default= "GR",
-                  help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
+                  help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level[Optional]")
 parser.add_option("-m", "--minsup",
                   action = "store", dest="min_sup", default= "0.3",
-                  help="The minimum support to consider for Frequent Patters. 0.3 is the default value")
+                  help="The minimum support to consider for Frequent Patters. 0.3 is the default value for grads and 5.0 for undergrads.[Optional]")
 (options, args) = parser.parse_args()
 
 #print options
@@ -45,7 +45,6 @@ if level == "UG" and float(min_sup) < 5.0:
 	min_sup = "5.0"
 
 my_set = FS.find_sems(cur_sem)
-#print 'cat CourseEnrollmentInfo.csv | grep ' + level + ' | egrep -v "' + my_set + '"  > grad_info2.csv'
 
 os.system('cat CourseEnrollmentInfo.csv | grep ' + level + ' | egrep -v "' + my_set + '"  > grad_info2.csv')
 
@@ -60,5 +59,4 @@ os.system("sh java_run.sh " + min_sup + "%> /dev/null")
 os.system("python remap.py CID_hash.txt output.txt > /dev/null")
 
 TSP.calculate_students(cur_sem, level, program)
-#print float(new_students), level, poss_flag
 Pred.main(float(new_students), level, poss_flag)

@@ -2,8 +2,9 @@
 import sys
 import csv
 
-#program = ['MS Health Informatics']
-
+# This function will save the students in the current semester into stud_actual.txt
+# It will also update the classes.out.csv with the students (UG/GR) that have taken 
+# courses (for all semesters including the current semester.)
 def calculate_students(cur_sem, level = 'GR', program = [ "MSCS Computer Science" ]):
 	hm = {}
 	stud_hash = {}
@@ -14,7 +15,6 @@ def calculate_students(cur_sem, level = 'GR', program = [ "MSCS Computer Science
 				stud_hash[stud[5]] = stud[1]
 
 
-	#print stud_hash
 	with open('CourseEnrollmentInfo.csv') as csvfile:
 		enroll_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for enroll in enroll_data:
@@ -40,15 +40,12 @@ def calculate_students(cur_sem, level = 'GR', program = [ "MSCS Computer Science
 						hm[sem][crn][lvl] = 1
 				
 
-	# max, grad, undergrad, actual
-	#fid=open('classes.output.csv','w')
 	out_index = 10
 	output = "classes.output.csv"
 	out_fd = open(output, 'wb')
 	output_actual = "stud_actual.txt"
 	act_fd = open(output_actual, 'wb')
 	actual_courses = {}
-	#out = open(output, "w")
 	out = csv.writer(out_fd)
 	with open("classes.csv", 'rb') as csvfile:
 		class_data = csv.reader(csvfile, delimiter=',', quotechar='"')
@@ -75,9 +72,6 @@ def calculate_students(cur_sem, level = 'GR', program = [ "MSCS Computer Science
 					actual_courses[cid] = 0.0
 				actual_courses[cid] += val
 				
-			#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
-			#out.write(",".join(line) + "\n")
-	#print actual_courses
 	for key, value in actual_courses.iteritems():
 		act_fd.write(key + "\t" + str(value) + "\n")
 	out_fd.close()
