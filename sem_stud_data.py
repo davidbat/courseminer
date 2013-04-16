@@ -1,10 +1,9 @@
 import csv
-
+from constants import *
 
 def create_common_id(program):
 	# all the coops
-	unwanted_cids = ['CS6949', 'CS6964', 'CS5011', 
-			'BUSN1100','COOP3945','CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
+	
 	lines = []
 	crn_hash = {}
 	with open("classes.csv", 'rb') as csvfile:

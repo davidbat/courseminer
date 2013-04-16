@@ -5,14 +5,7 @@ from bayes import bayes_mod, predict_bayes
 from optparse import OptionParser
 import csv
 import math
-
-#import pre_proc as PP
-
-#import eligible_student_sem as ES
-#import actual_labels as AL
-
-
-
+from constants import *
 
 parser = OptionParser()
 parser.add_option("-r", "--restrict",
@@ -29,19 +22,14 @@ parser.add_option("-l", "--level",
                   help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
 (options, args) = parser.parse_args()
 
-#print options
 if args != []:
 	print "Too many or too few options specified. Use -h to see usage"
 	exit()
 
-
-
 def get_frequent_pairs():
 	return map(lambda row:row[:-1] ,SS.ReadFile("frequent_pairs.txt", " "))
 
-
 dont_predict = [ 'CS5010' ]
-
 options = vars(options)
 cur_sem = options['cur_sem']
 poss_flag = options['poss_flag']
@@ -57,7 +45,7 @@ else:
 
 
 prior = TSP.calculate_students(cur_sem, level, program)
-#print "prior =", prior['CS5800']
+
 # false means that we want all prev sems
 # true means only cur sem enrolled students
 uniq_coursesx, student_course_map = SS.stud_sem_wise_course_map(program, cur_sem, level, False)
@@ -142,13 +130,11 @@ def calculate_error(actual_hash, predicted_hash):
 
 
 course_label_hash = course_label(unique_courses, student_course_map)
-#test = course_label(unique_courses,student_cur_course_map, True)
 
 poss_courses = unique_courses
 actual_courses = {key: float(value) for (key, value) in map(lambda row:row.strip().split(), open(poss_fn).readlines())}
 if poss_flag:
 	poss_courses = actual_courses.keys()
-	#print poss_courses
 
 course_predictor = {} 
 means = [ 0.5 for item in range(len(unique_courses+frequent_pairs)) ]
@@ -161,8 +147,6 @@ for course in poss_courses:
 		course_predictor[course][sem] = []
 	for sem in SEM_NUMBER:
 		course_predictor[course][sem] = bayes_mod(course_label_hash[course][sem], means)
-		#FP, FN, P, N, ERR, ROC_TPR, ROC_FPR, AUC = bayes_mod(course_label_hash[course][sem], means, test[course][sem], 0.5)
-		#print course ," ->  error = %.2f" % ERR, "\tAUC = %.2f" % AUC, "\tFP = %.2f" % FP, "\tFN = %.2f" % FN, "\tP = ", P, "\tN = ", N
 
 course_capacity = {}
 for course in course_predictor:
@@ -183,11 +167,8 @@ for stud_id in student_cur_course_map:
 		features = map(lambda x:1 if x in prev_sem_data else 0, unique_courses) + \
 			map(lambda courses:1 if courses[0] in prev_sem_data and courses[1] in prev_sem_data else 0, frequent_pairs)
 		label = [ 1 if course in student_cur_course_map[stud_id][last_sem] else 0 ]
-		#print course, prior[course]
 		prob[course] = predict_bayes(course_predictor[course][last_sem], 
 			means, features + label, prior[course])
-	#print stud_id, student_cur_course_map[stud_id], prev_sem_data
-	#pprint(prob)
 	Z = sum(map(lambda k:prob[k], prob))
 	# stud probably did a course again if he's here
 	# or we actually don't have a prediction

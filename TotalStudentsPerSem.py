@@ -1,6 +1,8 @@
 #!/usr/bin/python
 import sys
 import csv
+from constants import *
+
 hm = {}
 stud_hash = {}
 program = [ "MSCS Computer Science" ]
