@@ -22,7 +22,7 @@ parser.add_option("-l", "--level",
                   action = "store", dest="level", default= "GR",
                   help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
 parser.add_option("-m", "--minsup",
-                  action = "store", dest="min_sup", default= "0.3",
+                  action = "store", dest="min_sup", default= "0.000003",
                   help="The minimum support to consider for Frequent Patters. 0.3 is the default value")
 (options, args) = parser.parse_args()
 

@@ -19,11 +19,13 @@ def random_prediction(my_courses, all_courses, possible_courses, course_hash, ou
 	for course in all_courses:
 		prob_hash[course] = smoothing_const
 	#course_hash = {}
+	#print "here", out
 	for key in out.keys():
 		if key == 'val':
 			continue
 		#if len(item) == 2 and item[0] not in unwanted_cids and item[0] not in my_courses:
-		if key not in unwanted_cids and key not in my_courses:
+		# val is not in out[key] if count < min_supZ
+		if key not in unwanted_cids and key not in my_courses:# and 'val' in out[key]:
 			#print item[1]
 			prob_hash[key] += int(out[key]['val'])
 
@@ -70,7 +72,7 @@ def fp_hasher(fp):
 	fp_hash = {}
 	for items in fp:
 		fp_hash_ref = fp_hash
-		for itm_indx in range(len(items) - 1):
+		for itm_indx in range(len(items) - 2, -1, -1):
 			if items[itm_indx] not in fp_hash_ref.keys():
 				fp_hash_ref[items[itm_indx]] = {}
 			fp_hash_ref = fp_hash_ref[items[itm_indx]]
@@ -124,13 +126,14 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 		possible_courses = actual_hash.keys()
 	course_hash = {}
 	ordered_courses = map(lambda line:line.strip(), open("ordered_final.txt").readlines())
-
+	ordered_courses.reverse()
 
 	# MAke this more efficient!!
+	
 	for courses in student_course_info:
-		#print courses
 		out = fp_hash
 		ord_courses = order_courses(ordered_courses, courses)
+		#print ord_courses
 		for course in ord_courses:
 			# Replace mult works but screws up probabilities completely and takes too long. So don't use it
 			if course in out:
@@ -140,7 +143,8 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 				out = []
 				break
 
-			'''
+		#print out
+		'''
 		out = list(fp)
 		for course in courses:
 			# Replace mult works but screws up probabilities completely and takes too long. So don't use it
@@ -152,7 +156,7 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 			for course in courses:
 				out	= filter(lambda x:x != course, out)
 				out	= [ item for item in out if len(item) > 1 ]
-			'''
+		'''
 		if len(out) < 1:
 			out = fp_hash
 			#for course in courses:
