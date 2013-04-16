@@ -2,6 +2,7 @@ import csv
 from constants import *
 
 def create_common_id(program):
+	print unwanted_cids
 	# all the coops
 	
 	lines = []

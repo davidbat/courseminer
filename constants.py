@@ -1,2 +1,2 @@
-unwanted_cids = ['CS6949', 'CS6964', 'CS5011', 'CS5336'
+unwanted_cids = ['CS6949', 'CS6964', 'CS5011', 'CS5336',
 			'BUSN1100','COOP3945','CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
