@@ -10,8 +10,11 @@ def ReadFile(fn):
 # We can remove my_courses or set it to empty because it increases MSE (Spring 2013)
 def random_prediction(my_courses, all_courses, possible_courses, course_hash, out, n, poss_flag, level = 'GR'):
 	smoothing_const = 0.1
-	unwanted_cids = ['CS6949', 'CS6964', 'CS5011', 'BUSN1100','COOP3945',
-			'CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
+	unwanted_cids = [ 	'CS1210', 'CS1501', 'CS1801', 'CS2501', 'CS2511', 'CS2801', 'CS2900', 'CS2901', 
+						'CS4611', 'CS4991', 'CS4993', 'CS5011', 'CS5336', 'CS6949', 'CS7381', 'CS7990', 
+						'CS7996', 'CS8674', 'CS8949', 'CS8982', 'CS8984', 'CS8986', 'CS9990', 'CS9996', 
+						'IA5131', 'IA5151', 'IA5211', 'IA5978', 'IA5984', 'IA8982', 'CS6964',
+						'BUSN1100','COOP3945','CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
 	if level == 'GR':
 		# add pdp
 		unwanted_cids += [ 'CS5010' ]
@@ -42,7 +45,7 @@ def calculate_error(actual_hash, predicted_hash, poss_flag):
 	mse = 0
 	cnt = 0
 	fd = open("Predicted_values.txt", "w")
-	print "Course\tActual\tPredict\tDiff\tMSE"
+	print "Course\t\tActual\tPredict\tDiff\tMSE"
 	for key in sorted(predicted_hash):
 		actual = 0.0
 		if key in actual_hash:
@@ -54,7 +57,10 @@ def calculate_error(actual_hash, predicted_hash, poss_flag):
 		#	continue
 		diff = abs(actual - round(predicted_hash[key]))
 		mse += diff ** 2
-		output_str = key + "\t" + str(actual) + "\t" + str(round(predicted_hash[key])) + "\t" + \
+		tabs = '\t'
+		if len(key) <= 6:
+			tabs += '\t'
+		output_str = key + tabs + str(actual) + "\t" + str(round(predicted_hash[key])) + "\t" + \
 			str(diff) + "\t" + str(diff ** 2)
 		print output_str
 		fd.write(output_str + "\n")

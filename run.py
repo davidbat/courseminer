@@ -40,9 +40,9 @@ level = options['level']
 min_sup = options['min_sup']
 poss_fn = "stud_actual.txt"
 
-if level == "UG" and float(min_sup) < 2.0:
-	print "Changing min_sup to 2.0 for performance"
-	min_sup = "2.0"
+if level == "UG" and float(min_sup) < 5.0:
+	print "Changing min_sup to 5.0 for performance"
+	min_sup = "5.0"
 
 my_set = FS.find_sems(cur_sem)
 #print 'cat CourseEnrollmentInfo.csv | grep ' + level + ' | egrep -v "' + my_set + '"  > grad_info2.csv'
