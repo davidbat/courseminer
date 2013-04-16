@@ -21,6 +21,7 @@ def random_prediction(my_courses, all_courses, possible_courses, course_hash, ou
 						'IA5131', 'IA5151', 'IA5211', 'IA5978', 'IA5984', 'IA8982', 'CS6964',
 						'BUSN1100','COOP3945','CS1210','CS1220','CS6949','CS6964','MATH3000','MATH4000' ]
 	if level == 'GR':
+		# don't predict for PDP because only new students take it.
 		unwanted_cids += [ 'CS5010' ]
 	prob_hash = {}
 	for course in all_courses:
