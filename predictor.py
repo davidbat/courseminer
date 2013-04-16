@@ -55,9 +55,7 @@ def calculate_error(actual_hash, predicted_hash, poss_flag):
 			actual = actual_hash[key]
 		if not poss_flag and (round(predicted_hash[key]) == 0 and actual == 0) or (round(predicted_hash[key]) == 1 and actual == 0):
 			continue
-		cnt += 1	
-		#else:
-		#	continue
+		cnt += 1
 		diff = abs(actual - round(predicted_hash[key]))
 		mse += diff ** 2
 		tabs = '\t'
@@ -104,6 +102,7 @@ def main(new_students, level = 'GR', poss_flag = False, student_course_info_fn =
 		random_prediction(courses, all_courses, possible_courses, course_hash, out, courses_taken, poss_flag, level)
 
 	if level == 'GR':
+		# CS5010 is PDP is a special case. All GR new students must take it.
 		course_hash['CS5010'] = new_students
 	else:
 		new_students *= courses_taken
