@@ -20,4 +20,5 @@ Options:
                         0.3 is the default value for grads and 5.0 for
                         undergrads.[Optional]
 Examples:-
-
+python run.py -r -s "Spring 2013"
+python run.py -r -s "Spring 2013" -l UG -p "BSCS Computer Science"
