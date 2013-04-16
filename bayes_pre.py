@@ -137,10 +137,13 @@ if poss_flag:
 	poss_courses = actual_courses.keys()
 
 course_predictor = {} 
+course_capacity = {}
 means = [ 0.5 for item in range(len(unique_courses+frequent_pairs)) ]
 for course in poss_courses:
 	if course not in course_label_hash:
 		print course, "details not available from previous student history"
+		#course_capacity[course] = 0.0
+		#dont_predict += [course]
 		continue
 	course_predictor[course] = {}
 	for sem in SEM_NUMBER:
@@ -148,7 +151,7 @@ for course in poss_courses:
 	for sem in SEM_NUMBER:
 		course_predictor[course][sem] = bayes_mod(course_label_hash[course][sem], means)
 
-course_capacity = {}
+
 for course in course_predictor:
 	course_capacity[course] = 0.0
 new_students = 0
