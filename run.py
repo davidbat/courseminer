@@ -22,7 +22,7 @@ parser.add_option("-l", "--level",
                   action = "store", dest="level", default= "GR",
                   help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
 parser.add_option("-m", "--minsup",
-                  action = "store", dest="min_sup", default= "0.000003",
+                  action = "store", dest="min_sup", default= "0.3",
                   help="The minimum support to consider for Frequent Patters. 0.3 is the default value")
 (options, args) = parser.parse_args()
 
@@ -61,7 +61,4 @@ os.system("python remap.py CID_hash.txt output.txt > /dev/null")
 
 TSP.calculate_students(cur_sem, level, program)
 #print float(new_students), level, poss_flag
-
-os.system('cat final.txt| grep "^[A-Z]\+[0-9]\+ [0-9]\+" | cut -d " " -f1 > ordered_final.txt')
-
 Pred.main(float(new_students), level, poss_flag)
