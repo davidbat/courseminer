@@ -11,17 +11,19 @@ if len(sys.argv) == 3:
 
 cur_sem = sys.argv[1]
 
+# Return a list of previous semesters
 def prev_sems(cur_sem):
 	all_sems = ['Fall 2009', 'Spring 2010', 'Fall 2010', 'Spring 2011', 'Fall 2011', 'Spring 2012', 'Fall 2012', 'Spring 2013']
 	cur_sem_indx = all_sems.index(cur_sem)
 	return all_sems[:cur_sem_indx]
 
 
+# This function will save the students in the current semester into stud_actual.txt
+# It will also update the classes.out.csv with the students (UG/GR) that have taken 
+# courses (for all semesters including the current semester.)
 def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ]):
-	#print lvl
 	prior = {}
 	avg_prior = {}
-	#program = ['MS Health Informatics']
 
 	with open('Student_Information.csv') as studfile:
 		for line in studfile.readlines():
@@ -29,7 +31,6 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 			if stud[1] in program: 
 				stud_hash[stud[5]] = stud[1]
 
-	#print stud_hash
 	with open('CourseEnrollmentInfo.csv') as csvfile:
 		enroll_data = csv.reader(csvfile, delimiter=',', quotechar='"')
 		for enroll in enroll_data:
@@ -56,8 +57,6 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 					else:
 						hm[sem][crn][slvl] = 1
 
-	# max, grad, undergrad, actual
-	#fid=open('classes.output.csv','w')
 	out_index = 10
 	output = "classes.output.csv"
 	out_fd = open(output, 'wb')
@@ -104,20 +103,15 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 				if cid not in actual_courses:
 					actual_courses[cid] = 0.0
 				actual_courses[cid] += val
-				#act_fd.write(line[8] + "\t" + str(grad) + "\n")
-				
-			#csv.writer(file , delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
-			#out.write(",".join(line) + "\n")
+
 	for key, value in actual_courses.iteritems():
 		act_fd.write(key + "\t" + str(value) + "\n")
 
-	#print total
+
 	for sem in prev_sems(cur_sem) + [cur_sem]:
-		# Don't use current sem to calculate the prior
+		# Ignore summer semesters
 		if 'Summer' in sem:
 			continue
-		#print sem
-		# Initialize priors for new courses this semester to 0
 		if sem == cur_sem:
 			for cid in prior[sem]:
 				if cid not in avg_prior:
@@ -133,9 +127,7 @@ def calculate_students(cur_sem, lvl = 'GR', program=[ "MSCS Computer Science" ])
 	tot = 1.0
 	smoother = tot / len(avg_prior) 
 	for cid in avg_prior:
-		#print cid, avg_prior[cid]['val'], avg_prior[cid]['cnt']
 		avg_prior[cid] = (avg_prior[cid]['val'] + smoother) / (avg_prior[cid]['cnt'] + tot)
-
 
 	act_fd.close()
 	out_fd.close()

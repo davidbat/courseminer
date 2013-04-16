@@ -1,12 +1,5 @@
 import math
-
-def auc(x,y):
-	s = 0.0 
-
-	for i in range(1, len(x)):
-		s += (x[i] - x[i-1]) * (y[i] + y[i-1])
-	return s / 2.0
-
+# Create the bayes model
 def bayes_mod(db, means):
 	bern_db = []
 	if len(db) == 0:
@@ -28,6 +21,7 @@ def bayes_mod(db, means):
 		bern_db.append(inner)
 	return bern_db
 
+# Use a bayes model to predict whether a course it taken or not.
 def predict_bayes(model, means, data_point, prior):
 	if model == []:
 		return prior
