@@ -202,7 +202,7 @@ CS5976 Javed Aslam 1
 CS5976 Richard Rasala 3
 CS6120 David Smith 1
 CS6140 Javed Aslam 2
-CS6140 Virgiliu Pavlu 2
+CS6140 Virgiliu Pavlu 3
 CS6200 David Smith 1
 CS6200 Javed Aslam 2
 CS6200 Virgiliu Pavlu 2
