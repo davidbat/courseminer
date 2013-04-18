@@ -1,4 +1,6 @@
-import sys 
+import sys
+
+# convert the ids in the courses taken from my_ids to actual CCIS ids
 def rehash(hs, ls):
 	out = open("final.txt", "w")
 	for each in ls:
@@ -10,7 +12,7 @@ def rehash(hs, ls):
 		out.write(" ".join(tmp_ls) + "\n")
 	out.close()
 
-
+# Read the course id hash from file
 def readhash(fn):
 	fd = open(fn)
 	my_hash = {}
@@ -20,6 +22,7 @@ def readhash(fn):
 		my_hash[mid] = cid
 	return my_hash
 
+# read the courses taken from files into a list
 def readlist(fn): 
 	fd = open(fn)
 	my_list = []
