@@ -38,107 +38,40 @@ def available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, s
 		prof_course_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
 	return prof_course_hash, secondary_prof_course_hash
 
-def brute_reenact(prof_course_hash, profs, courses, course_offset, prof_offset):
-	first_itr_flag = True
-	score = 0
-	assign = {}
-	second_profs = set([])
-	secondary_prof_course_hash = {}
-	courses = list(courses[course_offset:] + courses[:course_offset])
-	for course in courses:
-		offset = 0
-		if first_itr_flag == True:
-			offset = prof_offset
-			first_itr_flag = False
-		if len(prof_course_hash[course]) > offset + 1:
-			print course, prof_course_hash[course][offset]
-			profs -= set([prof_course_hash[course][offset][0]])
-			assign[course] = prof_course_hash[course][offset][0]	
-			second_profs.union(set([prof_course_hash[course][offset][0]]))
-			prof_course_hash, secondary_prof_course_hash = available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, second_profs)
-		elif course in secondary_prof_course_hash and len(secondary_prof_course_hash[course]) > 0:
-			print course, secondary_prof_course_hash[course][offset][0]
-			print "prof -", secondary_prof_course_hash[course][0][0], "assigned twice"
-			second_profs -= set([secondary_prof_course_hash[course][0][0]])
-			secondary_prof_course_hash, tmp_hash = available_prof_hasher(secondary_prof_course_hash, second_profs, {}, [])
-		else:
-			print len(courses) - courses.index(course), "courses not assigned"
-			print courses[courses.index(course):]
-			exit()
-		
-	return assign
+def reduce_prof_hasher(prof_course_hash, profs):
+	tmp_hash = copy.deepcopy(prof_course_hash)
+	for course in prof_course_hash:
+		tmp_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
+	return tmp_hash
 
-def brute_helper(prof_course_hash, profs, courses, course_offset, prof_offset, trace = False):
-	first_itr_flag = True
-	score = 0
-	second_profs = set([])
-	secondary_prof_course_hash = {}
-	courses = list(courses[course_offset:] + courses[:course_offset])
-	for course in courses:
-		offset = 0
-		if first_itr_flag == True:
-			offset = prof_offset
-			first_itr_flag = False
-		if len(prof_course_hash[course]) > offset + 1:
+def rec(courses, prof_course_hash, profs, cur_score, cur_choice, min_score, best_choices, cutoff, trace = False, lvl = 0):
+	if courses == set([]):
+		exit_flag = False
+		if cur_score < cutoff:
+			exit_flag = True
+		return cur_score, cur_choice, exit_flag
+	exit_flag = False
+	for c in courses:
+		if trace:
+			print "Course", lvl, c
+		for p in prof_course_hash[c]:
 			if trace:
-				print course, prof_course_hash[course][offset][0]
-			score += prof_course_hash[course][offset][1]
-			profs -= set([prof_course_hash[course][offset][0]])
-			second_profs.union(set([prof_course_hash[course][offset][0]]))
-			prof_course_hash, secondary_prof_course_hash = available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, second_profs)
-		elif course in secondary_prof_course_hash and len(secondary_prof_course_hash[course]) > 0:
-			#print secondary_prof_course_hash[course]
+				print "Prof", lvl, p
+			choice = [c, p[0]]
+			cur_courses = courses - set([c])
+			cur_profs = profs - set([p[0]])
+			score, choice, exit_flag = rec(cur_courses, reduce_prof_hasher(prof_course_hash, cur_profs), 
+								cur_profs, cur_score + p[1], cur_choice + choice, min_score, best_choices, cutoff, trace, lvl + 1) 
 			if trace:
-				print course, prof_course_hash[course][offset][0]
-			score += secondary_prof_course_hash[course][0][1] + TWICE_PENALTY
-			second_profs -= set([secondary_prof_course_hash[course][0][0]])
-			secondary_prof_course_hash, tmp_hash = available_prof_hasher(secondary_prof_course_hash, second_profs, {}, [])
-		else:
-			# course can't be classified
-			#print course
-			return float("inf"), [course], courses.index(course)
-	return score, [], len(courses)
-
-def most_common(lst, cnt=1):
-    return sorted(set(lst), key=lst.count, reverse = True)[:cnt]
-
-def brute_force(prof_course_hash, profs, courses, trace = False):
-	assign = {}
-	min_score = float("inf")
-	best_course_offset = -1
-	best_prof_offset = -1
-	problem_courses = []
-	trace_courses_assigned = 0
-	best_res = [-1,-1]
-	for i in range(len(courses)):
-		for j in range(len(prof_course_hash[courses[i]])):
-			if trace:
-				print "Itr -", courses[i], prof_course_hash[courses[i]][j]
-			score, prob_course, courses_assigned = brute_helper(copy.deepcopy(prof_course_hash), set(profs), courses, i, j, trace)
-			if trace:
-				print "Reuslts -",score, prob_course, courses_assigned, "of", len(courses)
-			#print "here:", courses[i], j, score
-			#if score != float("inf"):
-			#	print "Assigned:"
-			#	pprint(brute_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, penalty, i, j))
-			if trace and courses_assigned > trace_courses_assigned:
-				best_res = i,j
-				trace_courses_assigned = courses_assigned
+				print "Score", score, choice
 			if score < min_score:
-				best_course_offset = i
-				best_prof_offset = j
 				min_score = score
-			elif score == float("inf"):
-				problem_courses += prob_course
-	if min_score < float("inf"):
-		print "min score =", min_score
-		brute_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, best_course_offset, best_prof_offset)
-	else:
-		print "Not Assigned"
-		print "Cant allocate course - ", most_common(problem_courses, 2)
-		brute_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, best_res[0], best_res[1])
-		
-
+				best_choices = choice
+			if exit_flag:
+				break
+		if exit_flag:
+			break	
+	return min_score, best_choices, exit_flag
 
 def pprint(my_hash):
 	for line in my_hash:
@@ -148,9 +81,9 @@ def pprint(my_hash):
 
 
 available_profs = map(lambda prof:prof.strip(), open("available_profs.txt").readlines())
-#print "available_profs" , available_profs
+print "available_profs" , available_profs
 predicted_courses = map(lambda row:row.strip().split()[0], open("Predicted_values.txt").readlines())
-#print "predicted_courses", predicted_courses
+print "predicted_courses", predicted_courses
 all_cs_courses = map(lambda prof:prof.strip(), open("ccis_courses.txt").readlines())
 non_cs_courses = set(predicted_courses) - set(all_cs_courses)
 predicted_cs_courses = list(set(predicted_courses) - non_cs_courses)
@@ -162,8 +95,11 @@ for course in predicted_cs_courses:
 		#print course, " is a new course. We can't schedule it."
 	#else:
 		seen_cs_courses.append(course)
-#print "seen_cs_courses", seen_cs_courses
+print "seen_cs_courses", seen_cs_courses
 available_profs_course_hash, ignore = available_prof_hasher(course_info, available_profs, {}, [])
-#print "available_profs_course_hash", available_profs_course_hash
-brute_force(available_profs_course_hash, available_profs, seen_cs_courses, True)
+print "available_profs_course_hash", available_profs_course_hash
+#brute_force(available_profs_course_hash, available_profs, seen_cs_courses, True)
+
+ms, best_choice, flg = rec(set(seen_cs_courses), available_profs_course_hash, set(available_profs), 0, [], float("inf"), {}, len(seen_cs_courses)/2, True, 0)
+print "Ended\n", ms, "\n", best_choice
 
