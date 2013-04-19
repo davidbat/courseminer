@@ -27,7 +27,7 @@ def read_courses_prof_hash(prof_course_fn = "courses_professors.txt"):
 			#print prof_course_hash[course]
 		return prof_course_hash
 
-def available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, second_profs):
+def available_prof_hasher_old(prof_course_hash, profs, secondary_prof_course_hash, second_profs):
 	for course in prof_course_hash:
 		#secondary_prof_course_hash[course] = list(set(secondary_prof_course_hash[course]) + set(filter(lambda row:row[0] in second_profs, prof_course_hash[course])))
 		# since only 1 prof at a time
@@ -37,42 +37,29 @@ def available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, s
 		prof_course_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
 	return prof_course_hash, secondary_prof_course_hash
 
+def available_prof_hasher(prof_course_hash, profs, cur_cs_courses):
+	tmp_hash = copy.deepcopy(prof_course_hash)
+	for course in prof_course_hash:
+		#secondary_prof_course_hash[course] = list(set(secondary_prof_course_hash[course]) + set(filter(lambda row:row[0] in second_profs, prof_course_hash[course])))
+		# since only 1 prof at a time
+		if course not in cur_cs_courses:
+			tmp_hash.pop(course, None)
+		else:
+			tmp_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
+	return tmp_hash
+
 def reduce_prof_hasher(prof_course_hash, profs, c=None):
 	tmp_hash = copy.deepcopy(prof_course_hash)
 	for course in prof_course_hash:
 		if course == c:
+			print c
+			tmp_hash.pop(c)
 			continue
+		#print "here -", course, filter(lambda row:row[0] in profs, prof_course_hash[course])
 		tmp_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
-	return tmp_hash
+		
 
-def rec(courses, prof_course_hash, profs, cur_score, cur_choice, min_score, best_choices, cutoff, trace = False, lvl = 0):
-	if courses == set([]):
-		exit_flag = False
-		if cur_score < cutoff:
-			exit_flag = True
-		return cur_score, cur_choice, exit_flag
-	exit_flag = False
-	for c in courses:
-		if trace:
-			print "Course", lvl, c
-		for p in prof_course_hash[c]:
-			if trace:
-				print "Prof", lvl, p
-			choice = [c, p[0]]
-			cur_courses = courses - set([c])
-			cur_profs = profs - set([p[0]])
-			score, choice, exit_flag = rec(cur_courses, reduce_prof_hasher(prof_course_hash, cur_profs), 
-								cur_profs, cur_score + p[1], cur_choice + choice, min_score, best_choices, cutoff, trace, lvl + 1) 
-			if trace:
-				print "Score", score, choice
-			if score < min_score:
-				min_score = score
-				best_choices = choice
-			if exit_flag:
-				break
-		if exit_flag:
-			break	
-	return min_score, best_choices, exit_flag
+	return tmp_hash
 
 def first(lst):
 	if lst == []:
@@ -83,25 +70,26 @@ def first(lst):
 
 def smart_rec(courses, prof_course_hash, profs, cur_score, cur_choice, min_score, best_choices, cutoff, trace = False, lvl = 0):
 	exit_flag = False
-	if courses == set([]):
+	if len(prof_course_hash) == 0:
 		if cur_score < cutoff:
 			exit_flag = True
 		return cur_score, cur_choice, exit_flag
 	
-	c = first(sorted(prof_course_hash, key=lambda prfs:len(prfs)))
+	c = first(sorted(prof_course_hash, key=lambda k:len(prof_course_hash[k])))
 	if c != None:
 		if trace:
 			print "Course", lvl, c, len(prof_course_hash[c])
 		for p in prof_course_hash[c]:
 			if trace:
 				print "Prof", lvl, p
-			choice = [c, p[0]]
+			choice = [[c, p[0]]]
 			cur_courses = courses - set([c])
 			cur_profs = profs - set([p[0]])
+			#print "cur profs", cur_profs
 			score, choice, exit_flag = smart_rec(cur_courses, reduce_prof_hasher(prof_course_hash, cur_profs, c), 
 								cur_profs, cur_score + p[1], cur_choice + choice, min_score, best_choices, cutoff, trace, lvl + 1) 
 			if trace:
-				print "Score", score, choice
+				print "Score", score, choice, exit_flag
 			if score < min_score:
 				min_score = score
 				best_choices = choice
@@ -125,7 +113,7 @@ def smart_rec2(courses, prof_course_hash, assigned_profs, cur_score, cur_choice,
 				continue
 			if trace:
 				print "Prof", lvl, p
-			choice = [c, p[0]]
+			choice = [[c, p[0]]]
 			cur_courses = courses - set([c])
 
 			score, choice, exit_flag = smart_rec2(cur_courses, prof_course_hash, assigned_profs.union([p]),
@@ -143,7 +131,9 @@ def pprint(my_hash):
 	for line in my_hash:
 		print line,my_hash[line]
 
-
+def sprint(my_hash):
+	for line in my_hash:
+		print line[0], line[1]
 
 
 available_profs = map(lambda prof:prof.strip(), open("available_profs.txt").readlines())
@@ -162,10 +152,12 @@ for course in predicted_cs_courses:
 	#else:
 		seen_cs_courses.append(course)
 #print "seen_cs_courses", seen_cs_courses
-available_profs_course_hash, ignore = available_prof_hasher(course_info, available_profs, {}, [])
+#print len(course_info)
+available_profs_course_hash = available_prof_hasher(course_info, available_profs, seen_cs_courses)
 #print "available_profs_course_hash", available_profs_course_hash
 #brute_force(available_profs_course_hash, available_profs, seen_cs_courses, True)
-
-ms, best_choice, flg = smart_rec(set(seen_cs_courses), available_profs_course_hash, set([]), 0, [], float("inf"), {}, len(seen_cs_courses)/2, True, 0)
-print "Ended\n", ms, "\n", best_choice
+#print len(available_profs_course_hash)
+ms, best_choice, flg = smart_rec(set(seen_cs_courses), available_profs_course_hash, set(available_profs), 0, [], float("inf"), {}, len(seen_cs_courses)/2, True, 0)
+print "Ended\n", ms, "\n"
+sprint(best_choice)
 
