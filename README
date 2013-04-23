@@ -30,3 +30,18 @@ smart.py = smart scheduler
 
 After running run.py you may run one of the schedulers to find the course instructor assignments
 
+Modules :-
+All modules are written by me.
+brute_force
+eligible_student_sem
+find_sems
+greedy
+predictor
+pre_proc
+remap
+run
+sched
+smart
+TotalStudentsPerSem
+
+Jar file - smpf.jar is the FPGroth implementation. This isn't written by me
