@@ -48,6 +48,7 @@ def reduce_prof_hasher(prof_course_hash, profs, c=None):
 		tmp_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
 	return tmp_hash
 
+# First of list
 def first(lst):
 	if lst == []:
 		return None
@@ -106,9 +107,8 @@ course_info = read_courses_prof_hash()
 seen_cs_courses = []
 for course in predicted_cs_courses:
 	if course in course_info:
-		#print course, " is a new course. We can't schedule it."
-	#else:
 		seen_cs_courses.append(course)
+		
 #print "seen_cs_courses", seen_cs_courses
 #print len(course_info)
 available_profs_course_hash = available_prof_hasher(course_info, available_profs, seen_cs_courses)

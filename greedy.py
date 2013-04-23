@@ -3,6 +3,7 @@ from collections import Counter
 
 TWICE_PENALTY = 100
 # prof_course_hash[course] = [[prof1, rank1], [prof2, rank2]]
+# Read the professor course hash
 def read_courses_prof_hash(prof_course_fn = "courses_professors.txt"):
 	with open(prof_course_fn) as fd:
 		prof_course_tmphash = {}
@@ -27,18 +28,17 @@ def read_courses_prof_hash(prof_course_fn = "courses_professors.txt"):
 			#print prof_course_hash[course]
 		return prof_course_hash
 
+# Reduce the prof_course_hash to only the current courses and professors
 def available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, second_profs):
-	
 	for course in prof_course_hash:
-		#secondary_prof_course_hash[course] = list(set(secondary_prof_course_hash[course]) + set(filter(lambda row:row[0] in second_profs, prof_course_hash[course])))
-		# since only 1 prof at a time
 		if course not in secondary_prof_course_hash:
 			secondary_prof_course_hash[course] = []
 		secondary_prof_course_hash[course] += filter(lambda row:row[0] in second_profs, prof_course_hash[course])
 		prof_course_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
 	return prof_course_hash, secondary_prof_course_hash
 
-def brute_reenact(prof_course_hash, profs, courses, course_offset, prof_offset):
+# Re-enact the greedy choice.
+def greedy_reenact(prof_course_hash, profs, courses, course_offset, prof_offset):
 	first_itr_flag = True
 	score = 0
 	assign = {}
@@ -64,11 +64,11 @@ def brute_reenact(prof_course_hash, profs, courses, course_offset, prof_offset):
 		else:
 			print len(courses) - courses.index(course), "courses not assigned"
 			print courses[courses.index(course):]
-			exit()
-		
+			exit()		
 	return assign
 
-def brute_helper(prof_course_hash, profs, courses, course_offset, prof_offset, trace = False):
+# Recursive helper function
+def greedy_helper(prof_course_hash, profs, courses, course_offset, prof_offset, trace = False):
 	first_itr_flag = True
 	score = 0
 	second_profs = set([])
@@ -87,22 +87,22 @@ def brute_helper(prof_course_hash, profs, courses, course_offset, prof_offset, t
 			second_profs.union(set([prof_course_hash[course][offset][0]]))
 			prof_course_hash, secondary_prof_course_hash = available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, second_profs)
 		elif course in secondary_prof_course_hash and len(secondary_prof_course_hash[course]) > 0:
-			#print secondary_prof_course_hash[course]
 			if trace:
 				print course, prof_course_hash[course][offset][0]
 			score += secondary_prof_course_hash[course][0][1] + TWICE_PENALTY
 			second_profs -= set([secondary_prof_course_hash[course][0][0]])
 			secondary_prof_course_hash, tmp_hash = available_prof_hasher(secondary_prof_course_hash, second_profs, {}, [])
 		else:
-			# course can't be classified
-			#print course
 			return float("inf"), [course], courses.index(course)
 	return score, [], len(courses)
 
+# return the most commont element of a list
 def most_common(lst, cnt=1):
     return sorted(set(lst), key=lst.count, reverse = True)[:cnt]
 
-def brute_force(prof_course_hash, profs, courses, trace = False):
+# The greedy scheduler
+# Start from every course professor combo and apply the greedy helper on that choice
+def greedy(prof_course_hash, profs, courses, trace = False):
 	assign = {}
 	min_score = float("inf")
 	best_course_offset = -1
@@ -114,13 +114,9 @@ def brute_force(prof_course_hash, profs, courses, trace = False):
 		for j in range(len(prof_course_hash[courses[i]])):
 			if trace:
 				print "Itr -", courses[i], prof_course_hash[courses[i]][j]
-			score, prob_course, courses_assigned = brute_helper(copy.deepcopy(prof_course_hash), set(profs), courses, i, j, trace)
+			score, prob_course, courses_assigned = greedy_helper(copy.deepcopy(prof_course_hash), set(profs), courses, i, j, trace)
 			if trace:
 				print "Reuslts -",score, prob_course, courses_assigned, "of", len(courses)
-			#print "here:", courses[i], j, score
-			#if score != float("inf"):
-			#	print "Assigned:"
-			#	pprint(brute_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, penalty, i, j))
 			if trace and courses_assigned > trace_courses_assigned:
 				best_res = i,j
 				trace_courses_assigned = courses_assigned
@@ -132,19 +128,17 @@ def brute_force(prof_course_hash, profs, courses, trace = False):
 				problem_courses += prob_course
 	if min_score < float("inf"):
 		print "min score =", min_score
-		brute_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, best_course_offset, best_prof_offset)
+		greedy_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, best_course_offset, best_prof_offset)
 	else:
 		print "Not Assigned"
 		print "Cant allocate course - ", most_common(problem_courses, 2)
-		brute_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, best_res[0], best_res[1])
+		greedy_reenact(copy.deepcopy(prof_course_hash), set(profs), courses, best_res[0], best_res[1])
 		
 
 
 def pprint(my_hash):
 	for line in my_hash:
 		print line,my_hash[line]
-
-
 
 
 available_profs = map(lambda prof:prof.strip(), open("available_profs.txt").readlines())
@@ -159,11 +153,10 @@ course_info = read_courses_prof_hash()
 seen_cs_courses = []
 for course in predicted_cs_courses:
 	if course in course_info:
-		#print course, " is a new course. We can't schedule it."
-	#else:
 		seen_cs_courses.append(course)
+		
 #print "seen_cs_courses", seen_cs_courses
 available_profs_course_hash, ignore = available_prof_hasher(course_info, available_profs, {}, [])
 #print "available_profs_course_hash", available_profs_course_hash
-brute_force(available_profs_course_hash, available_profs, seen_cs_courses, True)
+greedy(available_profs_course_hash, available_profs, seen_cs_courses, True)
 

@@ -1,7 +1,6 @@
 import copy
-
-
-
+# This is a failed attempt at trying to cluster courses based on their professor similarity
+# The courses all end up in the same cluster, because they share professors.
 
 
 def read_courses_prof_hash(prof_course_fn = "courses_professors.txt"):

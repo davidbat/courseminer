@@ -3,6 +3,7 @@ from collections import Counter
 
 TWICE_PENALTY = 100
 # prof_course_hash[course] = [[prof1, rank1], [prof2, rank2]]
+# Read the professor course hash
 def read_courses_prof_hash(prof_course_fn = "courses_professors.txt"):
 	with open(prof_course_fn) as fd:
 		prof_course_tmphash = {}
@@ -27,23 +28,25 @@ def read_courses_prof_hash(prof_course_fn = "courses_professors.txt"):
 			#print prof_course_hash[course]
 		return prof_course_hash
 
+
+# Reduce the prof_course_hash to only the current courses and professors
 def available_prof_hasher(prof_course_hash, profs, secondary_prof_course_hash, second_profs):
-	
 	for course in prof_course_hash:
-		#secondary_prof_course_hash[course] = list(set(secondary_prof_course_hash[course]) + set(filter(lambda row:row[0] in second_profs, prof_course_hash[course])))
-		# since only 1 prof at a time
 		if course not in secondary_prof_course_hash:
 			secondary_prof_course_hash[course] = []
 		secondary_prof_course_hash[course] += filter(lambda row:row[0] in second_profs, prof_course_hash[course])
 		prof_course_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
 	return prof_course_hash, secondary_prof_course_hash
 
+# Reduce the prof_course_hash to delete a professor from it
 def reduce_prof_hasher(prof_course_hash, profs):
 	tmp_hash = copy.deepcopy(prof_course_hash)
 	for course in prof_course_hash:
 		tmp_hash[course] = filter(lambda row:row[0] in profs, prof_course_hash[course])
 	return tmp_hash
 
+# The brute force recursion
+# Recures on courses, then on professors available for that course.
 def rec(courses, prof_course_hash, profs, cur_score, cur_choice, min_score, best_choices, cutoff, trace = False, lvl = 0):
 	if courses == set([]):
 		exit_flag = False
@@ -92,9 +95,8 @@ course_info = read_courses_prof_hash()
 seen_cs_courses = []
 for course in predicted_cs_courses:
 	if course in course_info:
-		#print course, " is a new course. We can't schedule it."
-	#else:
 		seen_cs_courses.append(course)
+		
 print "seen_cs_courses", seen_cs_courses
 available_profs_course_hash, ignore = available_prof_hasher(course_info, available_profs, {}, [])
 print "available_profs_course_hash", available_profs_course_hash
