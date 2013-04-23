@@ -1,4 +1,4 @@
-Course predictor for CCIS - Probability distribution method
+Course predictor for CCIS - Path distribution method
 Usage: run.py [options]
 
 Options:
@@ -22,3 +22,11 @@ Options:
 Examples:-
 python run.py -r -s "Spring 2013"
 python run.py -r -s "Spring 2013" -l UG -p "BSCS Computer Science"
+
+
+greedy.py = greedy scheduler
+brute_force.py = brute force scheduler
+smart.py = smart scheduler
+
+After running run.py you may run one of the schedulers to find the course instructor assignments
+
