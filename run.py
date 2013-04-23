@@ -10,16 +10,16 @@ from constants import *
 parser = OptionParser()
 parser.add_option("-r", "--restrict",
 				  action = "store_true", dest="poss_flag", default=False,
-                  help="Restrict predictions to courses available for the semester.")
+                  help="Restrict predictions to courses available for the semester.[Optional]")
 parser.add_option("-s", "--sem",
                   action = "store", dest="cur_sem",
                   help="semester to predict over.")
 parser.add_option("-p", "--program",
                   action = "store", dest="program", default= 'MSCS Computer Science',
-                  help="program to predict over.\n'MSCS Computer Science' is the default program.")
+                  help="program to predict over.\n'MSCS Computer Science' is the default program.[Optional]")
 parser.add_option("-l", "--level",
                   action = "store", dest="level", default= "GR",
-                  help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level")
+                  help="Student level to predict over. Either 'UG' or 'GR'.\n'GR' is the default level.[Optional]")
 (options, args) = parser.parse_args()
 
 if args != []:
@@ -55,11 +55,12 @@ unique_courses = list(set(uniq_coursesx + uniq_coursesz))
 
 frequent_pairs = get_frequent_pairs()
 
-
+# Print a hash
 def pprint(my_hash):
 	for line in my_hash:
 		print line,my_hash[line]
 
+# Find a students latest_sem
 def find_last_sem(sem_hash):
 	sems = sorted(sem_hash)
 	for indx in range(len(sems)):
@@ -67,6 +68,9 @@ def find_last_sem(sem_hash):
 			return sems[indx-1]
 	return sems[-1]
 
+# Compile the training data for bayes. The features are courses and frequent patterns.
+# Values are 0 (if not taken) and 1 (if taken).
+# Similarly the label is 0 if not taken and 1 if taken
 def course_label(uniq_courses, student_course_map, test_flag=False):
 	course_label_hash = {}
 	features = {}
@@ -95,10 +99,9 @@ def course_label(uniq_courses, student_course_map, test_flag=False):
 					continue
 				course_label_hash[course][sem].append(features[sem][stud_id] + [ 1 if course in sem_data else 0 ])
 
-	#pprint (course_label_hash['CS5610']['sem2'])
 	return course_label_hash
 
-
+# Function to calculate MSE
 def calculate_error(actual_hash, predicted_hash):
 	mse = 0
 	cnt = 0
@@ -111,9 +114,7 @@ def calculate_error(actual_hash, predicted_hash):
 		if not poss_flag and ((round(predicted_hash[key]) == 0 and actual == 0) 
 			or (round(predicted_hash[key]) == 1 and actual == 0)):
 			continue
-		cnt += 1	
-		#else:
-		#	continue
+		cnt += 1
 		diff = abs(actual - round(predicted_hash[key]))
 		mse += diff ** 2
 		tabs = '\t'
@@ -136,14 +137,15 @@ actual_courses = {key: float(value) for (key, value) in map(lambda row:row.strip
 if poss_flag:
 	poss_courses = actual_courses.keys()
 
+
+
+# Make the bayes models
 course_predictor = {} 
 course_capacity = {}
 means = [ 0.5 for item in range(len(unique_courses+frequent_pairs)) ]
 for course in poss_courses:
 	if course not in course_label_hash:
 		print course, "details not available from previous student history"
-		#course_capacity[course] = 0.0
-		#dont_predict += [course]
 		continue
 	course_predictor[course] = {}
 	for sem in SEM_NUMBER:
@@ -152,10 +154,13 @@ for course in poss_courses:
 		course_predictor[course][sem] = bayes_mod(course_label_hash[course][sem], means)
 
 
+
 for course in course_predictor:
 	course_capacity[course] = 0.0
 new_students = 0
 predict_over = set(course_capacity.keys()) - set(dont_predict)
+
+# Predict for every student
 for stud_id in student_cur_course_map:
 	last_sem = find_last_sem(student_cur_course_map[stud_id])
 	# Need random prediction here and for new students

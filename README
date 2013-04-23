@@ -1,0 +1,20 @@
+Course predictor for CCIS - Naive Bayes model
+
+Usage: run.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -r, --restrict        Restrict predictions to courses available for the
+                        semester.[Optional]
+  -s CUR_SEM, --sem=CUR_SEM
+                        semester to predict over.
+  -p PROGRAM, --program=PROGRAM
+                        program to predict over. 'MSCS Computer Science' is
+                        the default program.[Optional]
+  -l LEVEL, --level=LEVEL
+                        Student level to predict over. Either 'UG' or 'GR'.
+                        'GR' is the default level.[Optional]
+
+Example:
+python run.py -r -s "Spring 2013"
+python run.py -r -s "Spring 2013" -l UG -p "BSCS Computer Science"
