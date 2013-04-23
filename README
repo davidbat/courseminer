@@ -18,3 +18,6 @@ Options:
 Example:
 python run.py -r -s "Spring 2013"
 python run.py -r -s "Spring 2013" -l UG -p "BSCS Computer Science"
+
+
+After running run.py you may run sched.py to find the course instructor assignments
