@@ -25,3 +25,15 @@ brute_force.py = brute force scheduler
 smart.py = smart scheduler
 
 After running run.py you may run one of the schedulers to find the course instructor assignments
+
+All the modules mentioned below are written by me :-
+
+bayes
+brute_force
+cluster
+constants
+greedy
+run
+sem_stud_data
+smart
+TotalStudentsPerSem
